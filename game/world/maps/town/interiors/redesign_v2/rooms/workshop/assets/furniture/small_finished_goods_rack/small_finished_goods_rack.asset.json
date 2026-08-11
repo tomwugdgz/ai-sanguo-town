@@ -1,0 +1,212 @@
+{
+  "schema_version": 2,
+  "source_revision": "workshop_small_finished_goods_rack_batch_v1_formal_import_v1_footpoint_v3",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "small_finished_goods_rack",
+  "label": "低矮横向三格木制成品架（每格一件小木凳或木框，非高柜或零件柜）",
+  "room_id": "workshop",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 160,
+    "depth": 24,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/small_finished_goods_rack/frames/small_finished_goods_rack_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/small_finished_goods_rack/frames/small_finished_goods_rack_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/small_finished_goods_rack/frames/small_finished_goods_rack_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/small_finished_goods_rack/frames/small_finished_goods_rack_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      144
+    ],
+    "right": [
+      102,
+      146
+    ],
+    "up": [
+      103,
+      144
+    ],
+    "left": [
+      102,
+      146
+    ]
+  },
+  "ground_contact": {
+    "polygons_by_direction_px": {
+      "down": [[[-80, -24], [80, -24], [80, 0], [-80, 0]]],
+      "right": [[[-26, -24], [26, -24], [26, 0], [-26, 0]]],
+      "up": [[[-80, -24], [80, -24], [80, 0], [-80, 0]]],
+      "left": [[[-26, -24], [27, -24], [27, 0], [-26, 0]]]
+    },
+    "polygons_px": [
+      [
+        [
+          -80,
+          -24
+        ],
+        [
+          80,
+          -24
+        ],
+        [
+          80,
+          0
+        ],
+        [
+          -80,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -5,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -86,
+        -71
+      ],
+      [
+        86,
+        -71
+      ],
+      [
+        86,
+        0
+      ],
+      [
+        -86,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [
+        [
+          -86,
+          -71
+        ],
+        [
+          86,
+          -71
+        ],
+        [
+          86,
+          0
+        ],
+        [
+          -86,
+          0
+        ]
+      ],
+      "right": [
+        [
+          -26,
+          -74
+        ],
+        [
+          26,
+          -74
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          -26,
+          0
+        ]
+      ],
+      "up": [
+        [
+          -86,
+          -73
+        ],
+        [
+          86,
+          -73
+        ],
+        [
+          86,
+          0
+        ],
+        [
+          -86,
+          0
+        ]
+      ],
+      "left": [
+        [
+          -26,
+          -74
+        ],
+        [
+          27,
+          -74
+        ],
+        [
+          27,
+          0
+        ],
+        [
+          -26,
+          0
+        ]
+      ]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "small_goods_pickup",
+      "kind": "take",
+      "position_px": [
+        80,
+        -96
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/candidates/calibration_c/shell_raw.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/layout_concepts/workshop_layout_concept_a/workshop_furniture_layout_concept_a.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "assets/furniture/small_finished_goods_rack/batch_v1/SOURCE_RECORD.json"
+  }
+}

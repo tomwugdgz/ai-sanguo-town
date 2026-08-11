@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "source_revision": "library_candidate_c_uniform_wall_height_space_v1",
+  "room_id": "library",
+  "canvas_size_px": [
+    1331,
+    1182
+  ],
+  "segments": [
+    {
+      "id": "south_west_foreground",
+      "foreground_polygon_canvas_px": [
+        [
+          76,
+          958
+        ],
+        [
+          590,
+          958
+        ],
+        [
+          590,
+          1127
+        ],
+        [
+          560,
+          1127
+        ],
+        [
+          560,
+          1078
+        ],
+        [
+          76,
+          1078
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            104,
+            864
+          ],
+          [
+            584,
+            864
+          ],
+          [
+            584,
+            1024
+          ],
+          [
+            104,
+            1024
+          ]
+        ],
+        [
+          [
+            584,
+            928
+          ],
+          [
+            744,
+            928
+          ],
+          [
+            744,
+            1024
+          ],
+          [
+            584,
+            1024
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.16
+    },
+    {
+      "id": "south_east_foreground",
+      "foreground_polygon_canvas_px": [
+        [
+          741,
+          958
+        ],
+        [
+          1255,
+          958
+        ],
+        [
+          1255,
+          1078
+        ],
+        [
+          771,
+          1078
+        ],
+        [
+          771,
+          1127
+        ],
+        [
+          741,
+          1127
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            744,
+            864
+          ],
+          [
+            1224,
+            864
+          ],
+          [
+            1224,
+            1024
+          ],
+          [
+            744,
+            1024
+          ]
+        ],
+        [
+          [
+            584,
+            928
+          ],
+          [
+            744,
+            928
+          ],
+          [
+            744,
+            1024
+          ],
+          [
+            584,
+            1024
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.16
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": 2,
+  "source_revision": "side_table_footpoint_occlusion_v1",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "side_table",
+  "label": "诊所方形空台面小边桌",
+  "room_id": "clinic",
+  "canonical_direction": "down",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 64,
+    "depth": 56,
+    "height": 72
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/side_table/frames/side_table_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/side_table/frames/side_table_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/side_table/frames/side_table_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/side_table/frames/side_table_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      78,
+      80
+    ],
+    "right": [
+      77,
+      75
+    ],
+    "up": [
+      78,
+      80
+    ],
+    "left": [
+      77,
+      76
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -24,
+          -28
+        ],
+        [
+          24,
+          -28
+        ],
+        [
+          32,
+          -20
+        ],
+        [
+          32,
+          20
+        ],
+        [
+          24,
+          28
+        ],
+        [
+          -24,
+          28
+        ],
+        [
+          -32,
+          20
+        ],
+        [
+          -32,
+          -20
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      0,
+      0
+    ],
+    "cells": [
+      [
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -32,
+        -44
+      ],
+      [
+        32,
+        -44
+      ],
+      [
+        32,
+        28
+      ],
+      [
+        -32,
+        28
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-35, -40], [35, -40], [35, 28], [-35, 28]],
+      "right": [[-28, -33], [28, -33], [28, 32], [-28, 32]],
+      "up": [[-33, -41], [33, -41], [33, 28], [-33, 28]],
+      "left": [[-28, -34], [28, -34], [28, 32], [-28, 32]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "primary",
+      "kind": "use",
+      "position_px": [
+        0,
+        60
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/background/candidates/clinic_shell_calibration_a_user_accepted.png",
+      "res://world/maps/town/interiors/clinic/assets/concepts/clinic_layout_warm_v1.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/side_table/candidate_a_room_batch_v1/SOURCE_RECORD.json"
+  },
+  "direction_visual_policy": "strict_four_direction"
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "assetId": "ui.opening_flow.town_entry_loading.runtime-v1",
+  "status": "user_authorized_runtime_split",
+  "userDecision": {
+    "date": "2026-07-22",
+    "verdict": "拆",
+    "meaning": "The reviewed complete candidate may be split into formal runtime layers without changing its composition or visual family."
+  },
+  "referenceCanvas": [1672, 941],
+  "routeOwner": "TownEntryLoadingOverlay",
+  "routeKinds": [
+    "new_game",
+    "continue",
+    "load_game"
+  ],
+  "components": {
+    "background": {
+      "path": "res://assets/ui/opening_flow/shared/loading/runtime/v1/components/loading_background_dimmed_v1.png",
+      "size": [1672, 941],
+      "sha256": "ef12302ccebeafd1f454d21009f5c1914d94f79144ae027bfd4af1f2fe68da44",
+      "derivation": "canonical background multiplied by the measured reviewed-candidate dim factors; no runtime color block"
+    },
+    "shell": {
+      "path": "res://assets/ui/opening_flow/shared/loading/runtime/v1/components/loading_shell_exact_full_canvas_v1.png",
+      "size": [1672, 941],
+      "sha256": "d6890774661eacbf182f286442766615512a18c4f49da66217c6e39ec94e5461",
+      "alphaBounds": [515, 481, 641, 308],
+      "bakedText": false,
+      "bakedProgress": false
+    },
+    "progressTrack": {
+      "path": "res://assets/ui/opening_flow/shared/loading/runtime/v1/components/progress_track_empty_520x31_v1.png",
+      "size": [520, 31],
+      "sha256": "efb21b91d7da6ae5f1fcbcaa85884e51b4be24e1301438b06c231e824195a279",
+      "derivation": "approved crop with only the baked fill interior replaced by an equal-size sample from its approved empty trough"
+    },
+    "progressFill": {
+      "path": "res://assets/ui/opening_flow/shared/loading/runtime/v1/components/progress_fill_226x25_v1.png",
+      "size": [226, 25],
+      "sha256": "7ec87dfbf39a282a06d2e49dfea379e1e559b97f52be6362e96321670102be9c",
+      "sourceRectWithinApprovedProgress": [3, 3, 226, 25]
+    }
+  },
+  "dynamicSlots": {
+    "title": [570, 530, 530, 88],
+    "status": [570, 642, 530, 42],
+    "progress": [577, 708, 520, 31]
+  },
+  "runtimeRules": {
+    "singleInstanceAcrossRoutes": true,
+    "realStageProgressOnly": true,
+    "dynamicChineseInGodot": true,
+    "fullScreenInputBlockWhileActive": true,
+    "commonPanelFallbackAllowed": false,
+    "programmaticColorBlockAllowed": false
+  }
+}

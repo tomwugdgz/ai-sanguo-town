@@ -1,0 +1,192 @@
+{
+  "schema_version": 2,
+  "source_revision": "consultation_desk_footpoint_occlusion_v1",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "consultation_desk",
+  "label": "诊所空台面问诊桌",
+  "room_id": "clinic",
+  "canonical_direction": "down",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 160,
+    "depth": 64,
+    "height": 128
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/consultation_desk/frames/consultation_desk_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/consultation_desk/frames/consultation_desk_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/consultation_desk/frames/consultation_desk_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/consultation_desk/frames/consultation_desk_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      120
+    ],
+    "right": [
+      103,
+      73
+    ],
+    "up": [
+      104,
+      119
+    ],
+    "left": [
+      103,
+      73
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -72,
+          -32
+        ],
+        [
+          72,
+          -32
+        ],
+        [
+          80,
+          -24
+        ],
+        [
+          80,
+          24
+        ],
+        [
+          72,
+          32
+        ],
+        [
+          -72,
+          32
+        ],
+        [
+          -80,
+          24
+        ],
+        [
+          -80,
+          -24
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      0,
+      0
+    ],
+    "cells": [
+      [
+        -3,
+        -1
+      ],
+      [
+        -2,
+        -1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        -3,
+        0
+      ],
+      [
+        -2,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -96,
+        -96
+      ],
+      [
+        96,
+        -96
+      ],
+      [
+        96,
+        32
+      ],
+      [
+        -96,
+        32
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-77, -75], [78, -75], [78, 32], [-77, 32]],
+      "right": [[-23, -28], [23, -28], [23, 80], [-23, 80]],
+      "up": [[-77, -75], [78, -75], [78, 32], [-77, 32]],
+      "left": [[-23, -29], [23, -29], [23, 80], [-23, 80]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "patient_consult",
+      "kind": "service",
+      "position_px": [
+        0,
+        64
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    },
+    {
+      "id": "doctor_consult",
+      "kind": "use",
+      "position_px": [
+        0,
+        -64
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/background/candidates/clinic_shell_calibration_a_user_accepted.png",
+      "res://world/maps/town/interiors/clinic/assets/concepts/clinic_layout_warm_v1.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/consultation_desk/candidate_e_user_room_completion_retry_v2/SOURCE_RECORD.json"
+  },
+  "direction_visual_policy": "strict_four_direction"
+}

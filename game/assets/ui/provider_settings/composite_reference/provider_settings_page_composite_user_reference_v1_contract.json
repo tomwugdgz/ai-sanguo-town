@@ -1,0 +1,355 @@
+{
+  "assetId": "ui.provider-settings.composite.page-user-reference.v1",
+  "status": "user-authority-for-final-effect",
+  "sha256": "8488390ba66de0f5094de3c2f4959d4bbdc86b0f6ab08b66a2d04230dda9622c",
+  "sourceSize": [1672, 941],
+  "componentType": "page-specific-composite",
+  "owner": "ProviderSettingsPageCompositeTexture",
+  "visibleBorderOwners": 1,
+  "mayRegisterAsGenericStyleBoxTexture": false,
+  "childOverlayPolicy": {
+    "visibleBorders": "none",
+    "backgrounds": "none",
+    "controls": "live-labels-and-transparent-hit-targets-only"
+  },
+  "typographyRevision": "provider-settings.composite-typography.v2",
+  "typography": {
+    "fontFamily": "ZhengGeDianHei-16",
+    "nativeGridPx": 16,
+    "scaleStepPx": 8,
+    "spacingGlyphPx": 2,
+    "automaticFontShrink": false,
+    "ellipsis": false,
+    "minimumBorderClearanceAt1920": [8, 4, 8, 4],
+    "tokens": {
+    "title": {
+      "fontSizeAt1920": 32,
+      "variationEmbolden": 0.0,
+        "outlineSize": 0
+      },
+    "emphasis": {
+      "fontSizeAt1920": 24,
+      "variationEmbolden": 0.0,
+        "outlineSize": 0
+      },
+    "card-name": {
+      "fontSizeAt1920": 32,
+      "variationEmbolden": 0.0,
+        "outlineSize": 0
+      },
+    "body": {
+      "fontSizeAt1920": 24,
+      "variationEmbolden": 0.0,
+        "outlineSize": 0
+      },
+      "small": {
+        "fontSizeAt1920": 16,
+        "variationEmbolden": 0.0,
+        "outlineSize": 0
+      },
+    "primary-button": {
+      "fontSizeAt1920": 32,
+      "variationEmbolden": 0.0,
+        "outlineSize": 1,
+        "outlineColor": "#68260f"
+      }
+    }
+  },
+  "typographyStress": [
+    {
+      "slotId": "page_title",
+      "samples": ["设置", "Provider 连接与模型设置"],
+      "expansionFactor": 1.3,
+      "maxLines": 1
+    },
+    {
+      "slotId": "provider_0_status",
+      "samples": ["可用", "请求过于频繁"],
+      "expansionFactor": 1.3,
+      "maxLines": 1
+    },
+    {
+      "slotId": "provider_summary",
+      "samples": ["可用 1", "可用 3 · 已启用模型 12"],
+      "expansionFactor": 1.3,
+      "maxLines": 1
+    },
+    {
+      "slotId": "provider_page",
+      "samples": ["1 / 1", "3 / 3"],
+      "expansionFactor": 1.3,
+      "maxLines": 1
+    },
+    {
+      "slotId": "base_url_value",
+      "samples": ["本机地址", "https://api.example.invalid/v1"],
+      "expansionFactor": 1.3,
+      "maxLines": 1
+    },
+    {
+      "slotId": "model_0_name",
+      "samples": ["对话", "长上下文模型"],
+      "expansionFactor": 1.3,
+      "maxLines": 1
+    },
+    {
+      "slotId": "model_page",
+      "samples": ["1 / 1", "6 / 6"],
+      "expansionFactor": 1.3,
+      "maxLines": 1
+    },
+    {
+      "slotId": "model_0_capabilities",
+      "samples": ["JSON · 对话", "JSON · 对话 · 记忆 · 流式"],
+      "expansionFactor": 1.3,
+      "maxLines": 2,
+      "expansionBehavior": "wrap-within-slot"
+    },
+    {
+      "slotId": "connection_message",
+      "samples": ["未连接", "占位数据，未连接真实 Provider。"],
+      "expansionFactor": 1.3,
+      "maxLines": 1
+    },
+    {
+      "slotId": "connection_action",
+      "samples": ["检查", "检查连接"],
+      "expansionFactor": 1.3,
+      "maxLines": 1
+    }
+  ],
+  "layoutRegions": {
+    "settings_board": [154, 75, 1364, 815],
+    "header": [208, 124, 1248, 76],
+    "provider_selector": [207, 205, 416, 650],
+    "provider_detail": [641, 205, 827, 650],
+    "provider_summary": [220, 733, 386, 96],
+    "selected_provider_header": [665, 225, 786, 52],
+    "api_key_section": [663, 291, 789, 118],
+    "base_url_section": [663, 421, 789, 109],
+    "models_section": [663, 544, 789, 181],
+    "connection_section": [662, 741, 787, 94]
+  },
+  "slots": {
+    "page_title": {
+      "rect": [500, 135, 620, 54],
+      "wellRect": [420, 130, 780, 64],
+      "role": "live-text",
+      "alignment": "center",
+      "fontToken": "title",
+      "opticalYOffsetAt1920": -1
+    },
+    "formal_status": {
+      "rect": [1238, 142, 140, 42],
+      "wellRect": [1228, 132, 158, 62],
+      "role": "live-text",
+      "alignment": "center",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": -1
+    },
+    "provider_section": {
+      "rect": [271, 228, 278, 42],
+      "wellRect": [256, 224, 310, 50],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "body",
+      "opticalYOffsetAt1920": -1
+    },
+    "provider_0_name": {
+      "rect": [342, 306, 168, 42],
+      "wellRect": [328, 302, 172, 49],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "card-name",
+      "opticalYOffsetAt1920": 0
+    },
+    "provider_0_status": {
+      "rect": [342, 360, 144, 33],
+      "wellRect": [328, 356, 172, 41],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": 0
+    },
+    "provider_1_name": {
+      "rect": [342, 450, 168, 41.5],
+      "wellRect": [328, 446, 172, 49],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "card-name",
+      "opticalYOffsetAt1920": 0
+    },
+    "provider_1_status": {
+      "rect": [342, 503, 144, 33],
+      "wellRect": [328, 499, 172, 41],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": 0
+    },
+    "provider_2_name": {
+      "rect": [342, 591, 168, 41.5],
+      "wellRect": [328, 587, 172, 49],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "card-name",
+      "opticalYOffsetAt1920": 0
+    },
+    "provider_2_status": {
+      "rect": [342, 644, 144, 33],
+      "wellRect": [328, 640, 172, 41],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": 0
+    },
+    "provider_summary": {
+      "rect": [247, 738, 328, 26],
+      "wellRect": [220, 733, 386, 36],
+      "role": "live-text",
+      "alignment": "center",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": -1
+    },
+    "provider_page": {
+      "rect": [324, 773, 176, 40],
+      "wellRect": [312, 769, 200, 48],
+      "role": "live-text",
+      "alignment": "center",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": -1
+    },
+    "selected_provider": {
+      "rect": [690, 230, 452, 38],
+      "wellRect": [665, 226, 496, 47],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "body",
+      "opticalYOffsetAt1920": -1
+    },
+    "api_key_label": {
+      "rect": [700, 302, 124, 31],
+      "wellRect": [690, 298, 145, 39],
+      "role": "live-text",
+      "alignment": "center",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": -1
+    },
+    "api_key_value": {
+      "rect": [708, 343, 425, 39],
+      "wellRect": [685, 339, 476, 50],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "body",
+      "opticalYOffsetAt1920": -1
+    },
+    "base_url_label": {
+      "rect": [700, 432, 124, 31],
+      "wellRect": [690, 428, 145, 39],
+      "role": "live-text",
+      "alignment": "center",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": -1
+    },
+    "base_url_value": {
+      "rect": [708, 473, 696, 39],
+      "wellRect": [685, 469, 745, 50],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "body",
+      "opticalYOffsetAt1920": -1
+    },
+    "models_label": {
+      "rect": [700, 554, 124, 31],
+      "wellRect": [690, 550, 145, 39],
+      "role": "live-text",
+      "alignment": "center",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": -1
+    },
+    "model_page": {
+      "rect": [1245, 550, 108, 34],
+      "wellRect": [1237, 547, 124, 40],
+      "role": "live-text",
+      "alignment": "center",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": -1
+    },
+    "model_0_name": {
+      "rect": [710, 596, 270, 38],
+      "wellRect": [696, 592, 299, 46],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "body",
+      "opticalYOffsetAt1920": -1
+    },
+    "model_0_capabilities": {
+      "rect": [710, 645, 305, 50],
+      "wellRect": [696, 640, 334, 66],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": -1
+    },
+    "model_1_name": {
+      "rect": [1109, 596, 270, 38],
+      "wellRect": [1095, 592, 299, 46],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "body",
+      "opticalYOffsetAt1920": -1
+    },
+    "model_1_capabilities": {
+      "rect": [1109, 645, 305, 50],
+      "wellRect": [1095, 640, 334, 66],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": -1
+    },
+    "connection_title": {
+      "rect": [741, 753, 394, 34],
+      "wellRect": [724, 746, 444, 81],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": -1
+    },
+    "connection_message": {
+      "rect": [741, 789, 394, 32],
+      "wellRect": [724, 746, 444, 81],
+      "role": "live-text",
+      "alignment": "left",
+      "fontToken": "small",
+      "opticalYOffsetAt1920": -1
+    },
+    "connection_action": {
+      "rect": [1208, 756, 211, 64],
+      "wellRect": [1189, 744, 254, 88],
+      "role": "live-text",
+      "alignment": "center",
+      "fontToken": "primary-button",
+      "opticalYOffsetAt1920": 1
+    }
+  },
+  "transparentHitTargets": {
+    "back": [216, 130, 105, 65],
+    "provider_0": [217, 280, 391, 134],
+    "provider_1": [217, 423, 391, 134],
+    "provider_2": [217, 565, 391, 134],
+    "provider_toggle_0": [514, 346, 78, 49],
+    "provider_toggle_1": [514, 489, 78, 49],
+    "provider_toggle_2": [514, 631, 78, 49],
+    "provider_page_previous": [247, 770, 56, 44],
+    "provider_page_next": [520, 770, 56, 44],
+    "selected_provider_toggle": [1350, 226, 99, 51],
+    "show_key": [1176, 341, 72, 55],
+    "save_key": [1264, 341, 72, 55],
+    "delete_key": [1351, 341, 72, 55],
+    "model_0": [682, 586, 363, 132],
+    "model_1": [1066, 586, 363, 132],
+    "model_page_previous": [1190, 544, 46, 42],
+    "model_page_next": [1362, 544, 46, 42],
+    "check_connection": [1185, 743, 262, 91]
+  }
+}

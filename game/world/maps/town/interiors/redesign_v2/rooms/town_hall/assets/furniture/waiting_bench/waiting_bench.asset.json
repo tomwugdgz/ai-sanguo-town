@@ -1,0 +1,203 @@
+{
+  "schema_version": 2,
+  "source_revision": "town_hall_waiting_bench_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "waiting_bench",
+  "label": "镇公所绿色软垫等候长椅",
+  "room_id": "town_hall",
+  "canonical_direction": "down",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 192,
+    "depth": 64,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/waiting_bench/frames/waiting_bench_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/waiting_bench/frames/waiting_bench_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/waiting_bench/frames/waiting_bench_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/waiting_bench/frames/waiting_bench_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      158,
+      235
+    ],
+    "right": [
+      201,
+      164
+    ],
+    "up": [
+      158,
+      99
+    ],
+    "left": [
+      109,
+      152
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -88,
+          -64
+        ],
+        [
+          88,
+          -64
+        ],
+        [
+          96,
+          -52
+        ],
+        [
+          96,
+          -4
+        ],
+        [
+          88,
+          0
+        ],
+        [
+          -88,
+          0
+        ],
+        [
+          -96,
+          -4
+        ],
+        [
+          -96,
+          -52
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -6,
+      -4
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        1
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -96,
+        -104
+      ],
+      [
+        96,
+        -104
+      ],
+      [
+        96,
+        -48
+      ],
+      [
+        -96,
+        -48
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-106, -153], [105, -153], [105, 0], [-106, 0]],
+      "right": [[-81, -92], [0, -92], [0, 92], [-81, 92]],
+      "up": [[-106, 0], [105, 0], [105, 128], [-106, 128]],
+      "left": [[0, -91], [81, -91], [81, 91], [0, 91]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "seat_left",
+      "kind": "sit",
+      "position_px": [
+        -64,
+        -24
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    },
+    {
+      "id": "seat_center",
+      "kind": "sit",
+      "position_px": [
+        0,
+        -24
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    },
+    {
+      "id": "seat_right",
+      "kind": "sit",
+      "position_px": [
+        64,
+        -24
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "res://world/maps/town/interiors/assets/indoor_town_hall_shell_v1.png",
+      "res://world/maps/town/interiors/town_hall/assets/concepts/town_hall_layout_warm_v1.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/waiting_bench/candidate_a_room_batch_v1/SOURCE_RECORD.json"
+  },
+  "direction_visual_policy": "strict_four_direction",
+  "direction_visual_policy_revision": "furniture_direction_visual_policy_v1"
+}

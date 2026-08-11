@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "source_revision": "dining_hall_kitchen_revision_v2_geometry_v1",
+  "room_id": "dining_hall",
+  "canvas_size_px": [
+    1254,
+    1254
+  ],
+  "segments": [
+    {
+      "id": "south_main_left",
+      "foreground_polygon_canvas_px": [
+        [
+          95,
+          965
+        ],
+        [
+          474,
+          965
+        ],
+        [
+          474,
+          1101
+        ],
+        [
+          95,
+          1101
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            123,
+            908
+          ],
+          [
+            475,
+            908
+          ],
+          [
+            475,
+            1036
+          ],
+          [
+            123,
+            1036
+          ]
+        ],
+        [
+          [
+            475,
+            1004
+          ],
+          [
+            528,
+            1004
+          ],
+          [
+            528,
+            1088
+          ],
+          [
+            475,
+            1088
+          ]
+        ]
+      ],
+      "fade_distance_px": 128,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_main_right",
+      "foreground_polygon_canvas_px": [
+        [
+          572,
+          965
+        ],
+        [
+          850,
+          965
+        ],
+        [
+          850,
+          1101
+        ],
+        [
+          572,
+          1101
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            571,
+            908
+          ],
+          [
+            859,
+            908
+          ],
+          [
+            859,
+            1036
+          ],
+          [
+            571,
+            1036
+          ]
+        ],
+        [
+          [
+            518,
+            1004
+          ],
+          [
+            571,
+            1004
+          ],
+          [
+            571,
+            1088
+          ],
+          [
+            518,
+            1088
+          ]
+        ]
+      ],
+      "fade_distance_px": 128,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_service",
+      "foreground_polygon_canvas_px": [
+        [
+          846,
+          949
+        ],
+        [
+          1155,
+          949
+        ],
+        [
+          1155,
+          1098
+        ],
+        [
+          846,
+          1098
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            891,
+            876
+          ],
+          [
+            1147,
+            876
+          ],
+          [
+            1147,
+            1036
+          ],
+          [
+            891,
+            1036
+          ]
+        ]
+      ],
+      "fade_distance_px": 160,
+      "minimum_alpha": 0.15
+    }
+  ]
+}

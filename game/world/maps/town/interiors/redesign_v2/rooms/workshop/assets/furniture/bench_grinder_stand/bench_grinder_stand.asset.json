@@ -1,0 +1,200 @@
+{
+  "schema_version": 2,
+  "source_revision": "workshop_bench_grinder_stand_batch_v1_formal_import_v1_footpoint_v3",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "bench_grinder_stand",
+  "label": "台式砂轮机架",
+  "room_id": "workshop",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 64,
+    "depth": 28,
+    "height": 128
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/bench_grinder_stand/frames/bench_grinder_stand_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/bench_grinder_stand/frames/bench_grinder_stand_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/bench_grinder_stand/frames/bench_grinder_stand_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/bench_grinder_stand/frames/bench_grinder_stand_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      103,
+      182
+    ],
+    "right": [
+      94,
+      182
+    ],
+    "up": [
+      104,
+      182
+    ],
+    "left": [
+      101,
+      182
+    ]
+  },
+  "ground_contact": {
+    "polygons_by_direction_px": {
+      "down": [[[-32, -28], [32, -28], [32, 0], [-32, 0]]],
+      "right": [[[-42, -28], [42, -28], [42, 0], [-42, 0]]],
+      "up": [[[-32, -28], [32, -28], [32, 0], [-32, 0]]],
+      "left": [[[-42, -28], [42, -28], [42, 0], [-42, 0]]]
+    },
+    "polygons_px": [
+      [
+        [
+          -32,
+          -28
+        ],
+        [
+          32,
+          -28
+        ],
+        [
+          32,
+          0
+        ],
+        [
+          -32,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -2,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -41,
+        -162
+      ],
+      [
+        41,
+        -162
+      ],
+      [
+        41,
+        0
+      ],
+      [
+        -41,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [
+        [
+          -41,
+          -162
+        ],
+        [
+          41,
+          -162
+        ],
+        [
+          41,
+          0
+        ],
+        [
+          -41,
+          0
+        ]
+      ],
+      "right": [
+        [
+          -42,
+          -162
+        ],
+        [
+          42,
+          -162
+        ],
+        [
+          42,
+          0
+        ],
+        [
+          -42,
+          0
+        ]
+      ],
+      "up": [
+        [
+          -39,
+          -164
+        ],
+        [
+          40,
+          -164
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          -39,
+          0
+        ]
+      ],
+      "left": [
+        [
+          -42,
+          -163
+        ],
+        [
+          42,
+          -163
+        ],
+        [
+          42,
+          0
+        ],
+        [
+          -42,
+          0
+        ]
+      ]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "grinder_use",
+      "kind": "use",
+      "position_px": [
+        0,
+        48
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/candidates/calibration_c/shell_raw.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/layout_concepts/workshop_layout_concept_a/workshop_furniture_layout_concept_a.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "assets/furniture/bench_grinder_stand/batch_v1/SOURCE_RECORD.json"
+  }
+}

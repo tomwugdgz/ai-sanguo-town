@@ -1,0 +1,150 @@
+{
+  "schema_version": 2,
+  "source_revision": "clinic_chair_footpoint_occlusion_v1",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "clinic_chair",
+  "label": "诊所绿色软垫木椅",
+  "room_id": "clinic",
+  "canonical_direction": "down",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 56,
+    "depth": 60,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/clinic_chair/frames/clinic_chair_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/clinic_chair/frames/clinic_chair_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/clinic_chair/frames/clinic_chair_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/clinic_chair/frames/clinic_chair_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      78,
+      90
+    ],
+    "right": [
+      76,
+      92
+    ],
+    "up": [
+      78,
+      89
+    ],
+    "left": [
+      77,
+      91
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -20,
+          -30
+        ],
+        [
+          20,
+          -30
+        ],
+        [
+          28,
+          -22
+        ],
+        [
+          28,
+          22
+        ],
+        [
+          20,
+          30
+        ],
+        [
+          -20,
+          30
+        ],
+        [
+          -28,
+          22
+        ],
+        [
+          -28,
+          -22
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      0,
+      0
+    ],
+    "cells": [
+      [
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -32,
+        -82
+      ],
+      [
+        32,
+        -82
+      ],
+      [
+        32,
+        30
+      ],
+      [
+        -32,
+        30
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-25, -57], [26, -57], [26, 30], [-25, 30]],
+      "right": [[-25, -59], [25, -59], [25, 28], [-25, 28]],
+      "up": [[-25, -57], [26, -57], [26, 30], [-25, 30]],
+      "left": [[-25, -59], [25, -59], [25, 28], [-25, 28]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "seat",
+      "kind": "sit",
+      "position_px": [
+        0,
+        6
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/background/candidates/clinic_shell_calibration_a_user_accepted.png",
+      "res://world/maps/town/interiors/clinic/assets/concepts/clinic_layout_warm_v1.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/clinic_chair/candidate_c_user_room_completion_retry_v2/SOURCE_RECORD.json"
+  },
+  "direction_visual_policy": "strict_four_direction"
+}

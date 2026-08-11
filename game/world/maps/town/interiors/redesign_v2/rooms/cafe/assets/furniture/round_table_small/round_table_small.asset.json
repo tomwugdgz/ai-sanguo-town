@@ -1,0 +1,126 @@
+{
+  "schema_version": 2,
+  "source_revision": "cafe_round_table_small_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "round_table_small",
+  "label": "咖啡馆双人无装饰圆木桌",
+  "room_id": "cafe",
+  "canonical_direction": "down",
+  "direction_visual_policy": "rotationally_symmetric_reuse",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 96,
+    "depth": 64,
+    "height": 72
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/round_table_small/frames/round_table_small_canonical.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/round_table_small/frames/round_table_small_canonical.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/round_table_small/frames/round_table_small_canonical.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/round_table_small/frames/round_table_small_canonical.png"
+  },
+  "visual_anchor": {
+    "down": [
+      125,
+      162
+    ],
+    "right": [
+      125,
+      162
+    ],
+    "up": [
+      125,
+      162
+    ],
+    "left": [
+      125,
+      162
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -14,
+          -10
+        ],
+        [
+          -10,
+          -14
+        ],
+        [
+          10,
+          -14
+        ],
+        [
+          14,
+          -10
+        ],
+        [
+          14,
+          10
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          -10,
+          14
+        ],
+        [
+          -14,
+          10
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -1,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -48,
+        -97
+      ],
+      [
+        48,
+        -97
+      ],
+      [
+        48,
+        0
+      ],
+      [
+        -48,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-48, -97], [48, -97], [48, 0], [-48, 0]],
+      "right": [[-48, -97], [48, -97], [48, 0], [-48, 0]],
+      "up": [[-48, -97], [48, -97], [48, 0], [-48, 0]],
+      "left": [[-48, -97], [48, -97], [48, 0], [-48, 0]]
+    }
+  },
+  "interaction_anchor": [],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/cafe/assets/concepts/cafe_layout_warm_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "docs/design/pipelines/indoor_handoffs/cafe.md"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

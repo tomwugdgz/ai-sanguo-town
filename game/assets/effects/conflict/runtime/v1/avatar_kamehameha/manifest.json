@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "assetId": "effect.conflict.avatar-kamehameha-v1",
+  "status": "user_approved_runtime_animation_ready_for_review",
+  "deliveryScope": {
+    "runtimeFramesIncluded": true,
+    "sourceCandidatesIncluded": false,
+    "skillButtonAssetsIncluded": false,
+    "skillButtonOwner": "avatar_mode_hud_follow_up"
+  },
+  "runtime": {
+    "frameCount": 21,
+    "frameSize": [
+      256,
+      256
+    ],
+    "fps": 18,
+    "displayScale": 1.0,
+    "mirrorRightForLeft": true,
+    "footOffsetPx": 104,
+    "contactFrame": 15,
+    "authorityMovement": false,
+    "frames": [
+      {
+        "runtimeFrame": 0,
+        "sourceFrame": 1,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_00.png",
+        "sha256": "90249287650dc6823daef708d61865681a4b75a6187b09b8547effc96e6fbe94"
+      },
+      {
+        "runtimeFrame": 1,
+        "sourceFrame": 9,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_01.png",
+        "sha256": "dcd39599c0a638a47192c7cc74a06e4a34fe1df5277e93ff9f2f03dffccb1d7d"
+      },
+      {
+        "runtimeFrame": 2,
+        "sourceFrame": 13,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_02.png",
+        "sha256": "027e32ed465e5adbe0d10b3ab865ffba7ee301751f7bdd0dcf41a81aac854cd5"
+      },
+      {
+        "runtimeFrame": 3,
+        "sourceFrame": 17,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_03.png",
+        "sha256": "bd65afd4259d6ee69b4dfbf729929f24ec765cf29584f31527e5a5f58ca55449"
+      },
+      {
+        "runtimeFrame": 4,
+        "sourceFrame": 21,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_04.png",
+        "sha256": "cebd6ea260d8c30e58f5e255aeef402c0a3960daa20587270681f8018a2d9cb6"
+      },
+      {
+        "runtimeFrame": 5,
+        "sourceFrame": 25,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_05.png",
+        "sha256": "6cd5642c6f23dfbe6c2a5cc9ae2a5724fded61a202d26b5d45fa935eaa738062"
+      },
+      {
+        "runtimeFrame": 6,
+        "sourceFrame": 33,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_06.png",
+        "sha256": "355e6903a8a9e4045e16f9fb692b2c246775a58ec34318084952f18a84a63e19"
+      },
+      {
+        "runtimeFrame": 7,
+        "sourceFrame": 41,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_07.png",
+        "sha256": "8deead27f2761666dec03fad13e378f7e12be6a5425b1df5bb2d7bbd33ec8e4b"
+      },
+      {
+        "runtimeFrame": 8,
+        "sourceFrame": 49,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_08.png",
+        "sha256": "30b061db348802a76085d834249571faa38ca8a9a0ca8af4c1f1df1e87a1b9af"
+      },
+      {
+        "runtimeFrame": 9,
+        "sourceFrame": 57,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_09.png",
+        "sha256": "1ed5c618e2a4fbf3103a6ebf2359c9f6fcc1cf0686fd0d315b38886539e143f8"
+      },
+      {
+        "runtimeFrame": 10,
+        "sourceFrame": 65,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_10.png",
+        "sha256": "94ce9807332bec82140831f09c7d99ae95c21a7213b1f4371c51f89f2b7e5e45"
+      },
+      {
+        "runtimeFrame": 11,
+        "sourceFrame": 69,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_11.png",
+        "sha256": "e6fc7e33a22a98e646b45abe724b274b34e1f3791d6d587c66ec6295bcd62e69"
+      },
+      {
+        "runtimeFrame": 12,
+        "sourceFrame": 73,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_12.png",
+        "sha256": "b97d6d5e0620d6a299a4004806fc4afcc5991438169337aa96fe544d93a69b09"
+      },
+      {
+        "runtimeFrame": 13,
+        "sourceFrame": 77,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_13.png",
+        "sha256": "1cb60274a2aa06bff3d704715bf04cad75b3c4e4707bc8c2c4e47ffc4cdc852f"
+      },
+      {
+        "runtimeFrame": 14,
+        "sourceFrame": 81,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_14.png",
+        "sha256": "2f883811fb6ff91867bb2cb30d68ccfe4ee0f89c0f02a6d3e714db97fb7462fc"
+      },
+      {
+        "runtimeFrame": 15,
+        "sourceFrame": 84,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_15.png",
+        "sha256": "72f9bd9eac4e1dff34ecdadb47b850a2de81c435008b230e145c3f3ce764b91e"
+      },
+      {
+        "runtimeFrame": 16,
+        "sourceFrame": 87,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_16.png",
+        "sha256": "fc2b12d864f998d6e11ee4aa298d21e74deb79f94fed69d9a28c940bc2f0eae9"
+      },
+      {
+        "runtimeFrame": 17,
+        "sourceFrame": 90,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_17.png",
+        "sha256": "3e2e3a672b65e16d863c21ef1886cbc4b3bead70b7b79b0a144b069e2e565ceb"
+      },
+      {
+        "runtimeFrame": 18,
+        "sourceFrame": 94,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_18.png",
+        "sha256": "221e5ebe46661d7a85669868f9f519df59b5503e6bda25a0a17d2c47c2ba5c9e"
+      },
+      {
+        "runtimeFrame": 19,
+        "sourceFrame": 98,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_19.png",
+        "sha256": "b71fd7b5dc8809bd8d7b8efbd23bb95f90fd0112c51884798846623b20e38668"
+      },
+      {
+        "runtimeFrame": 20,
+        "sourceFrame": 101,
+        "path": "assets/effects/conflict/runtime/v1/avatar_kamehameha/frame_20.png",
+        "sha256": "6c33cfe661069a3aab1ca2b615e5f46406204928b4c6ba62d717669c28dbdb17"
+      }
+    ]
+  },
+  "skillButton": {
+    "label": "龟波气功",
+    "states": [
+      {
+        "state": "normal",
+        "path": "assets/ui/avatar_mode/runtime/attack_button_v1/avatar_kamehameha/avatar_kamehameha_button_normal.png",
+        "sha256": "df21f6fe37a8037a3151dcc52c0af0d84adf82acfed8aa74d73fb93e67f43d0a"
+      },
+      {
+        "state": "hover",
+        "path": "assets/ui/avatar_mode/runtime/attack_button_v1/avatar_kamehameha/avatar_kamehameha_button_hover.png",
+        "sha256": "eee9d274c6a9b676905f17d08dfa073136bc20e7a78602eb50952fcc0cc0150b"
+      },
+      {
+        "state": "pressed",
+        "path": "assets/ui/avatar_mode/runtime/attack_button_v1/avatar_kamehameha/avatar_kamehameha_button_pressed.png",
+        "sha256": "09ecf59521b5b4b8dddf6ff5969b5070d8db7871f832711199cbda7cf2a6f403"
+      },
+      {
+        "state": "disabled",
+        "path": "assets/ui/avatar_mode/runtime/attack_button_v1/avatar_kamehameha/avatar_kamehameha_button_disabled.png",
+        "sha256": "d2dbd874efa5cd5eb6f9b80aa690ee0265b170aae341c3f3c04609051f9d930b"
+      }
+    ],
+    "processing": "imagegen_reference_then_chroma_removal_and_nearest_resize"
+  },
+  "productContract": {
+    "owner": "avatar_unilateral_attack",
+    "residentCanRetaliate": false,
+    "usesResidentBrawlCloud": false,
+    "targetReaction": "red_flash_shake",
+    "worldAuthorityPositionUnchanged": true,
+    "injurySeverity": "light"
+  }
+}

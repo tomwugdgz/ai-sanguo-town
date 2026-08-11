@@ -1,0 +1,220 @@
+{
+  "schema_version": 2,
+  "source_revision": "workshop_raw_lumber_rack_r2_batch_v1_formal_import_v1_footpoint_v3",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "raw_lumber_rack_r2",
+  "label": "长木料架（正面宽度约侧面宽度两倍，纯绿色全边框）",
+  "room_id": "workshop",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 208,
+    "depth": 32,
+    "height": 160
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/raw_lumber_rack_r2/frames/raw_lumber_rack_r2_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/raw_lumber_rack_r2/frames/raw_lumber_rack_r2_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/raw_lumber_rack_r2/frames/raw_lumber_rack_r2_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/raw_lumber_rack_r2/frames/raw_lumber_rack_r2_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      161,
+      230
+    ],
+    "right": [
+      156,
+      230
+    ],
+    "up": [
+      162,
+      229
+    ],
+    "left": [
+      156,
+      229
+    ]
+  },
+  "ground_contact": {
+    "polygons_by_direction_px": {
+      "down": [[[-104, -32], [104, -32], [104, 0], [-104, 0]]],
+      "right": [[[-41, -32], [40, -32], [40, 0], [-41, 0]]],
+      "up": [[[-104, -32], [104, -32], [104, 0], [-104, 0]]],
+      "left": [[[-41, -32], [40, -32], [40, 0], [-41, 0]]]
+    },
+    "polygons_px": [
+      [
+        [
+          -104,
+          -32
+        ],
+        [
+          104,
+          -32
+        ],
+        [
+          104,
+          0
+        ],
+        [
+          -104,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -7,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -112,
+        -148
+      ],
+      [
+        112,
+        -148
+      ],
+      [
+        112,
+        0
+      ],
+      [
+        -112,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [
+        [
+          -112,
+          -148
+        ],
+        [
+          112,
+          -148
+        ],
+        [
+          112,
+          0
+        ],
+        [
+          -112,
+          0
+        ]
+      ],
+      "right": [
+        [
+          -41,
+          -149
+        ],
+        [
+          40,
+          -149
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          -41,
+          0
+        ]
+      ],
+      "up": [
+        [
+          -112,
+          -148
+        ],
+        [
+          111,
+          -148
+        ],
+        [
+          111,
+          0
+        ],
+        [
+          -112,
+          0
+        ]
+      ],
+      "left": [
+        [
+          -41,
+          -148
+        ],
+        [
+          40,
+          -148
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          -41,
+          0
+        ]
+      ]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "raw_material_pickup",
+      "kind": "take",
+      "position_px": [
+        16,
+        48
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/candidates/calibration_c/shell_raw.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/layout_concepts/workshop_layout_concept_a/workshop_furniture_layout_concept_a.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "assets/furniture/raw_lumber_rack_r2/batch_v1/SOURCE_RECORD.json"
+  }
+}

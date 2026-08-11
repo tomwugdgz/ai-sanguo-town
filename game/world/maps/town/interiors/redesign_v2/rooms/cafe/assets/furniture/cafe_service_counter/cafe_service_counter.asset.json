@@ -1,0 +1,172 @@
+{
+  "schema_version": 2,
+  "source_revision": "cafe_cafe_service_counter_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "cafe_service_counter",
+  "label": "花房咖啡馆完整空服务柜台",
+  "room_id": "cafe",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 352,
+    "depth": 96,
+    "height": 104
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/cafe_service_counter/frames/cafe_service_counter_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/cafe_service_counter/frames/cafe_service_counter_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/cafe_service_counter/frames/cafe_service_counter_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/cafe_service_counter/frames/cafe_service_counter_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      176,
+      104
+    ],
+    "right": [
+      82,
+      176
+    ],
+    "up": [
+      176,
+      0
+    ],
+    "left": [
+      0,
+      176
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -168,
+          -12
+        ],
+        [
+          168,
+          -12
+        ],
+        [
+          168,
+          0
+        ],
+        [
+          -168,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -11,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        10,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -176,
+        -104
+      ],
+      [
+        176,
+        -104
+      ],
+      [
+        176,
+        0
+      ],
+      [
+        -176,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-176, -104], [176, -104], [176, 0], [-176, 0]],
+      "right": [[-82, -176], [0, -176], [0, 176], [-82, 176]],
+      "up": [[-176, 0], [176, 0], [176, 104], [-176, 104]],
+      "left": [[0, -176], [82, -176], [82, 176], [0, 176]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "customer_service",
+      "kind": "service",
+      "position_px": [
+        0,
+        96
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    },
+    {
+      "id": "staff_service",
+      "kind": "service",
+      "position_px": [
+        0,
+        -96
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/cafe/assets/concepts/cafe_layout_warm_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "docs/design/pipelines/indoor_handoffs/cafe.md"
+    ],
+    "source_record": "../SOURCE_RECORD.json",
+    "visual_scale_revision": "cafe_user_itemwise_visual_scale_2026_07_20"
+  }
+}

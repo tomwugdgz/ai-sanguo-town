@@ -1,0 +1,158 @@
+{
+  "schema_version": 2,
+  "source_revision": "instrument_cart_footpoint_occlusion_v1",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "instrument_cart",
+  "label": "诊所空台面双层器械车",
+  "room_id": "clinic",
+  "canonical_direction": "down",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 72,
+    "depth": 56,
+    "height": 112
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/instrument_cart/frames/instrument_cart_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/instrument_cart/frames/instrument_cart_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/instrument_cart/frames/instrument_cart_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/instrument_cart/frames/instrument_cart_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      120
+    ],
+    "right": [
+      100,
+      112
+    ],
+    "up": [
+      104,
+      121
+    ],
+    "left": [
+      103,
+      113
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -28,
+          -28
+        ],
+        [
+          28,
+          -28
+        ],
+        [
+          36,
+          -20
+        ],
+        [
+          36,
+          20
+        ],
+        [
+          28,
+          28
+        ],
+        [
+          -28,
+          28
+        ],
+        [
+          -36,
+          20
+        ],
+        [
+          -36,
+          -20
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -1,
+      0
+    ],
+    "cells": [
+      [
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -48,
+        -84
+      ],
+      [
+        48,
+        -84
+      ],
+      [
+        48,
+        28
+      ],
+      [
+        -48,
+        28
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-34, -69], [35, -69], [35, 28], [-34, 28]],
+      "right": [[-29, -63], [29, -63], [29, 36], [-29, 36]],
+      "up": [[-34, -69], [35, -69], [35, 28], [-34, 28]],
+      "left": [[-29, -64], [29, -64], [29, 36], [-29, 36]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "primary",
+      "kind": "take",
+      "position_px": [
+        0,
+        60
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/background/candidates/clinic_shell_calibration_a_user_accepted.png",
+      "res://world/maps/town/interiors/clinic/assets/concepts/clinic_layout_warm_v1.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/instrument_cart/candidate_b_user_room_completion_v2/SOURCE_RECORD.json"
+  },
+  "direction_visual_policy": "strict_four_direction"
+}

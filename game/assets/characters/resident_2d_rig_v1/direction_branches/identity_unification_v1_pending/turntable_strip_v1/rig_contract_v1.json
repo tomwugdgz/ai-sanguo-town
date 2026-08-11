@@ -1,0 +1,76 @@
+{
+  "schema": "ai-town.four-direction-articulated-rig-contract.v1",
+  "status": "runtime_contract_validated",
+  "approved_whitebody_root": "production_frozen_v2/whitebody",
+  "canvas_size": [627, 627],
+  "foot_anchor": [314.5, 591.0],
+  "directions": ["down", "right", "up"],
+  "left_policy": "exact_runtime_mirror_of_right",
+  "bone_hierarchy": [
+    {"id": "root", "parent": null, "part": null},
+    {"id": "pelvis", "parent": "root", "part": "pelvis"},
+    {"id": "torso", "parent": "pelvis", "part": "torso"},
+    {"id": "head", "parent": "torso", "part": "head"},
+    {"id": "clavicle_l", "parent": "torso", "part": null},
+    {"id": "upper_arm_l", "parent": "clavicle_l", "part": "upper_arm_l"},
+    {"id": "forearm_l", "parent": "upper_arm_l", "part": "forearm_l"},
+    {"id": "hand_l", "parent": "forearm_l", "part": "hand_l"},
+    {"id": "clavicle_r", "parent": "torso", "part": null},
+    {"id": "upper_arm_r", "parent": "clavicle_r", "part": "upper_arm_r"},
+    {"id": "forearm_r", "parent": "upper_arm_r", "part": "forearm_r"},
+    {"id": "hand_r", "parent": "forearm_r", "part": "hand_r"},
+    {"id": "thigh_l", "parent": "pelvis", "part": "thigh_l"},
+    {"id": "shin_l", "parent": "thigh_l", "part": "shin_l"},
+    {"id": "foot_l", "parent": "shin_l", "part": "foot_l"},
+    {"id": "thigh_r", "parent": "pelvis", "part": "thigh_r"},
+    {"id": "shin_r", "parent": "thigh_r", "part": "shin_r"},
+    {"id": "foot_r", "parent": "shin_r", "part": "foot_r"}
+  ],
+  "direction_manifest_contract": {
+    "path": "rig_v1/<direction>/rig_manifest.json",
+    "required_fields": [
+      "direction", "source", "source_sha256", "canvas_size", "foot_anchor",
+      "joints", "parts", "rest_reconstruction_mismatch_pixels"
+    ],
+    "parts_are_full_canvas_rgba": true,
+    "source_pixels_only": true,
+    "joint_overlap_allowed": true,
+    "rest_reconstruction_mismatch_pixels": 0
+  },
+  "motion_contract": {
+    "phase_source": "real_world_movement_distance_only",
+    "idle_loop": false,
+    "style": "natural_low_amplitude_cozy_town_walk",
+    "pelvis": ["vertical_bob", "lateral_weight_shift", "small_rotation"],
+    "spine": ["torso_counter_rotation", "head_stabilization"],
+    "shoulders": ["clavicle_counter_swing", "reach_and_carry_support"],
+    "arms": ["opposed_to_legs", "elbow_flexion", "wrist_follow_through"],
+    "legs": ["hip_swing", "knee_flexion", "ankle_counter_rotation", "whole_foot_roll_around_ball_pivot"],
+    "forbidden": [
+      "rigid_whole_arm_swing", "rigid_whole_leg_swing", "idle_marching",
+      "direction_specific_unrelated_phase", "exaggerated_action_game_motion"
+    ]
+  },
+  "interaction_controls": {
+    "count": 8,
+    "ids": [
+      "hand_ik_l", "hand_ik_r", "foot_ik_l", "foot_ik_r",
+      "elbow_hint_l", "elbow_hint_r", "knee_hint_l", "knee_hint_r"
+    ],
+    "deforms_artwork": false,
+    "use_cases": ["ground_lock", "chair_contact", "door_handle", "tools", "carry", "push_pull"]
+  },
+  "pixel_scale_decision": {
+    "runtime_character_height_px": 152,
+    "bone2d_count": 18,
+    "artwork_part_count": 15,
+    "transform_only_bones": ["root", "clavicle_l", "clavicle_r"],
+    "intentionally_not_split": ["neck", "chest", "toe_l", "toe_r"],
+    "reason": "avoid sub-pixel seams and jitter on the approved chibi map character"
+  },
+  "external_reference_policy": {
+    "allowed": ["human_biomechanics", "key_pose_relationships", "timing_principles"],
+    "forbidden": ["third_party_code", "third_party_textures", "third_party_animation_data", "third_party_rig_files"]
+  },
+  "wardrobe_consumed": false
+}

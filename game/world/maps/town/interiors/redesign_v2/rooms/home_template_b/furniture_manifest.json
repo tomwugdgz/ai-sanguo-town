@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "source_revision": "home_template_b_space_v1_formal_furniture_manifest_v1",
+  "room_id": "home_template_b",
+  "assets": [
+    {
+      "asset_id": "bedside_cabinet",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/bedside_cabinet/bedside_cabinet.asset.json"
+    },
+    {
+      "asset_id": "floor_lamp",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/floor_lamp/floor_lamp.asset.json"
+    },
+    {
+      "asset_id": "leafy_plant",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/leafy_plant/leafy_plant.asset.json"
+    },
+    {
+      "asset_id": "lidded_storage_chest",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/lidded_storage_chest/lidded_storage_chest.asset.json"
+    },
+    {
+      "asset_id": "low_shelf",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/low_shelf/low_shelf.asset.json"
+    },
+    {
+      "asset_id": "narrow_worktable",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/narrow_worktable/narrow_worktable.asset.json"
+    },
+    {
+      "asset_id": "round_table_small",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/round_table_small/round_table_small.asset.json"
+    },
+    {
+      "asset_id": "single_bed",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/single_bed/single_bed.asset.json"
+    },
+    {
+      "asset_id": "tall_storage_cabinet",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/tall_storage_cabinet/tall_storage_cabinet.asset.json"
+    },
+    {
+      "asset_id": "wooden_chair",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/wooden_chair/wooden_chair.asset.json"
+    }
+  ]
+}

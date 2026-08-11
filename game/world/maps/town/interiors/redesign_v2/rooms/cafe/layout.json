@@ -1,0 +1,147 @@
+{
+  "schema_version": 2,
+  "source_revision": "cafe_user_confirmed_manual_layout_footpoint_v1",
+  "projection_revision": "interior_projection_v1",
+  "layout_revision": 5,
+  "room_id": "cafe",
+  "instances": [
+    {
+      "instance_id": "espresso_machine_north",
+      "asset_id": "espresso_machine",
+      "position_px": [336, 240],
+      "direction": "down"
+    },
+    {
+      "instance_id": "floor_lamp_connection",
+      "asset_id": "floor_lamp",
+      "position_px": [880, 272],
+      "direction": "down"
+    },
+    {
+      "instance_id": "flowering_plant_greenhouse",
+      "asset_id": "flowering_plant",
+      "position_px": [1168, 432],
+      "direction": "down"
+    },
+    {
+      "instance_id": "leafy_plant_connection",
+      "asset_id": "leafy_plant",
+      "position_px": [944, 432],
+      "direction": "down"
+    },
+    {
+      "instance_id": "leafy_plant_west",
+      "asset_id": "leafy_plant",
+      "position_px": [176, 912],
+      "direction": "down"
+    },
+    {
+      "instance_id": "manual_round_table_large_02",
+      "asset_id": "round_table_large",
+      "position_px": [656, 688],
+      "direction": "down"
+    },
+    {
+      "instance_id": "manual_wooden_chair_03",
+      "asset_id": "wooden_chair",
+      "position_px": [752, 688],
+      "direction": "left"
+    },
+    {
+      "instance_id": "manual_wooden_chair_04",
+      "asset_id": "wooden_chair",
+      "position_px": [656, 624],
+      "direction": "down"
+    },
+    {
+      "instance_id": "manual_wooden_chair_05",
+      "asset_id": "wooden_chair",
+      "position_px": [560, 688],
+      "direction": "right"
+    },
+    {
+      "instance_id": "manual_wooden_chair_06",
+      "asset_id": "wooden_chair",
+      "position_px": [656, 752],
+      "direction": "up"
+    },
+    {
+      "instance_id": "pastry_display_west",
+      "asset_id": "pastry_display",
+      "position_px": [208, 432],
+      "direction": "down"
+    },
+    {
+      "instance_id": "service_counter_north",
+      "asset_id": "cafe_service_counter",
+      "position_px": [464, 400],
+      "direction": "down"
+    },
+    {
+      "instance_id": "small_table_greenhouse",
+      "asset_id": "round_table_small",
+      "position_px": [1168, 624],
+      "direction": "down"
+    },
+    {
+      "instance_id": "small_table_greenhouse_chair_north",
+      "asset_id": "wooden_chair",
+      "position_px": [1168, 560],
+      "direction": "down"
+    },
+    {
+      "instance_id": "small_table_greenhouse_chair_south",
+      "asset_id": "wooden_chair",
+      "position_px": [1168, 688],
+      "direction": "up"
+    },
+    {
+      "instance_id": "small_table_main",
+      "asset_id": "round_table_small",
+      "position_px": [1040, 624],
+      "direction": "down"
+    },
+    {
+      "instance_id": "small_table_main_chair_east",
+      "asset_id": "wooden_chair",
+      "position_px": [1040, 688],
+      "direction": "up"
+    },
+    {
+      "instance_id": "small_table_main_chair_west",
+      "asset_id": "wooden_chair",
+      "position_px": [1040, 560],
+      "direction": "down"
+    },
+    {
+      "instance_id": "west_four_seat_table",
+      "asset_id": "round_table_large",
+      "position_px": [272, 688],
+      "direction": "down"
+    },
+    {
+      "instance_id": "west_table_chair_east",
+      "asset_id": "wooden_chair",
+      "position_px": [368, 688],
+      "direction": "left"
+    },
+    {
+      "instance_id": "west_table_chair_north",
+      "asset_id": "wooden_chair",
+      "position_px": [176, 688],
+      "direction": "right"
+    },
+    {
+      "instance_id": "west_table_chair_south",
+      "asset_id": "wooden_chair",
+      "position_px": [272, 752],
+      "direction": "up"
+    },
+    {
+      "instance_id": "west_table_chair_west",
+      "asset_id": "wooden_chair",
+      "position_px": [272, 624],
+      "direction": "down"
+    }
+  ]
+}

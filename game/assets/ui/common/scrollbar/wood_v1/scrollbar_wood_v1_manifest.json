@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "assetId": "ui.common.scrollbar.wood-v1",
+  "status": "common-approved-by-user-direction",
+  "owner": "ui-common",
+  "createdAt": "2026-07-22",
+  "runtimeAssets": {
+    "track": {
+      "assetId": "ui.common.scrollbar.wood-v1.track",
+      "path": "res://assets/ui/common/scrollbar/wood_v1/scrollbar_track_wood_v1.png",
+      "sha256": "cc689312b97f2ad9ea1d704d1a44466d6c9692df612f940d93729d2581058875",
+      "size": [59, 1251],
+      "importUid": "uid://whnqkkohdbp44"
+    },
+    "thumb": {
+      "assetId": "ui.common.scrollbar.wood-v1.thumb",
+      "path": "res://assets/ui/common/scrollbar/wood_v1/scrollbar_thumb_wood_v1.png",
+      "sha256": "c294098084dbabba384c1c2aaaffde1796f18fdbcf47e7155b539c77634104dc",
+      "size": [124, 732],
+      "importUid": "uid://y6yxhaxaus71r"
+    }
+  },
+  "variants": {
+    "dropdownShort": {
+      "assetId": "ui.common.scrollbar.wood-v1.dropdown-short",
+      "status": "common-approved-by-user-direction",
+      "source": "ui.common.scrollbar.wood-v1",
+      "targetUse": "dropdown and short popup panels",
+      "preparation": "no_runtime_compression",
+      "runtimeScalePolicy": "exact-size-only",
+      "notes": [
+        "Created after user rejected runtime squeezing of the long wood-v1 track/thumb.",
+        "Prepared offline from wood-v1 runtime assets: scale to target width with nearest/integer pixels, preserve proportional top/bottom caps, shorten or rebuild only the center segment.",
+        "The dropdown-short thumb was narrowed from 44px to 32px after user review; its 72px height and the 24x184 track remain unchanged."
+      ],
+      "track": {
+        "assetId": "ui.common.scrollbar.wood-v1.dropdown-short.track",
+        "path": "res://assets/ui/common/scrollbar/wood_v1/variants/dropdown_short/scrollbar_track_wood_v1_dropdown_short.png",
+        "sha256": "31db3d0a147e07796a72dc6781099c9bf6a5f9d4fce1476668fa41e24815b7c4",
+        "size": [24, 184],
+        "importUid": "uid://vrq2rwwaykv7x",
+        "sourceRuntimeAsset": "ui.common.scrollbar.wood-v1.track",
+        "sourceRuntimeSize": [59, 1251],
+        "intermediateScaledSize": [24, 509],
+        "scaleFactor": 0.4067796610169492,
+        "sourceCapPixels": 96,
+        "preparedCapPixels": {
+          "top": 39,
+          "bottom": 39
+        },
+        "preparedCenterPixels": 106
+      },
+      "thumb": {
+        "assetId": "ui.common.scrollbar.wood-v1.dropdown-short.thumb",
+        "path": "res://assets/ui/common/scrollbar/wood_v1/variants/dropdown_short/scrollbar_thumb_wood_v1_dropdown_short.png",
+        "sha256": "5ffa951930b3a24180e47e9b44ad830a620a7ed14b7be46a0067d01b0e49a651",
+        "size": [32, 72],
+        "importUid": "uid://c22d2f7bersp1",
+        "sourceRuntimeAsset": "ui.common.scrollbar.wood-v1.thumb",
+        "sourceRuntimeSize": [124, 732],
+        "intermediateScaledSize": [32, 189],
+        "scaleFactor": 0.25806451612903225,
+        "sourceCapPixels": 96,
+        "preparedCapPixels": {
+          "top": 25,
+          "bottom": 25
+        },
+        "preparedCenterPixels": 22
+      },
+      "behaviorContract": {
+        "alwaysVisibleWhenScrollable": true,
+        "nativeRangeValueBinding": true,
+        "mouseWheel": true,
+        "trackClick": true,
+        "thumbDrag": true,
+        "touchDrag": true,
+        "keyboardFocusable": true,
+        "noRuntimeCompression": true
+      }
+    }
+  },
+  "patchContract": {
+    "orientation": "vertical",
+    "integerPixelOnly": true,
+    "track": {
+      "baseSize": [59, 1251],
+      "minimumRuntimeSize": [24, 96],
+      "styleBoxTextureMargins": {
+        "left": 20,
+        "right": 20,
+        "top": 96,
+        "bottom": 96
+      },
+      "preferredRenderMode": "TextureRect stretch vertical or StyleBoxTexture with vertical center stretch"
+    },
+    "thumb": {
+      "baseSize": [124, 732],
+      "minimumRuntimeSize": [44, 72],
+      "styleBoxTextureMargins": {
+        "left": 42,
+        "right": 42,
+        "top": 96,
+        "bottom": 96
+      },
+      "preferredRenderMode": "TextureRect scaled from native range geometry; StyleBoxTexture allowed only with fixed hitbox"
+    }
+  },
+  "behaviorContract": {
+    "alwaysVisibleWhenScrollable": true,
+    "nativeRangeValueBinding": true,
+    "mouseWheel": true,
+    "trackClick": true,
+    "thumbDrag": true,
+    "touchDrag": true,
+    "keyboardFocusable": true,
+    "disabledWhenNoOverflow": "thumb fills track or page hides scroll affordance by explicit VM/layout rule; do not show fake inactive ornament",
+    "ownership": "Track and thumb visual frames are owned by this common component. Page shells may reserve a slot but must not redraw a second scrollbar frame."
+  },
+  "usageRules": [
+    "Pages must reference the common runtime paths above instead of resident_selection/icons_v2.",
+    "Pages may resize the slot but must keep integer pixel placement and preserve the native range/value binding.",
+    "Pages must not substitute default Theme scrollbars or code-drawn rails when this common asset is requested.",
+    "If a page needs a different scrollbar shape, it must create a separate common candidate instead of editing wood-v1 in place."
+  ]
+}

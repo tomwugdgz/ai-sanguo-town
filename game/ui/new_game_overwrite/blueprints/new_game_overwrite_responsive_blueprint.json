@@ -1,0 +1,407 @@
+{
+  "blueprintId": "new_game_overwrite_responsive_blueprint_rev1",
+  "pageStatus": "user_desktop_typography_approved",
+  "visibleCandidateId": "ui.new-game-overwrite.desktop-typography.candidate-v4",
+  "flatColorBlockOverlays": false,
+  "formalReady": false,
+  "designCanvas": {
+    "width": 1920,
+    "height": 1080,
+    "units": "logical_px",
+    "referenceSafeRect": {
+      "x": 80,
+      "y": 64,
+      "width": 1760,
+      "height": 952
+    }
+  },
+  "layoutPrinciples": [
+    "按可用安全区、宽高比、DPI 和输入方式重排，不按平台名称写死。",
+    "不整体缩小桌面弹窗；紧凑视口改为滚动内容区、固定操作区或双栏短横屏布局。",
+    "标题、警告正文、存档摘要、错误反馈和操作按钮使用独立语义槽。",
+    "所有功能文字由 Godot Control、Container、Label、Button 和 Theme 实时绘制。",
+    "覆盖是破坏性操作，默认焦点始终落在取消；恢复可用时不抢占安全默认焦点。",
+    "状态变化复用同一外壳和槽位，不因 loading、success、rejected、error 或 disabled 改变页面主几何。"
+  ],
+  "typography": {
+    "candidateFamily": "ZhengGeDianHei-16 v1.0.0",
+    "candidateStatus": "user-selected-candidate",
+    "themeRevision": "not_frozen",
+    "fallbackCount": 0,
+    "antiAliasing": false,
+    "subpixelPositioning": false,
+    "hinting": "none",
+    "integerFontSizesOnly": true,
+    "roles": {
+      "pageTitle": {
+        "size": 48,
+        "nativeScale": 3,
+        "spacingGlyph": 2,
+        "embolden": 0.25,
+        "outline": 0,
+        "candidateAscent": 56,
+        "candidateDescent": 14,
+        "candidateFontHeight": 70,
+        "pageRemeasureRequired": false,
+        "maxLinesWide": 1,
+        "maxLinesCompact": 2,
+        "lineSpacing": 9
+      },
+      "body": {
+        "size": 32,
+        "nativeScale": 2,
+        "spacingGlyph": 2,
+        "embolden": 0.125,
+        "outline": 0,
+        "ascent": 38,
+        "descent": 10,
+        "fontHeight": 48,
+        "lineSpacing": 8,
+        "twoLineMinimumHeight": 104
+      },
+      "dialogAction": {
+        "size": 32,
+        "nativeScale": 2,
+        "spacingGlyph": 2,
+        "embolden": 0.25,
+        "outline": 1,
+        "ascent": 38,
+        "descent": 10,
+        "fontHeight": 48,
+        "minimumTextPaddingEachSide": 12,
+        "minimumControlHeight": 75,
+        "status": "user_feedback_candidate_v2_missing_common_dialog_action_token",
+        "mustBeReplacedByFrozenThemeToken": true
+      },
+      "globalPrimaryReferenceNotConsumed": {
+        "size": 80,
+        "spacingGlyph": 2,
+        "embolden": 0.25,
+        "outline": 1,
+        "ascent": 93,
+        "descent": 24,
+        "fontHeight": 117,
+        "reason": "公共主按钮与 Theme 尚未 common-approved；本页不复制或冻结该组件。"
+      }
+    },
+    "measurementGate": {
+      "requiredPerTextControl": [
+        "glyphBounds",
+        "baseline",
+        "ascent",
+        "descent",
+        "fontHeight",
+        "outlineBounds",
+        "finalRect",
+        "paperSafeRect"
+      ],
+      "minimumEdgePaddingFormula": "ceil(max(8, 0.25 * actual_font_height))",
+      "minimumLineSpacingFormula": "ceil(max(2, 0.125 * actual_font_height))",
+      "autoShrinkAllowed": false
+    }
+  },
+  "referenceLayout1920x1080": {
+    "scrimSafeRect": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080
+    },
+    "dialogOuterRect": {
+      "x": 408,
+      "y": 126,
+      "width": 1104,
+      "height": 828
+    },
+    "dialogPaperSafeRect": {
+      "x": 456,
+      "y": 174,
+      "width": 1008,
+      "height": 732
+    },
+    "stateIconSlot": {
+      "x": 472,
+      "y": 190,
+      "width": 96,
+      "height": 96
+    },
+    "kickerSlot": {
+      "x": 600,
+      "y": 190,
+      "width": 824,
+      "height": 48
+    },
+    "titleSlot": {
+      "x": 600,
+      "y": 246,
+      "width": 824,
+      "height": 75
+    },
+    "warningBodySlot": {
+      "x": 472,
+      "y": 372,
+      "width": 952,
+      "height": 104
+    },
+    "saveSummarySlot": {
+      "x": 472,
+      "y": 500,
+      "width": 952,
+      "height": 176
+    },
+    "feedbackSlot": {
+      "x": 472,
+      "y": 696,
+      "width": 952,
+      "height": 70
+    },
+    "actionDock": {
+      "x": 472,
+      "y": 786,
+      "width": 952,
+      "height": 120
+    },
+    "actionOrderLeftToRight": [
+      "cancel",
+      "retryRestore",
+      "confirmOverwrite"
+    ]
+  },
+  "responsiveModes": [
+    {
+      "id": "wide_dialog",
+      "when": "safe_width >= 1180 and safe_height >= 720 and aspect_ratio >= 1.25",
+      "dialog": "centered; max 1104x828; outer gutter >= 48",
+      "content": "single column with two-column save summary",
+      "actions": "single row; cancel left, recovery middle when available, destructive overwrite right",
+      "copy": "full labels; title one line when measured width fits",
+      "targets": [
+        "1920x1080",
+        "1440x900",
+        "2560x1080"
+      ]
+    },
+    {
+      "id": "standard_dialog",
+      "when": "safe_width >= 760 and safe_height >= 560 and not wide_dialog and not square_dialog",
+      "dialog": "centered; width=min(safe_width-48,1040); height=min(safe_height-32,760)",
+      "content": "single column; save summary collapses from two columns to stacked key/value rows",
+      "actions": "row only when every measured action keeps its text safe rect; otherwise wrap cancel above retry/overwrite without changing font size",
+      "copy": "full labels; critical body wraps; no auto shrink",
+      "targets": [
+        "1280x720",
+        "1024x768"
+      ]
+    },
+    {
+      "id": "square_dialog",
+      "when": "safe_width >= 700 and safe_height >= 700 and aspect_ratio >= 0.85 and aspect_ratio <= 1.25",
+      "dialog": "near-full centered panel; gutter >= 32",
+      "content": "single column with compact save rows and independently scrollable detail body",
+      "actions": "two-row dock; cancel remains first in focus order; overwrite stays visually separated",
+      "copy": "full labels unless 130-percent measurement requires registered compact labels",
+      "targets": [
+        "810x810"
+      ]
+    },
+    {
+      "id": "compact_portrait",
+      "when": "safe_width < 760 and safe_height >= safe_width",
+      "dialog": "safe-area sheet; gutter=16; top and bottom follow safe insets",
+      "content": "scrollable title/body/summary region above a fixed action dock",
+      "actions": "vertical stack; cancel, retry recovery when available, destructive overwrite last; minimum height 75 each",
+      "copy": "registered compact visible labels 取消/恢复/覆盖; full consequence remains in body and accessible description",
+      "targets": [
+        "390x844",
+        "430x932",
+        "360x780"
+      ]
+    },
+    {
+      "id": "compact_landscape",
+      "when": "safe_height < 560 and safe_width >= 700",
+      "dialog": "safe-area sheet; gutter=16",
+      "content": "two columns; left is scrollable warning and save summary, right is fixed action stack",
+      "actions": "cancel, retry recovery, overwrite; same 32px action role; destructive action stays at bottom",
+      "copy": "compact visible labels allowed only after measured 130-percent failure; no font size drop",
+      "targets": [
+        "844x390"
+      ]
+    }
+  ],
+  "contentPriority": {
+    "alwaysVisible": [
+      "conditionIcon",
+      "title",
+      "irreversibleConsequence",
+      "cancel",
+      "confirmOverwrite"
+    ],
+    "visibleWhenApplicable": [
+      "retryRestore",
+      "saveVersionDifference",
+      "mapVersionDifference",
+      "recoveryFeedback"
+    ],
+    "mayMoveIntoScrollableDetails": [
+      "savedAtLabel",
+      "townSummary",
+      "settingsPreservedNote",
+      "fullVersionIdentifiers"
+    ],
+    "criticalTextEllipsisAllowed": false,
+    "secondaryIdentifierEllipsisAllowed": true,
+    "secondaryIdentifierFullValueAccess": "focus tooltip or expanded details"
+  },
+  "safeArea": {
+    "desktopOuterGutter": 48,
+    "standardOuterGutter": 24,
+    "compactOuterGutter": 16,
+    "gestureInsetExtra": 16,
+    "minimumTouchTarget": {
+      "width": 48,
+      "height": 48
+    },
+    "minimumAdjacentTouchGap": 12,
+    "focusRingReservedOutsideContent": 4,
+    "rule": "dialog and fixed action dock must be fully contained by viewport safe rect; scroll content must never pass under the action dock without bottom padding equal to dock height."
+  },
+  "longCopyPolicy": {
+    "requiredSamples": [
+      "short",
+      "normal",
+      "long_chinese",
+      "two_line_body",
+      "error_copy",
+      "copy_130_percent"
+    ],
+    "title": "controlled wrap to two lines; never ellipsize the destructive consequence",
+    "body": "controlled wrap; compact modes scroll the content region instead of shrinking text",
+    "versions": "stack key/value rows; long identifiers may ellipsize only when the full value is available on focus or expanded detail",
+    "actions": "measure full labels first; use registered compact labels only at compact modes; accessible action names remain full",
+    "sameGeometryAcrossOperationStates": true
+  },
+  "operationStates": {
+    "idle": "show stable prompt and enabled actions from ViewModel",
+    "loading": "retain confirmed data; disable repeated destructive input; show progress in feedback slot",
+    "success": "retain shell until a newer full ViewModel or route confirmation arrives",
+    "rejected": "retain confirmed data and revision; show rejection in feedback slot; do not style as disconnect",
+    "error": "retain confirmed data; show error code mapping and retry only when error.retryable and action enabled",
+    "disabled": "show unavailability reason; cancel remains reachable so the player is never trapped"
+  },
+  "contrastTargets": {
+    "bodyText": 4.5,
+    "largeText": 3.0,
+    "buttonText": 4.5,
+    "errorText": 4.5,
+    "disabledReasonText": 4.5,
+    "nonTextControls": 3.0,
+    "focusIndicator": 3.0,
+    "scrimRule": "scrim may reduce background competition but may not lower dialog text/background contrast below targets"
+  },
+  "integerPixelRules": {
+    "logicalControlRects": "integer",
+    "textBaselines": "integer",
+    "bordersCornersIcons": "integer_physical_pixels",
+    "ninePatch": "stretch_center_only",
+    "fractionalSystemScale": "recompute in physical pixels, snap, then derive the logical rect; do not resample a completed page bitmap",
+    "windowResize": "full relayout",
+    "textureFilter": "nearest",
+    "wholePageScalingAllowed": false
+  },
+  "inputTests": {
+    "mouse": [
+      "hover never activates",
+      "press-drag-out-release does not confirm",
+      "destructive button hitbox stays fixed across visual states"
+    ],
+    "keyboard": [
+      "initial focus is cancel",
+      "Tab order is cancel, retryRestore when enabled, confirmOverwrite",
+      "Escape emits cancel",
+      "Enter activates only the focused control",
+      "focus remains valid after every ViewModel refresh"
+    ],
+    "gamepad": [
+      "initial focus is cancel",
+      "B or platform back emits cancel",
+      "directional focus never jumps behind the dialog",
+      "disabled retry action is skipped"
+    ],
+    "touch": [
+      "targets are at least 48x48 logical pixels",
+      "destructive action is separated from cancel and recovery",
+      "release outside the target cancels activation",
+      "bottom action dock clears gesture and rounded-corner safe insets"
+    ]
+  },
+  "verificationMatrix": {
+    "viewports": [
+      "1920x1080",
+      "1280x720",
+      "1440x900",
+      "2560x1080",
+      "1024x768",
+      "810x810",
+      "390x844",
+      "430x932",
+      "360x780",
+      "844x390"
+    ],
+    "aspectRatios": [
+      "16:9",
+      "16:10",
+      "4:3",
+      "ultrawide",
+      "square",
+      "phone_portrait",
+      "phone_landscape"
+    ],
+    "systemScalePercent": [
+      100,
+      125,
+      150,
+      200
+    ],
+    "browserZoomPercent": [
+      80,
+      100,
+      125,
+      150,
+      200
+    ],
+    "retina": true,
+    "safeInsets": [
+      "none",
+      "top_notch",
+      "rounded_corners",
+      "bottom_gesture"
+    ],
+    "scenarios": [
+      "existing_save_idle",
+      "corrupt_save_idle",
+      "incompatible_save_idle",
+      "overwrite_loading",
+      "overwrite_success_placeholder",
+      "overwrite_rejected_save_changed",
+      "recovery_error_retryable",
+      "formal_interface_disabled",
+      "copy_130_percent"
+    ],
+    "requiredEvidencePerViewport": [
+      "normal_capture",
+      "safe_area_capture",
+      "machine_readable_measurements"
+    ]
+  },
+  "releaseGate": {
+    "imageGenerationAllowed": true,
+    "godotRunAllowed": true,
+    "nextAuthority": "用户视觉判断",
+    "blockingFacts": [
+      "公共面板、按钮、弹窗、状态图标和 Theme 尚无 common-approved revision。",
+      "覆盖、取消和重试恢复 action 尚未由正式 TownUiAdapter 冻结。",
+      "视觉 revision 生成后必须在本页面原任务等待用户判断。"
+    ]
+  }
+}

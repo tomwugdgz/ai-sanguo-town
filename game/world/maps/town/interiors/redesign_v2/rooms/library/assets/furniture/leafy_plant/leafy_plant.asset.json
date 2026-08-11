@@ -1,0 +1,122 @@
+{
+  "schema_version": 2,
+  "source_revision": "library_leafy_plant_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "leafy_plant",
+  "label": "图书馆无方向性阔叶盆栽",
+  "room_id": "library",
+  "canonical_direction": "down",
+  "direction_visual_policy": "rotationally_symmetric_reuse",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 56,
+    "depth": 40,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/leafy_plant/frames/leafy_plant_canonical.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/leafy_plant/frames/leafy_plant_canonical.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/leafy_plant/frames/leafy_plant_canonical.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/leafy_plant/frames/leafy_plant_canonical.png"
+  },
+  "visual_anchor": {
+    "down": [
+      78,
+      113
+    ],
+    "right": [
+      78,
+      113
+    ],
+    "up": [
+      78,
+      113
+    ],
+    "left": [
+      78,
+      113
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -12,
+          -8
+        ],
+        [
+          12,
+          -8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          -12,
+          8
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -1,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -40,
+        -96
+      ],
+      [
+        40,
+        -96
+      ],
+      [
+        40,
+        8
+      ],
+      [
+        -40,
+        8
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-32, -73], [32, -73], [32, 0], [-32, 0]],
+      "right": [[-32, -73], [32, -73], [32, 0], [-32, 0]],
+      "up": [[-32, -73], [32, -73], [32, 0], [-32, 0]],
+      "left": [[-32, -73], [32, -73], [32, 0], [-32, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "inspect",
+      "kind": "inspect",
+      "position_px": [
+        0,
+        -20
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/library/shell_candidates/candidate_c_interior_visual_review/assets/background/library_shell_candidate_c_uniform_wall_height.png",
+      "game/world/maps/town/interiors/library/assets/concepts/library_layout_warm_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "SOURCE_RECORD.json"
+  }
+}

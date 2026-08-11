@@ -1,0 +1,110 @@
+{
+  "schema_version": 2,
+  "source_revision": "cafe_leafy_plant_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "leafy_plant",
+  "label": "咖啡馆无朝向阔叶盆栽",
+  "room_id": "cafe",
+  "canonical_direction": "down",
+  "direction_visual_policy": "rotationally_symmetric_reuse",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 48,
+    "depth": 32,
+    "height": 104
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/leafy_plant/frames/leafy_plant_canonical.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/leafy_plant/frames/leafy_plant_canonical.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/leafy_plant/frames/leafy_plant_canonical.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/leafy_plant/frames/leafy_plant_canonical.png"
+  },
+  "visual_anchor": {
+    "down": [
+      79,
+      120
+    ],
+    "right": [
+      79,
+      120
+    ],
+    "up": [
+      79,
+      120
+    ],
+    "left": [
+      79,
+      120
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -12,
+          -8
+        ],
+        [
+          12,
+          -8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          -12,
+          8
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -1,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -40,
+        -90
+      ],
+      [
+        40,
+        -90
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        -40,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-40, -90], [40, -90], [40, 0], [-40, 0]],
+      "right": [[-40, -90], [40, -90], [40, 0], [-40, 0]],
+      "up": [[-40, -90], [40, -90], [40, 0], [-40, 0]],
+      "left": [[-40, -90], [40, -90], [40, 0], [-40, 0]]
+    }
+  },
+  "interaction_anchor": [],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/cafe/assets/concepts/cafe_layout_warm_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "docs/design/pipelines/indoor_handoffs/cafe.md"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "schema_version": 2,
+  "source_revision": "library_reading_table_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "library_reading_table",
+  "label": "三格宽三格深、四边同构且正交俯视可见框宽约为高度四分之三的深木色方形独立阅读桌（不含木椅）",
+  "room_id": "library",
+  "canonical_direction": "down",
+  "direction_visual_policy": "rotationally_symmetric_reuse",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 96,
+    "depth": 96,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/library_reading_table/frames/library_reading_table_canonical.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/library_reading_table/frames/library_reading_table_canonical.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/library_reading_table/frames/library_reading_table_canonical.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/library_reading_table/frames/library_reading_table_canonical.png"
+  },
+  "visual_anchor": {
+    "down": [
+      89,
+      141
+    ],
+    "right": [
+      89,
+      141
+    ],
+    "up": [
+      89,
+      141
+    ],
+    "left": [
+      89,
+      141
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -48,
+          -96
+        ],
+        [
+          48,
+          -96
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          -48,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -6
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -48,
+        -128
+      ],
+      [
+        48,
+        -128
+      ],
+      [
+        48,
+        -96
+      ],
+      [
+        -48,
+        -96
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-43, -108], [44, -108], [44, 0], [-43, 0]],
+      "right": [[-43, -108], [44, -108], [44, 0], [-43, 0]],
+      "up": [[-43, -108], [44, -108], [44, 0], [-43, 0]],
+      "left": [[-43, -108], [44, -108], [44, 0], [-43, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "use_front",
+      "kind": "use",
+      "position_px": [
+        0,
+        96
+      ],
+      "actor_facing": "down",
+      "capacity": 2
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/library/shell_candidates/candidate_c_interior_visual_review/assets/background/library_shell_candidate_c_uniform_wall_height.png",
+      "game/world/maps/town/interiors/library/assets/concepts/library_layout_warm_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "SOURCE_RECORD.json"
+  }
+}

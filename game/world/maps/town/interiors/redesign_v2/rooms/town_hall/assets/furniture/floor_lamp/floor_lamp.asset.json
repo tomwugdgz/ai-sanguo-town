@@ -1,0 +1,133 @@
+{
+  "schema_version": 2,
+  "source_revision": "town_hall_floor_lamp_footpoint_geometry_v2_emissive_v1",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "floor_lamp",
+  "label": "镇公所布罩木质落地灯",
+  "room_id": "town_hall",
+  "canonical_direction": "down",
+  "direction_visual_policy": "rotationally_symmetric_reuse",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 32,
+    "depth": 32,
+    "height": 176
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/floor_lamp/frames/floor_lamp_canonical.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/floor_lamp/frames/floor_lamp_canonical.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/floor_lamp/frames/floor_lamp_canonical.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/floor_lamp/frames/floor_lamp_canonical.png"
+  },
+  "visual_anchor": {
+    "down": [
+      90,
+      142
+    ],
+    "right": [
+      90,
+      142
+    ],
+    "up": [
+      90,
+      142
+    ],
+    "left": [
+      90,
+      142
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -14,
+          -8
+        ],
+        [
+          14,
+          -8
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          -14,
+          8
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -1,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -24,
+        -56
+      ],
+      [
+        24,
+        -56
+      ],
+      [
+        24,
+        -8
+      ],
+      [
+        -24,
+        -8
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-22, -121], [22, -121], [22, 9], [-22, 9]],
+      "right": [[-22, -121], [22, -121], [22, 9], [-22, 9]],
+      "up": [[-22, -121], [22, -121], [22, 9], [-22, 9]],
+      "left": [[-22, -121], [22, -121], [22, 9], [-22, 9]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "inspect_lamp",
+      "kind": "inspect",
+      "position_px": [
+        0,
+        24
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "visual_effect_anchor": [
+    {
+      "id": "bulb_glow",
+      "kind": "warm_light",
+      "position_px": [0, -97],
+      "rotate_with_direction": false,
+      "radius_px": 136,
+      "energy": 0.86,
+      "color": "#ffd58a"
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "res://world/maps/town/interiors/assets/indoor_town_hall_shell_v1.png",
+      "res://world/maps/town/interiors/town_hall/assets/concepts/town_hall_layout_warm_v1.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/floor_lamp/candidate_b_canonical_reuse_v1/SOURCE_RECORD.json"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": 2,
+  "source_revision": "dining_hall_wooden_chair_support_envelope_anchor_v3",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "wooden_chair",
+  "label": "通用朴素深木色单人木椅",
+  "room_id": "dining_hall",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 52,
+    "depth": 40,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/wooden_chair/frames/wooden_chair_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/wooden_chair/frames/wooden_chair_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/wooden_chair/frames/wooden_chair_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/wooden_chair/frames/wooden_chair_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      113,
+      156
+    ],
+    "right": [
+      122,
+      130
+    ],
+    "up": [
+      114,
+      92
+    ],
+    "left": [
+      64,
+      113
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -22,
+          -40
+        ],
+        [
+          22,
+          -40
+        ],
+        [
+          26,
+          -8
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          -22,
+          0
+        ],
+        [
+          -26,
+          -8
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -2,
+      -4
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -28,
+        -106
+      ],
+      [
+        28,
+        -106
+      ],
+      [
+        28,
+        0
+      ],
+      [
+        -28,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-28, -106], [28, -106], [28, 0], [-28, 0]],
+      "right": [[-55, -80], [0, -80], [0, 26], [-55, 26]],
+      "up": [[-28, -45], [27, -45], [27, 40], [-28, 40]],
+      "left": [[0, -79], [56, -79], [56, 26], [0, 26]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "seat",
+      "kind": "sit",
+      "position_px": [
+        0,
+        -20
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/wooden_chair/candidate_e_from_d_shared_integer_scale/production_candidate/wooden_chair.asset.json",
+      "docs/design/pipelines/indoor_handoffs/dining_hall.md"
+    ],
+    "source_record": "SOURCE_RECORD.json"
+  }
+}

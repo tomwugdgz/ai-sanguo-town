@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "source_revision": "clinic_calibration_a_space_v3_back_walls_background",
+  "room_id": "clinic",
+  "canvas_size_px": [
+    1254,
+    1254
+  ],
+  "segments": [
+    {
+      "id": "inner_left",
+      "foreground_polygon_canvas_px": [
+        [
+          343,
+          423
+        ],
+        [
+          497,
+          423
+        ],
+        [
+          497,
+          550
+        ],
+        [
+          343,
+          550
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            355,
+            398
+          ],
+          [
+            483,
+            398
+          ],
+          [
+            483,
+            526
+          ],
+          [
+            355,
+            526
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "inner_right",
+      "foreground_polygon_canvas_px": [
+        [
+          746,
+          423
+        ],
+        [
+          900,
+          423
+        ],
+        [
+          900,
+          550
+        ],
+        [
+          746,
+          550
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            739,
+            398
+          ],
+          [
+            867,
+            398
+          ],
+          [
+            867,
+            526
+          ],
+          [
+            739,
+            526
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "separator_left",
+      "foreground_polygon_canvas_px": [
+        [
+          291,
+          758
+        ],
+        [
+          326,
+          758
+        ],
+        [
+          326,
+          946
+        ],
+        [
+          291,
+          946
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            291,
+            654
+          ],
+          [
+            323,
+            654
+          ],
+          [
+            323,
+            782
+          ],
+          [
+            291,
+            782
+          ]
+        ]
+      ],
+      "fade_distance_px": 64,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "separator_right",
+      "foreground_polygon_canvas_px": [
+        [
+          928,
+          758
+        ],
+        [
+          963,
+          758
+        ],
+        [
+          963,
+          946
+        ],
+        [
+          928,
+          946
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            899,
+            654
+          ],
+          [
+            931,
+            654
+          ],
+          [
+            931,
+            782
+          ],
+          [
+            899,
+            782
+          ]
+        ]
+      ],
+      "fade_distance_px": 64,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_left_wing",
+      "foreground_polygon_canvas_px": [
+        [
+          58,
+          930
+        ],
+        [
+          309,
+          930
+        ],
+        [
+          309,
+          1073
+        ],
+        [
+          58,
+          1073
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            67,
+            910
+          ],
+          [
+            291,
+            910
+          ],
+          [
+            291,
+            1038
+          ],
+          [
+            67,
+            1038
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_center_left",
+      "foreground_polygon_canvas_px": [
+        [
+          292,
+          998
+        ],
+        [
+          552,
+          998
+        ],
+        [
+          552,
+          1155
+        ],
+        [
+          292,
+          1155
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            323,
+            974
+          ],
+          [
+            547,
+            974
+          ],
+          [
+            547,
+            1038
+          ],
+          [
+            323,
+            1038
+          ]
+        ],
+        [
+          [
+            552,
+            974
+          ],
+          [
+            700,
+            974
+          ],
+          [
+            700,
+            1038
+          ],
+          [
+            552,
+            1038
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_center_right",
+      "foreground_polygon_canvas_px": [
+        [
+          700,
+          998
+        ],
+        [
+          962,
+          998
+        ],
+        [
+          962,
+          1155
+        ],
+        [
+          700,
+          1155
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            707,
+            974
+          ],
+          [
+            899,
+            974
+          ],
+          [
+            899,
+            1038
+          ],
+          [
+            707,
+            1038
+          ]
+        ],
+        [
+          [
+            552,
+            974
+          ],
+          [
+            700,
+            974
+          ],
+          [
+            700,
+            1038
+          ],
+          [
+            552,
+            1038
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_right_wing",
+      "foreground_polygon_canvas_px": [
+        [
+          944,
+          930
+        ],
+        [
+          1198,
+          930
+        ],
+        [
+          1198,
+          1073
+        ],
+        [
+          944,
+          1073
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            931,
+            910
+          ],
+          [
+            1155,
+            910
+          ],
+          [
+            1155,
+            1038
+          ],
+          [
+            931,
+            1038
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    }
+  ]
+}

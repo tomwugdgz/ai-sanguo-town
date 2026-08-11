@@ -1,0 +1,108 @@
+{
+  "schema_version": 2,
+  "source_revision": "home_template_b_default_home_02_room_batch_layout_v3",
+  "projection_revision": "interior_projection_v1",
+  "layout_revision": 3,
+  "room_id": "home_template_b",
+  "instances": [
+    {
+      "instance_id": "home_02_sleep_bed",
+      "asset_id": "single_bed",
+      "position_px": [
+        304,
+        544
+      ],
+      "direction": "down"
+    },
+    {
+      "instance_id": "home_02_sleep_bedside",
+      "asset_id": "bedside_cabinet",
+      "position_px": [
+        288,
+        608
+      ],
+      "direction": "down"
+    },
+    {
+      "instance_id": "home_02_central_table",
+      "asset_id": "round_table_small",
+      "position_px": [
+        656,
+        512
+      ],
+      "direction": "down"
+    },
+    {
+      "instance_id": "home_02_central_chair_west",
+      "asset_id": "wooden_chair",
+      "position_px": [
+        608,
+        480
+      ],
+      "direction": "right"
+    },
+    {
+      "instance_id": "home_02_central_chair_east",
+      "asset_id": "wooden_chair",
+      "position_px": [
+        704,
+        480
+      ],
+      "direction": "left"
+    },
+    {
+      "instance_id": "home_02_window_worktable",
+      "asset_id": "narrow_worktable",
+      "position_px": [
+        1056,
+        384
+      ],
+      "direction": "down"
+    },
+    {
+      "instance_id": "home_02_lower_storage_shelf",
+      "asset_id": "low_shelf",
+      "position_px": [
+        992,
+        672
+      ],
+      "direction": "down"
+    },
+    {
+      "instance_id": "home_02_lower_storage_cabinet",
+      "asset_id": "tall_storage_cabinet",
+      "position_px": [
+        1152,
+        672
+      ],
+      "direction": "down"
+    },
+    {
+      "instance_id": "home_02_lower_storage_chest",
+      "asset_id": "lidded_storage_chest",
+      "position_px": [
+        1104,
+        768
+      ],
+      "direction": "down"
+    },
+    {
+      "instance_id": "home_02_left_floor_lamp",
+      "asset_id": "floor_lamp",
+      "position_px": [
+        144,
+        352
+      ],
+      "direction": "down"
+    },
+    {
+      "instance_id": "home_02_soft_plant",
+      "asset_id": "leafy_plant",
+      "position_px": [
+        160,
+        608
+      ],
+      "direction": "down"
+    }
+  ]
+}

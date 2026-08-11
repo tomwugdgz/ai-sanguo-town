@@ -1,0 +1,142 @@
+{
+  "schema_version": 2,
+  "source_revision": "dock_warehouse_fishing_net_bundle_ground_origin_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "fishing_net_bundle",
+  "label": "卷叠渔网",
+  "room_id": "dock_warehouse",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 96,
+    "depth": 64,
+    "height": 48
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/fishing_net_bundle/frames/fishing_net_bundle_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/fishing_net_bundle/frames/fishing_net_bundle_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/fishing_net_bundle/frames/fishing_net_bundle_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/fishing_net_bundle/frames/fishing_net_bundle_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      76,
+      107
+    ],
+    "right": [
+      129,
+      75
+    ],
+    "up": [
+      77,
+      43
+    ],
+    "left": [
+      28,
+      78
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -48,
+          -64
+        ],
+        [
+          48,
+          -64
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          -48,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -4
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_by_direction_px": {
+      "down": [[-48, -67], [49, -67], [49, 0], [-48, 0]],
+      "right": [[-101, -19], [0, -19], [0, 20], [-101, 20]],
+      "up": [[-48, 0], [49, 0], [49, 67], [-48, 67]],
+      "left": [[0, -19], [101, -19], [101, 20], [0, 20]]
+    },
+    "points_px": [
+      [
+        -48.0,
+        -67
+      ],
+      [
+        49.0,
+        -67
+      ],
+      [
+        49.0,
+        0
+      ],
+      [
+        -48.0,
+        0
+      ]
+    ]
+  },
+  "interaction_anchor": [
+    {
+      "id": "take_front",
+      "kind": "take",
+      "position_px": [
+        0,
+        32
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/shell_candidates/candidate_c_imagegen_prompt_v1/assets/background/dock_warehouse_shell_candidate_c_native.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/layout_concepts/concept_a_imagegen_prompt_v1/assets/dock_warehouse_furniture_layout_concept_candidate_a_native.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/fishing_net_bundle/candidate_a_furniture_four_direction_sheet_v1/SOURCE_RECORD.json"
+  }
+}

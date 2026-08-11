@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "assetId": "ui.avatar-mode.attack-skill-buttons-v1",
+  "status": "runtime_integrated_pending_user_in_world_review",
+  "sourceProcess": "Each skill uses its own ImageGen four-state preview, chroma removal, exact transparent crops",
+  "skills": [
+    {
+      "actionId": "skill_attack_1",
+      "attackKind": "unarmed",
+      "label": "升空重拳",
+      "shortcut": "1 / F",
+      "states": {
+        "normal": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_rising_uppercut_button_normal.png",
+        "hover": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_rising_uppercut_button_hover.png",
+        "pressed": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_rising_uppercut_button_pressed.png",
+        "disabled": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_rising_uppercut_button_disabled.png"
+      }
+    },
+    {
+      "actionId": "skill_attack_2",
+      "attackKind": "avatar_susanoo_strike",
+      "label": "须佐重击",
+      "shortcut": "2",
+      "states": {
+        "normal": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_susanoo_strike/avatar_susanoo_strike_button_normal.png",
+        "hover": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_susanoo_strike/avatar_susanoo_strike_button_hover.png",
+        "pressed": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_susanoo_strike/avatar_susanoo_strike_button_pressed.png",
+        "disabled": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_susanoo_strike/avatar_susanoo_strike_button_disabled.png"
+      }
+    },
+    {
+      "actionId": "skill_attack_3",
+      "attackKind": "avatar_rasengan",
+      "label": "螺旋丸",
+      "shortcut": "3",
+      "states": {
+        "normal": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_rasengan/avatar_rasengan_button_normal.png",
+        "hover": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_rasengan/avatar_rasengan_button_hover.png",
+        "pressed": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_rasengan/avatar_rasengan_button_pressed.png",
+        "disabled": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_rasengan/avatar_rasengan_button_disabled.png"
+      }
+    },
+    {
+      "actionId": "skill_attack_4",
+      "attackKind": "avatar_kamehameha",
+      "label": "龟波气功",
+      "shortcut": "4",
+      "states": {
+        "normal": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_kamehameha/avatar_kamehameha_button_normal.png",
+        "hover": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_kamehameha/avatar_kamehameha_button_hover.png",
+        "pressed": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_kamehameha/avatar_kamehameha_button_pressed.png",
+        "disabled": "res://assets/ui/avatar_mode/runtime/attack_button_v1/avatar_kamehameha/avatar_kamehameha_button_disabled.png"
+      }
+    }
+  ],
+  "sourceSize": [96, 96],
+  "runtimeLogicalSize": [72, 72],
+  "layout": "bottom_center_four_slot_skillbar",
+  "functionalTextBaked": false,
+  "tooltipOwner": "Godot dynamic label",
+  "runtimeCompression": false
+}

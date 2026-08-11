@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://ui/common/system_feedback/SystemFeedbackComponent.tscn" id="1_base"]
+
+[node name="SystemFeedbackValidation" instance=ExtResource("1_base")]
+custom_minimum_size = Vector2(447, 126)
+offset_right = 520.0
+offset_bottom = 126.0
+surface_kind = "validation"

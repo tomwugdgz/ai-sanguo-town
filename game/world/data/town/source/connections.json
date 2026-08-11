@@ -1,0 +1,581 @@
+{
+  "connections": [
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_cafe_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 4378.0,
+          "y": 3239.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_cafe",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_cafe_inside",
+        "placeName": "花房咖啡馆",
+        "position": {
+          "x": 432.0,
+          "y": 912.0
+        },
+        "regionId": "region_portal_cafe_entry",
+        "spaceId": "indoor_flower_cafe"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_clinic_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 4225.0,
+          "y": 1151.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_clinic",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_clinic_inside",
+        "placeName": "诊所",
+        "position": {
+          "x": 16.0,
+          "y": 752.0
+        },
+        "regionId": "region_portal_clinic_entry",
+        "spaceId": "indoor_clinic"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_dining_hall_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 4755.0,
+          "y": 1960.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_dining_hall",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_dining_hall_inside",
+        "placeName": "公共食堂",
+        "position": {
+          "x": 528.0,
+          "y": 1040.0
+        },
+        "regionId": "region_portal_dining_hall_entry",
+        "spaceId": "indoor_dining_hall"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_dock_warehouse_outside",
+        "placeName": "渔港",
+        "position": {
+          "x": 6050.0,
+          "y": 2924.0
+        },
+        "regionId": "outdoor_harbor_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_dock_warehouse",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_dock_warehouse_inside",
+        "placeName": "码头仓库",
+        "position": {
+          "x": 432.0,
+          "y": 784.0
+        },
+        "regionId": "region_portal_dock_warehouse_entry",
+        "spaceId": "indoor_dock_warehouse"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_01_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 2595.0,
+          "y": 591.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_01",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_01_inside",
+        "placeName": "北街一号住宅",
+        "position": {
+          "x": 16.0,
+          "y": 464.0
+        },
+        "regionId": "region_portal_home_01_entry",
+        "spaceId": "home_01"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_02_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 3230.0,
+          "y": 636.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_02",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_02_inside",
+        "placeName": "北街二号住宅",
+        "position": {
+          "x": 656.0,
+          "y": 912.0
+        },
+        "regionId": "region_portal_home_02_entry",
+        "spaceId": "home_02"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_03_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 4005.0,
+          "y": 617.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_03",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_03_inside",
+        "placeName": "北街三号住宅",
+        "position": {
+          "x": 656.0,
+          "y": 912.0
+        },
+        "regionId": "region_portal_home_03_entry",
+        "spaceId": "home_03"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_04_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 520.0,
+          "y": 1877.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_04",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_04_inside",
+        "placeName": "西街二号住宅",
+        "position": {
+          "x": 656.0,
+          "y": 912.0
+        },
+        "regionId": "region_portal_home_04_entry",
+        "spaceId": "home_04"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_05_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 1630.0,
+          "y": 1752.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_05",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_05_inside",
+        "placeName": "西街三号住宅",
+        "position": {
+          "x": 16.0,
+          "y": 464.0
+        },
+        "regionId": "region_portal_home_05_entry",
+        "spaceId": "home_05"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_06_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 2245.0,
+          "y": 1785.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_06",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_06_inside",
+        "placeName": "西街四号住宅",
+        "position": {
+          "x": 656.0,
+          "y": 912.0
+        },
+        "regionId": "region_portal_home_06_entry",
+        "spaceId": "home_06"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_07_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 1320.0,
+          "y": 2405.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_07",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_07_inside",
+        "placeName": "西街五号住宅",
+        "position": {
+          "x": 656.0,
+          "y": 912.0
+        },
+        "regionId": "region_portal_home_07_entry",
+        "spaceId": "home_07"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_08_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 2115.0,
+          "y": 2392.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_08",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_08_inside",
+        "placeName": "西街六号住宅",
+        "position": {
+          "x": 656.0,
+          "y": 912.0
+        },
+        "regionId": "region_portal_home_08_entry",
+        "spaceId": "home_08"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_09_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 1695.0,
+          "y": 2986.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_09",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_09_inside",
+        "placeName": "南街一号住宅",
+        "position": {
+          "x": 16.0,
+          "y": 464.0
+        },
+        "regionId": "region_portal_home_09_entry",
+        "spaceId": "home_09"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_10_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 2295.0,
+          "y": 2997.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_10",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_10_inside",
+        "placeName": "南街二号住宅",
+        "position": {
+          "x": 656.0,
+          "y": 912.0
+        },
+        "regionId": "region_portal_home_10_entry",
+        "spaceId": "home_10"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_11_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 2215.0,
+          "y": 3451.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_11",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_11_inside",
+        "placeName": "南街三号住宅",
+        "position": {
+          "x": 16.0,
+          "y": 464.0
+        },
+        "regionId": "region_portal_home_11_entry",
+        "spaceId": "home_11"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_12_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 2865.0,
+          "y": 3446.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_12",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_12_inside",
+        "placeName": "南街四号住宅",
+        "position": {
+          "x": 16.0,
+          "y": 464.0
+        },
+        "regionId": "region_portal_home_12_entry",
+        "spaceId": "home_12"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_13_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 3655.0,
+          "y": 3478.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_13",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_13_inside",
+        "placeName": "南街五号住宅",
+        "position": {
+          "x": 16.0,
+          "y": 464.0
+        },
+        "regionId": "region_portal_home_13_entry",
+        "spaceId": "home_13"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_14_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 4240.0,
+          "y": 2660.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_14",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_14_inside",
+        "placeName": "东南街住宅",
+        "position": {
+          "x": 16.0,
+          "y": 464.0
+        },
+        "regionId": "region_portal_home_14_entry",
+        "spaceId": "home_14"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_home_15_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 835.0,
+          "y": 1460.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_home_15",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_home_15_inside",
+        "placeName": "西街一号住宅",
+        "position": {
+          "x": 16.0,
+          "y": 464.0
+        },
+        "regionId": "region_portal_home_15_entry",
+        "spaceId": "home_15"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_library_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 2070.0,
+          "y": 845.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_library",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_library_inside",
+        "placeName": "图书馆",
+        "position": {
+          "x": 656.0,
+          "y": 976.0
+        },
+        "regionId": "region_portal_library_entry",
+        "spaceId": "indoor_library"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_market_shop_outside",
+        "placeName": "市集",
+        "position": {
+          "x": 3980.0,
+          "y": 2044.0
+        },
+        "regionId": "outdoor_market_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_market_shop",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_market_shop_inside",
+        "placeName": "独立市集",
+        "position": {
+          "x": 624.0,
+          "y": 912.0
+        },
+        "regionId": "region_portal_market_shop_entry",
+        "spaceId": "indoor_market_shop"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_town_hall_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 3140.0,
+          "y": 1111.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_town_hall",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_town_hall_inside",
+        "placeName": "镇公所",
+        "position": {
+          "x": -16.0,
+          "y": 304.0
+        },
+        "regionId": "region_portal_town_hall_entry",
+        "spaceId": "indoor_town_hall"
+      }
+    },
+    {
+      "direction": "双向",
+      "from": {
+        "nodeId": "portal_workshop_outside",
+        "placeName": "小镇道路",
+        "position": {
+          "x": 5000.0,
+          "y": 2658.0
+        },
+        "regionId": "outdoor_road_01",
+        "spaceId": "town_outdoor"
+      },
+      "id": "connection_workshop",
+      "movementMinutes": 1,
+      "to": {
+        "nodeId": "portal_workshop_inside",
+        "placeName": "工作坊",
+        "position": {
+          "x": 16.0,
+          "y": 752.0
+        },
+        "regionId": "region_portal_workshop_entry",
+        "spaceId": "indoor_workshop"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "worldId": "town"
+}

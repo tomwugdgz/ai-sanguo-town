@@ -1,0 +1,212 @@
+{
+  "schema_version": 2,
+  "source_revision": "workshop_assembly_trestle_bench_r2_batch_v1_formal_import_v1_footpoint_v3",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "assembly_trestle_bench_r2",
+  "label": "空台面装配锯架台（视角修订）",
+  "room_id": "workshop",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 160,
+    "depth": 24,
+    "height": 80
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/assembly_trestle_bench_r2/frames/assembly_trestle_bench_r2_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/assembly_trestle_bench_r2/frames/assembly_trestle_bench_r2_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/assembly_trestle_bench_r2/frames/assembly_trestle_bench_r2_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/assembly_trestle_bench_r2/frames/assembly_trestle_bench_r2_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      154
+    ],
+    "right": [
+      101,
+      157
+    ],
+    "up": [
+      104,
+      152
+    ],
+    "left": [
+      101,
+      157
+    ]
+  },
+  "ground_contact": {
+    "polygons_by_direction_px": {
+      "down": [[[-80, -24], [80, -24], [80, 0], [-80, 0]]],
+      "right": [[[-39, -24], [39, -24], [39, 0], [-39, 0]]],
+      "up": [[[-80, -24], [80, -24], [80, 0], [-80, 0]]],
+      "left": [[[-39, -24], [39, -24], [39, 0], [-39, 0]]]
+    },
+    "polygons_px": [
+      [
+        [
+          -80,
+          -24
+        ],
+        [
+          80,
+          -24
+        ],
+        [
+          80,
+          0
+        ],
+        [
+          -80,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -5,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -79,
+        -97
+      ],
+      [
+        80,
+        -97
+      ],
+      [
+        80,
+        0
+      ],
+      [
+        -79,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [
+        [
+          -79,
+          -97
+        ],
+        [
+          80,
+          -97
+        ],
+        [
+          80,
+          0
+        ],
+        [
+          -79,
+          0
+        ]
+      ],
+      "right": [
+        [
+          -39,
+          -103
+        ],
+        [
+          39,
+          -103
+        ],
+        [
+          39,
+          0
+        ],
+        [
+          -39,
+          0
+        ]
+      ],
+      "up": [
+        [
+          -73,
+          -98
+        ],
+        [
+          74,
+          -98
+        ],
+        [
+          74,
+          0
+        ],
+        [
+          -73,
+          0
+        ]
+      ],
+      "left": [
+        [
+          -39,
+          -103
+        ],
+        [
+          39,
+          -103
+        ],
+        [
+          39,
+          0
+        ],
+        [
+          -39,
+          0
+        ]
+      ]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "apprentice_use",
+      "kind": "use",
+      "position_px": [
+        -64,
+        80
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/candidates/calibration_c/shell_raw.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/layout_concepts/workshop_layout_concept_a/workshop_furniture_layout_concept_a.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "assets/furniture/assembly_trestle_bench_r2/batch_v1/SOURCE_RECORD.json"
+  }
+}

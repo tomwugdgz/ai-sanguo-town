@@ -1,0 +1,204 @@
+{
+  "schema_version": 2,
+  "source_revision": "workshop_small_parts_cabinet_batch_v1_formal_import_v1_footpoint_v3",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "small_parts_cabinet",
+  "label": "零件分类柜",
+  "room_id": "workshop",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 80,
+    "depth": 24,
+    "height": 128
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/small_parts_cabinet/frames/small_parts_cabinet_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/small_parts_cabinet/frames/small_parts_cabinet_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/small_parts_cabinet/frames/small_parts_cabinet_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/small_parts_cabinet/frames/small_parts_cabinet_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      109,
+      168
+    ],
+    "right": [
+      102,
+      168
+    ],
+    "up": [
+      109,
+      169
+    ],
+    "left": [
+      104,
+      169
+    ]
+  },
+  "ground_contact": {
+    "polygons_by_direction_px": {
+      "down": [[[-40, -24], [40, -24], [40, 0], [-40, 0]]],
+      "right": [[[-24, -24], [25, -24], [25, 0], [-24, 0]]],
+      "up": [[[-40, -24], [40, -24], [40, 0], [-40, 0]]],
+      "left": [[[-25, -24], [24, -24], [24, 0], [-25, 0]]]
+    },
+    "polygons_px": [
+      [
+        [
+          -40,
+          -24
+        ],
+        [
+          40,
+          -24
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          -40,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -44,
+        -138
+      ],
+      [
+        44,
+        -138
+      ],
+      [
+        44,
+        0
+      ],
+      [
+        -44,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [
+        [
+          -44,
+          -138
+        ],
+        [
+          44,
+          -138
+        ],
+        [
+          44,
+          0
+        ],
+        [
+          -44,
+          0
+        ]
+      ],
+      "right": [
+        [
+          -24,
+          -139
+        ],
+        [
+          25,
+          -139
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          -24,
+          0
+        ]
+      ],
+      "up": [
+        [
+          -44,
+          -139
+        ],
+        [
+          44,
+          -139
+        ],
+        [
+          44,
+          0
+        ],
+        [
+          -44,
+          0
+        ]
+      ],
+      "left": [
+        [
+          -25,
+          -140
+        ],
+        [
+          24,
+          -140
+        ],
+        [
+          24,
+          0
+        ],
+        [
+          -25,
+          0
+        ]
+      ]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "parts_pickup",
+      "kind": "take",
+      "position_px": [
+        0,
+        48
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/candidates/calibration_c/shell_raw.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/layout_concepts/workshop_layout_concept_a/workshop_furniture_layout_concept_a.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "assets/furniture/small_parts_cabinet/batch_v1/SOURCE_RECORD.json"
+  }
+}

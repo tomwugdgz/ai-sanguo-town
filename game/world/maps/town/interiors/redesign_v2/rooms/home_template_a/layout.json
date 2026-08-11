@@ -1,0 +1,8 @@
+{
+  "schema_version": 2,
+  "source_revision": "home_template_a_space_v1",
+  "projection_revision": "interior_projection_v1",
+  "layout_revision": 1,
+  "room_id": "home_template_a",
+  "instances": []
+}

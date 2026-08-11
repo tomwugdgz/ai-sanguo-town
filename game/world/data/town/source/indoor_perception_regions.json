@@ -1,0 +1,282 @@
+{
+  "regions": [
+    {
+      "id": "region_portal_cafe_entry",
+      "placeName": "花房咖啡馆",
+      "shape": {
+        "height": 768.0,
+        "type": "rect",
+        "width": 1152.0,
+        "x": 96.0,
+        "y": 192.0
+      },
+      "spaceId": "indoor_flower_cafe"
+    },
+    {
+      "id": "region_portal_clinic_entry",
+      "placeName": "诊所",
+      "shape": {
+        "height": 800.0,
+        "type": "rect",
+        "width": 1088.0,
+        "x": -544.0,
+        "y": 0.0
+      },
+      "spaceId": "indoor_clinic"
+    },
+    {
+      "id": "region_portal_dining_hall_entry",
+      "placeName": "公共食堂",
+      "shape": {
+        "height": 800.0,
+        "type": "rect",
+        "width": 1024.0,
+        "x": 128.0,
+        "y": 288.0
+      },
+      "spaceId": "indoor_dining_hall"
+    },
+    {
+      "id": "region_portal_dock_warehouse_entry",
+      "placeName": "码头仓库",
+      "shape": {
+        "height": 832.0,
+        "type": "rect",
+        "width": 1088.0,
+        "x": 32.0,
+        "y": 0.0
+      },
+      "spaceId": "indoor_dock_warehouse"
+    },
+    {
+      "id": "region_portal_home_01_entry",
+      "placeName": "北街一号住宅",
+      "shape": {
+        "height": 736.0,
+        "type": "rect",
+        "width": 1184.0,
+        "x": -576.0,
+        "y": -224.0
+      },
+      "spaceId": "home_01"
+    },
+    {
+      "id": "region_portal_home_02_entry",
+      "placeName": "北街二号住宅",
+      "shape": {
+        "height": 672.0,
+        "type": "rect",
+        "width": 1056.0,
+        "x": 128.0,
+        "y": 288.0
+      },
+      "spaceId": "home_02"
+    },
+    {
+      "id": "region_portal_home_03_entry",
+      "placeName": "北街三号住宅",
+      "shape": {
+        "height": 672.0,
+        "type": "rect",
+        "width": 1056.0,
+        "x": 128.0,
+        "y": 288.0
+      },
+      "spaceId": "home_03"
+    },
+    {
+      "id": "region_portal_home_04_entry",
+      "placeName": "西街二号住宅",
+      "shape": {
+        "height": 672.0,
+        "type": "rect",
+        "width": 1056.0,
+        "x": 128.0,
+        "y": 288.0
+      },
+      "spaceId": "home_04"
+    },
+    {
+      "id": "region_portal_home_05_entry",
+      "placeName": "西街三号住宅",
+      "shape": {
+        "height": 736.0,
+        "type": "rect",
+        "width": 1184.0,
+        "x": -576.0,
+        "y": -224.0
+      },
+      "spaceId": "home_05"
+    },
+    {
+      "id": "region_portal_home_06_entry",
+      "placeName": "西街四号住宅",
+      "shape": {
+        "height": 672.0,
+        "type": "rect",
+        "width": 1056.0,
+        "x": 128.0,
+        "y": 288.0
+      },
+      "spaceId": "home_06"
+    },
+    {
+      "id": "region_portal_home_07_entry",
+      "placeName": "西街五号住宅",
+      "shape": {
+        "height": 672.0,
+        "type": "rect",
+        "width": 1056.0,
+        "x": 128.0,
+        "y": 288.0
+      },
+      "spaceId": "home_07"
+    },
+    {
+      "id": "region_portal_home_08_entry",
+      "placeName": "西街六号住宅",
+      "shape": {
+        "height": 672.0,
+        "type": "rect",
+        "width": 1056.0,
+        "x": 128.0,
+        "y": 288.0
+      },
+      "spaceId": "home_08"
+    },
+    {
+      "id": "region_portal_home_09_entry",
+      "placeName": "南街一号住宅",
+      "shape": {
+        "height": 736.0,
+        "type": "rect",
+        "width": 1184.0,
+        "x": -576.0,
+        "y": -224.0
+      },
+      "spaceId": "home_09"
+    },
+    {
+      "id": "region_portal_home_10_entry",
+      "placeName": "南街二号住宅",
+      "shape": {
+        "height": 672.0,
+        "type": "rect",
+        "width": 1056.0,
+        "x": 128.0,
+        "y": 288.0
+      },
+      "spaceId": "home_10"
+    },
+    {
+      "id": "region_portal_home_11_entry",
+      "placeName": "南街三号住宅",
+      "shape": {
+        "height": 736.0,
+        "type": "rect",
+        "width": 1184.0,
+        "x": -576.0,
+        "y": -224.0
+      },
+      "spaceId": "home_11"
+    },
+    {
+      "id": "region_portal_home_12_entry",
+      "placeName": "南街四号住宅",
+      "shape": {
+        "height": 736.0,
+        "type": "rect",
+        "width": 1184.0,
+        "x": -576.0,
+        "y": -224.0
+      },
+      "spaceId": "home_12"
+    },
+    {
+      "id": "region_portal_home_13_entry",
+      "placeName": "南街五号住宅",
+      "shape": {
+        "height": 736.0,
+        "type": "rect",
+        "width": 1184.0,
+        "x": -576.0,
+        "y": -224.0
+      },
+      "spaceId": "home_13"
+    },
+    {
+      "id": "region_portal_home_14_entry",
+      "placeName": "东南街住宅",
+      "shape": {
+        "height": 736.0,
+        "type": "rect",
+        "width": 1184.0,
+        "x": -576.0,
+        "y": -224.0
+      },
+      "spaceId": "home_14"
+    },
+    {
+      "id": "region_portal_home_15_entry",
+      "placeName": "西街一号住宅",
+      "shape": {
+        "height": 736.0,
+        "type": "rect",
+        "width": 1184.0,
+        "x": -576.0,
+        "y": -224.0
+      },
+      "spaceId": "home_15"
+    },
+    {
+      "id": "region_portal_library_entry",
+      "placeName": "图书馆",
+      "shape": {
+        "height": 800.0,
+        "type": "rect",
+        "width": 1120.0,
+        "x": 96.0,
+        "y": 224.0
+      },
+      "spaceId": "indoor_library"
+    },
+    {
+      "id": "region_portal_market_shop_entry",
+      "placeName": "独立市集",
+      "shape": {
+        "height": 928.0,
+        "type": "rect",
+        "width": 1120.0,
+        "x": 64.0,
+        "y": 32.0
+      },
+      "spaceId": "indoor_market_shop"
+    },
+    {
+      "id": "region_portal_town_hall_entry",
+      "placeName": "镇公所",
+      "shape": {
+        "height": 704.0,
+        "type": "rect",
+        "width": 1088.0,
+        "x": -544.0,
+        "y": -256.0
+      },
+      "spaceId": "indoor_town_hall"
+    },
+    {
+      "id": "region_portal_workshop_entry",
+      "placeName": "工作坊",
+      "shape": {
+        "height": 800.0,
+        "type": "rect",
+        "width": 992.0,
+        "x": -384.0,
+        "y": 0.0
+      },
+      "spaceId": "indoor_workshop"
+    }
+  ],
+  "schemaVersion": 1,
+  "worldId": "town"
+}

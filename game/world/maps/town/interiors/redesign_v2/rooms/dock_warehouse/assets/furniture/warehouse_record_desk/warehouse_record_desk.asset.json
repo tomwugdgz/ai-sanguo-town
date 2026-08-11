@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "source_revision": "dock_warehouse_warehouse_record_desk_support_envelope_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "warehouse_record_desk",
+  "label": "仓库核单桌",
+  "room_id": "dock_warehouse",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 160,
+    "depth": 64,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/warehouse_record_desk/frames/warehouse_record_desk_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/warehouse_record_desk/frames/warehouse_record_desk_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/warehouse_record_desk/frames/warehouse_record_desk_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/warehouse_record_desk/frames/warehouse_record_desk_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      147
+    ],
+    "right": [
+      136,
+      100
+    ],
+    "up": [
+      104,
+      56
+    ],
+    "left": [
+      73,
+      101
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -77,
+          -22
+        ],
+        [
+          77,
+          -22
+        ],
+        [
+          77,
+          0
+        ],
+        [
+          -77,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -5,
+      -4
+    ],
+    "cells": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_by_direction_px": {
+      "down": [[-77, -93], [77, -93], [77, 0], [-77, 0]],
+      "right": [[-62, -46], [0, -46], [0, 47], [-62, 47]],
+      "up": [[-77, 0], [77, 0], [77, 92], [-77, 92]],
+      "left": [[0, -46], [63, -46], [63, 47], [0, 47]]
+    },
+    "points_px": [
+      [
+        -77.0,
+        -93
+      ],
+      [
+        77.0,
+        -93
+      ],
+      [
+        77.0,
+        0
+      ],
+      [
+        -77.0,
+        0
+      ]
+    ]
+  },
+  "interaction_anchor": [
+    {
+      "id": "use_front",
+      "kind": "use",
+      "position_px": [
+        0,
+        32
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/shell_candidates/candidate_c_imagegen_prompt_v1/assets/background/dock_warehouse_shell_candidate_c_native.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/layout_concepts/concept_a_imagegen_prompt_v1/assets/dock_warehouse_furniture_layout_concept_candidate_a_native.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/warehouse_record_desk/candidate_a_furniture_four_direction_sheet_v1/SOURCE_RECORD.json"
+  }
+}

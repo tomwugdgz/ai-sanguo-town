@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "source_revision": "clinic_user_confirmed_manual_layout_footpoint_audited_v1",
+  "projection_revision": "interior_projection_v1",
+  "layout_revision": 5,
+  "room_id": "clinic",
+  "instances": [
+    {
+      "instance_id": "consultation_desk_main",
+      "asset_id": "consultation_desk",
+      "position_px": [464, 432],
+      "direction": "down"
+    },
+    {
+      "instance_id": "doctor_chair",
+      "asset_id": "clinic_chair",
+      "position_px": [304, 432],
+      "direction": "down"
+    },
+    {
+      "instance_id": "exam_bed",
+      "asset_id": "clinic_exam_bed",
+      "position_px": [-176, 144],
+      "direction": "down"
+    },
+    {
+      "instance_id": "exam_privacy_screen",
+      "asset_id": "privacy_screen",
+      "position_px": [-16, 304],
+      "direction": "down"
+    },
+    {
+      "instance_id": "exam_stool",
+      "asset_id": "rolling_stool",
+      "position_px": [-48, 144],
+      "direction": "down"
+    },
+    {
+      "instance_id": "floor_lamp_northwest",
+      "asset_id": "floor_lamp",
+      "position_px": [112, 48],
+      "direction": "down"
+    },
+    {
+      "instance_id": "instrument_cart_north",
+      "asset_id": "instrument_cart",
+      "position_px": [48, 48],
+      "direction": "down"
+    },
+    {
+      "instance_id": "manual_side_table_03",
+      "asset_id": "side_table",
+      "position_px": [-208, 656],
+      "direction": "down"
+    },
+    {
+      "instance_id": "manual_side_table_04",
+      "asset_id": "side_table",
+      "position_px": [208, 656],
+      "direction": "down"
+    },
+    {
+      "instance_id": "manual_waiting_bench_01",
+      "asset_id": "waiting_bench",
+      "position_px": [-208, 560],
+      "direction": "down"
+    },
+    {
+      "instance_id": "manual_waiting_bench_02",
+      "asset_id": "waiting_bench",
+      "position_px": [208, 560],
+      "direction": "down"
+    },
+    {
+      "instance_id": "medicine_cabinet_north",
+      "asset_id": "medicine_cabinet",
+      "position_px": [208, 48],
+      "direction": "down"
+    },
+    {
+      "instance_id": "patient_chair",
+      "asset_id": "clinic_chair",
+      "position_px": [464, 560],
+      "direction": "up"
+    },
+    {
+      "instance_id": "waiting_bench_north",
+      "asset_id": "waiting_bench",
+      "position_px": [-432, 336],
+      "direction": "down"
+    },
+    {
+      "instance_id": "waiting_chair_left",
+      "asset_id": "clinic_chair",
+      "position_px": [-496, 464],
+      "direction": "right"
+    },
+    {
+      "instance_id": "waiting_chair_right",
+      "asset_id": "clinic_chair",
+      "position_px": [-496, 592],
+      "direction": "right"
+    },
+    {
+      "instance_id": "waiting_plant",
+      "asset_id": "leafy_plant",
+      "position_px": [-240, 368],
+      "direction": "down"
+    },
+    {
+      "instance_id": "waiting_side_table",
+      "asset_id": "side_table",
+      "position_px": [-496, 528],
+      "direction": "right"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": 2,
+  "source_revision": "home_template_b_bedside_cabinet_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "bedside_cabinet",
+  "label": "住宅 B 朴素深木色床侧双抽屉小柜（仅小柜，不含灯、书或其他摆件）",
+  "room_id": "home_template_b",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 64,
+    "depth": 64,
+    "height": 80
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/bedside_cabinet/frames/bedside_cabinet_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/bedside_cabinet/frames/bedside_cabinet_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/bedside_cabinet/frames/bedside_cabinet_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/bedside_cabinet/frames/bedside_cabinet_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      154
+    ],
+    "right": [
+      105,
+      154
+    ],
+    "up": [
+      104,
+      153
+    ],
+    "left": [
+      103,
+      153
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -32,
+          -20
+        ],
+        [
+          32,
+          -20
+        ],
+        [
+          32,
+          0
+        ],
+        [
+          -32,
+          0
+        ]
+      ]
+    ],
+    "polygons_by_direction_px": {
+      "down": [[[-32, -20], [32, -20], [32, 0], [-32, 0]]],
+      "right": [[[-24, -20], [24, -20], [24, 0], [-24, 0]]],
+      "up": [[[-32, -20], [32, -20], [32, 0], [-32, 0]]],
+      "left": [[[-24, -20], [24, -20], [24, 0], [-24, 0]]]
+    }
+  },
+  "occupied_cells": {
+    "origin2": [
+      -2,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [-47, -106],
+      [48, -106],
+      [48, 0],
+      [-47, 0]
+    ],
+    "points_by_direction_px": {
+      "down": [[-47, -106], [48, -106], [48, 0], [-47, 0]],
+      "right": [[-40, -106], [40, -106], [40, 0], [-40, 0]],
+      "up": [[-47, -106], [48, -106], [48, 0], [-47, 0]],
+      "left": [[-40, -106], [40, -106], [40, 0], [-40, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "drawer",
+      "kind": "store",
+      "position_px": [
+        0,
+        -24
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "../source/bedside_cabinet_four_direction_sheet_final_1x.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_b/layout_concepts/home_02_layout_v1/home_02_decor_layout_concept_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "docs/design/pipelines/indoor_handoffs/home_template_b.md"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

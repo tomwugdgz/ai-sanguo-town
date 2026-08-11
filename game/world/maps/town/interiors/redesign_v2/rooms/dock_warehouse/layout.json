@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "source_revision": "dock_warehouse_room_batch_layout_collision_fix_v4",
+  "projection_revision": "interior_projection_v1",
+  "layout_revision": 8,
+  "room_id": "dock_warehouse",
+  "instances": [
+    {
+      "instance_id": "rack_west_north",
+      "asset_id": "empty_heavy_storage_rack",
+      "position_px": [128, 128],
+      "direction": "down"
+    },
+    {
+      "instance_id": "rack_west_mid",
+      "asset_id": "empty_heavy_storage_rack",
+      "position_px": [256, 256],
+      "direction": "down"
+    },
+    {
+      "instance_id": "rack_east_north",
+      "asset_id": "empty_heavy_storage_rack",
+      "position_px": [608, 128],
+      "direction": "down"
+    },
+    {
+      "instance_id": "rack_east_mid",
+      "asset_id": "empty_heavy_storage_rack",
+      "position_px": [704, 256],
+      "direction": "down"
+    },
+    {
+      "instance_id": "manifest_record_desk",
+      "asset_id": "warehouse_record_desk",
+      "position_px": [144, 608],
+      "direction": "down"
+    },
+    {
+      "instance_id": "fishing_net_stock",
+      "asset_id": "fishing_net_bundle",
+      "position_px": [368, 608],
+      "direction": "down"
+    },
+    {
+      "instance_id": "incoming_shipping_crate",
+      "asset_id": "wooden_shipping_crate",
+      "position_px": [288, 544],
+      "direction": "down"
+    },
+    {
+      "instance_id": "dry_goods_crate",
+      "asset_id": "wooden_shipping_crate",
+      "position_px": [768, 608],
+      "direction": "down"
+    },
+    {
+      "instance_id": "annex_handcart",
+      "asset_id": "freight_handcart",
+      "position_px": [976, 448],
+      "direction": "down"
+    },
+    {
+      "instance_id": "annex_pending_crate",
+      "asset_id": "wooden_shipping_crate",
+      "position_px": [1056, 384],
+      "direction": "down"
+    },
+    {
+      "instance_id": "sorting_outbound_crate",
+      "asset_id": "wooden_shipping_crate",
+      "position_px": [896, 544],
+      "direction": "down"
+    },
+    {
+      "instance_id": "incoming_barrel_west",
+      "asset_id": "storage_barrel",
+      "position_px": [96, 320],
+      "direction": "down"
+    },
+    {
+      "instance_id": "incoming_barrel_east",
+      "asset_id": "storage_barrel",
+      "position_px": [192, 320],
+      "direction": "down"
+    },
+    {
+      "instance_id": "fishing_supply_barrel",
+      "asset_id": "storage_barrel",
+      "position_px": [192, 480],
+      "direction": "down"
+    },
+    {
+      "instance_id": "dry_goods_barrel_west",
+      "asset_id": "storage_barrel",
+      "position_px": [608, 544],
+      "direction": "down"
+    },
+    {
+      "instance_id": "dry_goods_barrel_east",
+      "asset_id": "storage_barrel",
+      "position_px": [704, 544],
+      "direction": "down"
+    },
+    {
+      "instance_id": "annex_barrel_west",
+      "asset_id": "storage_barrel",
+      "position_px": [960, 256],
+      "direction": "down"
+    },
+    {
+      "instance_id": "annex_barrel_east",
+      "asset_id": "storage_barrel",
+      "position_px": [1056, 256],
+      "direction": "down"
+    },
+    {
+      "instance_id": "sorting_barrel_west",
+      "asset_id": "storage_barrel",
+      "position_px": [960, 608],
+      "direction": "down"
+    },
+    {
+      "instance_id": "sorting_barrel_east",
+      "asset_id": "storage_barrel",
+      "position_px": [1056, 608],
+      "direction": "down"
+    }
+  ]
+}

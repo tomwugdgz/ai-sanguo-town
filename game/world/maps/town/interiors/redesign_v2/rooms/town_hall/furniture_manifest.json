@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "source_revision": "town_hall_runtime_v1_formal_furniture_footpoint_v2",
+  "room_id": "town_hall",
+  "assets": [
+    {
+      "asset_id": "consultation_table",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/consultation_table/consultation_table.asset.json"
+    },
+    {
+      "asset_id": "counter",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/counter/counter.asset.json"
+    },
+    {
+      "asset_id": "document_cabinet",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/document_cabinet/document_cabinet.asset.json"
+    },
+    {
+      "asset_id": "floor_lamp",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/floor_lamp/floor_lamp.asset.json"
+    },
+    {
+      "asset_id": "form_stand",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/form_stand/form_stand.asset.json"
+    },
+    {
+      "asset_id": "leafy_plant",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/leafy_plant/leafy_plant.asset.json"
+    },
+    {
+      "asset_id": "upholstered_chair",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/upholstered_chair/upholstered_chair.asset.json"
+    },
+    {
+      "asset_id": "waiting_bench",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/waiting_bench/waiting_bench.asset.json"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+name: formal-validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: formal-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  GODOT_VERSION: "4.7"
+
+jobs:
+  guards:
+    name: 防复发守卫（棘轮/动态调用/零引用/套件防缩水）
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: 运行守卫
+        run: tools/guards/run_guards.sh
+
+  formal-suite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y zsh ripgrep unzip
+
+      - name: Cache Godot binary
+        id: godot-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/godot-bin
+          key: godot-${{ env.GODOT_VERSION }}-linux-x86_64
+
+      - name: Download Godot
+        if: steps.godot-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/godot-bin
+          curl -sSL -o /tmp/godot.zip \
+            "https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip"
+          unzip -q /tmp/godot.zip -d /tmp/godot-extract
+          mv /tmp/godot-extract/Godot_v${GODOT_VERSION}-stable_linux.x86_64 ~/godot-bin/godot
+          chmod +x ~/godot-bin/godot
+
+      - name: Add Godot to PATH
+        run: echo "$HOME/godot-bin" >> "$GITHUB_PATH"
+
+      - name: Cache Godot import artifacts
+        uses: actions/cache@v4
+        with:
+          path: game/.godot
+          key: godot-import-${{ env.GODOT_VERSION }}-${{ hashFiles('game/**/*.import', 'game/project.godot') }}
+          restore-keys: |
+            godot-import-${{ env.GODOT_VERSION }}-
+
+      - name: Import project
+        run: |
+          set -o pipefail
+          godot --headless --path game --import 2>&1 | tee /tmp/godot-import.log
+          if grep -qE '^ERROR:|SCRIPT ERROR:|Parse Error:|Failed to load script' /tmp/godot-import.log; then
+            echo "::error::Godot import produced engine or script errors."
+            grep -nE '^ERROR:|SCRIPT ERROR:|Parse Error:|Failed to load script' /tmp/godot-import.log | head -20
+            exit 1
+          fi
+
+      - name: Agent offline suite
+        run: godot --headless --path game --script res://tests/agent/run_agent_tests.gd
+
+      - name: Formal release story suite
+        run: zsh game/tests/run_formal_release_story_suite.sh
+
+      - name: Isolated formal entry story
+        env:
+          GODOT_USERDATA_ROOT: /home/runner/.local/share/godot/app_userdata
+        run: zsh game/tests/run_isolated_formal_entry_story.sh
+
+      - name: Source tree must stay clean after tests
+        run: |
+          git status --porcelain
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::Tests generated unexpected changes in the source tree (missing .gd.uid, gate reports written to res://, etc.)."
+            exit 1
+          fi

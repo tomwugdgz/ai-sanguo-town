@@ -1,0 +1,216 @@
+{
+  "schema_version": 2,
+  "source_revision": "workshop_repair_intake_cart_batch_v1_formal_import_v1_footpoint_v3",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "repair_intake_cart",
+  "label": "空置待修推车",
+  "room_id": "workshop",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 80,
+    "depth": 64,
+    "height": 80
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/repair_intake_cart/frames/repair_intake_cart_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/repair_intake_cart/frames/repair_intake_cart_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/repair_intake_cart/frames/repair_intake_cart_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/repair_intake_cart/frames/repair_intake_cart_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      171
+    ],
+    "right": [
+      101,
+      156
+    ],
+    "up": [
+      104,
+      169
+    ],
+    "left": [
+      105,
+      156
+    ]
+  },
+  "ground_contact": {
+    "polygons_by_direction_px": {
+      "down": [[[-40, -64], [40, -64], [40, 0], [-40, 0]]],
+      "right": [[[-63, -64], [63, -64], [63, 0], [-63, 0]]],
+      "up": [[[-40, -64], [40, -64], [40, 0], [-40, 0]]],
+      "left": [[[-63, -64], [63, -64], [63, 0], [-63, 0]]]
+    },
+    "polygons_px": [
+      [
+        [
+          -40,
+          -64
+        ],
+        [
+          40,
+          -64
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          -40,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -4
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -43,
+        -128
+      ],
+      [
+        43,
+        -128
+      ],
+      [
+        43,
+        0
+      ],
+      [
+        -43,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [
+        [
+          -43,
+          -128
+        ],
+        [
+          43,
+          -128
+        ],
+        [
+          43,
+          0
+        ],
+        [
+          -43,
+          0
+        ]
+      ],
+      "right": [
+        [
+          -63,
+          -99
+        ],
+        [
+          63,
+          -99
+        ],
+        [
+          63,
+          0
+        ],
+        [
+          -63,
+          0
+        ]
+      ],
+      "up": [
+        [
+          -43,
+          -128
+        ],
+        [
+          43,
+          -128
+        ],
+        [
+          43,
+          0
+        ],
+        [
+          -43,
+          0
+        ]
+      ],
+      "left": [
+        [
+          -63,
+          -99
+        ],
+        [
+          63,
+          -99
+        ],
+        [
+          63,
+          0
+        ],
+        [
+          -63,
+          0
+        ]
+      ]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "repair_intake",
+      "kind": "inspect",
+      "position_px": [
+        0,
+        48
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/candidates/calibration_c/shell_raw.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/layout_concepts/workshop_layout_concept_b/workshop_furniture_layout_concept_b.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "assets/furniture/repair_intake_cart/batch_v1/SOURCE_RECORD.json"
+  }
+}

@@ -1,0 +1,91 @@
+{
+	"schemaVersion": 1,
+	"assetId": "ui.custom-resident-creator.runtime.v13",
+	"supersedesAssetId": "ui.custom-resident-creator.runtime.v10",
+	"approvalStatus": "user_approved",
+	"approvalDate": "2026-07-22",
+	"baseline": [
+		1920,
+		1080
+	],
+	"scenePath": "res://ui/custom_resident_creator/CustomResidentCreatorScreen.tscn",
+	"screenScriptPath": "res://ui/custom_resident_creator/CustomResidentCreatorScreen.gd",
+	"servicePath": "res://world/presentation/session/TownCustomResidentCreatorService.gd",
+	"candidatePoolPath": "res://world/presentation/session/TownCustomResidentCandidatePool.gd",
+	"structuralShellPath": "res://assets/ui/custom_resident_creator/runtime/shell/custom_resident_creator_structural_shell.png",
+	"runtimeControlRoot": "res://assets/ui/custom_resident_creator/runtime/controls/v4/",
+	"controlSizeContractPath": "res://assets/ui/custom_resident_creator/runtime/controls/v4/control_size_contract.json",
+	"dropdownSizeContractPath": "res://assets/ui/custom_resident_creator/runtime/controls/v4/dropdown_popup/dropdown_size_contract.json",
+	"commonScrollbarManifestPath": "res://assets/ui/common/scrollbar/wood_v1/scrollbar_wood_v1_manifest.json",
+	"runtimeRules": {
+		"consumeCandidateAssets": false,
+		"consumeChromaSources": false,
+		"consumeSourceSlices": false,
+		"consumeAtlas": false,
+		"runtimeTextureStretch": false,
+		"maximumRuntimeSizeDeltaPixels": 0,
+		"focusPolicy": "reuse_hover_or_selected",
+		"programmaticVisibleChromeCount": 0,
+		"dropdownIndividualRowFrames": false
+	},
+	"scrollbarContract": {
+		"assetId": "ui.common.scrollbar.wood-v1.dropdown-short",
+		"trackSize": [
+			24,
+			184
+		],
+		"thumbVisualSize": [
+			32,
+			72
+		],
+		"thumbHitTargetSize": [
+			44,
+			72
+		],
+		"runtimeScalePolicy": "exact-size-only",
+		"nativeRangeBinding": true,
+		"mouseWheel": true,
+		"trackClick": true,
+		"thumbDrag": true,
+		"touchDrag": true,
+		"keyboardFocusReachable": true
+	},
+	"productContract": {
+		"meaning": "create_new_session_candidate",
+		"presetCatalogMutation": false,
+		"finalRosterMutation": false,
+		"genderOptions": [
+			"女",
+			"男"
+		],
+		"appearanceEntryMode": "route_to_formal_wardrobe",
+		"successReturn": "resident_selection_focus_created_candidate",
+		"worldAndAgentReceiveCandidatePool": false
+	},
+	"selectionHandoff": {
+		"requiredFields": [
+			"candidatePoolRevision",
+			"residentId",
+			"focusedResidentId",
+			"appendCatalogEntry",
+			"appendSelectionEntry"
+		],
+		"selectionSummaryField": "selection_summary",
+		"selectionSummaryMaximumCharacters": 24
+	},
+	"adapterContract": {
+		"scope": "custom_resident_creator",
+		"bindingMethod": "bind_town_ui_adapter",
+		"adapterServiceBinding": "bind_custom_resident_creator_service",
+		"changeSignal": "view_model_changed",
+		"intentSignal": "intent_requested",
+		"runtimeMockAllowed": false
+	},
+	"validation": {
+		"creatorContract": "pass",
+		"creatorRuntimeGate": "pass",
+		"adapterIntegrationGate": "pass",
+		"commonScrollbarPreflightChecks": 10,
+		"residentModelAssignmentRoute": "pass"
+	}
+}

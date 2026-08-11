@@ -1,0 +1,169 @@
+{
+  "schema_version": 2,
+  "source_revision": "floor_lamp_footpoint_occlusion_v1_emissive_v1",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "floor_lamp",
+  "label": "诊所无光晕木质落地灯",
+  "room_id": "clinic",
+  "canonical_direction": "down",
+  "direction_visual_policy": "rotationally_symmetric_reuse",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 32,
+    "depth": 32,
+    "height": 144
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/floor_lamp/frames/floor_lamp_canonical.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/floor_lamp/frames/floor_lamp_canonical.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/floor_lamp/frames/floor_lamp_canonical.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/floor_lamp/frames/floor_lamp_canonical.png"
+  },
+  "visual_anchor": {
+    "down": [
+      156,
+      192
+    ],
+    "right": [
+      156,
+      192
+    ],
+    "up": [
+      156,
+      192
+    ],
+    "left": [
+      156,
+      192
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          0,
+          -16
+        ],
+        [
+          8,
+          -14
+        ],
+        [
+          14,
+          -8
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          0,
+          16
+        ],
+        [
+          -8,
+          14
+        ],
+        [
+          -14,
+          8
+        ],
+        [
+          -16,
+          0
+        ],
+        [
+          -14,
+          -8
+        ],
+        [
+          -8,
+          -14
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      0,
+      -1
+    ],
+    "cells": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -32,
+        -128
+      ],
+      [
+        32,
+        -128
+      ],
+      [
+        32,
+        16
+      ],
+      [
+        -32,
+        16
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-21, -103], [22, -103], [22, 16], [-21, 16]],
+      "right": [[-21, -103], [22, -103], [22, 16], [-21, 16]],
+      "up": [[-21, -103], [22, -103], [22, 16], [-21, 16]],
+      "left": [[-21, -103], [22, -103], [22, 16], [-21, 16]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "primary",
+      "kind": "use",
+      "position_px": [
+        0,
+        48
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "visual_effect_anchor": [
+    {
+      "id": "bulb_glow",
+      "kind": "warm_light",
+      "position_px": [0, -80],
+      "rotate_with_direction": false,
+      "radius_px": 140,
+      "energy": 0.88,
+      "color": "#ffd58a"
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/background/candidates/clinic_shell_calibration_a_user_accepted.png",
+      "res://world/maps/town/interiors/clinic/assets/concepts/clinic_layout_warm_v1.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/floor_lamp/candidate_b_canonical_reuse_v1/SOURCE_RECORD.json"
+  }
+}

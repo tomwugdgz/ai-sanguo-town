@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://world/maps/town/interiors/InteriorRoom.gd" id="1_script"]
+
+[node name="InteriorRoom" type="Node2D"]
+script = ExtResource("1_script")
+
+[node name="RoomShell" type="Sprite2D" parent="."]
+z_index = -10
+texture_filter = 1
+
+[node name="WallCollision" type="StaticBody2D" parent="."]
+collision_mask = 0
+
+[node name="IndoorEntryPoint" type="Marker2D" parent="."]
+
+[node name="IndoorExitPoint" type="Marker2D" parent="."]

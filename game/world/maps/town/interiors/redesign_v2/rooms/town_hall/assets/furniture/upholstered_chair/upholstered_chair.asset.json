@@ -1,0 +1,135 @@
+{
+  "schema_version": 2,
+  "source_revision": "town_hall_upholstered_chair_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "upholstered_chair",
+  "label": "镇公所绿色软垫木椅",
+  "room_id": "town_hall",
+  "canonical_direction": "down",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 64,
+    "depth": 64,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/upholstered_chair/frames/upholstered_chair_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/upholstered_chair/frames/upholstered_chair_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/upholstered_chair/frames/upholstered_chair_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/upholstered_chair/frames/upholstered_chair_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      103,
+      169
+    ],
+    "right": [
+      143,
+      103
+    ],
+    "up": [
+      102,
+      47
+    ],
+    "left": [
+      60,
+      106
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -28,
+          -60
+        ],
+        [
+          28,
+          -60
+        ],
+        [
+          28,
+          0
+        ],
+        [
+          -28,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -2,
+      -4
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -32,
+        -96
+      ],
+      [
+        32,
+        -96
+      ],
+      [
+        32,
+        -24
+      ],
+      [
+        -32,
+        -24
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-37, -123], [37, -123], [37, 0], [-37, 0]],
+      "right": [[-78, -66], [0, -66], [0, 66], [-78, 66]],
+      "up": [[-36, 0], [36, 0], [36, 116], [-36, 116]],
+      "left": [[0, -66], [78, -66], [78, 65], [0, 65]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "seat",
+      "kind": "sit",
+      "position_px": [
+        0,
+        -24
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "res://world/maps/town/interiors/assets/indoor_town_hall_shell_v1.png",
+      "res://world/maps/town/interiors/town_hall/assets/concepts/town_hall_layout_warm_v1.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/upholstered_chair/candidate_a_room_batch_v1/SOURCE_RECORD.json"
+  },
+  "direction_visual_policy": "strict_four_direction",
+  "direction_visual_policy_revision": "furniture_direction_visual_policy_v1"
+}

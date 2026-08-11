@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "worldId": "town",
+  "spaces": [
+    {
+      "id": "town_outdoor",
+      "name": "小镇室外空间",
+      "type": "室外",
+      "coordinateSystem": {
+        "origin": "地图左上角",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": 0, "y": 0, "width": 6688, "height": 3764 }
+    },
+    {
+      "id": "indoor_flower_cafe",
+      "name": "花房咖啡馆室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": 96, "y": 192, "width": 1152, "height": 768 }
+    },
+    {
+      "id": "indoor_library",
+      "name": "图书馆室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": 96, "y": 224, "width": 1120, "height": 800 }
+    },
+    {
+      "id": "indoor_town_hall",
+      "name": "镇公所室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": -544, "y": -256, "width": 1088, "height": 704 }
+    },
+    {
+      "id": "indoor_clinic",
+      "name": "诊所室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": -544, "y": 0, "width": 1088, "height": 800 }
+    },
+    {
+      "id": "indoor_market_shop",
+      "name": "独立市集空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": 64, "y": 32, "width": 1120, "height": 928 }
+    },
+    {
+      "id": "indoor_dining_hall",
+      "name": "公共食堂室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": 128, "y": 288, "width": 1024, "height": 800 }
+    },
+    {
+      "id": "indoor_workshop",
+      "name": "工作坊室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": -384, "y": 0, "width": 992, "height": 800 }
+    },
+    {
+      "id": "indoor_dock_warehouse",
+      "name": "码头仓库室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": 32, "y": 0, "width": 1088, "height": 832 }
+    },
+    {
+      "id": "home_01",
+      "name": "北街一号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": -576, "y": -224, "width": 1184, "height": 736 }
+    },
+    {
+      "id": "home_02",
+      "name": "北街二号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": 128, "y": 288, "width": 1056, "height": 672 }
+    },
+    {
+      "id": "home_03",
+      "name": "北街三号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": 128, "y": 288, "width": 1056, "height": 672 }
+    },
+    {
+      "id": "home_04",
+      "name": "西街二号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": 128, "y": 288, "width": 1056, "height": 672 }
+    },
+    {
+      "id": "home_05",
+      "name": "西街三号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": -576, "y": -224, "width": 1184, "height": 736 }
+    },
+    {
+      "id": "home_06",
+      "name": "西街四号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": 128, "y": 288, "width": 1056, "height": 672 }
+    },
+    {
+      "id": "home_07",
+      "name": "西街五号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": 128, "y": 288, "width": 1056, "height": 672 }
+    },
+    {
+      "id": "home_08",
+      "name": "西街六号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": 128, "y": 288, "width": 1056, "height": 672 }
+    },
+    {
+      "id": "home_09",
+      "name": "南街一号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": -576, "y": -224, "width": 1184, "height": 736 }
+    },
+    {
+      "id": "home_10",
+      "name": "南街二号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": 128, "y": 288, "width": 1056, "height": 672 }
+    },
+    {
+      "id": "home_11",
+      "name": "南街三号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": -576, "y": -224, "width": 1184, "height": 736 }
+    },
+    {
+      "id": "home_12",
+      "name": "南街四号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": -576, "y": -224, "width": 1184, "height": 736 }
+    },
+    {
+      "id": "home_13",
+      "name": "南街五号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": -576, "y": -224, "width": 1184, "height": 736 }
+    },
+    {
+      "id": "home_14",
+      "name": "东南街住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": -576, "y": -224, "width": 1184, "height": 736 }
+    },
+    {
+      "id": "home_15",
+      "name": "西街一号住宅室内空间",
+      "type": "室内",
+      "coordinateSystem": {
+        "origin": "室内局部原点",
+        "xAxis": "right",
+        "yAxis": "down",
+        "unit": "pixel",
+        "pixelsPerUnit": 1
+      },
+      "bounds": { "x": -576, "y": -224, "width": 1184, "height": 736 }
+    }
+  ]
+}

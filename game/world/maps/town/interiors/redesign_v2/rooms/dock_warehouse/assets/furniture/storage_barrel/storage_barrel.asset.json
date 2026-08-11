@@ -1,0 +1,148 @@
+{
+  "schema_version": 2,
+  "source_revision": "dock_warehouse_storage_barrel_base_envelope_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "storage_barrel",
+  "label": "仓储木桶",
+  "room_id": "dock_warehouse",
+  "canonical_direction": "down",
+  "direction_visual_policy": "rotationally_symmetric_reuse",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 64,
+    "depth": 64,
+    "height": 72
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/storage_barrel/frames/storage_barrel_canonical.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/storage_barrel/frames/storage_barrel_canonical.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/storage_barrel/frames/storage_barrel_canonical.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/storage_barrel/frames/storage_barrel_canonical.png"
+  },
+  "visual_anchor": {
+    "down": [
+      90,
+      130
+    ],
+    "right": [
+      90,
+      130
+    ],
+    "up": [
+      90,
+      130
+    ],
+    "left": [
+      90,
+      130
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -20,
+          -30
+        ],
+        [
+          20,
+          -30
+        ],
+        [
+          28,
+          -20
+        ],
+        [
+          28,
+          -8
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          -20,
+          0
+        ],
+        [
+          -28,
+          -8
+        ],
+        [
+          -28,
+          -20
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -2,
+      -4
+    ],
+    "cells": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_by_direction_px": {
+      "down": [[-28, -86], [28, -86], [28, 0], [-28, 0]],
+      "right": [[-28, -86], [28, -86], [28, 0], [-28, 0]],
+      "up": [[-28, -86], [28, -86], [28, 0], [-28, 0]],
+      "left": [[-28, -86], [28, -86], [28, 0], [-28, 0]]
+    },
+    "points_px": [
+      [
+        -28.0,
+        -86
+      ],
+      [
+        28.0,
+        -86
+      ],
+      [
+        28.0,
+        0
+      ],
+      [
+        -28.0,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-28.0, -86], [28.0, -86], [28.0, 0], [-28.0, 0]],
+      "right": [[-28.0, -86], [28.0, -86], [28.0, 0], [-28.0, 0]],
+      "up": [[-28.0, -86], [28.0, -86], [28.0, 0], [-28.0, 0]],
+      "left": [[-28.0, -86], [28.0, -86], [28.0, 0], [-28.0, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "inspect_front",
+      "kind": "inspect",
+      "position_px": [
+        0,
+        32
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/shell_candidates/candidate_c_imagegen_prompt_v1/assets/background/dock_warehouse_shell_candidate_c_native.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/layout_concepts/concept_a_imagegen_prompt_v1/assets/dock_warehouse_furniture_layout_concept_candidate_a_native.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/storage_barrel/candidate_b_rotationally_symmetric_reuse_v1/SOURCE_RECORD.json"
+  }
+}

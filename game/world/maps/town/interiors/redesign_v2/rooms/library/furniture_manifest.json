@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "source_revision": "library_candidate_c_uniform_wall_height_formal_furniture_footpoint_v2",
+  "room_id": "library",
+  "assets": [
+    {
+      "asset_id": "floor_lamp",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/floor_lamp/floor_lamp.asset.json"
+    },
+    {
+      "asset_id": "leafy_plant",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/leafy_plant/leafy_plant.asset.json"
+    },
+    {
+      "asset_id": "library_checkout_counter",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/library_checkout_counter/library_checkout_counter.asset.json"
+    },
+    {
+      "asset_id": "library_double_sided_browse_shelf",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/library_double_sided_browse_shelf/library_double_sided_browse_shelf.asset.json"
+    },
+    {
+      "asset_id": "library_reading_table",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/library_reading_table/library_reading_table.asset.json"
+    },
+    {
+      "asset_id": "library_returns_book_cart",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/library_returns_book_cart/library_returns_book_cart.asset.json"
+    },
+    {
+      "asset_id": "library_tall_bookshelf",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/library_tall_bookshelf/library_tall_bookshelf.asset.json"
+    },
+    {
+      "asset_id": "wooden_chair",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/wooden_chair/wooden_chair.asset.json"
+    }
+  ]
+}

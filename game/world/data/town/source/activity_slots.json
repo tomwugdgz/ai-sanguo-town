@@ -1,0 +1,2237 @@
+{
+  "contentGaps": [],
+  "fallbackContract": {
+    "sameActivityOtherSlotMatchFields": [
+      "placeName",
+      "activityId",
+      "role",
+      "targetType"
+    ]
+  },
+  "memberAnchorContract": {
+    "maxAuthoredMembersPerSlot": 1.0,
+    "multiPropTargetAnchorMode": "per_member",
+    "oneMemberPerCoordinate": true,
+    "requiresIndoorAuthoringMatch": true,
+    "requiresPropAuthoringMatch": true,
+    "singlePropTargetAnchorAllowed": true
+  },
+  "schemaVersion": 1.0,
+  "slots": [
+    {
+      "activityId": "activity_cafe_brew_coffee",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "barista_use",
+          "memberAnchorId": "member_cafe_brew_coffee_01",
+          "position": [
+            328,
+            296
+          ]
+        }
+      ],
+      "placeName": "花房咖啡馆",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "cafe",
+      "slotId": "slot_cafe_brew_coffee_01",
+      "target": {
+        "actionVerb": "冲咖啡",
+        "anchorId": "barista_use",
+        "propName": "花房咖啡馆咖啡机"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_cafe_receive_guests",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "staff_service",
+          "memberAnchorId": "member_cafe_receive_guests_01",
+          "position": [
+            456,
+            296
+          ]
+        }
+      ],
+      "placeName": "花房咖啡馆",
+      "poseFamily": "service",
+      "role": "worker",
+      "sceneId": "cafe",
+      "slotId": "slot_cafe_receive_guests_01",
+      "target": {
+        "actionVerb": "接待客人",
+        "anchorId": "staff_service",
+        "propName": "花房咖啡馆内侧柜台"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_cafe_tidy_tables",
+      "facing": "right",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "seat",
+          "memberAnchorId": "member_cafe_tidy_tables_01",
+          "position": [
+            152,
+            648
+          ]
+        }
+      ],
+      "placeName": "花房咖啡馆",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "cafe",
+      "slotId": "slot_cafe_tidy_tables_01",
+      "target": {
+        "actionVerb": "整理桌椅",
+        "anchorId": "seat",
+        "propName": "花房咖啡馆西北座椅"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_cafe_eat_pastry",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "inspect_display",
+          "memberAnchorId": "member_cafe_eat_pastry_01",
+          "position": [
+            200,
+            488
+          ]
+        }
+      ],
+      "placeName": "花房咖啡馆",
+      "poseFamily": "eat_drink",
+      "role": "visitor",
+      "sceneId": "cafe",
+      "slotId": "slot_cafe_eat_pastry_01",
+      "target": {
+        "actionVerb": "吃点心",
+        "anchorId": "inspect_display",
+        "propName": "花房咖啡馆糕点柜"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_cafe_order",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "customer_service",
+          "memberAnchorId": "member_cafe_order_01",
+          "position": [
+            456,
+            488
+          ]
+        }
+      ],
+      "placeName": "花房咖啡馆",
+      "poseFamily": "service",
+      "role": "visitor",
+      "sceneId": "cafe",
+      "slotId": "slot_cafe_order_01",
+      "target": {
+        "actionVerb": "点单",
+        "anchorId": "customer_service",
+        "propName": "花房咖啡馆点单柜台"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_cafe_rest",
+      "facing": "up",
+      "fallback": "same_activity_other_slot",
+      "memberAnchors": [
+        {
+          "anchorId": "seat",
+          "memberAnchorId": "member_cafe_rest_greenhouse_01",
+          "position": [
+            1160,
+            680
+          ]
+        }
+      ],
+      "placeName": "花房咖啡馆",
+      "poseFamily": "rest",
+      "role": "visitor",
+      "sceneId": "cafe",
+      "slotId": "slot_cafe_rest_greenhouse_01",
+      "target": {
+        "actionVerb": "歇着",
+        "anchorId": "seat",
+        "propName": "花房咖啡馆花房座位"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_cafe_rest",
+      "facing": "up",
+      "fallback": "same_activity_other_slot",
+      "memberAnchors": [
+        {
+          "anchorId": "seat",
+          "memberAnchorId": "member_cafe_rest_main_01",
+          "position": [
+            264,
+            744
+          ]
+        }
+      ],
+      "placeName": "花房咖啡馆",
+      "poseFamily": "rest",
+      "role": "visitor",
+      "sceneId": "cafe",
+      "slotId": "slot_cafe_rest_main_01",
+      "target": {
+        "actionVerb": "歇着",
+        "anchorId": "seat",
+        "propName": "花房咖啡馆主厅座位"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_clinic_consult",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "patient_consult",
+          "memberAnchorId": "member_clinic_consult_visitor_01",
+          "position": [
+            456,
+            504
+          ]
+        }
+      ],
+      "placeName": "诊所",
+      "poseFamily": "service",
+      "role": "visitor",
+      "sceneId": "clinic",
+      "slotId": "slot_clinic_consult_visitor_01",
+      "target": {
+        "actionVerb": "看诊",
+        "anchorId": "patient_consult",
+        "propName": "诊所问诊桌"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_clinic_examination",
+      "facing": "left",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "inspect_right_side",
+          "memberAnchorId": "member_clinic_examination_visitor_01",
+          "position": [
+            -104,
+            152
+          ]
+        }
+      ],
+      "placeName": "诊所",
+      "poseFamily": "service",
+      "role": "visitor",
+      "sceneId": "clinic",
+      "slotId": "slot_clinic_examination_visitor_01",
+      "target": {
+        "actionVerb": "接受检查",
+        "anchorId": "inspect_right_side",
+        "propName": "诊所检查床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_clinic_prepare_medicine",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "primary",
+          "memberAnchorId": "member_clinic_prepare_medicine_01",
+          "position": [
+            200,
+            104
+          ]
+        }
+      ],
+      "placeName": "诊所",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "clinic",
+      "slotId": "slot_clinic_prepare_medicine_01",
+      "target": {
+        "actionVerb": "取药",
+        "anchorId": "primary",
+        "propName": "诊所药柜"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_clinic_receive_patient",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "doctor_consult",
+          "memberAnchorId": "member_clinic_receive_patient_01",
+          "position": [
+            456,
+            360
+          ]
+        }
+      ],
+      "placeName": "诊所",
+      "poseFamily": "service",
+      "role": "worker",
+      "sceneId": "clinic",
+      "slotId": "slot_clinic_receive_patient_01",
+      "target": {
+        "actionVerb": "接诊",
+        "anchorId": "doctor_consult",
+        "propName": "诊所问诊桌医生侧"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_clinic_wait",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "seat_center",
+          "memberAnchorId": "member_clinic_wait_01",
+          "position": [
+            -440,
+            408
+          ]
+        }
+      ],
+      "placeName": "诊所",
+      "poseFamily": "rest",
+      "role": "visitor",
+      "sceneId": "clinic",
+      "slotId": "slot_clinic_wait_01",
+      "target": {
+        "actionVerb": "歇着",
+        "anchorId": "seat_center",
+        "propName": "诊所候诊长椅"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_dining_collect_meal",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "open_front",
+          "memberAnchorId": "member_dining_collect_meal_01",
+          "position": [
+            680,
+            376
+          ]
+        }
+      ],
+      "placeName": "公共食堂",
+      "poseFamily": "work",
+      "role": "visitor",
+      "sceneId": "dining_hall",
+      "slotId": "slot_dining_collect_meal_01",
+      "target": {
+        "actionVerb": "取餐",
+        "anchorId": "open_front",
+        "propName": "公共食堂备餐柜"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_dining_eat_meal",
+      "facing": "left",
+      "fallback": "same_activity_other_slot",
+      "memberAnchors": [
+        {
+          "anchorId": "inspect_north",
+          "memberAnchorId": "member_dining_eat_east_01",
+          "position": [
+            488,
+            712
+          ]
+        }
+      ],
+      "placeName": "公共食堂",
+      "poseFamily": "eat_drink",
+      "role": "visitor",
+      "sceneId": "dining_hall",
+      "slotId": "slot_dining_eat_east_01",
+      "target": {
+        "actionVerb": "吃饭",
+        "anchorId": "inspect_north",
+        "propName": "公共食堂餐桌东端"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_dining_return_dishes",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_front",
+          "memberAnchorId": "member_dining_return_dishes_01",
+          "position": [
+            808,
+            376
+          ]
+        }
+      ],
+      "placeName": "公共食堂",
+      "poseFamily": "work",
+      "role": "visitor",
+      "sceneId": "dining_hall",
+      "slotId": "slot_dining_return_dishes_01",
+      "target": {
+        "actionVerb": "归还餐具",
+        "anchorId": "use_front",
+        "propName": "公共食堂餐具架"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_dining_eat_meal",
+      "facing": "right",
+      "fallback": "same_activity_other_slot",
+      "memberAnchors": [
+        {
+          "anchorId": "inspect_south",
+          "memberAnchorId": "member_dining_eat_west_01",
+          "position": [
+            168,
+            712
+          ]
+        }
+      ],
+      "placeName": "公共食堂",
+      "poseFamily": "eat_drink",
+      "role": "visitor",
+      "sceneId": "dining_hall",
+      "slotId": "slot_dining_eat_west_01",
+      "target": {
+        "actionVerb": "吃饭",
+        "anchorId": "inspect_south",
+        "propName": "公共食堂西侧餐桌"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_dining_prepare_meal",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_front",
+          "memberAnchorId": "member_dining_prepare_meal_01",
+          "position": [
+            360,
+            376
+          ]
+        }
+      ],
+      "placeName": "公共食堂",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "dining_hall",
+      "slotId": "slot_dining_prepare_meal_01",
+      "target": {
+        "actionVerb": "做饭",
+        "anchorId": "use_front",
+        "propName": "公共食堂灶台"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_dining_serve_meal",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "serve_front",
+          "memberAnchorId": "member_dining_serve_meal_01",
+          "position": [
+            568,
+            376
+          ]
+        }
+      ],
+      "placeName": "公共食堂",
+      "poseFamily": "service",
+      "role": "worker",
+      "sceneId": "dining_hall",
+      "slotId": "slot_dining_serve_meal_01",
+      "target": {
+        "actionVerb": "递餐",
+        "anchorId": "serve_front",
+        "propName": "公共食堂递餐口"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_dining_wash_dishes",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_front",
+          "memberAnchorId": "member_dining_wash_dishes_01",
+          "position": [
+            456,
+            376
+          ]
+        }
+      ],
+      "placeName": "公共食堂",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "dining_hall",
+      "slotId": "slot_dining_wash_dishes_01",
+      "target": {
+        "actionVerb": "洗餐具",
+        "anchorId": "use_front",
+        "propName": "公共食堂水槽"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "right",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_bed",
+          "memberAnchorId": "member_home_01_sleep_01",
+          "position": [
+            -168,
+            -136
+          ]
+        }
+      ],
+      "placeName": "北街一号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_01",
+      "slotId": "slot_home_01_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "use_bed",
+        "propName": "北街一号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "left",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "sleep_side",
+          "memberAnchorId": "member_home_02_sleep_01",
+          "position": [
+            232,
+            408
+          ]
+        }
+      ],
+      "placeName": "北街二号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_02",
+      "slotId": "slot_home_02_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "sleep_side",
+        "propName": "北街二号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "left",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "sleep_side",
+          "memberAnchorId": "member_home_03_sleep_01",
+          "position": [
+            248,
+            392
+          ]
+        }
+      ],
+      "placeName": "北街三号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_03",
+      "slotId": "slot_home_03_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "sleep_side",
+        "propName": "北街三号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "left",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "sleep_side",
+          "memberAnchorId": "member_home_04_sleep_01",
+          "position": [
+            232,
+            392
+          ]
+        }
+      ],
+      "placeName": "西街二号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_04",
+      "slotId": "slot_home_04_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "sleep_side",
+        "propName": "西街二号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "right",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_bed",
+          "memberAnchorId": "member_home_05_sleep_01",
+          "position": [
+            -552,
+            72
+          ]
+        }
+      ],
+      "placeName": "西街三号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_05",
+      "slotId": "slot_home_05_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "use_bed",
+        "propName": "西街三号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "left",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "sleep_side",
+          "memberAnchorId": "member_home_06_sleep_01",
+          "position": [
+            232,
+            392
+          ]
+        }
+      ],
+      "placeName": "西街四号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_06",
+      "slotId": "slot_home_06_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "sleep_side",
+        "propName": "西街四号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "left",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "sleep_side",
+          "memberAnchorId": "member_home_07_sleep_01",
+          "position": [
+            232,
+            392
+          ]
+        }
+      ],
+      "placeName": "西街五号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_07",
+      "slotId": "slot_home_07_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "sleep_side",
+        "propName": "西街五号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "left",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "sleep_side",
+          "memberAnchorId": "member_home_08_sleep_01",
+          "position": [
+            232,
+            376
+          ]
+        }
+      ],
+      "placeName": "西街六号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_08",
+      "slotId": "slot_home_08_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "sleep_side",
+        "propName": "西街六号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "right",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_bed",
+          "memberAnchorId": "member_home_09_sleep_01",
+          "position": [
+            -168,
+            -152
+          ]
+        }
+      ],
+      "placeName": "南街一号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_09",
+      "slotId": "slot_home_09_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "use_bed",
+        "propName": "南街一号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "left",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "sleep_side",
+          "memberAnchorId": "member_home_10_sleep_01",
+          "position": [
+            232,
+            392
+          ]
+        }
+      ],
+      "placeName": "南街二号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_10",
+      "slotId": "slot_home_10_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "sleep_side",
+        "propName": "南街二号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "right",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_bed",
+          "memberAnchorId": "member_home_11_sleep_01",
+          "position": [
+            -168,
+            -168
+          ]
+        }
+      ],
+      "placeName": "南街三号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_11",
+      "slotId": "slot_home_11_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "use_bed",
+        "propName": "南街三号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "right",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_bed",
+          "memberAnchorId": "member_home_12_sleep_01",
+          "position": [
+            -56,
+            -152
+          ]
+        }
+      ],
+      "placeName": "南街四号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_12",
+      "slotId": "slot_home_12_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "use_bed",
+        "propName": "南街四号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "right",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_bed",
+          "memberAnchorId": "member_home_13_sleep_01",
+          "position": [
+            88,
+            -152
+          ]
+        }
+      ],
+      "placeName": "南街五号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_13",
+      "slotId": "slot_home_13_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "use_bed",
+        "propName": "南街五号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "right",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_bed",
+          "memberAnchorId": "member_home_14_sleep_01",
+          "position": [
+            -168,
+            -136
+          ]
+        }
+      ],
+      "placeName": "东南街住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_14",
+      "slotId": "slot_home_14_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "use_bed",
+        "propName": "东南街住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "facing": "right",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_bed",
+          "memberAnchorId": "member_home_15_sleep_01",
+          "position": [
+            -40,
+            -136
+          ]
+        }
+      ],
+      "placeName": "西街一号住宅",
+      "poseFamily": "sleep",
+      "role": "participant",
+      "sceneId": "home_15",
+      "slotId": "slot_home_15_sleep_01",
+      "target": {
+        "actionVerb": "睡觉",
+        "anchorId": "use_bed",
+        "propName": "西街一号住宅单人床"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_library_checkout",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "service_public",
+          "memberAnchorId": "member_library_checkout_01",
+          "position": [
+            712,
+            440
+          ]
+        }
+      ],
+      "placeName": "图书馆",
+      "poseFamily": "service",
+      "role": "visitor",
+      "sceneId": "library",
+      "slotId": "slot_library_checkout_01",
+      "target": {
+        "actionVerb": "借还书",
+        "anchorId": "service_public",
+        "propName": "图书馆借还书柜台"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_library_read",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_front",
+          "memberAnchorId": "member_library_read_east_01",
+          "position": [
+            936,
+            792
+          ]
+        }
+      ],
+      "placeName": "图书馆",
+      "poseFamily": "read_write",
+      "role": "visitor",
+      "sceneId": "library",
+      "slotId": "slot_library_read_east_01",
+      "target": {
+        "actionVerb": "阅读",
+        "anchorId": "use_front",
+        "propName": "图书馆东侧阅读桌"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_library_write",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_front",
+          "memberAnchorId": "member_library_write_01",
+          "position": [
+            328,
+            792
+          ]
+        }
+      ],
+      "placeName": "图书馆",
+      "poseFamily": "read_write",
+      "role": "visitor",
+      "sceneId": "library",
+      "slotId": "slot_library_write_01",
+      "target": {
+        "actionVerb": "写作",
+        "anchorId": "use_front",
+        "propName": "图书馆写作桌"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_library_research",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "browse",
+          "memberAnchorId": "member_library_research_01",
+          "position": [
+            200,
+            504
+          ]
+        }
+      ],
+      "placeName": "图书馆",
+      "poseFamily": "read_write",
+      "role": "visitor",
+      "sceneId": "library",
+      "slotId": "slot_library_research_01",
+      "target": {
+        "actionVerb": "查资料",
+        "anchorId": "browse",
+        "propName": "图书馆西侧高书架"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_library_shelve_returns",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "returns_front",
+          "memberAnchorId": "member_library_shelve_returns_01",
+          "position": [
+            776,
+            520
+          ]
+        }
+      ],
+      "placeName": "图书馆",
+      "poseFamily": "read_write",
+      "role": "worker",
+      "sceneId": "library",
+      "slotId": "slot_library_shelve_returns_01",
+      "target": {
+        "actionVerb": "归还书籍",
+        "anchorId": "returns_front",
+        "propName": "图书馆还书车"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_library_staff_checkout",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "service_staff",
+          "memberAnchorId": "member_library_staff_checkout_01",
+          "position": [
+            712,
+            328
+          ]
+        }
+      ],
+      "placeName": "图书馆",
+      "poseFamily": "read_write",
+      "role": "worker",
+      "sceneId": "library",
+      "slotId": "slot_library_staff_checkout_01",
+      "target": {
+        "actionVerb": "整理借还",
+        "anchorId": "service_staff",
+        "propName": "图书馆借还书柜台内侧"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_town_hall_civic_service",
+      "facing": "up",
+      "fallback": "same_activity_other_slot",
+      "memberAnchors": [
+        {
+          "anchorId": "service_public",
+          "memberAnchorId": "member_town_hall_civic_service_left_01",
+          "position": [
+            -184,
+            -40
+          ]
+        }
+      ],
+      "placeName": "镇公所",
+      "poseFamily": "service",
+      "role": "visitor",
+      "sceneId": "town_hall",
+      "slotId": "slot_town_hall_civic_service_left_01",
+      "target": {
+        "actionVerb": "办事",
+        "anchorId": "service_public",
+        "propName": "镇公所左侧办事柜台"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_town_hall_civic_service",
+      "facing": "up",
+      "fallback": "same_activity_other_slot",
+      "memberAnchors": [
+        {
+          "anchorId": "service_public",
+          "memberAnchorId": "member_town_hall_civic_service_right_01",
+          "position": [
+            168,
+            -40
+          ]
+        }
+      ],
+      "placeName": "镇公所",
+      "poseFamily": "service",
+      "role": "visitor",
+      "sceneId": "town_hall",
+      "slotId": "slot_town_hall_civic_service_right_01",
+      "target": {
+        "actionVerb": "办事",
+        "anchorId": "service_public",
+        "propName": "镇公所右侧办事柜台"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_town_hall_fill_form",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "fill_form",
+          "memberAnchorId": "member_town_hall_fill_form_01",
+          "position": [
+            136,
+            248
+          ]
+        }
+      ],
+      "placeName": "镇公所",
+      "poseFamily": "read_write",
+      "role": "visitor",
+      "sceneId": "town_hall",
+      "slotId": "slot_town_hall_fill_form_01",
+      "target": {
+        "actionVerb": "填表",
+        "anchorId": "fill_form",
+        "propName": "镇公所表格架"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_town_hall_manage_records",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "records",
+          "memberAnchorId": "member_town_hall_manage_records_01",
+          "position": [
+            8,
+            -168
+          ]
+        }
+      ],
+      "placeName": "镇公所",
+      "poseFamily": "read_write",
+      "role": "worker",
+      "sceneId": "town_hall",
+      "slotId": "slot_town_hall_manage_records_01",
+      "target": {
+        "actionVerb": "查档案",
+        "anchorId": "records",
+        "propName": "镇公所档案柜"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_town_hall_process_paperwork",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "seat",
+          "memberAnchorId": "member_town_hall_process_paperwork_01",
+          "position": [
+            -232,
+            -200
+          ]
+        }
+      ],
+      "placeName": "镇公所",
+      "poseFamily": "read_write",
+      "role": "worker",
+      "sceneId": "town_hall",
+      "slotId": "slot_town_hall_process_paperwork_01",
+      "target": {
+        "actionVerb": "处理文书",
+        "anchorId": "seat",
+        "propName": "镇公所职员座位"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_town_hall_meeting",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "consultation",
+          "memberAnchorId": "member_town_hall_meeting_01",
+          "position": [
+            360,
+            -24
+          ]
+        }
+      ],
+      "placeName": "镇公所",
+      "poseFamily": "service",
+      "role": "participant",
+      "sceneId": "town_hall",
+      "slotId": "slot_town_hall_meeting_01",
+      "target": {
+        "actionVerb": "议事",
+        "anchorId": "consultation",
+        "propName": "镇公所议事桌"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_warehouse_check_cargo",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "take_front",
+          "memberAnchorId": "member_warehouse_check_cargo_01",
+          "position": [
+            232,
+            568
+          ]
+        }
+      ],
+      "placeName": "码头仓库",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "dock_warehouse",
+      "slotId": "slot_warehouse_check_cargo_01",
+      "target": {
+        "actionVerb": "检查货物",
+        "anchorId": "take_front",
+        "propName": "码头仓库入库木箱"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_warehouse_check_manifest",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_front",
+          "memberAnchorId": "member_warehouse_check_manifest_01",
+          "position": [
+            136,
+            568
+          ]
+        }
+      ],
+      "placeName": "码头仓库",
+      "poseFamily": "read_write",
+      "role": "worker",
+      "sceneId": "dock_warehouse",
+      "slotId": "slot_warehouse_check_manifest_01",
+      "target": {
+        "actionVerb": "核对货单",
+        "anchorId": "use_front",
+        "propName": "码头仓库货单桌"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_warehouse_move_cargo",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_handle",
+          "memberAnchorId": "member_warehouse_move_cargo_01",
+          "position": [
+            968,
+            488
+          ]
+        }
+      ],
+      "placeName": "码头仓库",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "dock_warehouse",
+      "slotId": "slot_warehouse_move_cargo_01",
+      "target": {
+        "actionVerb": "搬运货物",
+        "anchorId": "use_handle",
+        "propName": "码头仓库手推车"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_warehouse_organize_shelves",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "inspect_front",
+          "memberAnchorId": "member_warehouse_organize_shelves_01",
+          "position": [
+            120,
+            168
+          ]
+        }
+      ],
+      "placeName": "码头仓库",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "dock_warehouse",
+      "slotId": "slot_warehouse_organize_shelves_01",
+      "target": {
+        "actionVerb": "整理货架",
+        "anchorId": "inspect_front",
+        "propName": "码头仓库西侧货架"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_workshop_assemble_item",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "apprentice_use",
+          "memberAnchorId": "member_workshop_assemble_item_01",
+          "position": [
+            136,
+            168
+          ]
+        }
+      ],
+      "placeName": "工作坊",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "workshop",
+      "slotId": "slot_workshop_assemble_item_01",
+      "target": {
+        "actionVerb": "组装器物",
+        "anchorId": "apprentice_use",
+        "propName": "工作坊装配锯架台"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_workshop_craft_item",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "master_use",
+          "memberAnchorId": "member_workshop_craft_item_01",
+          "position": [
+            -8,
+            376
+          ]
+        }
+      ],
+      "placeName": "工作坊",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "workshop",
+      "slotId": "slot_workshop_craft_item_01",
+      "target": {
+        "actionVerb": "制作器物",
+        "anchorId": "master_use",
+        "propName": "工作坊主木工台"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_workshop_grind_parts",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "grinder_use",
+          "memberAnchorId": "member_workshop_grind_parts_01",
+          "position": [
+            72,
+            136
+          ]
+        }
+      ],
+      "placeName": "工作坊",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "workshop",
+      "slotId": "slot_workshop_grind_parts_01",
+      "target": {
+        "actionVerb": "打磨零件",
+        "anchorId": "grinder_use",
+        "propName": "工作坊打磨机"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_workshop_handoff_repair",
+      "facing": "left",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "customer_handoff",
+          "memberAnchorId": "member_workshop_handoff_repair_01",
+          "position": [
+            -40,
+            536
+          ]
+        }
+      ],
+      "placeName": "工作坊",
+      "poseFamily": "service",
+      "role": "visitor",
+      "sceneId": "workshop",
+      "slotId": "slot_workshop_handoff_repair_01",
+      "target": {
+        "actionVerb": "交接修理件",
+        "anchorId": "customer_handoff",
+        "propName": "工作坊修理交接台"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_workshop_inspect_finished",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "finished_goods_pickup",
+          "memberAnchorId": "member_workshop_inspect_finished_01",
+          "position": [
+            504,
+            200
+          ]
+        }
+      ],
+      "placeName": "工作坊",
+      "poseFamily": "work",
+      "role": "visitor",
+      "sceneId": "workshop",
+      "slotId": "slot_workshop_inspect_finished_01",
+      "target": {
+        "actionVerb": "查看成品",
+        "anchorId": "finished_goods_pickup",
+        "propName": "工作坊成品架"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_workshop_take_lumber",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "raw_material_pickup",
+          "memberAnchorId": "member_workshop_take_lumber_01",
+          "position": [
+            -168,
+            136
+          ]
+        }
+      ],
+      "placeName": "工作坊",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "workshop",
+      "slotId": "slot_workshop_take_lumber_01",
+      "target": {
+        "actionVerb": "取用木料",
+        "anchorId": "raw_material_pickup",
+        "propName": "工作坊木料架"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_botanist_observe_plants",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [],
+      "placeName": "社区花园",
+      "poseFamily": "read_write",
+      "role": "worker",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_botanist_observe_plants_01",
+      "target": {
+        "navigationActionVerb": "观察植物",
+        "navigationLabel": "全镇可观察植物区域",
+        "regionId": "outdoor_garden_01",
+        "semanticQuery": {
+          "visibleFeaturesAny": [
+            "花坛",
+            "花圃",
+            "花树",
+            "花木"
+          ]
+        }
+      },
+      "targetType": "region"
+    },
+    {
+      "activityId": "activity_botanist_record_plants",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_front",
+          "memberAnchorId": "member_botanist_record_plants_01",
+          "position": [
+            328,
+            792
+          ]
+        }
+      ],
+      "placeName": "图书馆",
+      "poseFamily": "read_write",
+      "role": "worker",
+      "sceneId": "library",
+      "slotId": "slot_botanist_record_plants_01",
+      "target": {
+        "actionVerb": "写作",
+        "anchorId": "use_front",
+        "propName": "图书馆写作桌"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_botanist_verify_sources",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "browse",
+          "memberAnchorId": "member_botanist_verify_sources_01",
+          "position": [
+            200,
+            504
+          ]
+        }
+      ],
+      "placeName": "图书馆",
+      "poseFamily": "read_write",
+      "role": "worker",
+      "sceneId": "library",
+      "slotId": "slot_botanist_verify_sources_01",
+      "target": {
+        "actionVerb": "查资料",
+        "anchorId": "browse",
+        "propName": "图书馆西侧高书架"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_baker_prepare_dough",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "dough_front",
+          "memberAnchorId": "member_baker_prepare_dough_01",
+          "position": [
+            680,
+            472
+          ]
+        }
+      ],
+      "placeName": "公共食堂",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "dining_hall",
+      "slotId": "slot_baker_prepare_dough_01",
+      "target": {
+        "actionVerb": "准备面团",
+        "anchorId": "dough_front",
+        "propName": "公共食堂面团操作台"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_baker_bake_bread",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "use_front",
+          "memberAnchorId": "member_baker_bake_bread_01",
+          "position": [
+            360,
+            376
+          ]
+        }
+      ],
+      "placeName": "公共食堂",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "dining_hall",
+      "slotId": "slot_baker_bake_bread_01",
+      "target": {
+        "actionVerb": "烘烤面包",
+        "anchorId": "use_front",
+        "propName": "公共食堂灶台"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_fisher_organize_gear",
+      "facing": "right",
+      "fallback": "reject",
+      "memberAnchors": [],
+      "placeName": "渔港",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_fisher_organize_gear_01",
+      "target": {
+        "navigationActionVerb": "整理渔具",
+        "navigationLabel": "渔港作业区域",
+        "regionId": "outdoor_harbor_01",
+        "semanticQuery": {
+          "placeCapabilitiesAny": [
+            "fishing.harvest"
+          ]
+        }
+      },
+      "targetType": "region"
+    },
+    {
+      "activityId": "activity_fisher_catch_in_region",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [],
+      "placeName": "渔港",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_fisher_catch_in_region_01",
+      "target": {
+        "navigationActionVerb": "捕鱼",
+        "navigationLabel": "渔港合法捕鱼区域",
+        "regionId": "outdoor_harbor_01",
+        "semanticQuery": {
+          "placeCapabilitiesAny": [
+            "fishing.harvest"
+          ]
+        }
+      },
+      "targetType": "region"
+    },
+    {
+      "activityId": "activity_fisher_count_catch",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [],
+      "placeName": "渔港",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_fisher_count_catch_01",
+      "target": {
+        "navigationActionVerb": "清点渔获",
+        "navigationLabel": "渔港作业区域",
+        "regionId": "outdoor_harbor_01",
+        "semanticQuery": {
+          "placeCapabilitiesAny": [
+            "fishing.harvest"
+          ]
+        }
+      },
+      "targetType": "region"
+    },
+    {
+      "activityId": "activity_grocer_count_goods",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "stock",
+          "memberAnchorId": "member_grocer_count_goods_west",
+          "position": [
+            392,
+            392
+          ]
+        }
+      ],
+      "placeName": "独立市集",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "market_shop",
+      "slotId": "slot_grocer_count_goods_west",
+      "target": {
+        "actionVerb": "清点货品",
+        "anchorId": "stock",
+        "propName": "独立市集西侧杂货摊"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_grocer_count_goods",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "stock",
+          "memberAnchorId": "member_grocer_count_goods_fish",
+          "position": [
+            904,
+            392
+          ]
+        }
+      ],
+      "placeName": "独立市集",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "market_shop",
+      "slotId": "slot_grocer_count_goods_fish",
+      "target": {
+        "actionVerb": "清点货品",
+        "anchorId": "stock",
+        "propName": "独立市集鱼货摊"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_grocer_tidy_stall",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "tidy",
+          "memberAnchorId": "member_grocer_tidy_stall_south",
+          "position": [
+            216,
+            792
+          ]
+        }
+      ],
+      "placeName": "独立市集",
+      "poseFamily": "service",
+      "role": "worker",
+      "sceneId": "market_shop",
+      "slotId": "slot_grocer_tidy_stall_south",
+      "target": {
+        "actionVerb": "整理摊位",
+        "anchorId": "tidy",
+        "propName": "独立市集南侧杂货摊"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_market_buy_general_goods",
+      "facing": "up",
+      "fallback": "same_activity_other_slot",
+      "memberAnchors": [
+        {
+          "anchorId": "customer_west",
+          "memberAnchorId": "member_market_buy_general_goods_west",
+          "position": [
+            392,
+            488
+          ]
+        }
+      ],
+      "placeName": "独立市集",
+      "poseFamily": "service",
+      "role": "visitor",
+      "sceneId": "market_shop",
+      "slotId": "slot_market_buy_general_goods_west",
+      "target": {
+        "actionVerb": "购买日用品",
+        "anchorId": "customer_west",
+        "propName": "独立市集西侧杂货摊"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_market_buy_general_goods",
+      "facing": "down",
+      "fallback": "same_activity_other_slot",
+      "memberAnchors": [
+        {
+          "anchorId": "customer_south",
+          "memberAnchorId": "member_market_buy_general_goods_south",
+          "position": [
+            216,
+            696
+          ]
+        }
+      ],
+      "placeName": "独立市集",
+      "poseFamily": "service",
+      "role": "visitor",
+      "sceneId": "market_shop",
+      "slotId": "slot_market_buy_general_goods_south",
+      "target": {
+        "actionVerb": "购买日用品",
+        "anchorId": "customer_south",
+        "propName": "独立市集南侧杂货摊"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_market_buy_fish",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "customer_fish",
+          "memberAnchorId": "member_market_buy_fish",
+          "position": [
+            904,
+            488
+          ]
+        }
+      ],
+      "placeName": "独立市集",
+      "poseFamily": "service",
+      "role": "visitor",
+      "sceneId": "market_shop",
+      "slotId": "slot_market_buy_fish",
+      "target": {
+        "actionVerb": "购买鲜鱼",
+        "anchorId": "customer_fish",
+        "propName": "独立市集鱼货摊"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_postal_collect_outgoing_mail",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [],
+      "placeName": "小镇道路",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_postal_collect_outgoing_mail_01",
+      "target": {
+        "navigationActionVerb": "巡看信箱",
+        "navigationPropName": "沿途信箱巡查区域",
+        "regionId": "outdoor_road_01",
+        "semanticQuery": {
+          "placeCapabilitiesAny": [
+            "mail.delivery"
+          ]
+        }
+      },
+      "targetType": "region"
+    },
+    {
+      "activityId": "activity_postal_sort_mail",
+      "facing": "right",
+      "fallback": "reject",
+      "memberAnchors": [],
+      "placeName": "小镇道路",
+      "poseFamily": "read_write",
+      "role": "worker",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_postal_sort_mail_01",
+      "target": {
+        "navigationActionVerb": "分拣信件",
+        "navigationPropName": "沿途邮件整理区域",
+        "regionId": "outdoor_road_01",
+        "semanticQuery": {
+          "placeCapabilitiesAny": [
+            "mail.delivery"
+          ]
+        }
+      },
+      "targetType": "region"
+    },
+    {
+      "activityId": "activity_postal_prepare_mailbag",
+      "facing": "left",
+      "fallback": "reject",
+      "memberAnchors": [],
+      "placeName": "小镇道路",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_postal_prepare_mailbag_01",
+      "target": {
+        "navigationActionVerb": "整理投递袋",
+        "navigationPropName": "沿途投递整理区域",
+        "regionId": "outdoor_road_01",
+        "semanticQuery": {
+          "placeCapabilitiesAny": [
+            "mail.delivery"
+          ]
+        }
+      },
+      "targetType": "region"
+    },
+    {
+      "activityId": "activity_flower_arrange_bouquets",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "bouquet",
+          "memberAnchorId": "member_flower_arrange_bouquets_north",
+          "position": [
+            616,
+            392
+          ]
+        }
+      ],
+      "placeName": "独立市集",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "market_shop",
+      "slotId": "slot_flower_arrange_bouquets_north",
+      "target": {
+        "actionVerb": "整理花束",
+        "anchorId": "bouquet",
+        "propName": "独立市集北侧花摊"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_flower_watch_stall",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "watch",
+          "memberAnchorId": "member_flower_watch_stall_south",
+          "position": [
+            1016,
+            792
+          ]
+        }
+      ],
+      "placeName": "独立市集",
+      "poseFamily": "service",
+      "role": "worker",
+      "sceneId": "market_shop",
+      "slotId": "slot_flower_watch_stall_south",
+      "target": {
+        "actionVerb": "看顾花摊",
+        "anchorId": "watch",
+        "propName": "独立市集南侧花摊"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_market_buy_flowers",
+      "facing": "up",
+      "fallback": "same_activity_other_slot",
+      "memberAnchors": [
+        {
+          "anchorId": "customer_north",
+          "memberAnchorId": "member_market_buy_flowers_north",
+          "position": [
+            616,
+            488
+          ]
+        }
+      ],
+      "placeName": "独立市集",
+      "poseFamily": "service",
+      "role": "visitor",
+      "sceneId": "market_shop",
+      "slotId": "slot_market_buy_flowers_north",
+      "target": {
+        "actionVerb": "购买花束",
+        "anchorId": "customer_north",
+        "propName": "独立市集北侧花摊"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_market_buy_flowers",
+      "facing": "down",
+      "fallback": "same_activity_other_slot",
+      "memberAnchors": [
+        {
+          "anchorId": "customer_south",
+          "memberAnchorId": "member_market_buy_flowers_south",
+          "position": [
+            1016,
+            696
+          ]
+        }
+      ],
+      "placeName": "独立市集",
+      "poseFamily": "service",
+      "role": "visitor",
+      "sceneId": "market_shop",
+      "slotId": "slot_market_buy_flowers_south",
+      "target": {
+        "actionVerb": "购买花束",
+        "anchorId": "customer_south",
+        "propName": "独立市集南侧花摊"
+      },
+      "targetType": "prop"
+    },
+    {
+      "activityId": "activity_musician_rehearse",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [],
+      "placeName": "中心广场",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_musician_rehearse_01",
+      "target": {
+        "navigationActionVerb": "练习曲目",
+        "navigationLabel": "全镇适合练习的开阔区域",
+        "regionId": "outdoor_plaza_01",
+        "semanticQuery": {
+          "visibleFeaturesAny": [
+            "花坛",
+            "花木"
+          ]
+        }
+      },
+      "targetType": "region"
+    },
+    {
+      "activityId": "activity_musician_rehearse",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [],
+      "placeName": "河岸公园",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_musician_rehearse_river_01",
+      "target": {
+        "navigationActionVerb": "练习曲目",
+        "navigationLabel": "河岸公园可练习区域",
+        "regionId": "outdoor_river_park_01"
+      },
+      "targetType": "region"
+    },
+    {
+      "activityId": "activity_musician_perform",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [],
+      "placeName": "中心广场",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_musician_perform_01",
+      "target": {
+        "navigationActionVerb": "演奏",
+        "navigationLabel": "全镇适合停留演奏的开阔区域",
+        "regionId": "outdoor_plaza_01",
+        "semanticQuery": {
+          "visibleFeaturesAny": [
+            "花坛",
+            "花木"
+          ]
+        }
+      },
+      "targetType": "region"
+    },
+    {
+      "activityId": "activity_farm_water_beds",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [],
+      "placeName": "社区花园",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_farm_water_beds_01",
+      "target": {
+        "navigationActionVerb": "浇灌花圃",
+        "navigationLabel": "社区花园花圃区域",
+        "regionId": "outdoor_garden_01",
+        "semanticQuery": {
+          "placeCapabilitiesAny": [
+            "garden.care"
+          ]
+        }
+      },
+      "targetType": "region"
+    },
+    {
+      "activityId": "activity_farm_tidy_tools",
+      "facing": "left",
+      "fallback": "reject",
+      "memberAnchors": [],
+      "placeName": "社区花园",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_farm_tidy_tools_01",
+      "target": {
+        "navigationActionVerb": "整理园具",
+        "navigationLabel": "社区花园作业区域",
+        "regionId": "outdoor_garden_01",
+        "semanticQuery": {
+          "placeCapabilitiesAny": [
+            "garden.care"
+          ]
+        }
+      },
+      "targetType": "region"
+    },
+    {
+      "activityId": "activity_garden_harvest_region",
+      "facing": "down",
+      "fallback": "reject",
+      "memberAnchors": [],
+      "placeName": "社区花园",
+      "poseFamily": "work",
+      "role": "worker",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_garden_harvest_region_01",
+      "target": {
+        "navigationActionVerb": "采收花卉",
+        "navigationLabel": "社区花园成熟花圃",
+        "regionId": "outdoor_garden_01",
+        "semanticQuery": {
+          "placeCapabilitiesAny": [
+            "garden.care"
+          ]
+        }
+      },
+      "targetType": "region"
+    },
+    {
+      "activityId": "activity_bulletin_read",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "read_left",
+          "memberAnchorId": "member_bulletin_read_01",
+          "position": [
+            3030.0,
+            1782.0
+          ]
+        }
+      ],
+      "placeName": "中心广场",
+      "poseFamily": "read_write",
+      "role": "visitor",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_bulletin_read_01",
+      "target": {
+        "anchorId": "read_left",
+        "navigationActionVerb": "阅读公告",
+        "navigationPropName": "中心广场公告栏阅读处",
+        "pointId": "point_bulletin_read_01"
+      },
+      "targetType": "point"
+    },
+    {
+      "activityId": "activity_bulletin_publish",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "post_right",
+          "memberAnchorId": "member_bulletin_publish_01",
+          "position": [
+            3098.0,
+            1782.0
+          ]
+        }
+      ],
+      "placeName": "中心广场",
+      "poseFamily": "read_write",
+      "role": "visitor",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_bulletin_publish_01",
+      "target": {
+        "anchorId": "post_right",
+        "navigationActionVerb": "张贴公告",
+        "navigationPropName": "中心广场公告栏张贴处",
+        "pointId": "point_bulletin_publish_01"
+      },
+      "targetType": "point"
+    },
+    {
+      "activityId": "activity_garden_bench_rest",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "seat",
+          "memberAnchorId": "member_garden_bench_rest_01",
+          "position": [
+            3426.0,
+            2766.0
+          ]
+        }
+      ],
+      "placeName": "社区花园",
+      "poseFamily": "rest",
+      "role": "visitor",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_garden_bench_rest_01",
+      "target": {
+        "anchorId": "seat",
+        "navigationActionVerb": "歇着",
+        "navigationPropName": "社区花园长椅",
+        "pointId": "point_garden_bench_rest_01"
+      },
+      "targetType": "point"
+    },
+    {
+      "activityId": "activity_river_bench_rest",
+      "facing": "up",
+      "fallback": "reject",
+      "memberAnchors": [
+        {
+          "anchorId": "seat",
+          "memberAnchorId": "member_river_bench_rest_01",
+          "position": [
+            5982.0,
+            1266.0
+          ]
+        }
+      ],
+      "placeName": "河岸公园",
+      "poseFamily": "rest",
+      "role": "visitor",
+      "sceneId": "town_outdoor",
+      "slotId": "slot_river_bench_rest_01",
+      "target": {
+        "anchorId": "seat",
+        "navigationActionVerb": "歇着",
+        "navigationPropName": "河岸公园长椅",
+        "pointId": "point_river_bench_rest_01"
+      },
+      "targetType": "point"
+    }
+  ],
+  "worldId": "town"
+}

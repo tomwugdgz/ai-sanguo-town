@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "worldId": "town",
+  "places": [
+    {
+      "name": "小镇道路",
+      "type": "公共地点",
+      "spaceId": "town_outdoor",
+      "summary": "连接住宅、公共建筑和户外活动区域的道路与桥面，居民从这里往来全镇。",
+      "visibleFeatures": [],
+      "capabilities": {
+        "assignableWorkplace": true,
+        "mail.delivery": true
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "中心广场",
+      "type": "公共地点",
+      "spaceId": "town_outdoor",
+      "summary": "镇子正中的石板广场，有公告栏、花坛和路灯，居民可以在这里碰面、驻足和集合。",
+      "visibleFeatures": ["公告栏", "花坛", "路灯"],
+      "capabilities": {
+        "assignableWorkplace": true,
+        "music.perform": true,
+        "news.distribute": true
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "市集",
+      "type": "公共地点",
+      "spaceId": "town_outdoor",
+      "summary": "中心广场东侧的露天摊位区域，摆着货架、木桶和不同颜色的棚铺，居民会来这里逛摊、买东西和碰面。",
+      "visibleFeatures": ["露天摊位", "货架", "木桶"],
+      "capabilities": {
+        "assignableWorkplace": true,
+        "retail.flowers": true
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "社区花园",
+      "type": "公共地点",
+      "spaceId": "town_outdoor",
+      "summary": "中心广场南侧围着花树和长椅的公共花园，适合散步、赏花和休息。",
+      "visibleFeatures": ["花圃", "花树", "长椅", "路灯"],
+      "capabilities": {
+        "assignableWorkplace": true,
+        "plant.study": true,
+        "garden.care": true
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "河岸公园",
+      "type": "公共地点",
+      "spaceId": "town_outdoor",
+      "summary": "石桥东侧沿河而建的公园，有环形步道、花木和长椅。",
+      "visibleFeatures": ["环形步道", "花木", "长椅"],
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "南入口",
+      "type": "公共地点",
+      "spaceId": "town_outdoor",
+      "summary": "小镇正南方通向镇外的入口，居民会在这里迎送和等待来客。",
+      "visibleFeatures": ["入口台阶", "路灯"],
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "渔港",
+      "type": "公共地点",
+      "spaceId": "town_outdoor",
+      "summary": "小镇东南角伸向河面的木栈道和泊船水岸，码头上放着货箱和木桶，居民会在这里处理货物、渔具和渔获。",
+      "visibleFeatures": ["木栈道", "泊船", "货箱", "木桶"],
+      "capabilities": {
+        "assignableWorkplace": true,
+        "fishing.harvest": true
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "花房咖啡馆",
+      "type": "铺面",
+      "spaceId": "indoor_flower_cafe",
+      "summary": "带玻璃花房的咖啡馆，居民可以在这里工作、喝东西、休息和聊天。",
+      "serviceProfile": {
+        "capacity": 1,
+        "helperActivityId": "activity_cafe_receive_guests",
+        "requestActivityIds": ["activity_cafe_order"]
+      },
+      "capabilities": {
+        "assignableWorkplace": true,
+        "drink.prepare": true
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "图书馆",
+      "type": "公共地点",
+      "spaceId": "indoor_library",
+      "summary": "收藏和借阅书籍的公共建筑，居民可以在这里工作、阅读、写作和查资料。",
+      "serviceProfile": {
+        "capacity": 1,
+        "helperActivityId": "activity_library_staff_checkout",
+        "requestActivityIds": ["activity_library_checkout"]
+      },
+      "capabilities": {
+        "assignableWorkplace": true,
+        "library.shelve": true,
+        "calligraphy.teach": true
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "镇公所",
+      "type": "公共地点",
+      "spaceId": "indoor_town_hall",
+      "summary": "处理镇务和公共事务的办公地点，居民可以在这里任职、办事和议事。",
+      "capabilities": {
+        "assignableWorkplace": true,
+        "civic.records": true
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "诊所",
+      "type": "公共地点",
+      "spaceId": "indoor_clinic",
+      "summary": "为镇民看病和取药的公共诊所，医护居民可以在这里工作。",
+      "serviceProfile": {
+        "capacity": 1,
+        "helperActivityId": "activity_clinic_receive_patient",
+        "requestActivityIds": [
+          "activity_clinic_consult",
+          "activity_clinic_examination"
+        ]
+      },
+      "capabilities": {
+        "assignableWorkplace": true,
+        "care.medicine": true
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "独立市集",
+      "type": "铺面",
+      "spaceId": "indoor_market_shop",
+      "summary": "从小镇市集入口进入的独立露天石铺广场，分布着多个棚铺，居民可以在这里经营、采购和碰面。",
+      "visibleFeatures": ["露天摊位"],
+      "capabilities": {
+        "assignableWorkplace": true,
+        "retail.goods": true,
+        "retail.flowers": true
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "公共食堂",
+      "type": "公共地点",
+      "spaceId": "indoor_dining_hall",
+      "summary": "面向全镇供餐的公共食堂，居民可以在这里工作、吃饭和碰面。",
+      "serviceProfile": {
+        "capacity": 4,
+        "helperActivityId": "activity_dining_serve_meal",
+        "requestActivityIds": ["activity_dining_collect_meal"]
+      },
+      "capabilities": {
+        "assignableWorkplace": true,
+        "food.prepare": true,
+        "food.clean": true,
+        "baking.prepare": true
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "工作坊",
+      "type": "铺面",
+      "spaceId": "indoor_workshop",
+      "summary": "制作和修理器物的工坊，居民可以在这里经营铺面和从事手工工作。",
+      "serviceProfile": {
+        "capacity": 1,
+        "helperActivityId": "activity_workshop_craft_item",
+        "requestActivityIds": ["activity_workshop_handoff_repair"]
+      },
+      "capabilities": {
+        "assignableWorkplace": true,
+        "craft.woodwork": true,
+        "craft.assembly": true,
+        "craft.metalwork": true
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "码头仓库",
+      "type": "铺面",
+      "spaceId": "indoor_dock_warehouse",
+      "summary": "渔港旁存放货物和渔具的仓库，居民可以在这里管理货物和处理渔获。",
+      "capabilities": {
+        "assignableWorkplace": true,
+        "fishing.gear": true,
+        "logistics.inventory": true
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "北街一号住宅",
+      "type": "住家",
+      "spaceId": "home_01",
+      "summary": "北街西段的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "北街二号住宅",
+      "type": "住家",
+      "spaceId": "home_02",
+      "summary": "北街中段的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "北街三号住宅",
+      "type": "住家",
+      "spaceId": "home_03",
+      "summary": "北街东段的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "西街一号住宅",
+      "type": "住家",
+      "spaceId": "home_15",
+      "summary": "西街北端靠近山坡的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "西街二号住宅",
+      "type": "住家",
+      "spaceId": "home_04",
+      "summary": "西街外侧的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "西街三号住宅",
+      "type": "住家",
+      "spaceId": "home_05",
+      "summary": "西街上段的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "西街四号住宅",
+      "type": "住家",
+      "spaceId": "home_06",
+      "summary": "西街上段靠近中心道路的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "西街五号住宅",
+      "type": "住家",
+      "spaceId": "home_07",
+      "summary": "西街下段的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "西街六号住宅",
+      "type": "住家",
+      "spaceId": "home_08",
+      "summary": "西街下段靠近中心道路的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "南街一号住宅",
+      "type": "住家",
+      "spaceId": "home_09",
+      "summary": "南街西段的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "南街二号住宅",
+      "type": "住家",
+      "spaceId": "home_10",
+      "summary": "南街西段靠近镇口道路的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "南街三号住宅",
+      "type": "住家",
+      "spaceId": "home_11",
+      "summary": "南街下段西侧的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "南街四号住宅",
+      "type": "住家",
+      "spaceId": "home_12",
+      "summary": "南街下段靠近南入口的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "南街五号住宅",
+      "type": "住家",
+      "spaceId": "home_13",
+      "summary": "南街下段东侧的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    },
+    {
+      "name": "东南街住宅",
+      "type": "住家",
+      "spaceId": "home_14",
+      "summary": "社区花园东侧、通往渔港道路旁的一套独立住宅，可分配给居民居住和休息。",
+      "capabilities": {
+        "assignableWorkplace": false
+      },
+      "perceptionRegionIds": []
+    }
+  ]
+}

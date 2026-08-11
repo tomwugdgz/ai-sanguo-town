@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "source_revision": "cafe_footpoint_geometry_manifest_v2",
+  "room_id": "cafe",
+  "assets": [
+    {
+      "asset_id": "cafe_service_counter",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/cafe_service_counter/cafe_service_counter.asset.json"
+    },
+    {
+      "asset_id": "espresso_machine",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/espresso_machine/espresso_machine.asset.json"
+    },
+    {
+      "asset_id": "floor_lamp",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/floor_lamp/floor_lamp.asset.json"
+    },
+    {
+      "asset_id": "flowering_plant",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/flowering_plant/flowering_plant.asset.json"
+    },
+    {
+      "asset_id": "leafy_plant",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/leafy_plant/leafy_plant.asset.json"
+    },
+    {
+      "asset_id": "pastry_display",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/pastry_display/pastry_display.asset.json"
+    },
+    {
+      "asset_id": "round_table_large",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/round_table_large/round_table_large.asset.json"
+    },
+    {
+      "asset_id": "round_table_small",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/round_table_small/round_table_small.asset.json"
+    },
+    {
+      "asset_id": "wooden_chair",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/wooden_chair/wooden_chair.asset.json"
+    }
+  ]
+}

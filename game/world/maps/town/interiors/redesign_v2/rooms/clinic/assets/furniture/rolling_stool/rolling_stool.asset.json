@@ -1,0 +1,174 @@
+{
+  "schema_version": 2,
+  "source_revision": "rolling_stool_footpoint_occlusion_v1",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "rolling_stool",
+  "label": "诊所绿色圆座移动五脚凳",
+  "room_id": "clinic",
+  "canonical_direction": "down",
+  "direction_visual_policy": "rotationally_symmetric_reuse",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 56,
+    "depth": 56,
+    "height": 80
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/rolling_stool/frames/rolling_stool_canonical.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/rolling_stool/frames/rolling_stool_canonical.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/rolling_stool/frames/rolling_stool_canonical.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/rolling_stool/frames/rolling_stool_canonical.png"
+  },
+  "visual_anchor": {
+    "down": [
+      126,
+      140
+    ],
+    "right": [
+      126,
+      140
+    ],
+    "up": [
+      126,
+      140
+    ],
+    "left": [
+      126,
+      140
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          0,
+          -28
+        ],
+        [
+          14,
+          -24
+        ],
+        [
+          24,
+          -14
+        ],
+        [
+          28,
+          0
+        ],
+        [
+          24,
+          14
+        ],
+        [
+          14,
+          24
+        ],
+        [
+          0,
+          28
+        ],
+        [
+          -14,
+          24
+        ],
+        [
+          -24,
+          14
+        ],
+        [
+          -28,
+          0
+        ],
+        [
+          -24,
+          -14
+        ],
+        [
+          -14,
+          -24
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -1,
+      0
+    ],
+    "cells": [
+      [
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -48,
+        -48
+      ],
+      [
+        48,
+        -48
+      ],
+      [
+        48,
+        32
+      ],
+      [
+        -48,
+        32
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-29, -59], [28, -59], [28, 28], [-29, 28]],
+      "right": [[-29, -59], [28, -59], [28, 28], [-29, 28]],
+      "up": [[-29, -59], [28, -59], [28, 28], [-29, 28]],
+      "left": [[-29, -59], [28, -59], [28, 28], [-29, 28]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "seat",
+      "kind": "sit",
+      "position_px": [
+        0,
+        8
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/background/candidates/clinic_shell_calibration_a_user_accepted.png",
+      "res://world/maps/town/interiors/clinic/assets/concepts/clinic_layout_warm_v1.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/rolling_stool/candidate_b_canonical_reuse_v1/SOURCE_RECORD.json"
+  }
+}

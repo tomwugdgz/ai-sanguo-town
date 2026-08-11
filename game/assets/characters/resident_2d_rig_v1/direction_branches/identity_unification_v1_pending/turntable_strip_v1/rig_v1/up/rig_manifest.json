@@ -1,0 +1,575 @@
+{
+  "schema": "ai-town.direction-articulated-rig-manifest.v1",
+  "status": "runtime_contract_validated",
+  "direction": "up",
+  "source": "res://assets/characters/resident_2d_rig_v1/direction_branches/identity_unification_v1_pending/turntable_strip_v1/production_frozen_v2/whitebody/up.png",
+  "source_sha256": "cb3fde62daba506ac5602c471094cd9bce02c6c3ef8d3740d891040d46db7ab8",
+  "contract": "res://assets/characters/resident_2d_rig_v1/direction_branches/identity_unification_v1_pending/turntable_strip_v1/rig_contract_v1.json",
+  "contract_sha256": "e8d2ca75cf8e4fc03bc68f0333f8f39fe20bfa04526d9271926277fa73e5e038",
+  "canvas_size": [
+    627,
+    627
+  ],
+  "foot_anchor": [
+    314.5,
+    591.0
+  ],
+  "bone_hierarchy": [
+    {
+      "id": "root",
+      "parent": null,
+      "part": null
+    },
+    {
+      "id": "pelvis",
+      "parent": "root",
+      "part": "pelvis"
+    },
+    {
+      "id": "torso",
+      "parent": "pelvis",
+      "part": "torso"
+    },
+    {
+      "id": "head",
+      "parent": "torso",
+      "part": "head"
+    },
+    {
+      "id": "clavicle_l",
+      "parent": "torso",
+      "part": null
+    },
+    {
+      "id": "upper_arm_l",
+      "parent": "clavicle_l",
+      "part": "upper_arm_l"
+    },
+    {
+      "id": "forearm_l",
+      "parent": "upper_arm_l",
+      "part": "forearm_l"
+    },
+    {
+      "id": "hand_l",
+      "parent": "forearm_l",
+      "part": "hand_l"
+    },
+    {
+      "id": "clavicle_r",
+      "parent": "torso",
+      "part": null
+    },
+    {
+      "id": "upper_arm_r",
+      "parent": "clavicle_r",
+      "part": "upper_arm_r"
+    },
+    {
+      "id": "forearm_r",
+      "parent": "upper_arm_r",
+      "part": "forearm_r"
+    },
+    {
+      "id": "hand_r",
+      "parent": "forearm_r",
+      "part": "hand_r"
+    },
+    {
+      "id": "thigh_l",
+      "parent": "pelvis",
+      "part": "thigh_l"
+    },
+    {
+      "id": "shin_l",
+      "parent": "thigh_l",
+      "part": "shin_l"
+    },
+    {
+      "id": "foot_l",
+      "parent": "shin_l",
+      "part": "foot_l"
+    },
+    {
+      "id": "thigh_r",
+      "parent": "pelvis",
+      "part": "thigh_r"
+    },
+    {
+      "id": "shin_r",
+      "parent": "thigh_r",
+      "part": "shin_r"
+    },
+    {
+      "id": "foot_r",
+      "parent": "shin_r",
+      "part": "foot_r"
+    }
+  ],
+  "interaction_controls": {
+    "count": 8,
+    "ids": [
+      "hand_ik_l",
+      "hand_ik_r",
+      "foot_ik_l",
+      "foot_ik_r",
+      "elbow_hint_l",
+      "elbow_hint_r",
+      "knee_hint_l",
+      "knee_hint_r"
+    ],
+    "deforms_artwork": false,
+    "use_cases": [
+      "ground_lock",
+      "chair_contact",
+      "door_handle",
+      "tools",
+      "carry",
+      "push_pull"
+    ]
+  },
+  "joints": {
+    "root": [
+      314.5,
+      441.0
+    ],
+    "pelvis": [
+      314.5,
+      441.0
+    ],
+    "torso": [
+      314.5,
+      392.0
+    ],
+    "head": [
+      314.5,
+      184.0
+    ],
+    "clavicle_l": [
+      276.0,
+      284.0
+    ],
+    "shoulder_l": [
+      258.0,
+      284.0
+    ],
+    "elbow_l": [
+      232.0,
+      348.0
+    ],
+    "wrist_l": [
+      216.0,
+      407.0
+    ],
+    "hand_l": [
+      218.0,
+      424.0
+    ],
+    "clavicle_r": [
+      353.0,
+      284.0
+    ],
+    "shoulder_r": [
+      371.0,
+      284.0
+    ],
+    "elbow_r": [
+      397.0,
+      348.0
+    ],
+    "wrist_r": [
+      413.0,
+      407.0
+    ],
+    "hand_r": [
+      411.0,
+      424.0
+    ],
+    "hip_l": [
+      278.0,
+      466.0
+    ],
+    "knee_l": [
+      270.0,
+      516.0
+    ],
+    "ankle_l": [
+      260.0,
+      558.0
+    ],
+    "foot_ball_l": [
+      260.0,
+      572.0
+    ],
+    "hip_r": [
+      351.0,
+      466.0
+    ],
+    "knee_r": [
+      359.0,
+      516.0
+    ],
+    "ankle_r": [
+      369.0,
+      558.0
+    ],
+    "foot_ball_r": [
+      369.0,
+      572.0
+    ],
+    "hand_ik_l": [
+      218.0,
+      424.0
+    ],
+    "hand_ik_r": [
+      411.0,
+      424.0
+    ],
+    "foot_ik_l": [
+      260.0,
+      591.0
+    ],
+    "foot_ik_r": [
+      369.0,
+      591.0
+    ],
+    "elbow_hint_l": [
+      188.0,
+      348.0
+    ],
+    "elbow_hint_r": [
+      441.0,
+      348.0
+    ],
+    "knee_hint_l": [
+      238.0,
+      516.0
+    ],
+    "knee_hint_r": [
+      391.0,
+      516.0
+    ]
+  },
+  "parts": [
+    {
+      "id": "pelvis",
+      "bone": "pelvis",
+      "path": "parts/pelvis.png",
+      "sha256": "50630fe86cf3c991e0814aced8f935fe05a311c6f9ea6d942d10b9af12203e1a",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        235,
+        386,
+        160,
+        87
+      ],
+      "opaque_pixels": 12824,
+      "source_pixels_only": true
+    },
+    {
+      "id": "torso",
+      "bone": "torso",
+      "path": "parts/torso.png",
+      "sha256": "a7016fc6f028e2e778610e623eb4bf2a34bcfd229a28693c845172bbef0cabc7",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        244,
+        261,
+        142,
+        136
+      ],
+      "opaque_pixels": 13156,
+      "source_pixels_only": true
+    },
+    {
+      "id": "head",
+      "bone": "head",
+      "path": "parts/head.png",
+      "sha256": "ec02d4ce28870f00c825f6cdd05cf8402a8778773c3d910ed389238aef2948f1",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        220,
+        66,
+        193,
+        220
+      ],
+      "opaque_pixels": 29985,
+      "source_pixels_only": true
+    },
+    {
+      "id": "upper_arm_l",
+      "bone": "upper_arm_l",
+      "path": "parts/upper_arm_l.png",
+      "sha256": "d035aa05dd9bf627c283c921b8d82d3b282b86ee751e7a38ee77f4e0eeb8c1b4",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        208,
+        261,
+        60,
+        96
+      ],
+      "opaque_pixels": 3319,
+      "source_pixels_only": true
+    },
+    {
+      "id": "forearm_l",
+      "bone": "forearm_l",
+      "path": "parts/forearm_l.png",
+      "sha256": "2106d48c9463251c691a40e0bd5d6ea0de042a3395981c2d5dffa1b2547341be",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        198,
+        338,
+        65,
+        78
+      ],
+      "opaque_pixels": 2802,
+      "source_pixels_only": true
+    },
+    {
+      "id": "hand_l",
+      "bone": "hand_l",
+      "path": "parts/hand_l.png",
+      "sha256": "06aa7f0fca1f762e5bf4a1555846dfb10ec4db095a9b2294012db4ad69955ed4",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        198,
+        389,
+        37,
+        57
+      ],
+      "opaque_pixels": 1890,
+      "source_pixels_only": true
+    },
+    {
+      "id": "upper_arm_r",
+      "bone": "upper_arm_r",
+      "path": "parts/upper_arm_r.png",
+      "sha256": "beb7c44e9690e6058761103e64bb7655a3236da95a75a7027f0825809b4cec0f",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        362,
+        261,
+        60,
+        96
+      ],
+      "opaque_pixels": 3428,
+      "source_pixels_only": true
+    },
+    {
+      "id": "forearm_r",
+      "bone": "forearm_r",
+      "path": "parts/forearm_r.png",
+      "sha256": "99ad9332f33326d3ad4b1cd735ccd64190a1f9285a7374db12daa64b613fb2d2",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        367,
+        338,
+        65,
+        78
+      ],
+      "opaque_pixels": 2838,
+      "source_pixels_only": true
+    },
+    {
+      "id": "hand_r",
+      "bone": "hand_r",
+      "path": "parts/hand_r.png",
+      "sha256": "58983fff2ef904c12da217d1c4c20b73c553cb3ffcf4b84c75b4ae24b63de850",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        395,
+        389,
+        37,
+        57
+      ],
+      "opaque_pixels": 1910,
+      "source_pixels_only": true
+    },
+    {
+      "id": "thigh_l",
+      "bone": "thigh_l",
+      "path": "parts/thigh_l.png",
+      "sha256": "408a05a1b9689b65f7e8ddf964e1dbdc116e608e2df091cd1a2483a5d9feca79",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        237,
+        460,
+        72,
+        62
+      ],
+      "opaque_pixels": 2866,
+      "source_pixels_only": true
+    },
+    {
+      "id": "shin_l",
+      "bone": "shin_l",
+      "path": "parts/shin_l.png",
+      "sha256": "b416ab704eb6490f2410f9c9ea5feacc60ec0ffc90ec605ecb2590974ec08366",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        226,
+        511,
+        74,
+        53
+      ],
+      "opaque_pixels": 2758,
+      "source_pixels_only": true
+    },
+    {
+      "id": "foot_l",
+      "bone": "foot_l",
+      "path": "parts/foot_l.png",
+      "sha256": "648fe487f35d13b2f1c400d0019c8e7d206794c410e40357468a698528e9aef4",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        225,
+        553,
+        70,
+        38
+      ],
+      "opaque_pixels": 2103,
+      "source_pixels_only": true
+    },
+    {
+      "id": "thigh_r",
+      "bone": "thigh_r",
+      "path": "parts/thigh_r.png",
+      "sha256": "fd34c1e27511f3b460512842aaa2898ba846e956dd747642f8b6ffbdd9144bae",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        323,
+        460,
+        72,
+        62
+      ],
+      "opaque_pixels": 2821,
+      "source_pixels_only": true
+    },
+    {
+      "id": "shin_r",
+      "bone": "shin_r",
+      "path": "parts/shin_r.png",
+      "sha256": "0a3fc9dbb7f125b2a660030d76ec5fba76e4a72c26f519ac0a3fe2f143109fa5",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        332,
+        511,
+        74,
+        53
+      ],
+      "opaque_pixels": 2726,
+      "source_pixels_only": true
+    },
+    {
+      "id": "foot_r",
+      "bone": "foot_r",
+      "path": "parts/foot_r.png",
+      "sha256": "f6841fac99167a27e9a44b4884a44ec33e501378baa3d6b30c326b3bf2b119f8",
+      "canvas_size": [
+        627,
+        627
+      ],
+      "bounds": [
+        338,
+        553,
+        68,
+        38
+      ],
+      "opaque_pixels": 2030,
+      "source_pixels_only": true
+    }
+  ],
+  "parts_are_full_canvas_rgba": true,
+  "source_pixels_only": true,
+  "joint_overlap_allowed": true,
+  "joint_overlap_used": true,
+  "rest_reconstruction": "res://assets/characters/resident_2d_rig_v1/direction_branches/identity_unification_v1_pending/turntable_strip_v1/production_frozen_v2/whitebody/up.png",
+  "rest_reconstruction_sha256": "cb3fde62daba506ac5602c471094cd9bce02c6c3ef8d3740d891040d46db7ab8",
+  "rest_reconstruction_mismatch_pixels": 0,
+  "motion_contract": {
+    "phase_source": "real_world_movement_distance_only",
+    "idle_loop": false,
+    "style": "natural_low_amplitude_cozy_town_walk",
+    "pelvis": [
+      "vertical_bob",
+      "lateral_weight_shift",
+      "small_rotation"
+    ],
+    "spine": [
+      "torso_counter_rotation",
+      "head_stabilization"
+    ],
+    "shoulders": [
+      "clavicle_counter_swing",
+      "reach_and_carry_support"
+    ],
+    "arms": [
+      "opposed_to_legs",
+      "elbow_flexion",
+      "wrist_follow_through"
+    ],
+    "legs": [
+      "hip_swing",
+      "knee_flexion",
+      "ankle_counter_rotation",
+      "whole_foot_roll_around_ball_pivot"
+    ],
+    "forbidden": [
+      "rigid_whole_arm_swing",
+      "rigid_whole_leg_swing",
+      "idle_marching",
+      "direction_specific_unrelated_phase",
+      "exaggerated_action_game_motion"
+    ]
+  },
+  "normal_walk_joint_policy": {
+    "arms": "rigid upper_arm/forearm/hand chain; clavicle vertical depth offset only",
+    "legs": "thigh vertical depth offset; 1px shin compression at knee only",
+    "feet": "locked to shin; no independent ankle or foot rotation",
+    "retained_interaction_bones": true
+  },
+  "wardrobe_consumed": false
+}

@@ -1,0 +1,433 @@
+{
+  "schemaVersion": 1,
+  "worldId": "town",
+  "outdoorProps": [
+    {
+      "name": "社区花园长椅",
+      "placeName": "社区花园",
+      "interaction": {
+        "spaceId": "town_outdoor",
+        "regionId": "outdoor_garden_01",
+        "roomId": "town_outdoor",
+        "anchorId": "seat",
+        "position": [3426, 2766],
+        "approachPolyline": [[3396, 2772], [3402, 2778], [3414, 2766], [3426, 2766]]
+      },
+      "actions": [
+        {"verb": "歇着", "durationMinutes": 30, "effects": {"累": -1}}
+      ]
+    },
+    {
+      "name": "河岸公园长椅",
+      "placeName": "河岸公园",
+      "interaction": {
+        "spaceId": "town_outdoor",
+        "regionId": "outdoor_river_park_01",
+        "roomId": "town_outdoor",
+        "anchorId": "seat",
+        "position": [5982, 1266],
+        "approachPolyline": [[5913, 1288], [5910, 1290], [5934, 1290], [5946, 1278], [5958, 1278], [5970, 1266], [5982, 1266]]
+      },
+      "actions": [
+        {"verb": "歇着", "durationMinutes": 30, "effects": {"累": -1}}
+      ]
+    },
+    {
+      "name": "社区花园观察花圃",
+      "placeName": "社区花园",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_garden_01",
+        "roomId": "town_outdoor", "anchorId": "observe",
+        "position": [3234, 2790],
+        "approachPolyline": [[3396, 2772], [3402, 2778], [3354, 2778], [3342, 2790], [3234, 2790]]
+      },
+      "actions": [{"verb": "观察植物", "durationMinutes": 20, "effects": {}}]
+    },
+    {
+      "name": "社区花园植物记录点",
+      "placeName": "社区花园",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_garden_01",
+        "roomId": "town_outdoor", "anchorId": "record",
+        "position": [3306, 2790],
+        "approachPolyline": [[3396, 2772], [3402, 2778], [3354, 2778], [3342, 2790], [3306, 2790]]
+      },
+      "actions": [{"verb": "记录植物", "durationMinutes": 20, "effects": {}}]
+    },
+    {
+      "name": "社区花园浇水点",
+      "placeName": "社区花园",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_garden_01",
+        "roomId": "town_outdoor", "anchorId": "water",
+        "position": [3486, 2754],
+        "approachPolyline": [[3396, 2772], [3402, 2778], [3414, 2766], [3450, 2766], [3450, 2754], [3486, 2754]]
+      },
+      "actions": [{"verb": "浇灌花圃", "durationMinutes": 25, "effects": {"累": 1}}]
+    },
+    {
+      "name": "社区花园园具点",
+      "placeName": "社区花园",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_garden_01",
+        "roomId": "town_outdoor", "anchorId": "tools",
+        "position": [3546, 2706],
+        "approachPolyline": [[3396, 2772], [3402, 2778], [3414, 2766], [3450, 2766], [3450, 2754], [3486, 2754], [3486, 2742], [3510, 2742], [3546, 2706]]
+      },
+      "actions": [{"verb": "整理园具", "durationMinutes": 20, "effects": {}}]
+    },
+    {
+      "name": "渔港渔具整理点",
+      "placeName": "渔港",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_harbor_01",
+        "roomId": "town_outdoor", "anchorId": "gear",
+        "position": [5658, 3066],
+        "approachPolyline": [[5766, 3114], [5754, 3114], [5742, 3102], [5706, 3102], [5682, 3078], [5670, 3078], [5658, 3066]]
+      },
+      "actions": [{"verb": "整理渔具", "durationMinutes": 25, "effects": {}}]
+    },
+    {
+      "name": "渔港渔获清点处",
+      "placeName": "渔港",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_harbor_01",
+        "roomId": "town_outdoor", "anchorId": "catch",
+        "position": [5754, 2994],
+        "approachPolyline": [[5766, 3114], [5754, 3114], [5754, 2994]]
+      },
+      "actions": [{"verb": "清点渔获", "durationMinutes": 20, "effects": {}}]
+    },
+    {
+      "name": "独立市集西侧杂货摊",
+      "placeName": "独立市集",
+      "interaction": {
+        "spaceId": "indoor_market_shop", "regionId": "region_portal_market_shop_entry",
+        "position": [400, 400], "roomId": "market_shop",
+        "instanceId": "fixed_grocery_stall_west", "assetId": "fixed_scene_stall",
+        "anchorId": "stock", "anchorKind": "work", "actorFacing": "up",
+        "sourceAnchorPosition": [400, 400], "anchorSnappedToFloor": false,
+        "instancePosition": [400, 400], "direction": "down",
+        "memberAnchors": [
+          {"anchorId": "customer_west", "position": [400, 496]}
+        ]
+      },
+      "actions": [
+        {"verb": "清点货品", "durationMinutes": 20, "effects": {}},
+        {"verb": "购买日用品", "durationMinutes": 10, "effects": {}}
+      ]
+    },
+    {
+      "name": "独立市集北侧花摊",
+      "placeName": "独立市集",
+      "interaction": {
+        "spaceId": "indoor_market_shop", "regionId": "region_portal_market_shop_entry",
+        "position": [624, 400], "roomId": "market_shop",
+        "instanceId": "fixed_flower_stall_north", "assetId": "fixed_scene_flower_stall",
+        "anchorId": "bouquet", "anchorKind": "work", "actorFacing": "up",
+        "sourceAnchorPosition": [624, 400], "anchorSnappedToFloor": false,
+        "instancePosition": [624, 400], "direction": "down",
+        "memberAnchors": [
+          {"anchorId": "customer_north", "position": [624, 496]}
+        ]
+      },
+      "actions": [
+        {"verb": "整理花束", "durationMinutes": 20, "effects": {}},
+        {"verb": "购买花束", "durationMinutes": 10, "effects": {}}
+      ]
+    },
+    {
+      "name": "独立市集鱼货摊",
+      "placeName": "独立市集",
+      "interaction": {
+        "spaceId": "indoor_market_shop", "regionId": "region_portal_market_shop_entry",
+        "position": [912, 400], "roomId": "market_shop",
+        "instanceId": "fixed_fish_stall", "assetId": "fixed_scene_stall",
+        "anchorId": "stock", "anchorKind": "work", "actorFacing": "up",
+        "sourceAnchorPosition": [912, 400], "anchorSnappedToFloor": false,
+        "instancePosition": [912, 400], "direction": "down",
+        "memberAnchors": [
+          {"anchorId": "customer_fish", "position": [912, 496]}
+        ]
+      },
+      "actions": [
+        {"verb": "清点货品", "durationMinutes": 20, "effects": {}},
+        {"verb": "购买鲜鱼", "durationMinutes": 10, "effects": {}}
+      ]
+    },
+    {
+      "name": "独立市集南侧杂货摊",
+      "placeName": "独立市集",
+      "interaction": {
+        "spaceId": "indoor_market_shop", "regionId": "region_portal_market_shop_entry",
+        "position": [224, 800], "roomId": "market_shop",
+        "instanceId": "fixed_grocery_stall_south", "assetId": "fixed_scene_stall",
+        "anchorId": "tidy", "anchorKind": "work", "actorFacing": "up",
+        "sourceAnchorPosition": [224, 800], "anchorSnappedToFloor": false,
+        "instancePosition": [224, 800], "direction": "down",
+        "memberAnchors": [
+          {"anchorId": "customer_south", "position": [224, 704]}
+        ]
+      },
+      "actions": [
+        {"verb": "整理摊位", "durationMinutes": 20, "effects": {}},
+        {"verb": "购买日用品", "durationMinutes": 10, "effects": {}}
+      ]
+    },
+    {
+      "name": "独立市集南侧花摊",
+      "placeName": "独立市集",
+      "interaction": {
+        "spaceId": "indoor_market_shop", "regionId": "region_portal_market_shop_entry",
+        "position": [1024, 800], "roomId": "market_shop",
+        "instanceId": "fixed_flower_stall_south", "assetId": "fixed_scene_flower_stall",
+        "anchorId": "watch", "anchorKind": "work", "actorFacing": "up",
+        "sourceAnchorPosition": [1024, 800], "anchorSnappedToFloor": false,
+        "instancePosition": [1024, 800], "direction": "down",
+        "memberAnchors": [
+          {"anchorId": "customer_south", "position": [1024, 704]}
+        ]
+      },
+      "actions": [
+        {"verb": "看顾花摊", "durationMinutes": 20, "effects": {}},
+        {"verb": "购买花束", "durationMinutes": 10, "effects": {}}
+      ]
+    },
+    {
+      "name": "小镇道路邮件分拣点",
+      "placeName": "小镇道路",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_road_01",
+        "roomId": "town_outdoor", "anchorId": "sort",
+        "position": [1950, 1998],
+        "approachPolyline": [[2000, 2000], [1998, 1998], [1950, 1998]]
+      },
+      "actions": [{"verb": "分拣信件", "durationMinutes": 20, "effects": {}}]
+    },
+    {
+      "name": "小镇道路投递袋整理点",
+      "placeName": "小镇道路",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_road_01",
+        "roomId": "town_outdoor", "anchorId": "mailbag",
+        "position": [2046, 1998],
+        "approachPolyline": [[2000, 2000], [1998, 1998], [2046, 1998]]
+      },
+      "actions": [{"verb": "整理投递袋", "durationMinutes": 20, "effects": {}}]
+    },
+    {
+      "name": "市集西侧棚铺",
+      "placeName": "市集",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_market_01",
+        "roomId": "town_outdoor", "anchorId": "bouquet",
+        "position": [3978, 2058],
+        "approachPolyline": [[4086, 2058], [3978, 2058]]
+      },
+      "actions": [{"verb": "整理花束", "durationMinutes": 20, "effects": {}}]
+    },
+    {
+      "name": "市集东侧花摊",
+      "placeName": "市集",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_market_01",
+        "roomId": "town_outdoor", "anchorId": "watch",
+        "position": [4146, 2058],
+        "approachPolyline": [[4086, 2058], [4146, 2058]]
+      },
+      "actions": [{"verb": "看顾花摊", "durationMinutes": 20, "effects": {}}]
+    },
+    {
+      "name": "中心广场排练点",
+      "placeName": "中心广场",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_plaza_01",
+        "roomId": "town_outdoor", "anchorId": "rehearse",
+        "position": [3042, 1938],
+        "approachPolyline": [[3250, 2050], [3246, 2046], [3210, 2010], [3174, 2010], [3150, 1986], [3138, 1986], [3102, 1950], [3066, 1950], [3054, 1938], [3042, 1938]]
+      },
+      "actions": [{"verb": "练习曲目", "durationMinutes": 25, "effects": {}}]
+    },
+    {
+      "name": "中心广场演奏点",
+      "placeName": "中心广场",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_plaza_01",
+        "roomId": "town_outdoor", "anchorId": "perform",
+        "position": [3402, 1914],
+        "approachPolyline": [[3250, 2050], [3246, 2046], [3366, 1926], [3378, 1926], [3390, 1914], [3402, 1914]]
+      },
+      "actions": [{"verb": "演奏", "durationMinutes": 25, "effects": {}}]
+    },
+    {
+      "name": "中心广场报纸整理点",
+      "placeName": "中心广场",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_plaza_01",
+        "roomId": "town_outdoor", "anchorId": "papers",
+        "position": [3474, 1842],
+        "approachPolyline": [[3250, 2050], [3246, 2046], [3438, 1854], [3450, 1854], [3462, 1842], [3474, 1842]]
+      },
+      "actions": [{"verb": "整理报纸", "durationMinutes": 20, "effects": {}}]
+    },
+    {
+      "name": "中心广场报纸叫卖点",
+      "placeName": "中心广场",
+      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_plaza_01",
+        "roomId": "town_outdoor", "anchorId": "sell",
+        "position": [3402, 1842],
+        "approachPolyline": [[3250, 2050], [3246, 2046], [3366, 1926], [3366, 1914], [3378, 1902], [3378, 1890], [3390, 1878], [3390, 1866], [3402, 1854], [3402, 1842]]
+      },
+      "actions": [{"verb": "叫卖报纸", "durationMinutes": 20, "effects": {}}]
+    },
+	    {
+	      "name": "中心广场公告栏阅读处",
+	      "placeName": "中心广场",
+	      "agentVisible": false,
+	      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_plaza_01",
+        "roomId": "town_outdoor", "anchorId": "read_left",
+        "position": [3030, 1782],
+        "approachPolyline": [[3250, 2050], [3246, 2046], [3090, 1890], [3030, 1782]]
+      },
+      "actions": [{"verb": "阅读公告", "durationMinutes": 10, "effects": {}}]
+    },
+	    {
+	      "name": "中心广场公告栏张贴处",
+	      "placeName": "中心广场",
+	      "agentVisible": false,
+	      "interaction": {
+        "spaceId": "town_outdoor", "regionId": "outdoor_plaza_01",
+        "roomId": "town_outdoor", "anchorId": "post_right",
+        "position": [3098, 1782],
+        "approachPolyline": [[3250, 2050], [3246, 2046], [3126, 1926], [3098, 1782]]
+      },
+      "actions": [{"verb": "张贴公告", "durationMinutes": 10, "effects": {}}]
+    }
+  ],
+  "rooms": [
+    {
+      "roomId": "cafe",
+      "spaceId": "indoor_flower_cafe",
+      "placeName": "花房咖啡馆",
+      "regionId": "region_portal_cafe_entry",
+      "props": [
+        {"name": "花房咖啡馆点单柜台", "instanceId": "service_counter_north", "assetId": "cafe_service_counter", "anchorId": "customer_service", "verb": "点单", "durationMinutes": 10, "effects": {}},
+        {"name": "花房咖啡馆内侧柜台", "instanceId": "service_counter_north", "assetId": "cafe_service_counter", "anchorId": "staff_service", "verb": "接待客人", "durationMinutes": 15, "effects": {"累": 1}},
+        {"name": "花房咖啡馆咖啡机", "instanceId": "espresso_machine_north", "assetId": "espresso_machine", "anchorId": "barista_use", "verb": "冲咖啡", "durationMinutes": 20, "effects": {"困": -1}, "maximumAnchorSnapPx": 80},
+        {"name": "花房咖啡馆糕点柜", "instanceId": "pastry_display_west", "assetId": "pastry_display", "anchorId": "inspect_display", "verb": "吃点心", "durationMinutes": 20, "effects": {"饿": -1}},
+        {"name": "花房咖啡馆西北座椅", "instanceId": "west_table_chair_north", "assetId": "wooden_chair", "anchorId": "seat", "verb": "整理桌椅", "durationMinutes": 15, "effects": {"累": 1}},
+        {"name": "花房咖啡馆主厅座位", "instanceId": "west_table_chair_south", "assetId": "wooden_chair", "anchorId": "seat", "verb": "歇着", "durationMinutes": 30, "effects": {"累": -1}},
+        {"name": "花房咖啡馆花房座位", "instanceId": "small_table_greenhouse_chair_south", "assetId": "wooden_chair", "anchorId": "seat", "verb": "歇着", "durationMinutes": 30, "effects": {"累": -1}}
+      ]
+    },
+    {
+      "roomId": "clinic",
+      "spaceId": "indoor_clinic",
+      "placeName": "诊所",
+      "regionId": "region_portal_clinic_entry",
+      "props": [
+        {"name": "诊所问诊桌", "instanceId": "consultation_desk_main", "assetId": "consultation_desk", "anchorId": "patient_consult", "verb": "看诊", "durationMinutes": 30, "effects": {}},
+        {"name": "诊所问诊桌医生侧", "instanceId": "consultation_desk_main", "assetId": "consultation_desk", "anchorId": "doctor_consult", "verb": "接诊", "durationMinutes": 20, "effects": {}},
+        {"name": "诊所检查床", "instanceId": "exam_bed", "assetId": "clinic_exam_bed", "anchorId": "inspect_right_side", "verb": "接受检查", "durationMinutes": 30, "effects": {}},
+        {"name": "诊所候诊长椅", "instanceId": "waiting_bench_north", "assetId": "waiting_bench", "anchorId": "seat_center", "maximumAnchorSnapPx": 80, "verb": "歇着", "durationMinutes": 30, "effects": {"累": -1}},
+        {"name": "诊所药柜", "instanceId": "medicine_cabinet_north", "assetId": "medicine_cabinet", "anchorId": "primary", "verb": "取药", "durationMinutes": 10, "effects": {}}
+      ]
+    },
+    {
+      "roomId": "dining_hall",
+      "spaceId": "indoor_dining_hall",
+      "placeName": "公共食堂",
+      "regionId": "region_portal_dining_hall_entry",
+      "props": [
+        {"name": "公共食堂灶台", "instanceId": "stove_oven_kitchen_west", "assetId": "stove_oven", "anchorId": "use_front", "actions": [{"verb": "做饭", "durationMinutes": 60, "effects": {"累": 1}}, {"verb": "烘烤面包", "durationMinutes": 30, "effects": {"累": 1}}]},
+        {"name": "公共食堂水槽", "instanceId": "sink_cabinet_kitchen_west", "assetId": "sink_cabinet", "anchorId": "use_front", "verb": "洗餐具", "durationMinutes": 30, "effects": {"累": 1}},
+        {"name": "公共食堂备餐柜", "instanceId": "pantry_cabinet_kitchen_east", "assetId": "pantry_cabinet", "anchorId": "open_front", "verb": "取餐", "durationMinutes": 5, "effects": {}},
+        {"name": "公共食堂递餐口", "instanceId": "pantry_cabinet_kitchen_east", "assetId": "pantry_cabinet", "anchorId": "serve_front", "verb": "递餐", "durationMinutes": 5, "effects": {}},
+        {"name": "公共食堂面团操作台", "instanceId": "pantry_cabinet_kitchen_east", "assetId": "pantry_cabinet", "anchorId": "dough_front", "verb": "准备面团", "durationMinutes": 25, "effects": {}},
+        {"name": "公共食堂餐具架", "instanceId": "dish_rack_kitchen_east", "assetId": "dish_rack", "anchorId": "use_front", "verb": "归还餐具", "durationMinutes": 10, "effects": {}},
+        {"name": "公共食堂西侧餐桌", "instanceId": "dining_table_west", "assetId": "dining_table", "anchorId": "inspect_south", "verb": "吃饭", "durationMinutes": 30, "effects": {"饿": -2}},
+        {"name": "公共食堂餐桌东端", "instanceId": "dining_table_west", "assetId": "dining_table", "anchorId": "inspect_north", "verb": "吃饭", "durationMinutes": 30, "effects": {"饿": -2}}
+      ]
+    },
+    {
+      "roomId": "dock_warehouse",
+      "spaceId": "indoor_dock_warehouse",
+      "placeName": "码头仓库",
+      "regionId": "region_portal_dock_warehouse_entry",
+      "props": [
+        {"name": "码头仓库货单桌", "instanceId": "manifest_record_desk", "assetId": "warehouse_record_desk", "anchorId": "use_front", "maximumAnchorSnapPx": 80, "verb": "核对货单", "durationMinutes": 45, "effects": {}},
+        {"name": "码头仓库西侧货架", "instanceId": "rack_west_north", "assetId": "empty_heavy_storage_rack", "anchorId": "inspect_front", "verb": "整理货架", "durationMinutes": 60, "effects": {"累": 1}},
+        {"name": "码头仓库渔网堆", "instanceId": "fishing_net_stock", "assetId": "fishing_net_bundle", "anchorId": "take_front", "verb": "整理渔网", "durationMinutes": 45, "effects": {"累": 1}},
+        {"name": "码头仓库手推车", "instanceId": "annex_handcart", "assetId": "freight_handcart", "anchorId": "use_handle", "verb": "搬运货物", "durationMinutes": 45, "effects": {"累": 1}},
+        {"name": "码头仓库入库木箱", "instanceId": "incoming_shipping_crate", "assetId": "wooden_shipping_crate", "anchorId": "take_front", "verb": "检查货物", "durationMinutes": 20, "effects": {}}
+      ]
+    },
+    {
+      "roomId": "library",
+      "spaceId": "indoor_library",
+      "placeName": "图书馆",
+      "regionId": "region_portal_library_entry",
+      "props": [
+        {"name": "图书馆借还书柜台", "instanceId": "checkout_counter_north", "assetId": "library_checkout_counter", "anchorId": "service_public", "verb": "借还书", "durationMinutes": 15, "effects": {}},
+        {"name": "图书馆借还书柜台内侧", "instanceId": "checkout_counter_north", "assetId": "library_checkout_counter", "anchorId": "service_staff", "verb": "整理借还", "durationMinutes": 15, "effects": {}},
+        {"name": "图书馆写作桌", "instanceId": "reading_table_west", "assetId": "library_reading_table", "anchorId": "use_front", "actions": [{"verb": "写作", "durationMinutes": 60, "effects": {}}, {"verb": "整理字帖", "durationMinutes": 20, "effects": {}}]},
+        {"name": "图书馆东侧阅读桌", "instanceId": "reading_table_east", "assetId": "library_reading_table", "anchorId": "use_front", "actions": [{"verb": "阅读", "durationMinutes": 60, "effects": {}}, {"verb": "书写示范", "durationMinutes": 25, "effects": {}}]},
+        {"name": "图书馆西侧高书架", "instanceId": "tall_bookshelf_west_upper", "assetId": "library_tall_bookshelf", "anchorId": "browse", "verb": "查资料", "durationMinutes": 30, "effects": {}},
+        {"name": "图书馆还书车", "instanceId": "returns_book_cart_north_west", "assetId": "library_returns_book_cart", "anchorId": "returns_front", "verb": "归还书籍", "durationMinutes": 10, "effects": {}}
+      ]
+    },
+    {
+      "roomId": "market_shop",
+      "spaceId": "indoor_market_shop",
+      "placeName": "独立市集",
+      "regionId": "region_portal_market_shop_entry",
+      "props": [],
+      "emptyReason": "独立市集的棚铺由固定场景结构提供，相关活动使用已经登记的固定站位。"
+    },
+    {
+      "roomId": "town_hall",
+      "spaceId": "indoor_town_hall",
+      "placeName": "镇公所",
+      "regionId": "region_portal_town_hall_entry",
+      "props": [
+        {"name": "镇公所左侧办事柜台", "instanceId": "counter_left", "assetId": "counter", "anchorId": "service_public", "verb": "办事", "durationMinutes": 30, "effects": {}},
+        {"name": "镇公所右侧办事柜台", "instanceId": "counter_right", "assetId": "counter", "anchorId": "service_public", "verb": "办事", "durationMinutes": 30, "effects": {}},
+        {"name": "镇公所议事桌", "instanceId": "consultation_table_main", "assetId": "consultation_table", "anchorId": "consultation", "verb": "议事", "durationMinutes": 45, "effects": {}},
+        {"name": "镇公所表格架", "instanceId": "public_form_stand", "assetId": "form_stand", "anchorId": "fill_form", "verb": "填表", "durationMinutes": 20, "effects": {}},
+        {"name": "镇公所档案柜", "instanceId": "records_cabinet", "assetId": "document_cabinet", "anchorId": "records", "verb": "查档案", "durationMinutes": 30, "effects": {}},
+        {"name": "镇公所职员座位", "instanceId": "staff_chair_left", "assetId": "upholstered_chair", "anchorId": "seat", "verb": "处理文书", "durationMinutes": 20, "effects": {}}
+      ]
+    },
+    {
+      "roomId": "workshop",
+      "spaceId": "indoor_workshop",
+      "placeName": "工作坊",
+      "regionId": "region_portal_workshop_entry",
+      "props": [
+        {"name": "工作坊主木工台", "instanceId": "heavy_workbench_main_r2", "assetId": "heavy_workbench_r2", "anchorId": "master_use", "verb": "制作器物", "durationMinutes": 120, "effects": {"累": 1}},
+        {"name": "工作坊装配锯架台", "instanceId": "assembly_trestle_bench_main_r2", "assetId": "assembly_trestle_bench_r2", "anchorId": "apprentice_use", "verb": "组装器物", "durationMinutes": 90, "effects": {"累": 1}},
+        {"name": "工作坊修理交接台", "instanceId": "repair_handoff_counter_southwest", "assetId": "repair_handoff_counter", "anchorId": "customer_handoff", "verb": "交接修理件", "durationMinutes": 15, "effects": {}},
+        {"name": "工作坊木料架", "instanceId": "raw_lumber_rack_annex_r2", "assetId": "raw_lumber_rack_r2", "anchorId": "raw_material_pickup", "verb": "取用木料", "durationMinutes": 10, "effects": {}},
+        {"name": "工作坊成品架", "instanceId": "finished_goods_shelf_annex_r2", "assetId": "finished_goods_shelf_r2", "anchorId": "finished_goods_pickup", "verb": "查看成品", "durationMinutes": 15, "effects": {}},
+        {"name": "工作坊打磨机", "instanceId": "bench_grinder_stand_east", "assetId": "bench_grinder_stand", "anchorId": "grinder_use", "verb": "打磨零件", "durationMinutes": 45, "effects": {"累": 1}}
+      ]
+    },
+    {"roomId": "home_01", "templateRoomId": "home_template_a", "spaceId": "home_01", "placeName": "北街一号住宅", "regionId": "region_portal_home_01_entry", "layoutFile": "layouts/home_01.json", "props": [{"name": "北街一号住宅单人床", "instanceId": "home_01_single_bed_01", "assetId": "single_bed", "anchorId": "use_bed", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_02", "templateRoomId": "home_template_b", "spaceId": "home_02", "placeName": "北街二号住宅", "regionId": "region_portal_home_02_entry", "layoutFile": "layouts/home_02.json", "props": [{"name": "北街二号住宅单人床", "instanceId": "home_02_sleep_bed", "assetId": "single_bed", "anchorId": "sleep_side", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_03", "templateRoomId": "home_template_b", "spaceId": "home_03", "placeName": "北街三号住宅", "regionId": "region_portal_home_03_entry", "layoutFile": "layouts/home_03.json", "props": [{"name": "北街三号住宅单人床", "instanceId": "home_03_sleep_bed", "assetId": "single_bed", "anchorId": "sleep_side", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_04", "templateRoomId": "home_template_b", "spaceId": "home_04", "placeName": "西街二号住宅", "regionId": "region_portal_home_04_entry", "layoutFile": "layouts/home_04.json", "props": [{"name": "西街二号住宅单人床", "instanceId": "home_04_quiet_bed", "assetId": "single_bed", "anchorId": "sleep_side", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_05", "templateRoomId": "home_template_a", "spaceId": "home_05", "placeName": "西街三号住宅", "regionId": "region_portal_home_05_entry", "layoutFile": "layouts/home_05.json", "props": [{"name": "西街三号住宅单人床", "instanceId": "home_05_single_bed_01", "assetId": "single_bed", "anchorId": "use_bed", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_06", "templateRoomId": "home_template_b", "spaceId": "home_06", "placeName": "西街四号住宅", "regionId": "region_portal_home_06_entry", "layoutFile": "layouts/home_06.json", "props": [{"name": "西街四号住宅单人床", "instanceId": "home_06_sleep_bed", "assetId": "single_bed", "anchorId": "sleep_side", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_07", "templateRoomId": "home_template_b", "spaceId": "home_07", "placeName": "西街五号住宅", "regionId": "region_portal_home_07_entry", "layoutFile": "layouts/home_07.json", "props": [{"name": "西街五号住宅单人床", "instanceId": "home_07_quiet_bed", "assetId": "single_bed", "anchorId": "sleep_side", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_08", "templateRoomId": "home_template_b", "spaceId": "home_08", "placeName": "西街六号住宅", "regionId": "region_portal_home_08_entry", "layoutFile": "layouts/home_08.json", "props": [{"name": "西街六号住宅单人床", "instanceId": "home_08_sleep_bed", "assetId": "single_bed", "anchorId": "sleep_side", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_09", "templateRoomId": "home_template_a", "spaceId": "home_09", "placeName": "南街一号住宅", "regionId": "region_portal_home_09_entry", "layoutFile": "layouts/home_09.json", "props": [{"name": "南街一号住宅单人床", "instanceId": "home_09_single_bed_01", "assetId": "single_bed", "anchorId": "use_bed", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_10", "templateRoomId": "home_template_b", "spaceId": "home_10", "placeName": "南街二号住宅", "regionId": "region_portal_home_10_entry", "layoutFile": "layouts/home_10.json", "props": [{"name": "南街二号住宅单人床", "instanceId": "home_10_sleep_bed", "assetId": "single_bed", "anchorId": "sleep_side", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_11", "templateRoomId": "home_template_a", "spaceId": "home_11", "placeName": "南街三号住宅", "regionId": "region_portal_home_11_entry", "layoutFile": "layouts/home_11.json", "props": [{"name": "南街三号住宅单人床", "instanceId": "home_11_single_bed_01", "assetId": "single_bed", "anchorId": "use_bed", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_12", "templateRoomId": "home_template_a", "spaceId": "home_12", "placeName": "南街四号住宅", "regionId": "region_portal_home_12_entry", "layoutFile": "layouts/home_12.json", "props": [{"name": "南街四号住宅单人床", "instanceId": "home_12_single_bed_01", "assetId": "single_bed", "anchorId": "use_bed", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_13", "templateRoomId": "home_template_a", "spaceId": "home_13", "placeName": "南街五号住宅", "regionId": "region_portal_home_13_entry", "layoutFile": "layouts/home_13.json", "props": [{"name": "南街五号住宅单人床", "instanceId": "home_13_single_bed_01", "assetId": "single_bed", "anchorId": "use_bed", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_14", "templateRoomId": "home_template_a", "spaceId": "home_14", "placeName": "东南街住宅", "regionId": "region_portal_home_14_entry", "layoutFile": "layouts/home_14.json", "props": [{"name": "东南街住宅单人床", "instanceId": "home_14_single_bed_01", "assetId": "single_bed", "anchorId": "use_bed", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]},
+    {"roomId": "home_15", "templateRoomId": "home_template_a", "spaceId": "home_15", "placeName": "西街一号住宅", "regionId": "region_portal_home_15_entry", "layoutFile": "layouts/home_15.json", "props": [{"name": "西街一号住宅单人床", "instanceId": "home_15_single_bed_01", "assetId": "single_bed", "anchorId": "use_bed", "verb": "睡觉", "durationMinutes": 480, "effects": {"困": -2, "累": -1}}]}
+  ]
+}

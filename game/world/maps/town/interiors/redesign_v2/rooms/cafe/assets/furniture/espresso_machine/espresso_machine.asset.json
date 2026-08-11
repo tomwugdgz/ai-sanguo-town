@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "source_revision": "cafe_espresso_machine_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "espresso_machine",
+  "label": "花房咖啡馆双头咖啡机",
+  "room_id": "cafe",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 96,
+    "depth": 64,
+    "height": 144
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/espresso_machine/frames/espresso_machine_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/espresso_machine/frames/espresso_machine_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/espresso_machine/frames/espresso_machine_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/espresso_machine/frames/espresso_machine_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      96,
+      149
+    ],
+    "right": [
+      93,
+      151
+    ],
+    "up": [
+      96,
+      149
+    ],
+    "left": [
+      96,
+      149
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -40,
+          -10
+        ],
+        [
+          40,
+          -10
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          -40,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -48,
+        -120
+      ],
+      [
+        48,
+        -120
+      ],
+      [
+        48,
+        0
+      ],
+      [
+        -48,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-48, -120], [48, -120], [48, 0], [-48, 0]],
+      "right": [[-48, -120], [48, -120], [48, 0], [-48, 0]],
+      "up": [[-48, -120], [48, -120], [48, 0], [-48, 0]],
+      "left": [[-48, -120], [48, -120], [48, 0], [-48, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "barista_use",
+      "kind": "use",
+      "position_px": [
+        0,
+        64
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/cafe/assets/concepts/cafe_layout_warm_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "docs/design/pipelines/indoor_handoffs/cafe.md"
+    ],
+    "source_record": "SOURCE_RECORD.json"
+  }
+}

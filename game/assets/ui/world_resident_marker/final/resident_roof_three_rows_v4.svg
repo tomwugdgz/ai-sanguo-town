@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="170" viewBox="0 0 200 170">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff8e6"/><stop offset="1" stop-color="#f0c878"/></linearGradient>
+    <linearGradient id="v" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6c3d20" stop-opacity="0"/><stop offset=".08" stop-color="#6c3d20" stop-opacity=".72"/><stop offset=".92" stop-color="#6c3d20" stop-opacity=".72"/><stop offset="1" stop-color="#6c3d20" stop-opacity="0"/></linearGradient>
+    <linearGradient id="h"><stop stop-color="#6c3d20" stop-opacity="0"/><stop offset=".12" stop-color="#6c3d20" stop-opacity=".62"/><stop offset=".88" stop-color="#6c3d20" stop-opacity=".62"/><stop offset="1" stop-color="#6c3d20" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect x="1" y="1" width="198" height="168" rx="9" fill="url(#paper)" stroke="#6c3d20" stroke-opacity=".90" stroke-width="1.5"/>
+  <rect x="2.5" y="2.5" width="195" height="165" rx="7.5" fill="none" stroke="#fffdf0" stroke-opacity=".72"/>
+  <g fill="url(#v)" opacity=".42"><rect x="51" y="7" width="2" height="156"/><rect x="99" y="7" width="2" height="156"/><rect x="147" y="7" width="2" height="156"/></g>
+  <g stroke="url(#v)" stroke-width=".75" opacity=".78"><path d="M52 8V162"/><path d="M100 8V162"/><path d="M148 8V162"/></g>
+  <g fill="url(#h)" opacity=".34"><rect x="7" y="57" width="186" height="2"/><rect x="7" y="111" width="186" height="2"/></g>
+  <g stroke="url(#h)" stroke-width=".75" opacity=".7"><path d="M8 58H192"/><path d="M8 112H192"/></g>
+</svg>

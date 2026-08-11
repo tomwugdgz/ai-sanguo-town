@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "source_revision": "market_scene_candidate_a3_formal_geometry_v1",
+  "room_id": "market_shop",
+  "canvas_size_px": [
+    1254,
+    1254
+  ],
+  "segments": [
+    {
+      "id": "south_wall_left",
+      "foreground_polygon_canvas_px": [
+        [
+          67,
+          1022
+        ],
+        [
+          547,
+          1022
+        ],
+        [
+          547,
+          1086
+        ],
+        [
+          67,
+          1086
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            67,
+            894
+          ],
+          [
+            547,
+            894
+          ],
+          [
+            547,
+            1198
+          ],
+          [
+            67,
+            1198
+          ]
+        ],
+        [
+          [
+            467,
+            878
+          ],
+          [
+            787,
+            878
+          ],
+          [
+            787,
+            1198
+          ],
+          [
+            467,
+            1198
+          ]
+        ]
+      ],
+      "fade_distance_px": 160,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_wall_right",
+      "foreground_polygon_canvas_px": [
+        [
+          707,
+          1022
+        ],
+        [
+          1187,
+          1022
+        ],
+        [
+          1187,
+          1086
+        ],
+        [
+          707,
+          1086
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            707,
+            894
+          ],
+          [
+            1187,
+            894
+          ],
+          [
+            1187,
+            1198
+          ],
+          [
+            707,
+            1198
+          ]
+        ],
+        [
+          [
+            467,
+            878
+          ],
+          [
+            787,
+            878
+          ],
+          [
+            787,
+            1198
+          ],
+          [
+            467,
+            1198
+          ]
+        ]
+      ],
+      "fade_distance_px": 160,
+      "minimum_alpha": 0.15
+    }
+  ]
+}

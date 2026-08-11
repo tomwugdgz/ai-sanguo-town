@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://ui/resident_detail/components/ResidentDetailRefreshButton.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/ui/resident_detail/runtime/refresh_button_surface.png" id="2_surface"]
+
+[node name="ResidentDetailRefreshButton" type="Control"]
+mouse_filter = 0
+focus_mode = 2
+script = ExtResource("1_script")
+
+[node name="Surface" type="TextureRect" parent="."]
+texture_filter = 1
+mouse_filter = 2
+texture = ExtResource("2_surface")
+expand_mode = 1
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="."]
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+text_overrun_behavior = 3

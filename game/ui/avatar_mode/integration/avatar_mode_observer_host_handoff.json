@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "pageId": "avatar_mode",
+  "status": "avatar_page_verified_shared_input_bridge_pending",
+  "recordedDate": "2026-07-23",
+  "visualBaseline": {
+    "candidate": "ui.avatar-mode.runtime-candidate-v1r1",
+    "frozen": true,
+    "redrawAllowed": false,
+    "newVisualGenerated": false
+  },
+  "mountOwnership": {
+    "observer": {
+      "avatarHudVisible": false,
+      "observerHudVisible": true
+    },
+    "avatar_descent": {
+      "avatarHudVisible": true,
+      "observerHudVisible": false,
+      "avatarHudContent": [
+        "正在降落…",
+        "请稍候"
+      ],
+      "movementAndActionsLocked": true
+    },
+    "avatar_active": {
+      "avatarHudVisible": true,
+      "observerHudVisible": false,
+      "movementAndActionsLocked": false
+    },
+    "owner": "shared Host",
+    "pagePolicy": "AvatarModeHud self-unmounts outside avatar_descent/avatar_active; the shared Host must make Observer HUD mutually exclusive without duplicating mode state.",
+    "currentSharedImplementation": {
+      "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+      "inspectedSha256": "239aeed718f53fa49637b51f6598476644418553b4268a591fcb95b745e7b9e9",
+      "hunk": "func _sync_hud_mode_ownership, inspected lines 542-552",
+      "status": "already_present_read_only_verified"
+    },
+    "runtimeGate": {
+      "check": "formal_avatar_observer_hud_mutual_exclusivity",
+      "result": "passed",
+      "historicalPath": "game/ui/avatar_mode/integration/avatar_mode_adapter_integration_gate.json",
+      "historicalNote": "原运行报告已随生成物清理从仓库移除（gate 现每次运行写入 user://ai-town-test-reports/avatar_mode_adapter_integration_gate.json），此处保留当时结果摘要。"
+    }
+  },
+  "adapterWiring": {
+    "instanceRule": "Inject the same TownUiAdapter instance into AvatarModeHud; do not construct a page-local Adapter.",
+    "method": "bind_town_ui_adapter",
+    "scopes": [
+      "avatar",
+      "conversation"
+    ],
+    "completeViewModelEnvelope": [
+      "scope",
+      "status",
+      "revision",
+      "data",
+      "actions",
+      "operation",
+      "error"
+    ],
+    "pageDirectWorldRead": false,
+    "pageDirectRuntimeRead": false,
+    "pageDirectAgentRead": false
+  },
+  "sharedIntegrationItems": [
+    {
+      "id": "host.avatar_observer_hud_exclusivity",
+      "owner": "shared Host",
+      "required": true,
+      "status": "already_present_read_only_verified"
+    },
+    {
+      "id": "host.avatar_hud_same_adapter_injection",
+      "owner": "shared Host",
+      "required": true,
+      "status": "already_present_read_only_verified",
+      "implementation": {
+        "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+        "inspectedSha256": "49992b3844b406e82a17ef378ea54959315b2f4a507c689ea957eafe3c73b92d",
+        "hunks": [
+          "AvatarModeHud instantiate/bind, inspected lines 3074-3094",
+          "existing AvatarModeHud rebind, inspected lines 3095-3110"
+        ]
+      }
+    },
+    {
+      "id": "host.avatar_focus_target_route_conflict",
+      "owner": "GameFlowHost shared owner",
+      "required": false,
+      "status": "already_resolved_read_only_verified",
+      "problem": "Resolved by the shared owner: AvatarModeHud still dispatches avatar.focus_target through the injected TownUiAdapter, while the connected GameFlowHost callback is now a documented no-op and no longer opens resident_action_menu.",
+      "exactHunksAtInspectedSha": [
+        "game/world/presentation/game_flow/GameFlowHost.gd lines 3090-3094",
+        "game/world/presentation/game_flow/GameFlowHost.gd lines 3106-3110",
+        "game/world/presentation/game_flow/GameFlowHost.gd lines 4095-4100"
+      ],
+      "requestedChange": "none",
+      "pageTaskEditedSharedFile": false
+    },
+    {
+      "id": "host.avatar_touch_movement_vector_bridge",
+      "owner": "shared Host/Runtime input",
+      "required": true,
+      "status": "pending_shared_input_contract",
+      "pageRendersAffordanceOnly": true
+    },
+    {
+      "id": "host.avatar_gamepad_movement_axis_bridge",
+      "owner": "shared Host/Runtime input",
+      "required": true,
+      "status": "pending_shared_input_contract",
+      "pageRendersAffordanceOnly": true
+    },
+    {
+      "id": "host.avatar_camera_owner_release_then_runtime_gate",
+      "owner": "camera/shared integration queue",
+      "required": true,
+      "gate": "game/ui/avatar_mode/integration/AvatarModeAdapterIntegrationGate.gd",
+      "status": "passed_19_of_19_after_product_boundary_update"
+    }
+  ],
+  "notClaimedByPage": [
+    "TownRuntime",
+    "GameFlowHost",
+    "TownUiAdapter",
+    "Observer HUD",
+    "World",
+    "Agent",
+    "camera ownership"
+  ]
+}

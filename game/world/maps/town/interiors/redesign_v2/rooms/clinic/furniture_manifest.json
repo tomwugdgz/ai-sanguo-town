@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "source_revision": "clinic_calibration_a_space_v1_formal_furniture_manifest_footpoint_v1",
+  "room_id": "clinic",
+  "assets": [
+    {
+      "asset_id": "clinic_chair",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/clinic_chair/clinic_chair.asset.json"
+    },
+    {
+      "asset_id": "clinic_exam_bed",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/clinic_exam_bed/clinic_exam_bed.asset.json"
+    },
+    {
+      "asset_id": "consultation_desk",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/consultation_desk/consultation_desk.asset.json"
+    },
+    {
+      "asset_id": "floor_lamp",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/floor_lamp/floor_lamp.asset.json"
+    },
+    {
+      "asset_id": "instrument_cart",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/instrument_cart/instrument_cart.asset.json"
+    },
+    {
+      "asset_id": "leafy_plant",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/leafy_plant/leafy_plant.asset.json"
+    },
+    {
+      "asset_id": "medicine_cabinet",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/medicine_cabinet/medicine_cabinet.asset.json"
+    },
+    {
+      "asset_id": "privacy_screen",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/privacy_screen/privacy_screen.asset.json"
+    },
+    {
+      "asset_id": "rolling_stool",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/rolling_stool/rolling_stool.asset.json"
+    },
+    {
+      "asset_id": "side_table",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/side_table/side_table.asset.json"
+    },
+    {
+      "asset_id": "waiting_bench",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/waiting_bench/waiting_bench.asset.json"
+    }
+  ]
+}

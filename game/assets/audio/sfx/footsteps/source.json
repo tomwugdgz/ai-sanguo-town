@@ -1,0 +1,58 @@
+{
+  "assetPack": "RPG Audio",
+  "author": "Kenney Vleugels (Kenney.nl)",
+  "sourceUrl": "https://kenney.nl/assets/rpg-audio",
+  "downloadUrl": "https://kenney.nl/media/pages/assets/rpg-audio/8e99002d76-1677590336/kenney_rpg-audio.zip",
+  "license": "Creative Commons Zero (CC0 1.0)",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "commercialUse": true,
+  "creditRequired": false,
+  "copiedLicense": "LICENSE_KENNEY_CC0.txt",
+  "files": [
+    {
+      "runtimePath": "res://assets/audio/sfx/footsteps/sfx_footstep_outdoor_01.ogg",
+      "sourceFile": "Audio/footstep00.ogg",
+      "sha256": "6fe61ef1fc3bcf0e253bf2eb64759db6cb69e2fe452f4d88cc597ecf78a3d601"
+    },
+    {
+      "runtimePath": "res://assets/audio/sfx/footsteps/sfx_footstep_outdoor_02.ogg",
+      "sourceFile": "Audio/footstep01.ogg",
+      "sha256": "313472dba31fd0c855376069fa368bb5a198c27251cc8398ef464578b7047a4c"
+    },
+    {
+      "runtimePath": "res://assets/audio/sfx/footsteps/sfx_footstep_outdoor_03.ogg",
+      "sourceFile": "Audio/footstep02.ogg",
+      "sha256": "2d9575b7dead6e1217ca113991fc5229e9b6d998ea0726ebbb277e7398ab888f"
+    },
+    {
+      "runtimePath": "res://assets/audio/sfx/footsteps/sfx_footstep_indoor_01.ogg",
+      "sourceFile": "Audio/footstep03.ogg",
+      "sha256": "a86756b9af9f370455ab47844239bb07fd1bee7a113068c91f0fcd9b72703fae"
+    },
+    {
+      "runtimePath": "res://assets/audio/sfx/footsteps/sfx_footstep_indoor_02.ogg",
+      "sourceFile": "Audio/footstep04.ogg",
+      "sha256": "fd264d72a7cd622b82abde202f4ed09fa7de95d34c36473ee938ce66cdf39830"
+    },
+    {
+      "runtimePath": "res://assets/audio/sfx/footsteps/sfx_footstep_indoor_03.ogg",
+      "sourceFile": "Audio/footstep05.ogg",
+      "sha256": "817957e1f95d97fd36870064c41673895575cde17bccb245f50364c86ed10198"
+    },
+    {
+      "runtimePath": "res://assets/audio/sfx/footsteps/sfx_footstep_wet_01.ogg",
+      "sourceFile": "Audio/footstep06.ogg",
+      "sha256": "6cabfe7ae95d227a84066c6e17014ac31cc7c89b14ef51d7877e98352d4a64fb"
+    },
+    {
+      "runtimePath": "res://assets/audio/sfx/footsteps/sfx_footstep_wet_02.ogg",
+      "sourceFile": "Audio/footstep07.ogg",
+      "sha256": "42924cdbf998d5b3db180a339fd74afc94c570d594a536687e337ef1bdfdb346"
+    },
+    {
+      "runtimePath": "res://assets/audio/sfx/footsteps/sfx_footstep_wet_03.ogg",
+      "sourceFile": "Audio/footstep08.ogg",
+      "sha256": "668f14dc1254d0d0f33025e9c7dbcdf2c2f00462ed0e07fb8f099c1d711c1337"
+    }
+  ]
+}

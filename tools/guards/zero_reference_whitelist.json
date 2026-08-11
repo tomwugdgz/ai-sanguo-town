@@ -1,0 +1,5 @@
+{
+ "version": 1,
+ "note": "无静态引用但合法的项：动态加载、编辑器工具、手工预览。每项记 purpose/consumer/owner。",
+ "entries": []
+}

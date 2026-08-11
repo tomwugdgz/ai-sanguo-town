@@ -1,0 +1,72 @@
+{
+	"coordinateSpace": [
+		1920,
+		1080
+	],
+	"families": {
+		"item": {
+			"assetSize": [
+				542,
+				48
+			],
+			"layoutSize": [
+				542,
+				48
+			],
+			"preparation": "offline_exact_size_only",
+			"states": [
+				"normal",
+				"hover",
+				"pressed",
+				"selected",
+				"disabled"
+			]
+		},
+		"panel": {
+			"assetSize": [
+				606,
+				216
+			],
+			"layoutSize": [
+				606,
+				216
+			],
+			"preparation": "offline_exact_size_only"
+		},
+		"separator": {
+			"assetSize": [
+				542,
+				2
+			],
+			"layoutSize": [
+				542,
+				2
+			],
+			"preparation": "offline_exact_size_only"
+		}
+	},
+	"rules": {
+		"focusPolicy": "reuse_hover_or_selected",
+		"individualRowFrames": false,
+		"programmaticFrameDrawing": false,
+		"runtimeUsesAtlas": false,
+		"runtimeUsesSourceSlices": false,
+		"scrollbarManifest": "res://assets/ui/common/scrollbar/wood_v1/scrollbar_wood_v1_manifest.json",
+		"scrollbarOwner": "ui.common.scrollbar.wood-v1.dropdown-short",
+		"scrollbarRuntimeScalePolicy": "exact-size-only",
+		"scrollbarThumbHitTargetSize": [
+			44,
+			72
+		],
+		"scrollbarThumbSize": [
+			32,
+			72
+		],
+		"scrollbarTrackSize": [
+			24,
+			184
+		]
+	},
+	"schemaVersion": 1,
+	"visibleItemCount": 4
+}

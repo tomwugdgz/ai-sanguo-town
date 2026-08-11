@@ -1,0 +1,130 @@
+{
+  "schema_version": 2,
+  "source_revision": "dining_hall_sink_cabinet_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "sink_cabinet",
+  "label": "公共食堂独立水槽柜",
+  "room_id": "dining_hall",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 96,
+    "depth": 64,
+    "height": 128
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/sink_cabinet/frames/sink_cabinet_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/sink_cabinet/frames/sink_cabinet_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/sink_cabinet/frames/sink_cabinet_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/sink_cabinet/frames/sink_cabinet_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      121,
+      175
+    ],
+    "right": [
+      103,
+      175
+    ],
+    "up": [
+      121,
+      157
+    ],
+    "left": [
+      101,
+      162
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -48,
+          -12
+        ],
+        [
+          48,
+          -12
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          -48,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -55,
+        -148
+      ],
+      [
+        55,
+        -148
+      ],
+      [
+        56,
+        0
+      ],
+      [
+        -56,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-55, -148], [55, -148], [55, 0], [-55, 0]],
+      "right": [[-35, -144], [34, -144], [34, 0], [-35, 0]],
+      "up": [[-55, -143], [55, -143], [55, 0], [-55, 0]],
+      "left": [[-35, -144], [34, -144], [34, 0], [-35, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "use_front",
+      "kind": "use",
+      "position_px": [
+        0,
+        48
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/background/dining_hall_background_kitchen_v2.png",
+      "game/world/maps/town/interiors/dining_hall/assets/concepts/dining_hall_layout_candidate_3.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

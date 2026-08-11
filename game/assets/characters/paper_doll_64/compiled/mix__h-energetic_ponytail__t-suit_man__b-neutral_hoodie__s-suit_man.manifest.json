@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 2,
+  "loadoutId": "mix__h-energetic_ponytail__t-suit_man__b-neutral_hoodie__s-suit_man",
+  "displayName": "自由混搭",
+  "previewOnly": false,
+  "masterContractSha256": "A3DB56CAB28515A0AEC00BC0C18261A363BD6C63E6A345A4E21766F695703850",
+  "selection": {
+    "head": "energetic_ponytail",
+    "top_hands": "suit_man",
+    "bottom": "neutral_hoodie",
+    "shoes": "suit_man"
+  },
+  "preset": false,
+  "frame": [
+    64,
+    80
+  ],
+  "root": [
+    32,
+    72
+  ],
+  "sheet": [
+    256,
+    320
+  ],
+  "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+  ],
+  "columnSequence": [
+    "neutral",
+    "step_right",
+    "neutral",
+    "step_left"
+  ],
+  "frameDurationMs": 200,
+  "filter": "nearest",
+  "mipmaps": false,
+  "runtimeMode": "precompiled_single_sprite_atlas",
+  "atlas": "assets/characters/paper_doll_64/compiled/mix__h-energetic_ponytail__t-suit_man__b-neutral_hoodie__s-suit_man_walk_64.png"
+}

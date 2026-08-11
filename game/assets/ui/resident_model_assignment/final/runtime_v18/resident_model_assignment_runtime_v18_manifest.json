@@ -1,0 +1,182 @@
+{
+  "assetId": "ui.resident_model_assignment.runtime-v18",
+  "assets": {
+    "completion_modal.overlay": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/completion_modal/completion_modal_overlay_v18.png",
+      "sha256": "3547684c12ca8fddba60227df9c21cc42eb12cbee264d5316ca5bed9cc2a66ac",
+      "size": [
+        630,
+        525
+      ]
+    },
+    "modal.modal_return.disabled": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_return/disabled.png",
+      "sha256": "9b9c05ba78ff90645b97c9250f810caf36d5f6211628886b0d84b3922e74c07a",
+      "size": [
+        241,
+        75
+      ]
+    },
+    "modal.modal_return.hover_1": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_return/hover_1.png",
+      "sha256": "da32f7714cef6facae11a05258d28dec06489d48427b202b3e6eb50257b40cd6",
+      "size": [
+        241,
+        75
+      ]
+    },
+    "modal.modal_return.hover_2_focus": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_return/hover_2_focus.png",
+      "sha256": "953e58deb341f6a57840d9943d3382f3ece8325d34368d7bb6a09674be15603b",
+      "size": [
+        241,
+        75
+      ]
+    },
+    "modal.modal_return.normal": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_return/normal.png",
+      "sha256": "31a18516a2c60524dc255caa3969833c4775903ca91542d52d3fb3bcfd8299e2",
+      "size": [
+        241,
+        75
+      ]
+    },
+    "modal.modal_return.pressed_1": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_return/pressed_1.png",
+      "sha256": "49a9e27c20a95147943e3f28254004d5d2a61febadd7b8e17856d23d5724ab00",
+      "size": [
+        241,
+        75
+      ]
+    },
+    "modal.modal_return.pressed_2": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_return/pressed_2.png",
+      "sha256": "c52f0b0bc6c2e6ee3ae3b843fd96c97a9063d07118638121827bc183d32168ff",
+      "size": [
+        241,
+        75
+      ]
+    },
+    "modal.modal_return.selected": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_return/selected.png",
+      "sha256": "953e58deb341f6a57840d9943d3382f3ece8325d34368d7bb6a09674be15603b",
+      "size": [
+        241,
+        75
+      ]
+    },
+    "modal.modal_start.disabled": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_start/disabled.png",
+      "sha256": "c59c7da61d969892981e625d037e9e00022f9f1fd1b92b79ecbdbeced3ab6419",
+      "size": [
+        244,
+        75
+      ]
+    },
+    "modal.modal_start.hover_1": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_start/hover_1.png",
+      "sha256": "a1c28763e3f26f0b1fc0b24267752ebc26b8552472e9a4c2c04a27b252c4d7b8",
+      "size": [
+        244,
+        75
+      ]
+    },
+    "modal.modal_start.hover_2_focus": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_start/hover_2_focus.png",
+      "sha256": "239bfabd4db7341cb0899bbc00fe68aad0db846fd7607e0b73f2a720156f7fc1",
+      "size": [
+        244,
+        75
+      ]
+    },
+    "modal.modal_start.normal": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_start/normal.png",
+      "sha256": "e1e3dd86592f14c611cb6c8739558ed0af76ca43224d8a382a75c9aac022bfe5",
+      "size": [
+        244,
+        75
+      ]
+    },
+    "modal.modal_start.pressed_1": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_start/pressed_1.png",
+      "sha256": "4528b656c5ed2f9483216361778c8163b2fdb8b45b16fecf8ee181956f101683",
+      "size": [
+        244,
+        75
+      ]
+    },
+    "modal.modal_start.pressed_2": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_start/pressed_2.png",
+      "sha256": "92a5ee6d6a00bde5a3f4bb509e92d31ab13b3039cc6feb73ad0090d7b2e8df20",
+      "size": [
+        244,
+        75
+      ]
+    },
+    "modal.modal_start.selected": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/modal_controls/modal_start/selected.png",
+      "sha256": "239bfabd4db7341cb0899bbc00fe68aad0db846fd7607e0b73f2a720156f7fc1",
+      "size": [
+        244,
+        75
+      ]
+    },
+    "page_shell.v18": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/page_shell/resident_model_assignment_page_shell_v18.png",
+      "sha256": "d16d6cd2e757cf55eafa78b76bcb86995461dfddb56cc64275a0a920badfc5e8",
+      "size": [
+        1671,
+        941
+      ]
+    },
+    "scrollbar.thumb.focus": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/scrollbar/thumb_focus.png",
+      "sha256": "b42391ee3e5d369bf78e9fcaf4beb9c1528e076cd8b89c72f80f7a81414e0875",
+      "size": [
+        32,
+        64
+      ]
+    },
+    "scrollbar.thumb.hover": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/scrollbar/thumb_hover.png",
+      "sha256": "847ead3766a621b9d4afdddeaa7aaffdb635afc237d00afd7a0b855774af4fa5",
+      "size": [
+        32,
+        64
+      ]
+    },
+    "scrollbar.thumb.normal": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/scrollbar/thumb_normal.png",
+      "sha256": "a81fa17c4ee457ef037e8806c5cd37a7e5491ee63fcef8ea5b7d00a0fd8c6d39",
+      "size": [
+        32,
+        64
+      ]
+    },
+    "scrollbar.thumb.pressed": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/scrollbar/thumb_pressed.png",
+      "sha256": "8ef1c62b0b62aab0f0346abeed2bc2d53afc9ec606fd755921c95530cc8bfaee",
+      "size": [
+        32,
+        64
+      ]
+    },
+    "scrollbar.track": {
+      "path": "res://assets/ui/resident_model_assignment/final/runtime_v18/scrollbar/track.png",
+      "sha256": "ec3f300042f9af141056bae3ec4c32a3c4b3aebdea85e9346074a0d5070c55f6",
+      "size": [
+        24,
+        574
+      ]
+    }
+  },
+  "failures": [],
+  "fullSurfaceStatusAnimation": false,
+  "method": "approved overlay; cap-preserving 1:1 page scrollbar; exact modal button crops",
+  "passed": true,
+  "runtimeWholePageScale": false,
+  "schemaVersion": 1,
+  "singleVisibleBoundaryOwner": true,
+  "sourceAssetStatus": "approved",
+  "yellowSweepAnimation": false
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "source_revision": "home_template_a_single_bed_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "single_bed",
+  "label": "单人床",
+  "room_id": "home_template_a",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 96,
+    "depth": 24,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/single_bed/frames/single_bed_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/single_bed/frames/single_bed_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/single_bed/frames/single_bed_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/single_bed/frames/single_bed_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      156,
+      260
+    ],
+    "right": [
+      156,
+      222
+    ],
+    "up": [
+      156,
+      254
+    ],
+    "left": [
+      154,
+      218
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -48,
+          -24
+        ],
+        [
+          48,
+          -24
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          -48,
+          0
+        ]
+      ]
+    ],
+    "polygons_by_direction_px": {
+      "down": [[[-48, -24], [48, -24], [48, 0], [-48, 0]]],
+      "right": [[[-96, -24], [96, -24], [96, 0], [-96, 0]]],
+      "up": [[[-48, -24], [48, -24], [48, 0], [-48, 0]]],
+      "left": [[[-96, -24], [96, -24], [96, 0], [-96, 0]]]
+    }
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -55,
+        -214
+      ],
+      [
+        56,
+        -214
+      ],
+      [
+        56,
+        1
+      ],
+      [
+        -55,
+        1
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-55, -214], [56, -214], [56, 1], [-55, 1]],
+      "right": [[-114, -141], [115, -141], [115, 0], [-114, 0]],
+      "up": [[-55, -215], [56, -215], [56, 0], [-55, 0]],
+      "left": [[-115, -141], [114, -141], [114, 0], [-115, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "use_bed",
+      "kind": "use",
+      "position_px": [
+        -64,
+        -96
+      ],
+      "actor_facing": "right",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_a/FURNITURE_PLAN.md",
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_a/layout_concepts/home_01_layout_concept_v1/home_01_furniture_layout_concept_candidate_a.png"
+    ],
+    "source_record": "game/world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/single_bed/candidate_a_room_batch/SOURCE_RECORD.json"
+  }
+}

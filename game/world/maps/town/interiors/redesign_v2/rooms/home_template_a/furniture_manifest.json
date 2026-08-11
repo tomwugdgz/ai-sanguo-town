@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source_revision": "home_template_a_space_v1_formal_furniture_manifest_v1",
+  "room_id": "home_template_a",
+  "assets": [
+    {
+      "asset_id": "potted_plant",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/potted_plant/potted_plant.asset.json"
+    },
+    {
+      "asset_id": "single_bed",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/single_bed/single_bed.asset.json"
+    },
+    {
+      "asset_id": "storage_cabinet",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/storage_cabinet/storage_cabinet.asset.json"
+    },
+    {
+      "asset_id": "wooden_chair",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/wooden_chair/wooden_chair.asset.json"
+    },
+    {
+      "asset_id": "work_table",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/work_table/work_table.asset.json"
+    }
+  ]
+}

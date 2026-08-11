@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "pageId": "avatar_mode",
+  "status": "avatar_page_verified_shared_input_bridge_pending",
+  "inspectedDate": "2026-07-23",
+  "adapter": {
+    "path": "game/world/presentation/ui/TownUiAdapter.gd",
+    "sha256": "932436c9516832cb11cd9cb5da0bf24cb228bd3c29d3b74ff384d6ad230dc3ab",
+    "consumptionMode": "single injected adapter instance",
+    "directClassPreloadByPage": false,
+    "directWorldReadByPage": false,
+    "directAgentReadByPage": false
+  },
+  "formalContractDifferences": {
+    "newlyConfirmed": [
+      "avatar.data.mode uses observer/avatar_descent/avatar_active",
+      "avatar.data.nearbyTargets/currentTarget/nextTarget/focusedTargetId/targetRevision",
+      "avatar.data.contextTargets[].primaryAction provides the nearby chat entry",
+      "avatar.actions.focusTarget dispatches avatar.focus_target",
+      "avatar.actions.exitMode dispatches avatar.exit_mode only in avatar_active without a conversation"
+    ],
+    "stillUnavailable": [
+      "avatar.nearbyTargets does not deliver a directly consumable Texture2D portrait",
+      "avatar.actions.retry is disabled with NO_RETRYABLE_ERROR"
+    ],
+    "pagePolicy": "Consume only the injected TownUiAdapter snapshots and declared actions; never read TownRuntime, World, Agent, resident catalogs, or file paths to fill a gap."
+  },
+  "productDecisions": [
+    {
+      "path": "avatar.actions.enterPlace",
+      "intent": "avatar.enter_place",
+      "classification": "intentionally_unsupported_by_product",
+      "adapterStateAccepted": "omitted",
+      "pageExposure": "none",
+      "transitionOwner": "physical_portal",
+      "contractGap": false
+    },
+    {
+      "path": "avatar.actions.inspectObject",
+      "intent": "avatar.inspect_object",
+      "classification": "intentionally_unsupported_by_product",
+      "adapterStateAccepted": "omitted",
+      "pageExposure": "none",
+      "transitionOwner": "none",
+      "contractGap": false
+    }
+  ],
+  "deliveredAndConsumed": {
+    "scopes": [
+      "avatar",
+      "conversation"
+    ],
+    "envelope": [
+      "scope",
+      "status",
+      "revision",
+      "data",
+      "actions",
+      "operation",
+      "error"
+    ],
+    "avatarModes": [
+      "observer",
+      "avatar_descent",
+      "avatar_active"
+    ],
+    "legacyModeAvatarAccepted": false,
+    "avatarData": [
+      "source",
+      "capabilityMode",
+      "formalReady",
+      "place",
+      "spaceId",
+      "regionId",
+      "position",
+      "nearbyTargets",
+      "currentTarget",
+      "nextTarget",
+      "focusedTargetId",
+      "targetRevision",
+      "contextTargets",
+      "prompt",
+      "mode",
+      "conversationId",
+      "identityStatus"
+    ],
+    "avatarActions": [
+      "openConversation",
+      "focusTarget",
+      "exitMode",
+      "retry"
+    ],
+    "enabledAvatarDispatch": [
+      "avatar.focus_target",
+      "avatar.exit_mode"
+    ],
+    "targetSwitchVerified": {
+      "initialFocusedTargetId": "resident:resident_lin_lan_01",
+      "afterFocusedTargetId": "resident:resident_wen_xu_01",
+      "currentTargetAfterSwitch": "resident:resident_wen_xu_01",
+      "nextTargetAfterSwitch": "resident:resident_lin_lan_01",
+      "payloadUsesStableResidentId": true,
+      "pageReadsTargetsOnlyFromViewModel": true
+    },
+    "modeLifecycleVerified": {
+      "sequence": [
+        "observer",
+        "avatar_descent",
+        "avatar_active",
+        "observer"
+      ],
+      "descentInputLocked": true,
+      "descentOnlyLandingStatusVerified": true,
+      "activeInputEnabled": true,
+      "observerUnmountsPage": true,
+      "observerHudMutuallyExclusiveVerified": true
+    },
+    "inputDispatchVerified": {
+      "keyboard_mouse": [
+        "avatar.focus_target",
+        "avatar.exit_mode"
+      ],
+      "gamepad": [
+        "avatar.focus_target",
+        "avatar.exit_mode"
+      ],
+      "touch": [
+        "avatar.focus_target",
+        "avatar.exit_mode"
+      ]
+    }
+  },
+  "gaps": [
+    {
+      "path": "avatar.data.nearbyTargets[].portraitRef",
+      "currentState": "portraitRef=\"\" and portraitStatus=\"unavailable\"; no directly consumable Texture2D is delivered",
+      "pagePolicy": "Use portraitFallbackText, then resident name initial; never resolve a string path, portraitKey, resident catalog, World object, or filesystem path.",
+      "visibleFallback": "initial_fallback"
+    },
+    {
+      "path": "avatar.actions.retry",
+      "currentState": "delivered disabled with NO_RETRYABLE_ERROR",
+      "pagePolicy": "Only expose retry after the Adapter enables the declared action."
+    },
+    {
+      "path": "host.avatarMovementInput",
+      "currentState": "keyboard movement is owned by the runtime InputMap; no public touch-vector bridge or gamepad-axis mapping is delivered to this page",
+      "pagePolicy": "Render the approved mutually exclusive movement affordances; do not call TownRuntime or synthesize movement through a private path.",
+      "hostWiringRequired": true
+    }
+  ],
+  "resolvedSharedIntegration": [
+    {
+      "path": "GameFlowHost._on_avatar_hud_intent_requested",
+      "currentState": "Shared owner changed the callback to a documented no-op; avatar.focus_target remains Adapter-only and no resident_action_menu is opened.",
+      "gameFlowHostSha256": "49992b3844b406e82a17ef378ea54959315b2f4a507c689ea957eafe3c73b92d",
+      "pageTaskEditedSharedFile": false,
+      "exactHunksAtInspectedSha": [
+        "game/world/presentation/game_flow/GameFlowHost.gd lines 3090-3094",
+        "game/world/presentation/game_flow/GameFlowHost.gd lines 3106-3110",
+        "game/world/presentation/game_flow/GameFlowHost.gd lines 4095-4100"
+      ]
+    }
+  ],
+  "portraitSlotContract": {
+    "current": "TextureRect when a Texture2D is delivered",
+    "next": "TextureRect with muted modulate when a Texture2D is delivered",
+    "fallback": "portraitFallbackText or resident name initial Label",
+    "centerTolerancePx": 4,
+    "borderOwner": "ui.avatar-mode.composite.target-switcher",
+    "portraitDrawsDuplicateBorder": false
+  },
+  "frozenPlayerAvatar": {
+    "path": "res://assets/characters/player_avatar_white/player_avatar_white_walk_64.png",
+    "sha256": "d51937f9fdb0adf4bf8747ccdcbde74afe1b028c6969019877d5c494a60d7395",
+    "sheet": [
+      256,
+      320
+    ],
+    "frame": [
+      64,
+      80
+    ],
+    "grid": [
+      4,
+      4
+    ],
+    "footPoint": [
+      32,
+      72
+    ],
+    "townDisplayScale": 3.0,
+    "interpolation": "nearest",
+    "owner": "Town/character presentation",
+    "pageLoadsOrCopiesAsset": false
+  },
+  "verification": {
+    "adapterIntegration": {
+      "sha256": "263f285a68388ec1583184efd1c90cd74702df7628649d02b4cf2e7bf311c4ae",
+      "checks": 19,
+      "failedChecks": 0,
+      "historicalPath": "game/ui/avatar_mode/integration/avatar_mode_adapter_integration_gate.json",
+      "historicalNote": "原运行报告已随生成物清理从仓库移除（gate 现每次运行写入 user://ai-town-test-reports/avatar_mode_adapter_integration_gate.json），此处保留当时结果摘要。"
+    },
+    "adapterIntegrationScript": {
+      "path": "game/ui/avatar_mode/integration/AvatarModeAdapterIntegrationGate.gd",
+      "sha256": "57cbc148f217834b5fc71f318c8127e31b4d48d1323d3664c92f08c9547deb40",
+      "addsDescentOnlyLandingStatusAssertion": true,
+      "addsAvatarObserverHudMutualExclusivityAssertion": true,
+      "addsProductUnsupportedZeroExposureAssertion": true,
+      "status": "passed"
+    },
+    "runtimeCandidatePreflight": {
+      "path": "game/ui/avatar_mode/preflight/avatar_mode_runtime_candidate_preflight.json",
+      "sha256": "ac7557e38c60e731d2e734aff9ffe0be4bcc8b11708a8bc5e3d908f1706a05b5",
+      "checks": 12,
+      "failedChecks": 0
+    },
+    "runtimeCandidatePreflightScript": {
+      "path": "game/ui/avatar_mode/preflight/AvatarModeRuntimeCandidatePreflight.gd",
+      "sha256": "64774c66321f9bdeba1cdcee1f9ae2f56b60d917576858b9198239c16708bf52"
+    },
+    "godotVersion": "4.7.1.stable.official.a13da4feb",
+    "godotStartedThisCloseout": true,
+    "visualBaselineChanged": false
+  },
+  "formalReadyWhenInjected": true,
+  "sharedHandoff": "game/ui/avatar_mode/integration/avatar_mode_observer_host_handoff.json",
+  "integrationStatus": "avatar_page_verified_shared_input_bridge_pending"
+}

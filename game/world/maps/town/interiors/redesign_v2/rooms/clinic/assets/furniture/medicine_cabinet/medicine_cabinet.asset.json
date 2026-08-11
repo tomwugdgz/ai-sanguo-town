@@ -1,0 +1,158 @@
+{
+  "schema_version": 2,
+  "source_revision": "medicine_cabinet_footpoint_occlusion_v1",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "medicine_cabinet",
+  "label": "诊所玻璃药品高柜",
+  "room_id": "clinic",
+  "canonical_direction": "down",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 92,
+    "depth": 48,
+    "height": 208
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/medicine_cabinet/frames/medicine_cabinet_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/medicine_cabinet/frames/medicine_cabinet_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/medicine_cabinet/frames/medicine_cabinet_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/medicine_cabinet/frames/medicine_cabinet_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      158,
+      234
+    ],
+    "right": [
+      151,
+      212
+    ],
+    "up": [
+      158,
+      235
+    ],
+    "left": [
+      150,
+      211
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -42,
+          -24
+        ],
+        [
+          42,
+          -24
+        ],
+        [
+          46,
+          -20
+        ],
+        [
+          46,
+          20
+        ],
+        [
+          42,
+          24
+        ],
+        [
+          -42,
+          24
+        ],
+        [
+          -46,
+          20
+        ],
+        [
+          -46,
+          -20
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -1,
+      0
+    ],
+    "cells": [
+      [
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -48,
+        -184
+      ],
+      [
+        48,
+        -184
+      ],
+      [
+        48,
+        24
+      ],
+      [
+        -48,
+        24
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-47, -192], [48, -192], [48, 24], [-47, 24]],
+      "right": [[-31, -170], [31, -170], [31, 46], [-31, 46]],
+      "up": [[-47, -192], [48, -192], [48, 24], [-47, 24]],
+      "left": [[-31, -171], [31, -171], [31, 46], [-31, 46]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "primary",
+      "kind": "store",
+      "position_px": [
+        0,
+        56
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/background/candidates/clinic_shell_calibration_a_user_accepted.png",
+      "res://world/maps/town/interiors/clinic/assets/concepts/clinic_layout_warm_v1.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "res://world/maps/town/interiors/redesign_v2/rooms/clinic/assets/furniture/medicine_cabinet/candidate_a_room_batch_v1/SOURCE_RECORD.json"
+  },
+  "direction_visual_policy": "strict_four_direction"
+}

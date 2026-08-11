@@ -1,0 +1,224 @@
+{
+  "schema_version": 2,
+  "source_revision": "workshop_heavy_workbench_r2_batch_v1_formal_import_v1_footpoint_v3",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "heavy_workbench_r2",
+  "label": "高脚重型木工台（四根显著长桌腿，空台面，正面约侧面三倍宽且总高度约正面宽度一半）",
+  "room_id": "workshop",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 256,
+    "depth": 32,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/heavy_workbench_r2/frames/heavy_workbench_r2_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/heavy_workbench_r2/frames/heavy_workbench_r2_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/heavy_workbench_r2/frames/heavy_workbench_r2_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/heavy_workbench_r2/frames/heavy_workbench_r2_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      156,
+      232
+    ],
+    "right": [
+      160,
+      232
+    ],
+    "up": [
+      156,
+      216
+    ],
+    "left": [
+      160,
+      216
+    ]
+  },
+  "ground_contact": {
+    "polygons_by_direction_px": {
+      "down": [[[-128, -32], [128, -32], [128, 0], [-128, 0]]],
+      "right": [[[-51, -32], [50, -32], [50, 0], [-51, 0]]],
+      "up": [[[-128, -32], [128, -32], [128, 0], [-128, 0]]],
+      "left": [[[-51, -32], [51, -32], [51, 0], [-51, 0]]]
+    },
+    "polygons_px": [
+      [
+        [
+          -128,
+          -32
+        ],
+        [
+          128,
+          -32
+        ],
+        [
+          128,
+          0
+        ],
+        [
+          -128,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -8,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -131,
+        -135
+      ],
+      [
+        131,
+        -135
+      ],
+      [
+        131,
+        0
+      ],
+      [
+        -131,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [
+        [
+          -131,
+          -135
+        ],
+        [
+          131,
+          -135
+        ],
+        [
+          131,
+          0
+        ],
+        [
+          -131,
+          0
+        ]
+      ],
+      "right": [
+        [
+          -51,
+          -135
+        ],
+        [
+          50,
+          -135
+        ],
+        [
+          50,
+          0
+        ],
+        [
+          -51,
+          0
+        ]
+      ],
+      "up": [
+        [
+          -131,
+          -135
+        ],
+        [
+          131,
+          -135
+        ],
+        [
+          131,
+          0
+        ],
+        [
+          -131,
+          0
+        ]
+      ],
+      "left": [
+        [
+          -51,
+          -135
+        ],
+        [
+          51,
+          -135
+        ],
+        [
+          51,
+          0
+        ],
+        [
+          -51,
+          0
+        ]
+      ]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "master_use",
+      "kind": "use",
+      "position_px": [
+        0,
+        48
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/candidates/calibration_c/shell_raw.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/layout_concepts/workshop_layout_concept_a/workshop_furniture_layout_concept_a.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "assets/furniture/heavy_workbench_r2/batch_v1/SOURCE_RECORD.json"
+  }
+}

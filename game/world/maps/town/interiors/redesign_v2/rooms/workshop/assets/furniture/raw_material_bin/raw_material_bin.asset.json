@@ -1,0 +1,204 @@
+{
+  "schema_version": 2,
+  "source_revision": "workshop_raw_material_bin_batch_v1_formal_import_v1_footpoint_v3",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "raw_material_bin",
+  "label": "原料木块箱",
+  "room_id": "workshop",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 96,
+    "depth": 32,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/raw_material_bin/frames/raw_material_bin_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/raw_material_bin/frames/raw_material_bin_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/raw_material_bin/frames/raw_material_bin_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/raw_material_bin/frames/raw_material_bin_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      172
+    ],
+    "right": [
+      102,
+      168
+    ],
+    "up": [
+      104,
+      167
+    ],
+    "left": [
+      102,
+      168
+    ]
+  },
+  "ground_contact": {
+    "polygons_by_direction_px": {
+      "down": [[[-48, -32], [48, -32], [48, 0], [-48, 0]]],
+      "right": [[[-45, -32], [44, -32], [44, 0], [-45, 0]]],
+      "up": [[[-48, -32], [48, -32], [48, 0], [-48, 0]]],
+      "left": [[[-44, -32], [45, -32], [45, 0], [-44, 0]]]
+    },
+    "polygons_px": [
+      [
+        [
+          -48,
+          -32
+        ],
+        [
+          48,
+          -32
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          -48,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -54,
+        -138
+      ],
+      [
+        55,
+        -138
+      ],
+      [
+        55,
+        0
+      ],
+      [
+        -54,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [
+        [
+          -54,
+          -138
+        ],
+        [
+          55,
+          -138
+        ],
+        [
+          55,
+          0
+        ],
+        [
+          -54,
+          0
+        ]
+      ],
+      "right": [
+        [
+          -45,
+          -121
+        ],
+        [
+          44,
+          -121
+        ],
+        [
+          44,
+          0
+        ],
+        [
+          -45,
+          0
+        ]
+      ],
+      "up": [
+        [
+          -54,
+          -129
+        ],
+        [
+          55,
+          -129
+        ],
+        [
+          55,
+          0
+        ],
+        [
+          -54,
+          0
+        ]
+      ],
+      "left": [
+        [
+          -44,
+          -122
+        ],
+        [
+          45,
+          -122
+        ],
+        [
+          45,
+          0
+        ],
+        [
+          -44,
+          0
+        ]
+      ]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "raw_blank_pickup",
+      "kind": "take",
+      "position_px": [
+        0,
+        48
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/candidates/calibration_c/shell_raw.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/layout_concepts/workshop_layout_concept_a/workshop_furniture_layout_concept_a.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "assets/furniture/raw_material_bin/batch_v1/SOURCE_RECORD.json"
+  }
+}

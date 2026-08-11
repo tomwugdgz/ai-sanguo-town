@@ -1,0 +1,40 @@
+{
+  "assetId": "ui.startup.resident-messages.v1",
+  "source": {
+    "kind": "generated_for_project",
+    "sourceFilesCommitted": false
+  },
+  "generator": {
+    "mode": "built-in image_gen",
+    "workflow": "reference preview, flat chroma-key generation, local alpha removal, nearest-neighbor production sizing",
+    "generatedFor": "AI Town resident-message title popup"
+  },
+  "runtime": {
+    "cleanShell": {
+      "path": "res://assets/ui/startup/runtime/resident_messages/v1/resident_message_shell_clean_v2.png",
+      "width": 720,
+      "height": 572
+    },
+    "topCard": {
+      "path": "res://assets/ui/startup/runtime/resident_messages/v1/resident_message_card_top_v2.png",
+      "width": 580,
+      "height": 185
+    },
+    "bottomCard": {
+      "path": "res://assets/ui/startup/runtime/resident_messages/v1/resident_message_card_bottom_v2.png",
+      "width": 580,
+      "height": 185
+    },
+    "closeButton": {
+      "path": "res://assets/ui/startup/runtime/resident_messages/v1/resident_message_close_button_v2.png",
+      "width": 360,
+      "height": 68
+    }
+  },
+  "contentPolicy": {
+    "bakedText": false,
+    "residentPortraits": false,
+    "supportsMessageCount": [1, 2]
+  },
+  "integration": "StartupScreen ResidentMessagePopup"
+}

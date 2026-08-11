@@ -1,0 +1,158 @@
+{
+  "schema_version": 2,
+  "source_revision": "dock_warehouse_freight_handcart_ground_origin_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "freight_handcart",
+  "label": "货运手推车",
+  "room_id": "dock_warehouse",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 96,
+    "depth": 64,
+    "height": 64
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/freight_handcart/frames/freight_handcart_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/freight_handcart/frames/freight_handcart_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/freight_handcart/frames/freight_handcart_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/freight_handcart/frames/freight_handcart_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      102,
+      156
+    ],
+    "right": [
+      180,
+      126
+    ],
+    "up": [
+      102,
+      41
+    ],
+    "left": [
+      33,
+      119
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -51,
+          -58
+        ],
+        [
+          51,
+          -58
+        ],
+        [
+          51,
+          0
+        ],
+        [
+          -51,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -4
+    ],
+    "cells": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_by_direction_px": {
+      "down": [[-51, -126], [51, -126], [51, 0], [-51, 0]],
+      "right": [[-152, -28], [0, -28], [0, 29], [-152, 29]],
+      "up": [[-50, 0], [50, 0], [50, 124], [-50, 124]],
+      "left": [[0, -28], [152, -28], [152, 29], [0, 29]]
+    },
+    "points_px": [
+      [
+        -51.0,
+        -126
+      ],
+      [
+        51.0,
+        -126
+      ],
+      [
+        51.0,
+        0
+      ],
+      [
+        -51.0,
+        0
+      ]
+    ]
+  },
+  "interaction_anchor": [
+    {
+      "id": "use_handle",
+      "kind": "use",
+      "position_px": [
+        0,
+        48
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/shell_candidates/candidate_c_imagegen_prompt_v1/assets/background/dock_warehouse_shell_candidate_c_native.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/layout_concepts/concept_a_imagegen_prompt_v1/assets/dock_warehouse_furniture_layout_concept_candidate_a_native.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/freight_handcart/candidate_a_furniture_four_direction_sheet_v1/SOURCE_RECORD.json"
+  }
+}

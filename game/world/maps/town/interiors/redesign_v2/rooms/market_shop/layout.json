@@ -1,0 +1,8 @@
+{
+  "schema_version": 2,
+  "source_revision": "market_scene_candidate_a3_geometry_v2_boundary_audited",
+  "projection_revision": "interior_projection_v1",
+  "layout_revision": 1,
+  "room_id": "market_shop",
+  "instances": []
+}

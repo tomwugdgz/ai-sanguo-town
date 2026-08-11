@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "source_revision": "workshop_candidate_c_space_v2_formal_furniture_manifest_v1",
+  "room_id": "workshop",
+  "assets": [
+    {
+      "asset_id": "assembly_trestle_bench_r2",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/assembly_trestle_bench_r2/assembly_trestle_bench_r2.asset.json"
+    },
+    {
+      "asset_id": "bench_grinder_stand",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/bench_grinder_stand/bench_grinder_stand.asset.json"
+    },
+    {
+      "asset_id": "finished_goods_shelf_r2",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/finished_goods_shelf_r2/finished_goods_shelf_r2.asset.json"
+    },
+    {
+      "asset_id": "heavy_workbench_r2",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/heavy_workbench_r2/heavy_workbench_r2.asset.json"
+    },
+    {
+      "asset_id": "raw_lumber_rack_r2",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/raw_lumber_rack_r2/raw_lumber_rack_r2.asset.json"
+    },
+    {
+      "asset_id": "raw_material_bin",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/raw_material_bin/raw_material_bin.asset.json"
+    },
+    {
+      "asset_id": "repair_handoff_counter",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/repair_handoff_counter/repair_handoff_counter.asset.json"
+    },
+    {
+      "asset_id": "repair_intake_cart",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/repair_intake_cart/repair_intake_cart.asset.json"
+    },
+    {
+      "asset_id": "small_finished_goods_rack",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/small_finished_goods_rack/small_finished_goods_rack.asset.json"
+    },
+    {
+      "asset_id": "small_parts_cabinet",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/small_parts_cabinet/small_parts_cabinet.asset.json"
+    },
+    {
+      "asset_id": "standing_tool_board",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/standing_tool_board/standing_tool_board.asset.json"
+    },
+    {
+      "asset_id": "workshop_tool_chest",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/workshop_tool_chest/workshop_tool_chest.asset.json"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "assetId": "effect.conflict.avatar-susanoo-strike-v1",
+  "status": "runtime_corrected_giant_fill_ready_for_review",
+  "deliveryScope": {
+    "runtimeFramesIncluded": true,
+    "sourceCandidatesIncluded": false,
+    "skillButtonAssetsIncluded": false,
+    "skillButtonOwner": "avatar_mode_hud_follow_up"
+  },
+  "runtime": {
+    "frameCount": 23,
+    "frameSize": [
+      256,
+      256
+    ],
+    "fps": 18,
+    "displayScale": 1.0,
+    "mirrorRightForLeft": true,
+    "footOffsetPx": 104,
+    "contactFrame": 10,
+    "authorityMovement": false,
+    "frames": [
+      {
+        "runtimeFrame": 0,
+        "sourceFrame": 33,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_00.png",
+        "sha256": "e711d251d4aace51f3ccb7c5744aa6bc02ec70bc813c6909e860bf7634cc546c"
+      },
+      {
+        "runtimeFrame": 1,
+        "sourceFrame": 49,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_01.png",
+        "sha256": "14fd0cd8b5dcece78bef190722146255573f6c734d5dde6cc2d9c388df742291"
+      },
+      {
+        "runtimeFrame": 2,
+        "sourceFrame": 57,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_02.png",
+        "sha256": "22a6818148fcfeaf1c304b58c5bff0cb822a99d7b754c315da9a24a24ac9e29e"
+      },
+      {
+        "runtimeFrame": 3,
+        "sourceFrame": 63,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_03.png",
+        "sha256": "4a40fc8511e9c20f8c7d9675b1e666e2be8bf97afd0cfec206ff7cdbd0c85d41"
+      },
+      {
+        "runtimeFrame": 4,
+        "sourceFrame": 65,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_04.png",
+        "sha256": "510751b6a99a37eb71555efbb09640ca1248a15edf993c9ba30e60180d50ad80"
+      },
+      {
+        "runtimeFrame": 5,
+        "sourceFrame": 68,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_05.png",
+        "sha256": "13cfb32f6392e7817f52fcd9c2c26ec17769438dd9265fac8642b27fee42ecad"
+      },
+      {
+        "runtimeFrame": 6,
+        "sourceFrame": 72,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_06.png",
+        "sha256": "560a76f223e7415ea70b20b6bef3beb29a2a29af049588feb3eb510532d980c5"
+      },
+      {
+        "runtimeFrame": 7,
+        "sourceFrame": 80,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_07.png",
+        "sha256": "c86b6398d84b7752e71d7d1f5cbabe1c33506c26f4508c17d7796a1ba2473097"
+      },
+      {
+        "runtimeFrame": 8,
+        "sourceFrame": 96,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_08.png",
+        "sha256": "f57aced52507ea3d082238657073722476cd4be5a8c32dca3911af1521312d9d"
+      },
+      {
+        "runtimeFrame": 9,
+        "sourceFrame": 112,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_09.png",
+        "sha256": "0158c564fb9aa051f0290d5868c37ac43c7a787e03ba8d4f51789f41179034be"
+      },
+      {
+        "runtimeFrame": 10,
+        "sourceFrame": 117,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_10.png",
+        "sha256": "63961f20d915906f27f3349a142850e4ea9c05f6c591b1a9c492850c22ef75f9"
+      },
+      {
+        "runtimeFrame": 11,
+        "sourceFrame": 120,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_11.png",
+        "sha256": "d0b79f2aa190ce8904ef08502059e16be4eda97e65b76e91821ee80164ef7990"
+      },
+      {
+        "runtimeFrame": 12,
+        "sourceFrame": 124,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_12.png",
+        "sha256": "2da919db04625928c4366d2c4dc8ed542ba43eca3d1bad6e6fc5cc2b7778cc59"
+      },
+      {
+        "runtimeFrame": 13,
+        "sourceFrame": 128,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_13.png",
+        "sha256": "6749bb78abfc1c34053013b99096c778b558b8fbd0909b0f551ee776d25e8e98"
+      },
+      {
+        "runtimeFrame": 14,
+        "sourceFrame": 132,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_14.png",
+        "sha256": "e0530a502a95ede4179db849dd32e9ebe9fb54d6720e21475cfda4f4dc3ba317"
+      },
+      {
+        "runtimeFrame": 15,
+        "sourceFrame": 137,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_15.png",
+        "sha256": "6fc0b77426c62ac9fb694bcf0329602255e055000db3fa4d226a1d3b8f5046d4"
+      },
+      {
+        "runtimeFrame": 16,
+        "sourceFrame": 145,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_16.png",
+        "sha256": "a1f00799ae45548657ea90a92c3f9540fa94e3f80602c85c173915749993516b"
+      },
+      {
+        "runtimeFrame": 17,
+        "sourceFrame": 153,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_17.png",
+        "sha256": "2bed0fe1c900a3b5d247aeb03c231554301034a4719ff5b8740d96a7efaf7c75"
+      },
+      {
+        "runtimeFrame": 18,
+        "sourceFrame": 161,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_18.png",
+        "sha256": "4c888111501e2281fd515f1ec52e4bd6247afde946bd851794e3e1d4fa9899c3"
+      },
+      {
+        "runtimeFrame": 19,
+        "sourceFrame": 169,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_19.png",
+        "sha256": "1d4713c52fb6b742fea7ab8819db233aa7e8f0079edf8519f997f1c9ca031eca"
+      },
+      {
+        "runtimeFrame": 20,
+        "sourceFrame": 177,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_20.png",
+        "sha256": "e60383e0672a4fc92b716f71cbeb9cf224f603f8e668aa22cf550ee14f9e743b"
+      },
+      {
+        "runtimeFrame": 21,
+        "sourceFrame": 185,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_21.png",
+        "sha256": "6b35d5b7adbab2e1a8d652b5ab41c24e75cb2cb2d86155212d741526bfd84532"
+      },
+      {
+        "runtimeFrame": 22,
+        "sourceFrame": 193,
+        "path": "assets/effects/conflict/runtime/v1/avatar_susanoo_strike/frame_22.png",
+        "sha256": "73bfea3907ad1245aec171abff87a85052da904389937182c394570e98d3fb0d"
+      }
+    ],
+    "backgroundRemoval": "edge_connected_black_stage_only",
+    "giantFill": {
+      "color": "#431867",
+      "alpha": 205,
+      "activeSourceFrameRange": [
+        80,
+        153
+      ],
+      "preservesOriginalOutlineAndImpactPixels": true
+    }
+  },
+  "skillButton": {
+    "label": "须佐重击",
+    "states": [
+      {
+        "state": "normal",
+        "path": "assets/ui/avatar_mode/runtime/attack_button_v1/avatar_susanoo_strike/avatar_susanoo_strike_button_normal.png",
+        "sha256": "343efb8b3a97813031e683979d8e6729ba0376925eac365eb1b4b188631a80e0"
+      },
+      {
+        "state": "hover",
+        "path": "assets/ui/avatar_mode/runtime/attack_button_v1/avatar_susanoo_strike/avatar_susanoo_strike_button_hover.png",
+        "sha256": "ec56f781222f85ede132ccc576b6ce1258143be6519080d1f53254bf3ad30af3"
+      },
+      {
+        "state": "pressed",
+        "path": "assets/ui/avatar_mode/runtime/attack_button_v1/avatar_susanoo_strike/avatar_susanoo_strike_button_pressed.png",
+        "sha256": "da64e7876e73b32dfa589f9acba70075ce74b66b3288673a1ae96afb949c814c"
+      },
+      {
+        "state": "disabled",
+        "path": "assets/ui/avatar_mode/runtime/attack_button_v1/avatar_susanoo_strike/avatar_susanoo_strike_button_disabled.png",
+        "sha256": "2c4ae6b36ede3594289ea1866689337d8ef46291a1fabee9213b6ee174ab9ca1"
+      }
+    ],
+    "processing": "imagegen_reference_then_chroma_removal_and_nearest_resize"
+  },
+  "productContract": {
+    "owner": "avatar_unilateral_attack",
+    "residentCanRetaliate": false,
+    "usesResidentBrawlCloud": false,
+    "targetReaction": "red_flash_shake",
+    "worldAuthorityPositionUnchanged": true,
+    "injurySeverity": "light"
+  }
+}

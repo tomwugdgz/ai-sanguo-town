@@ -1,0 +1,959 @@
+{
+  "schema": "ai-town-resident-action-icons/v4",
+  "catalogDesign": "res://../docs/design/居民动作气泡与图标.md",
+  "runtimeFrameSize": [
+    32,
+    32
+  ],
+  "runtimeMarkerSize": [
+    9,
+    9
+  ],
+  "frameCount": 2,
+  "layout": "horizontal_strip",
+  "generationPromptContract": "match approved warm pixel icons; two stable frames; dark brown stepped outline; cream highlights; limited green orange gold palette; flat magenta chroma source; no text people bubble shell or watermark",
+  "markers": [
+    {
+      "markerKey": "phase_approaching",
+      "usage": "正在前往原任务位置",
+      "path": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/markers/phase_approaching.png",
+      "status": "native_9_runtime_size_checked"
+    },
+    {
+      "markerKey": "phase_waiting",
+      "usage": "等待活动位或临时受阻",
+      "path": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/markers/phase_waiting.png",
+      "status": "native_9_runtime_size_checked"
+    },
+    {
+      "markerKey": "phase_interrupted",
+      "usage": "动作被中断",
+      "path": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/markers/phase_interrupted.png",
+      "status": "native_9_runtime_size_checked"
+    },
+    {
+      "markerKey": "result_completed",
+      "usage": "原任务已经完成",
+      "path": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/markers/result_completed.png",
+      "status": "native_9_runtime_size_checked"
+    },
+    {
+      "markerKey": "result_failed",
+      "usage": "原任务失败、被拒绝或不可达",
+      "path": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/markers/result_failed.png",
+      "status": "native_9_runtime_size_checked"
+    }
+  ],
+  "items": [
+    {
+      "iconKey": "cafe_brew_coffee",
+      "usage": "冲泡咖啡",
+      "activityIds": [
+        "activity_cafe_brew_coffee"
+      ],
+      "verbs": [
+        "冲咖啡"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/cafe_brew_coffee.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "counter_service",
+      "usage": "在柜台或摊位接待客人",
+      "activityIds": [
+        "activity_cafe_receive_guests",
+        "activity_grocer_tidy_stall",
+        "activity_flower_watch_stall"
+      ],
+      "verbs": [
+        "接待客人",
+        "看顾花摊"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/counter_service.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "cafe_tidy_tables",
+      "usage": "整理咖啡馆桌椅",
+      "activityIds": [
+        "activity_cafe_tidy_tables"
+      ],
+      "verbs": [
+        "整理桌椅"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/cafe_tidy_tables.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "eat_pastry",
+      "usage": "吃点心",
+      "activityIds": [
+        "activity_cafe_eat_pastry"
+      ],
+      "verbs": [
+        "吃点心"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/eat_pastry.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "place_order",
+      "usage": "在柜台点单",
+      "activityIds": [
+        "activity_cafe_order"
+      ],
+      "verbs": [
+        "点单"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/place_order.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "cafe_rest",
+      "usage": "坐在咖啡馆喝东西休息",
+      "activityIds": [
+        "activity_cafe_rest"
+      ],
+      "verbs": [
+        "歇着"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/cafe_rest.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "clinic_consult",
+      "usage": "看诊和在问诊位接诊",
+      "activityIds": [
+        "activity_clinic_consult",
+        "activity_clinic_receive_patient"
+      ],
+      "verbs": [
+        "看诊",
+        "接诊"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/clinic_consult.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "clinic_examination",
+      "usage": "接受身体检查",
+      "activityIds": [
+        "activity_clinic_examination"
+      ],
+      "verbs": [
+        "接受检查"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/clinic_examination.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "clinic_medicine",
+      "usage": "配取或领取药品",
+      "activityIds": [
+        "activity_clinic_prepare_medicine"
+      ],
+      "verbs": [
+        "取药"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/clinic_medicine.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "clinic_wait",
+      "usage": "在诊所候诊长椅休息",
+      "activityIds": [
+        "activity_clinic_wait"
+      ],
+      "verbs": [
+        "歇着"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/clinic_wait.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "eat_meal",
+      "usage": "吃正餐",
+      "activityIds": [
+        "activity_dining_eat_meal"
+      ],
+      "verbs": [
+        "吃饭"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/eat_meal.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "collect_meal",
+      "usage": "在出餐处取餐",
+      "activityIds": [
+        "activity_dining_collect_meal"
+      ],
+      "verbs": [
+        "取餐"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/collect_meal.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "return_dishes",
+      "usage": "归还使用后的餐具",
+      "activityIds": [
+        "activity_dining_return_dishes"
+      ],
+      "verbs": [
+        "归还餐具"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/return_dishes.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "prepare_meal",
+      "usage": "烹饪和准备饭菜",
+      "activityIds": [
+        "activity_dining_prepare_meal"
+      ],
+      "verbs": [
+        "做饭"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/prepare_meal.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "wash_dishes",
+      "usage": "清洗餐具",
+      "activityIds": [
+        "activity_dining_wash_dishes"
+      ],
+      "verbs": [
+        "洗餐具"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/wash_dishes.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "sleep",
+      "usage": "在床上睡觉",
+      "activityIds": [
+        "activity_home_sleep"
+      ],
+      "verbs": [
+        "睡觉"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/sleep.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "library_checkout",
+      "usage": "办理借书和还书",
+      "activityIds": [
+        "activity_library_checkout"
+      ],
+      "verbs": [
+        "借还书"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/library_checkout.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "read_book",
+      "usage": "阅读书籍",
+      "activityIds": [
+        "activity_library_read"
+      ],
+      "verbs": [
+        "阅读"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/read_book.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "write",
+      "usage": "写作",
+      "activityIds": [
+        "activity_library_write"
+      ],
+      "verbs": [
+        "写作",
+        "整理笔记",
+        "自由书写"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/write.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "research",
+      "usage": "查阅资料",
+      "activityIds": [
+        "activity_library_research"
+      ],
+      "verbs": [
+        "查资料"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/research.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "shelve_books",
+      "usage": "整理和归还书籍",
+      "activityIds": [
+        "activity_library_shelve_returns"
+      ],
+      "verbs": [
+        "归还书籍"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/shelve_books.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "loan_records",
+      "usage": "整理借还记录",
+      "activityIds": [
+        "activity_library_staff_checkout"
+      ],
+      "verbs": [
+        "整理借还"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/loan_records.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "civic_service",
+      "usage": "办理镇务",
+      "activityIds": [
+        "activity_town_hall_civic_service"
+      ],
+      "verbs": [
+        "办事"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/civic_service.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "fill_form",
+      "usage": "填写表格",
+      "activityIds": [
+        "activity_town_hall_fill_form"
+      ],
+      "verbs": [
+        "填表"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/fill_form.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "manage_archives",
+      "usage": "查阅和整理档案",
+      "activityIds": [
+        "activity_town_hall_manage_records"
+      ],
+      "verbs": [
+        "查档案"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/manage_archives.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "paperwork",
+      "usage": "处理日常文书",
+      "activityIds": [
+        "activity_town_hall_process_paperwork"
+      ],
+      "verbs": [
+        "处理文书"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/paperwork.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "meeting",
+      "usage": "参加议事",
+      "activityIds": [
+        "activity_town_hall_meeting"
+      ],
+      "verbs": [
+        "议事"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/meeting.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "inspect_cargo",
+      "usage": "检查货物",
+      "activityIds": [
+        "activity_warehouse_check_cargo"
+      ],
+      "verbs": [
+        "检查货物"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/inspect_cargo.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "check_manifest",
+      "usage": "核对货单",
+      "activityIds": [
+        "activity_warehouse_check_manifest"
+      ],
+      "verbs": [
+        "核对货单"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/check_manifest.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "move_cargo",
+      "usage": "搬运货物",
+      "activityIds": [
+        "activity_warehouse_move_cargo"
+      ],
+      "verbs": [
+        "搬运货物"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/move_cargo.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "organize_shelves",
+      "usage": "整理仓储货架",
+      "activityIds": [
+        "activity_warehouse_organize_shelves"
+      ],
+      "verbs": [
+        "整理货架"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/organize_shelves.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "assemble_item",
+      "usage": "组装器物",
+      "activityIds": [
+        "activity_workshop_assemble_item"
+      ],
+      "verbs": [
+        "组装器物"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/assemble_item.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "craft_item",
+      "usage": "制作器物",
+      "activityIds": [
+        "activity_workshop_craft_item"
+      ],
+      "verbs": [
+        "制作器物"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/craft_item.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "grind_parts",
+      "usage": "打磨零件",
+      "activityIds": [
+        "activity_workshop_grind_parts"
+      ],
+      "verbs": [
+        "打磨零件"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/grind_parts.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "handoff_repair",
+      "usage": "交接修理件",
+      "activityIds": [
+        "activity_workshop_handoff_repair"
+      ],
+      "verbs": [
+        "交接修理件"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/handoff_repair.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "inspect_finished",
+      "usage": "查看完成的器物",
+      "activityIds": [
+        "activity_workshop_inspect_finished"
+      ],
+      "verbs": [
+        "查看成品"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/inspect_finished.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "take_lumber",
+      "usage": "取用木料",
+      "activityIds": [
+        "activity_workshop_take_lumber"
+      ],
+      "verbs": [
+        "取用木料"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/take_lumber.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "observe_plants",
+      "usage": "近距离观察植物",
+      "activityIds": [
+        "activity_botanist_observe_plants"
+      ],
+      "verbs": [
+        "观察植物"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/observe_plants.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "record_plants",
+      "usage": "记录植物研究",
+      "activityIds": [
+        "activity_botanist_record_plants"
+      ],
+      "verbs": [
+        "记录植物"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/record_plants.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "verify_plant_sources",
+      "usage": "查证植物资料",
+      "activityIds": [
+        "activity_botanist_verify_sources"
+      ],
+      "verbs": [],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/verify_plant_sources.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "prepare_dough",
+      "usage": "准备面团",
+      "activityIds": [
+        "activity_baker_prepare_dough"
+      ],
+      "verbs": [
+        "准备面团"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/prepare_dough.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "bake_bread",
+      "usage": "使用烤炉烘烤面包",
+      "activityIds": [
+        "activity_baker_bake_bread"
+      ],
+      "verbs": [
+        "烘烤面包"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/bake_bread.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "organize_fishing_gear",
+      "usage": "整理渔具",
+      "activityIds": [
+        "activity_fisher_organize_gear"
+      ],
+      "verbs": [
+        "整理渔具"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/organize_fishing_gear.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "catch_fish",
+      "usage": "在捕鱼区域捕鱼",
+      "activityIds": [
+        "activity_fisher_catch_in_region"
+      ],
+      "verbs": [],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/catch_fish.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "count_catch",
+      "usage": "清点渔获",
+      "activityIds": [
+        "activity_fisher_count_catch"
+      ],
+      "verbs": [
+        "清点渔获"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/count_catch.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "count_goods",
+      "usage": "清点商店货品",
+      "activityIds": [
+        "activity_grocer_count_goods"
+      ],
+      "verbs": [
+        "清点货品"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/count_goods.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "buy_general_goods",
+      "usage": "购买日用品",
+      "activityIds": [
+        "activity_market_buy_general_goods"
+      ],
+      "verbs": [
+        "购买日用品"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/buy_general_goods.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "buy_fish",
+      "usage": "购买鲜鱼",
+      "activityIds": [
+        "activity_market_buy_fish"
+      ],
+      "verbs": [
+        "购买鲜鱼"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/buy_fish.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "sort_mail",
+      "usage": "分拣信件",
+      "activityIds": [
+        "activity_postal_sort_mail"
+      ],
+      "verbs": [
+        "分拣信件"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/sort_mail.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "prepare_mailbag",
+      "usage": "巡看信箱与整理投递袋",
+      "activityIds": [
+        "activity_postal_collect_outgoing_mail",
+        "activity_postal_prepare_mailbag"
+      ],
+      "verbs": [
+        "整理投递袋"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/prepare_mailbag.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "arrange_bouquets",
+      "usage": "整理花束",
+      "activityIds": [
+        "activity_flower_arrange_bouquets"
+      ],
+      "verbs": [
+        "整理花束"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/arrange_bouquets.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "buy_flowers",
+      "usage": "购买花束",
+      "activityIds": [
+        "activity_market_buy_flowers"
+      ],
+      "verbs": [
+        "购买花束"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/buy_flowers.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "rehearse_music",
+      "usage": "练习曲目",
+      "activityIds": [
+        "activity_musician_rehearse"
+      ],
+      "verbs": [
+        "练习曲目"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/rehearse_music.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "perform_music",
+      "usage": "在广场演奏",
+      "activityIds": [
+        "activity_musician_perform"
+      ],
+      "verbs": [
+        "演奏"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/perform_music.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "water_beds",
+      "usage": "浇灌花圃",
+      "activityIds": [
+        "activity_farm_water_beds"
+      ],
+      "verbs": [
+        "浇灌花圃"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/water_beds.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "harvest_garden",
+      "usage": "在成熟花圃采收",
+      "activityIds": [
+        "activity_garden_harvest_region"
+      ],
+      "verbs": [],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/harvest_garden.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "tidy_garden_tools",
+      "usage": "整理园具",
+      "activityIds": [
+        "activity_farm_tidy_tools"
+      ],
+      "verbs": [
+        "整理园具"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/tidy_garden_tools.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "read_bulletin",
+      "usage": "阅读公告栏",
+      "activityIds": [
+        "activity_bulletin_read"
+      ],
+      "verbs": [
+        "阅读公告"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/read_bulletin.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "publish_bulletin",
+      "usage": "张贴公告",
+      "activityIds": [
+        "activity_bulletin_publish"
+      ],
+      "verbs": [
+        "张贴公告"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/publish_bulletin.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "rest_outdoor_bench",
+      "usage": "坐在户外长椅休息",
+      "activityIds": [
+        "activity_garden_bench_rest",
+        "activity_river_bench_rest"
+      ],
+      "verbs": [],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/rest_outdoor_bench.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "calligraphy_demonstrate",
+      "usage": "书写示范",
+      "activityIds": [],
+      "verbs": [
+        "书写示范"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/calligraphy_demonstrate.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "tidy_copybooks",
+      "usage": "整理字帖",
+      "activityIds": [],
+      "verbs": [
+        "整理字帖"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/tidy_copybooks.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "tidy_stall",
+      "usage": "收拾摊位",
+      "activityIds": [],
+      "verbs": [
+        "整理摊位"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/tidy_stall.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "tidy_fishing_nets",
+      "usage": "整理渔网",
+      "activityIds": [],
+      "verbs": [
+        "整理渔网"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/tidy_fishing_nets.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "tidy_newspapers",
+      "usage": "整理报纸",
+      "activityIds": [],
+      "verbs": [
+        "整理报纸"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/tidy_newspapers.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "sell_newspapers",
+      "usage": "叫卖报纸",
+      "activityIds": [],
+      "verbs": [
+        "叫卖报纸"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/sell_newspapers.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "pet_animal",
+      "usage": "抚摸允许互动的动物",
+      "activityIds": [],
+      "verbs": [
+        "摸摸"
+      ],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/pet_animal.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "walk",
+      "usage": "没有后续任务语义的普通移动",
+      "activityIds": [],
+      "verbs": [],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/walk.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "idle",
+      "usage": "World明确确认的普通待命",
+      "activityIds": [],
+      "verbs": [],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/idle.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "relay_message",
+      "usage": "托人传话",
+      "activityIds": [],
+      "verbs": [],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/relay_message.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "business_open",
+      "usage": "开门营业",
+      "activityIds": [],
+      "verbs": [],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/business_open.png",
+      "status": "native_32_runtime_size_checked"
+    },
+    {
+      "iconKey": "business_close",
+      "usage": "停止营业",
+      "activityIds": [],
+      "verbs": [],
+      "stripPath": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/strips/business_close.png",
+      "status": "native_32_runtime_size_checked"
+    }
+  ],
+  "runtimeContentSize": [
+    28,
+    28
+  ],
+  "generationMode": "approved_restore_readable_32px_assets_with_9px_markers",
+  "legacyCompatibilityIcons": [
+    {
+      "iconKey": "walking",
+      "path": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/legacy/walking.png",
+      "size": [
+        32,
+        32
+      ],
+      "status": "native_32_compatibility_icon_checked"
+    },
+    {
+      "iconKey": "eating",
+      "path": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/legacy/eating.png",
+      "size": [
+        32,
+        32
+      ],
+      "status": "native_32_compatibility_icon_checked"
+    },
+    {
+      "iconKey": "working",
+      "path": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/legacy/working.png",
+      "size": [
+        32,
+        32
+      ],
+      "status": "native_32_compatibility_icon_checked"
+    },
+    {
+      "iconKey": "tired",
+      "path": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/legacy/tired.png",
+      "size": [
+        32,
+        32
+      ],
+      "status": "native_32_compatibility_icon_checked"
+    },
+    {
+      "iconKey": "happy",
+      "path": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/legacy/happy.png",
+      "size": [
+        32,
+        32
+      ],
+      "status": "native_32_compatibility_icon_checked"
+    },
+    {
+      "iconKey": "angry",
+      "path": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/legacy/angry.png",
+      "size": [
+        32,
+        32
+      ],
+      "status": "native_32_compatibility_icon_checked"
+    },
+    {
+      "iconKey": "observing",
+      "path": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/legacy/observing.png",
+      "size": [
+        32,
+        32
+      ],
+      "status": "native_32_compatibility_icon_checked"
+    },
+    {
+      "iconKey": "reading",
+      "path": "res://assets/ui/town/hud/runtime/action_icons_readable_v4/legacy/reading.png",
+      "size": [
+        32,
+        32
+      ],
+      "status": "native_32_compatibility_icon_checked"
+    }
+  ]
+}

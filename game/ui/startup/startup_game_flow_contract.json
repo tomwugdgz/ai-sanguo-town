@@ -1,0 +1,82 @@
+{
+  "contractId": "ui.startup.game-flow-intents.rev2",
+  "producer": "StartupScreen",
+  "consumer": "GameFlowHost",
+  "signal": "intent_requested(intent: StringName, payload: Dictionary)",
+  "intents": {
+    "newGame": {
+      "intent": "session.new_game",
+      "source": "session.actions.newGame.intent",
+      "enabledFrom": "session.actions.newGame.enabled",
+      "requiresWorldAndResidentCatalog": true,
+      "providerIndependentUntilResidentModelAssignment": true,
+      "payloadRequired": [
+        "scope",
+        "actionKey",
+        "revision",
+        "routeOrigin",
+        "source",
+        "capabilityMode",
+        "validationMode",
+        "formalReady",
+        "internalPlaytest"
+      ]
+    },
+    "back": {
+      "intent": "startup.back",
+      "source": "page_navigation",
+      "payloadRequired": [
+        "scope",
+        "actionKey",
+        "revision",
+        "routeOrigin",
+        "source",
+        "capabilityMode",
+        "formalReady"
+      ]
+    },
+    "continue": {
+      "intent": "session.continue",
+      "source": "session.actions.continue.intent",
+      "enabledFrom": "session.actions.continue.enabled",
+      "disabledReasonFrom": "session.actions.continue.disabledReason",
+      "requiresPublishedPair": true
+    },
+    "loadGame": {
+      "intent": "startup.open_load_game",
+      "source": "session.actions.loadGame.intent",
+      "enabledFrom": "session.actions.loadGame.enabled",
+      "providerIndependent": true
+    },
+    "quitGame": {
+      "intent": "startup.quit_game",
+      "source": "page_navigation",
+      "payloadRequired": [
+        "scope",
+        "actionKey",
+        "revision",
+        "routeOrigin",
+        "source",
+        "capabilityMode",
+        "formalReady"
+      ]
+    }
+  },
+  "developmentEntry": {
+    "requires": {
+      "source": "placeholder",
+      "capabilityMode": "development",
+      "validationMode": "development",
+      "formalReady": false,
+      "internalPlaytest": true
+    },
+    "visibleStatus": true
+  },
+  "invariants": {
+    "onlyHostChangesScenes": true,
+    "directTownSceneNavigation": false,
+    "formalFailureMayFallbackToDevelopment": false,
+    "formalReadyMayBePromotedByPage": false,
+    "projectGodotOwnedByHost": true
+  }
+}

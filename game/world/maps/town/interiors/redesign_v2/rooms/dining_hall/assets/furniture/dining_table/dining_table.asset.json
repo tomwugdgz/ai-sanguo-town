@@ -1,0 +1,224 @@
+{
+  "schema_version": 2,
+  "source_revision": "dining_hall_dining_table_end_access_geometry_v3",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "dining_table",
+  "label": "公共食堂空长餐桌",
+  "room_id": "dining_hall",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 256,
+    "depth": 96,
+    "height": 80
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/dining_table/frames/dining_table_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/dining_table/frames/dining_table_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/dining_table/frames/dining_table_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/dining_table/frames/dining_table_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      170,
+      189
+    ],
+    "right": [
+      194,
+      147
+    ],
+    "up": [
+      170,
+      93
+    ],
+    "left": [
+      111,
+      145
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -128,
+          -96
+        ],
+        [
+          128,
+          -96
+        ],
+        [
+          128,
+          0
+        ],
+        [
+          -128,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -8,
+      -6
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        2
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -141,
+        -100
+      ],
+      [
+        141,
+        -100
+      ],
+      [
+        141,
+        0
+      ],
+      [
+        -141,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-141, -100], [141, -100], [141, 0], [-141, 0]],
+      "right": [[-83, -130], [0, -130], [0, 130], [-83, 130]],
+      "up": [[-141, 0], [141, 0], [141, 99], [-141, 99]],
+      "left": [[0, -130], [83, -130], [83, 129], [0, 129]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "inspect_south",
+      "kind": "inspect",
+      "position_px": [
+        -160,
+        -32
+      ],
+      "actor_facing": "right",
+      "capacity": 4
+    },
+    {
+      "id": "inspect_north",
+      "kind": "inspect",
+      "position_px": [
+        160,
+        -32
+      ],
+      "actor_facing": "left",
+      "capacity": 4
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/background/dining_hall_background_kitchen_v2.png",
+      "game/world/maps/town/interiors/dining_hall/assets/concepts/dining_hall_layout_candidate_3.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "instances": [
+    {
+      "asset_id": "repair_intake_cart",
+      "direction": "down",
+      "instance_id": "repair_intake_cart_west",
+      "position_px": [
+        -336,
+        304
+      ]
+    },
+    {
+      "asset_id": "repair_handoff_counter",
+      "direction": "down",
+      "instance_id": "repair_handoff_counter_southwest",
+      "position_px": [
+        -256,
+        592
+      ]
+    },
+    {
+      "asset_id": "assembly_trestle_bench_r2",
+      "direction": "down",
+      "instance_id": "assembly_trestle_bench_main_r2",
+      "position_px": [
+        208,
+        96
+      ]
+    },
+    {
+      "asset_id": "standing_tool_board",
+      "direction": "down",
+      "instance_id": "standing_tool_board_west",
+      "position_px": [
+        320,
+        128
+      ]
+    },
+    {
+      "asset_id": "workshop_tool_chest",
+      "direction": "down",
+      "instance_id": "workshop_tool_chest_west",
+      "position_px": [
+        -336,
+        32
+      ]
+    },
+    {
+      "asset_id": "bench_grinder_stand",
+      "direction": "down",
+      "instance_id": "bench_grinder_stand_east",
+      "position_px": [
+        80,
+        96
+      ]
+    },
+    {
+      "asset_id": "raw_material_bin",
+      "direction": "down",
+      "instance_id": "raw_material_bin_annex",
+      "position_px": [
+        560,
+        304
+      ]
+    },
+    {
+      "asset_id": "small_parts_cabinet",
+      "direction": "down",
+      "instance_id": "small_parts_cabinet_annex",
+      "position_px": [
+        -16,
+        96
+      ]
+    },
+    {
+      "asset_id": "heavy_workbench_r2",
+      "direction": "down",
+      "instance_id": "heavy_workbench_main_r2",
+      "position_px": [
+        0,
+        336
+      ]
+    },
+    {
+      "asset_id": "raw_lumber_rack_r2",
+      "direction": "down",
+      "instance_id": "raw_lumber_rack_annex_r2",
+      "position_px": [
+        -176,
+        96
+      ]
+    },
+    {
+      "asset_id": "finished_goods_shelf_r2",
+      "direction": "down",
+      "instance_id": "finished_goods_shelf_annex_r2",
+      "position_px": [
+        512,
+        160
+      ]
+    }
+  ],
+  "layout_revision": 4,
+  "projection_revision": "interior_projection_v1",
+  "room_id": "workshop",
+  "schema_version": 2,
+  "source_revision": "workshop_user_manual_layout_r3_footpoint_v2"
+}

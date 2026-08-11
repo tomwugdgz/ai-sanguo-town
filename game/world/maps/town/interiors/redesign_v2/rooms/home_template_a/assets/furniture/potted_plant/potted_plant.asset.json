@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "source_revision": "home_template_a_potted_plant_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "potted_plant",
+  "label": "盆栽",
+  "room_id": "home_template_a",
+  "canonical_direction": "down",
+  "direction_visual_policy": "rotationally_symmetric_reuse",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 64,
+    "depth": 24,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/potted_plant/frames/potted_plant_canonical.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/potted_plant/frames/potted_plant_canonical.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/potted_plant/frames/potted_plant_canonical.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/potted_plant/frames/potted_plant_canonical.png"
+  },
+  "visual_anchor": {
+    "down": [
+      80,
+      112
+    ],
+    "right": [
+      80,
+      112
+    ],
+    "up": [
+      80,
+      112
+    ],
+    "left": [
+      80,
+      112
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -24,
+          -24
+        ],
+        [
+          24,
+          -24
+        ],
+        [
+          28,
+          -8
+        ],
+        [
+          24,
+          0
+        ],
+        [
+          -24,
+          0
+        ],
+        [
+          -28,
+          -8
+        ]
+      ]
+    ],
+    "polygons_by_direction_px": {
+      "down": [[[-24, -24], [24, -24], [28, -8], [24, 0], [-24, 0], [-28, -8]]],
+      "right": [[[-24, -24], [24, -24], [28, -8], [24, 0], [-24, 0], [-28, -8]]],
+      "up": [[[-24, -24], [24, -24], [28, -8], [24, 0], [-24, 0], [-28, -8]]],
+      "left": [[[-24, -24], [24, -24], [28, -8], [24, 0], [-24, 0], [-28, -8]]]
+    }
+  },
+  "occupied_cells": {
+    "origin2": [
+      -2,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -33,
+        -74
+      ],
+      [
+        34,
+        -74
+      ],
+      [
+        34,
+        1
+      ],
+      [
+        -33,
+        1
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-33, -74], [34, -74], [34, 1], [-33, 1]],
+      "right": [[-33, -74], [34, -74], [34, 1], [-33, 1]],
+      "up": [[-33, -74], [34, -74], [34, 1], [-33, 1]],
+      "left": [[-33, -74], [34, -74], [34, 1], [-33, 1]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "inspect_plant",
+      "kind": "inspect",
+      "position_px": [
+        0,
+        -32
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_a/FURNITURE_PLAN.md",
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_a/layout_concepts/home_01_layout_concept_v1/home_01_furniture_layout_concept_candidate_a.png"
+    ],
+    "source_record": "game/world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/potted_plant/candidate_a_room_batch/SOURCE_RECORD.json"
+  }
+}

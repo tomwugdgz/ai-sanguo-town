@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": 4,
+  "worldId": "town",
+  "contentStage": "world_ready",
+  "pendingSections": [],
+  "distance": {
+    "unit": "pixel",
+    "pixelsPerUnit": 1
+  },
+  "perceptionRange": 320,
+  "movementRules": {
+    "outdoorDistancePerGameMinute": 144.0,
+    "connectionMinutes": 1,
+    "durationRounding": "ceil",
+    "edgeCost": "polyline_length",
+    "routeTieBreak": [
+      "arrival_node_id",
+      "node_id_sequence",
+      "edge_id_sequence"
+    ]
+  }
+}

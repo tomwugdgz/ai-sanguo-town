@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://ui/town/hud/runtime/ResidentDirectoryDrawer.gd" id="1_script"]
+
+[node name="ResidentDirectoryDrawer" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 0
+script = ExtResource("1_script")

@@ -1,0 +1,234 @@
+{
+  "schema_version": 2,
+  "source_revision": "workshop_repair_handoff_counter_batch_v1_formal_import_v1_footpoint_v3",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "repair_handoff_counter",
+  "label": "空台面送修交接台",
+  "room_id": "workshop",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 256,
+    "depth": 32,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/repair_handoff_counter/frames/repair_handoff_counter_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/repair_handoff_counter/frames/repair_handoff_counter_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/repair_handoff_counter/frames/repair_handoff_counter_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/repair_handoff_counter/frames/repair_handoff_counter_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      154,
+      200
+    ],
+    "right": [
+      157,
+      200
+    ],
+    "up": [
+      155,
+      200
+    ],
+    "left": [
+      157,
+      200
+    ]
+  },
+  "ground_contact": {
+    "polygons_by_direction_px": {
+      "down": [[[-128, -32], [128, -32], [128, 0], [-128, 0]]],
+      "right": [[[-32, -32], [32, -32], [32, 0], [-32, 0]]],
+      "up": [[[-128, -32], [128, -32], [128, 0], [-128, 0]]],
+      "left": [[[-32, -32], [32, -32], [32, 0], [-32, 0]]]
+    },
+    "polygons_px": [
+      [
+        [
+          -128,
+          -32
+        ],
+        [
+          128,
+          -32
+        ],
+        [
+          128,
+          0
+        ],
+        [
+          -128,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -8,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -132,
+        -100
+      ],
+      [
+        133,
+        -100
+      ],
+      [
+        133,
+        0
+      ],
+      [
+        -132,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [
+        [
+          -132,
+          -100
+        ],
+        [
+          133,
+          -100
+        ],
+        [
+          133,
+          0
+        ],
+        [
+          -132,
+          0
+        ]
+      ],
+      "right": [
+        [
+          -32,
+          -100
+        ],
+        [
+          32,
+          -100
+        ],
+        [
+          32,
+          0
+        ],
+        [
+          -32,
+          0
+        ]
+      ],
+      "up": [
+        [
+          -133,
+          -100
+        ],
+        [
+          133,
+          -100
+        ],
+        [
+          133,
+          0
+        ],
+        [
+          -133,
+          0
+        ]
+      ],
+      "left": [
+        [
+          -32,
+          -100
+        ],
+        [
+          32,
+          -100
+        ],
+        [
+          32,
+          0
+        ],
+        [
+          -32,
+          0
+        ]
+      ]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "customer_handoff",
+      "kind": "service",
+      "position_px": [
+        224,
+        -48
+      ],
+      "actor_facing": "left",
+      "capacity": 1
+    },
+    {
+      "id": "staff_handoff",
+      "kind": "service",
+      "position_px": [
+        0,
+        -96
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/candidates/calibration_c/shell_raw.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/layout_concepts/workshop_layout_concept_b/workshop_furniture_layout_concept_b.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "assets/furniture/repair_handoff_counter/batch_v1/SOURCE_RECORD.json"
+  }
+}

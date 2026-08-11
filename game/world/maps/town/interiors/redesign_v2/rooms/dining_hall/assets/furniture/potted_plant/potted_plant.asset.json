@@ -1,0 +1,121 @@
+{
+  "schema_version": 2,
+  "source_revision": "dining_hall_potted_plant_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "potted_plant",
+  "label": "公共食堂无朝向盆栽",
+  "room_id": "dining_hall",
+  "canonical_direction": "down",
+  "direction_visual_policy": "rotationally_symmetric_reuse",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 64,
+    "depth": 64,
+    "height": 112
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/potted_plant/frames/potted_plant_canonical.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/potted_plant/frames/potted_plant_canonical.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/potted_plant/frames/potted_plant_canonical.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/potted_plant/frames/potted_plant_canonical.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      150
+    ],
+    "right": [
+      104,
+      150
+    ],
+    "up": [
+      104,
+      150
+    ],
+    "left": [
+      104,
+      150
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -12,
+          -8
+        ],
+        [
+          12,
+          -8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          -12,
+          8
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -1,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -40,
+        -97
+      ],
+      [
+        41,
+        -97
+      ],
+      [
+        41,
+        0
+      ],
+      [
+        -40,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-40, -97], [41, -97], [41, 0], [-40, 0]],
+      "right": [[-40, -97], [41, -97], [41, 0], [-40, 0]],
+      "up": [[-40, -97], [41, -97], [41, 0], [-40, 0]],
+      "left": [[-40, -97], [41, -97], [41, 0], [-40, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "inspect_front",
+      "kind": "inspect",
+      "position_px": [
+        0,
+        48
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/dining_hall/assets/concepts/dining_hall_layout_candidate_3.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "docs/design/pipelines/indoor_handoffs/dining_hall.md"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

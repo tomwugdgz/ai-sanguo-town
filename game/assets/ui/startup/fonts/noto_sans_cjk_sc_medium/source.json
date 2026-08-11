@@ -1,0 +1,10 @@
+{
+	"family": "Noto Sans CJK SC",
+	"weight": "Medium",
+	"versionSource": "notofonts/noto-cjk main",
+	"sourceCommit": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
+	"sourceUrl": "https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Medium.otf",
+	"license": "SIL Open Font License 1.1",
+	"licenseFile": "OFL.txt",
+	"sha256": "ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7"
+}

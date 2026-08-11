@@ -1,0 +1,195 @@
+{
+	"coordinateSpace": [
+		1920,
+		1080
+	],
+	"families": {
+		"age_minus": {
+			"assetSize": [
+				55,
+				50
+			],
+			"layoutSize": [
+				55,
+				50
+			],
+			"preparation": "offline_exact_size_only"
+		},
+		"age_plus": {
+			"assetSize": [
+				55,
+				50
+			],
+			"layoutSize": [
+				55,
+				50
+			],
+			"preparation": "offline_exact_size_only"
+		},
+		"age_value": {
+			"assetSize": [
+				121,
+				50
+			],
+			"layoutSize": [
+				121,
+				50
+			],
+			"preparation": "offline_nine_patch_only"
+		},
+		"back": {
+			"assetSize": [
+				184,
+				73
+			],
+			"layoutSize": [
+				184,
+				73
+			],
+			"preparation": "offline_nine_patch_only"
+		},
+		"cancel": {
+			"assetSize": [
+				246,
+				69
+			],
+			"layoutSize": [
+				246,
+				69
+			],
+			"preparation": "offline_nine_patch_only"
+		},
+		"core_field": {
+			"assetSize": [
+				606,
+				55
+			],
+			"layoutSize": [
+				606,
+				55
+			],
+			"preparation": "offline_nine_patch_only"
+		},
+		"create": {
+			"assetSize": [
+				392,
+				69
+			],
+			"layoutSize": [
+				392,
+				69
+			],
+			"preparation": "offline_nine_patch_only"
+		},
+		"create_decoration": {
+			"assetSize": [
+				55,
+				55
+			],
+			"layoutSize": [
+				55,
+				55
+			],
+			"preparation": "offline_exact_size_only"
+		},
+		"dropdown_arrow": {
+			"assetSize": [
+				46,
+				48
+			],
+			"layoutSize": [
+				46,
+				48
+			],
+			"preparation": "offline_exact_size_only"
+		},
+		"dropdown_field": {
+			"assetSize": [
+				606,
+				48
+			],
+			"layoutSize": [
+				606,
+				48
+			],
+			"preparation": "offline_nine_patch_only"
+		},
+		"gender": {
+			"assetSize": [
+				193,
+				48
+			],
+			"layoutSize": [
+				193,
+				48
+			],
+			"preparation": "offline_nine_patch_only"
+		},
+		"name_field": {
+			"assetSize": [
+				606,
+				49
+			],
+			"layoutSize": [
+				606,
+				49
+			],
+			"preparation": "offline_nine_patch_only"
+		},
+		"status": {
+			"assetSize": [
+				700,
+				69
+			],
+			"layoutSize": [
+				700,
+				69
+			],
+			"preparation": "offline_nine_patch_only"
+		},
+		"status_icon": {
+			"assetSize": [
+				38,
+				38
+			],
+			"layoutSize": [
+				38,
+				38
+			],
+			"preparation": "offline_exact_size_only"
+		},
+		"status_icon_reference": {
+			"assetSize": [
+				38,
+				38
+			],
+			"layoutSize": [
+				38,
+				38
+			],
+			"preparation": "offline_exact_size_only"
+		},
+		"wardrobe": {
+			"assetSize": [
+				327,
+				90
+			],
+			"layoutSize": [
+				327,
+				90
+			],
+			"preparation": "offline_nine_patch_only"
+		}
+	},
+	"rules": {
+		"consumeAtlas": false,
+		"consumeChromaSource": false,
+		"consumeSourceSlices": false,
+		"fixedGeometryScaling": "offline_exact_size_only",
+		"focusPolicy": "reuse_hover_or_selected",
+		"maximumRuntimeSizeDeltaPixels": 0,
+		"runtimeTextureStretch": false,
+		"variableFrameScaling": "offline_nine_patch_only"
+	},
+	"schemaVersion": 1
+}

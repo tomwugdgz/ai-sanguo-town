@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "source_revision": "town_hall_user_confirmed_manual_layout_footpoint_v1",
+  "projection_revision": "interior_projection_v1",
+  "layout_revision": 4,
+  "room_id": "town_hall",
+  "instances": [
+    {"instance_id": "consultation_chair_south", "asset_id": "upholstered_chair", "position_px": [304, 16], "direction": "down"},
+    {"instance_id": "consultation_chair_west", "asset_id": "upholstered_chair", "position_px": [432, 16], "direction": "down"},
+    {"instance_id": "consultation_table_main", "asset_id": "consultation_table", "position_px": [368, 16], "direction": "up"},
+    {"instance_id": "counter_left", "asset_id": "counter", "position_px": [-176, -80], "direction": "down"},
+    {"instance_id": "counter_right", "asset_id": "counter", "position_px": [176, -80], "direction": "down"},
+    {"instance_id": "floor_lamp_left", "asset_id": "floor_lamp", "position_px": [-304, -112], "direction": "down"},
+    {"instance_id": "leafy_plant_left", "asset_id": "leafy_plant", "position_px": [-464, 208], "direction": "down"},
+    {"instance_id": "leafy_plant_right", "asset_id": "leafy_plant", "position_px": [528, -80], "direction": "down"},
+    {"instance_id": "public_form_stand", "asset_id": "form_stand", "position_px": [144, 208], "direction": "down"},
+    {"instance_id": "records_cabinet", "asset_id": "document_cabinet", "position_px": [16, -208], "direction": "down"},
+    {"instance_id": "staff_chair_left", "asset_id": "upholstered_chair", "position_px": [-176, -176], "direction": "down"},
+    {"instance_id": "staff_chair_right", "asset_id": "upholstered_chair", "position_px": [176, -176], "direction": "down"},
+    {"instance_id": "waiting_bench_north", "asset_id": "waiting_bench", "position_px": [-432, -48], "direction": "down"},
+    {"instance_id": "waiting_bench_south", "asset_id": "waiting_bench", "position_px": [-432, 112], "direction": "down"}
+  ]
+}

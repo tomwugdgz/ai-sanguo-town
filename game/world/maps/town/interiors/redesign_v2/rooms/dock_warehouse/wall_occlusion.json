@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "source_revision": "dock_warehouse_selected_c_space_v1",
+  "room_id": "dock_warehouse",
+  "canvas_size_px": [
+    1335,
+    1178
+  ],
+  "segments": [
+    {
+      "id": "west_internal_wall_face",
+      "foreground_polygon_canvas_px": [
+        [
+          88,
+          464
+        ],
+        [
+          376,
+          464
+        ],
+        [
+          376,
+          584
+        ],
+        [
+          88,
+          584
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            120,
+            568
+          ],
+          [
+            440,
+            568
+          ],
+          [
+            440,
+            696
+          ],
+          [
+            120,
+            696
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "west_column_face",
+      "foreground_polygon_canvas_px": [
+        [
+          344,
+          416
+        ],
+        [
+          376,
+          416
+        ],
+        [
+          376,
+          640
+        ],
+        [
+          344,
+          640
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            280,
+            568
+          ],
+          [
+            440,
+            568
+          ],
+          [
+            440,
+            728
+          ],
+          [
+            280,
+            728
+          ]
+        ]
+      ],
+      "fade_distance_px": 64,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "center_column_beam_face",
+      "foreground_polygon_canvas_px": [
+        [
+          592,
+          416
+        ],
+        [
+          632,
+          416
+        ],
+        [
+          632,
+          872
+        ],
+        [
+          592,
+          872
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            536,
+            632
+          ],
+          [
+            696,
+            632
+          ],
+          [
+            696,
+            888
+          ],
+          [
+            536,
+            888
+          ]
+        ]
+      ],
+      "fade_distance_px": 64,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "east_column_face",
+      "foreground_polygon_canvas_px": [
+        [
+          796,
+          416
+        ],
+        [
+          832,
+          416
+        ],
+        [
+          832,
+          640
+        ],
+        [
+          796,
+          640
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            728,
+            568
+          ],
+          [
+            888,
+            568
+          ],
+          [
+            888,
+            728
+          ],
+          [
+            728,
+            728
+          ]
+        ]
+      ],
+      "fade_distance_px": 64,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "main_annex_lower_divider_face",
+      "foreground_polygon_canvas_px": [
+        [
+          880,
+          576
+        ],
+        [
+          928,
+          576
+        ],
+        [
+          928,
+          1056
+        ],
+        [
+          880,
+          1056
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            824,
+            568
+          ],
+          [
+            888,
+            568
+          ],
+          [
+            888,
+            888
+          ],
+          [
+            824,
+            888
+          ]
+        ],
+        [
+          [
+            920,
+            568
+          ],
+          [
+            984,
+            568
+          ],
+          [
+            984,
+            888
+          ],
+          [
+            920,
+            888
+          ]
+        ]
+      ],
+      "fade_distance_px": 64,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_main_left_face",
+      "foreground_polygon_canvas_px": [
+        [
+          80,
+          872
+        ],
+        [
+          440,
+          872
+        ],
+        [
+          440,
+          1056
+        ],
+        [
+          80,
+          1056
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            120,
+            792
+          ],
+          [
+            536,
+            792
+          ],
+          [
+            536,
+            1048
+          ],
+          [
+            120,
+            1048
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_main_right_face",
+      "foreground_polygon_canvas_px": [
+        [
+          600,
+          872
+        ],
+        [
+          920,
+          872
+        ],
+        [
+          920,
+          1056
+        ],
+        [
+          600,
+          1056
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            504,
+            792
+          ],
+          [
+            888,
+            792
+          ],
+          [
+            888,
+            1048
+          ],
+          [
+            504,
+            1048
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_annex_face",
+      "foreground_polygon_canvas_px": [
+        [
+          920,
+          888
+        ],
+        [
+          1264,
+          888
+        ],
+        [
+          1264,
+          992
+        ],
+        [
+          920,
+          992
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            920,
+            792
+          ],
+          [
+            1208,
+            792
+          ],
+          [
+            1208,
+            888
+          ],
+          [
+            920,
+            888
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    }
+  ]
+}

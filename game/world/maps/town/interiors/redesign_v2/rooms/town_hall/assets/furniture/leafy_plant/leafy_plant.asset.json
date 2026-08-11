@@ -1,0 +1,122 @@
+{
+  "schema_version": 2,
+  "source_revision": "town_hall_leafy_plant_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "leafy_plant",
+  "label": "住宅 B 朴素陶盆绿色阔叶植物（仅一盆植物，不含花架、桌或其他物品）",
+  "room_id": "town_hall",
+  "canonical_direction": "down",
+  "direction_visual_policy": "rotationally_symmetric_reuse",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 56,
+    "depth": 40,
+    "height": 112
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/leafy_plant/frames/leafy_plant_canonical.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/leafy_plant/frames/leafy_plant_canonical.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/leafy_plant/frames/leafy_plant_canonical.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/leafy_plant/frames/leafy_plant_canonical.png"
+  },
+  "visual_anchor": {
+    "down": [
+      78,
+      116
+    ],
+    "right": [
+      78,
+      116
+    ],
+    "up": [
+      78,
+      116
+    ],
+    "left": [
+      78,
+      116
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -12,
+          -8
+        ],
+        [
+          12,
+          -8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          -12,
+          8
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -1,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -40,
+        -128
+      ],
+      [
+        40,
+        -128
+      ],
+      [
+        40,
+        8
+      ],
+      [
+        -40,
+        8
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-29, -76], [30, -76], [30, 0], [-29, 0]],
+      "right": [[-29, -76], [30, -76], [30, 0], [-29, 0]],
+      "up": [[-29, -76], [30, -76], [30, 0], [-29, 0]],
+      "left": [[-29, -76], [30, -76], [30, 0], [-29, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "plant",
+      "kind": "inspect",
+      "position_px": [
+        0,
+        -20
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "../source/leafy_plant_canonical_down_final_1x.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_b/layout_concepts/home_02_layout_v1/home_02_decor_layout_concept_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "docs/design/pipelines/indoor_handoffs/home_template_b.md"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

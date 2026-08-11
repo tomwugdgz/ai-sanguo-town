@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "file": "amb_sleep_soft_white_noise_loop.wav",
+      "role": "sleep_background_white_noise",
+      "sourceType": "original_procedural_synthesis",
+      "generationMethod": "Deterministic project-local Python synthesis; generator source is excluded from the runtime PR.",
+      "durationSeconds": 32.0,
+      "sampleRate": 32000,
+      "channels": 2,
+      "sha256": "6f781c6df958cded6ea0a9be2d392ab0c1a7b18cbacfc1cd8c86f80c3c57fe7b",
+      "generatedAt": "2026-07-28T18:34:00+08:00",
+      "design": "Softened broad-band white noise with a periodic loop boundary; suppressed while recorded rain ambience is active."
+    }
+  ]
+}

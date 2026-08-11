@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://ui/resident_detail/components/ResidentDetailCloseButton.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/ui/resident_detail/runtime/close_x_icon.png" id="2_icon"]
+
+[node name="ResidentDetailCloseButton" type="Control"]
+mouse_filter = 0
+focus_mode = 2
+script = ExtResource("1_script")
+
+[node name="Icon" type="TextureRect" parent="."]
+texture_filter = 1
+mouse_filter = 2
+texture = ExtResource("2_icon")
+expand_mode = 1
+stretch_mode = 5

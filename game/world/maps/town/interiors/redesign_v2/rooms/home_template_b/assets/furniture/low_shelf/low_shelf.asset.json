@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "source_revision": "home_template_b_low_shelf_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "low_shelf",
+  "label": "住宅 B 朴素深木色低层架（仅空层架，不含书籍、器具、箱柜或其他物品）",
+  "room_id": "home_template_b",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 128,
+    "depth": 64,
+    "height": 112
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/low_shelf/frames/low_shelf_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/low_shelf/frames/low_shelf_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/low_shelf/frames/low_shelf_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/low_shelf/frames/low_shelf_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      175
+    ],
+    "right": [
+      106,
+      175
+    ],
+    "up": [
+      104,
+      172
+    ],
+    "left": [
+      106,
+      172
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -64,
+          -20
+        ],
+        [
+          64,
+          -20
+        ],
+        [
+          64,
+          0
+        ],
+        [
+          -64,
+          0
+        ]
+      ]
+    ],
+    "polygons_by_direction_px": {
+      "down": [[[-64, -20], [64, -20], [64, 0], [-64, 0]]],
+      "right": [[[-24, -20], [24, -20], [24, 0], [-24, 0]]],
+      "up": [[[-64, -20], [64, -20], [64, 0], [-64, 0]]],
+      "left": [[[-24, -20], [24, -20], [24, 0], [-24, 0]]]
+    }
+  },
+  "occupied_cells": {
+    "origin2": [
+      -4,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [-67, -134],
+      [68, -134],
+      [68, 0],
+      [-67, 0]
+    ],
+    "points_by_direction_px": {
+      "down": [[-67, -134], [68, -134], [68, 0], [-67, 0]],
+      "right": [[-25, -134], [26, -134], [26, 0], [-25, 0]],
+      "up": [[-67, -134], [68, -134], [68, 0], [-67, 0]],
+      "left": [[-25, -134], [26, -134], [26, 0], [-25, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "shelf",
+      "kind": "inspect",
+      "position_px": [
+        0,
+        -16
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "../source/low_shelf_four_direction_sheet_final_1x.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_b/layout_concepts/home_02_layout_v1/home_02_decor_layout_concept_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "docs/design/pipelines/indoor_handoffs/home_template_b.md"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

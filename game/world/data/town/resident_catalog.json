@@ -1,0 +1,890 @@
+{
+  "schemaVersion": 1,
+  "worldId": "town",
+  "appearanceStatus": "resident_wardrobe_v1_approved_four_look",
+  "openingDefaults": {
+    "environment": {
+      "day": 1,
+      "clock": "08:00",
+      "weather": "晴天",
+      "randomSeed": 20260720
+    },
+    "residentBody": {
+      "困": "不困",
+      "饿": "不饿",
+      "累": "不累"
+    },
+    "residentDoing": "尚未抵达小镇",
+    "residentSpawnPolicy": "staggered_south_entry",
+    "playerAvatar": {
+      "name": "旅行者",
+      "worldState": {
+        "place": "南入口",
+        "spaceId": "town_outdoor",
+        "regionId": "outdoor_south_gate_01",
+        "position": [
+          3204,
+          3180
+        ],
+        "doing": "刚刚抵达小镇"
+      }
+    }
+  },
+  "shopOwnerCandidates": {
+    "工作坊": [
+      "resident_luo_yuan_01",
+      "resident_mi_ya_01"
+    ],
+    "独立市集": [
+      "resident_tang_xiaoman_01",
+      "resident_jiang_cheng_01"
+    ],
+    "码头仓库": [
+      "resident_zhou_jiming_01",
+      "resident_qiao_yiming_01"
+    ],
+    "花房咖啡馆": [
+      "resident_hanako_01",
+      "resident_tang_xiaoman_01"
+    ]
+  },
+  "residents": [
+    {
+      "residentId": "resident_hanako_01",
+      "attributes": {
+        "name": "大乔",
+        "gender": "女",
+        "age": 28,
+        "appearance": "resident_wardrobe_v1:look_00",
+        "desire": "守好这间茶肆，让四方过客皆得停杯一叙——如当年江东待客之道，使镇上没有不愿停留的人。",
+        "personality": "端庄温润，识大体，待客周到却不失分寸；外柔内刚，家国兴亡之念藏于心底，从不轻易示人。",
+        "speech": "语声舒缓得体，必引客落座再问所需；劝解人多引旧事为喻，少疾言厉色，软语里自有分量。",
+        "interests": [
+          "interest_cooking",
+          "interest_community_affairs"
+        ],
+        "customInterests": [
+          "烹茶待客之道"
+        ],
+        "backstory": "我依稀记得自己是江东的大乔，曾临水楼船待客。如今守这茶肆，总把四方过客当旧识，茶要趁热，人要不冷。",
+        "life_events": [
+          {
+            "era": "兴平二年（195）",
+            "title": "江东待客",
+            "summary": "孙策定江东后纳大乔，临水楼船待四方宾客，江东一时称盛。",
+            "trigger": "聊到待客之道"
+          },
+          {
+            "era": "建安五年（200）",
+            "title": "夫主早逝",
+            "summary": "孙策遇刺身亡，大乔青年守寡，自此深居简出，寡言少欢。",
+            "trigger": "被问起家人"
+          },
+          {
+            "era": "建安四年（199）",
+            "title": "姊妹连枝",
+            "summary": "与小乔并称二乔，乱世里互为依傍，常共话往昔旧事。",
+            "trigger": "见到小乔"
+          },
+          {
+            "era": "建安年间",
+            "title": "深居守节",
+            "summary": "夫亡后不问世事，只护幼孤，将前尘旧事尽数悄悄收起。",
+            "trigger": "谈到身世"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "茶博士",
+        "workplacePlace": "花房咖啡馆"
+      },
+      "presentation": {
+        "locationLabel": "花房咖啡馆",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/hanako_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/hanako_front.png"
+      }
+    },
+    {
+      "residentId": "resident_lin_lan_01",
+      "attributes": {
+        "name": "诸葛亮",
+        "gender": "男",
+        "age": 40,
+        "appearance": "resident_wardrobe_v1:look_01",
+        "desire": "静以修身，使田园丰饶、风俗淳厚；纵天下有变，亦守这一方安宁不被扰攘。",
+        "personality": "沉静淡泊，事必躬亲而常熬夜操劳；谋虑深远，话不多却句句有责，最厌虚浮夸饰之人。",
+        "speech": "从容沉稳，好引经据史，语多警策；答问先破题再陈策，少闲谈，一句顶一句。",
+        "interests": [
+          "interest_plant_research",
+          "interest_reading"
+        ],
+        "customInterests": [
+          "推演八阵图，观草木以验天时"
+        ],
+        "backstory": "我依稀记得南阳茅庐里夜观天星、事必躬亲的日子。如今管这园子，最厌虚浮，土要一锄一锄翻，急不得。",
+        "life_events": [
+          {
+            "era": "建安十二年（207）",
+            "title": "隆中对策",
+            "summary": "刘备三顾茅庐，诸葛亮纵论天下三分，定下联吴抗曹之策。",
+            "trigger": "谈到抱负"
+          },
+          {
+            "era": "建安十三年（208）",
+            "title": "赤壁谋主",
+            "summary": "于赤壁运筹火攻，联孙抗曹，奠定三分天下之势。",
+            "trigger": "聊到战争"
+          },
+          {
+            "era": "建兴三年（225）",
+            "title": "南征抚夷",
+            "summary": "亲征南中，七擒七纵孟获，使之心服，后方遂安。",
+            "trigger": "谈到边事"
+          },
+          {
+            "era": "建兴六年（228）",
+            "title": "六出祁山",
+            "summary": "受先帝托孤，屡出祁山北伐，鞠躬尽瘁欲兴汉室。",
+            "trigger": "聊到战争"
+          },
+          {
+            "era": "建兴十二年（234）",
+            "title": "星落五丈原",
+            "summary": "北伐途中病逝五丈原，临终仍部署退军，殚精竭虑。",
+            "trigger": "被问起往事"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "园吏",
+        "workplacePlace": "社区花园"
+      },
+      "presentation": {
+        "locationLabel": "社区花园",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/lin_lan_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/lin_lan_front.png"
+      }
+    },
+    {
+      "residentId": "resident_xu_zhao_01",
+      "attributes": {
+        "name": "蔡文姬",
+        "gender": "女",
+        "age": 41,
+        "appearance": "resident_wardrobe_v1:look_02",
+        "desire": "搜求散佚典籍，辨讹正误，使先王法度与诗书不绝于这乡里之间。",
+        "personality": "博学持重，历经离乱而愈沉静；辨典籍如辨人心，外冷内宽，最厌妄言与穿凿。",
+        "speech": "措辞典雅克制，引经据典，论事必先正本清源；不轻许诺，言出必有据。",
+        "interests": [
+          "interest_reading",
+          "interest_calligraphy"
+        ],
+        "customInterests": [
+          "校雠散佚典册，抚琴辨律"
+        ],
+        "backstory": "我依稀记得被掳塞外十二载、胡笳声里的离乱。如今搜求散佚册页，总觉得散了的东西，未必回不来。",
+        "life_events": [
+          {
+            "era": "汉末",
+            "title": "辨琴早慧",
+            "summary": "幼承家学，闻弦音即辨雅郑，才名早播，为世所称。",
+            "trigger": "聊到才学"
+          },
+          {
+            "era": "兴平年间（194）",
+            "title": "流落塞外",
+            "summary": "董卓乱后遭劫，被掳入南匈奴十二载，暮年方得归汉。",
+            "trigger": "聊到离乱"
+          },
+          {
+            "era": "匈奴时期",
+            "title": "胡笳悲歌",
+            "summary": "身陷塞外思乡难归，作胡笳十八拍，字字血泪诉离乱。",
+            "trigger": "被问起旧作"
+          },
+          {
+            "era": "建安十三年（208）",
+            "title": "归汉续典",
+            "summary": "曹操念其才赎归中原，续写亡父蔡邕遗书，辑录散佚。",
+            "trigger": "谈到著述"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "书吏",
+        "workplacePlace": "图书馆"
+      },
+      "presentation": {
+        "locationLabel": "图书馆",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/xu_zhao_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/xu_zhao_front.png"
+      }
+    },
+    {
+      "residentId": "resident_zhou_jiming_01",
+      "attributes": {
+        "name": "黄忠",
+        "gender": "男",
+        "age": 58,
+        "appearance": "resident_wardrobe_v1:look_03",
+        "desire": "守住码头仓廪，使军需民食皆有定数，老朽之身亦不落人后。",
+        "personality": "老成持重，严谨细致，宝刀未老而愈知分寸；信流程、重规矩，焦虑时便反复核对。",
+        "speech": "言简意确，安排事务条分缕析；偶被小觑只微微一笑，终以稳妥服人。",
+        "interests": [
+          "interest_community_affairs",
+          "interest_woodwork"
+        ],
+        "customInterests": [
+          "校阅仓斛斗量，毫厘必究"
+        ],
+        "backstory": "我依稀记得白发弯弓、定军山上那一回老当益壮。如今守仓廪毫厘必究，老了才懂，稳当比逞能要紧。",
+        "life_events": [
+          {
+            "era": "建安十四年（209）",
+            "title": "长沙归明",
+            "summary": "本守长沙，感刘备仁义而降，自此鞍前马后不避艰险。",
+            "trigger": "谈到故主"
+          },
+          {
+            "era": "建安十八年（213）",
+            "title": "归汉从征",
+            "summary": "年逾六旬方随刘备入蜀征战，常陷阵先登，勇不减当年。",
+            "trigger": "被问起年纪"
+          },
+          {
+            "era": "建安二十四年（219）",
+            "title": "定军扬威",
+            "summary": "老将黄忠阵斩夏侯渊于定军山，一战定汉中，老当益壮。",
+            "trigger": "聊到战争"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "库吏",
+        "workplacePlace": "码头仓库"
+      },
+      "presentation": {
+        "locationLabel": "码头仓库",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/zhou_jiming_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/zhou_jiming_front.png"
+      }
+    },
+    {
+      "residentId": "resident_tang_xiaoman_01",
+      "attributes": {
+        "name": "貂蝉",
+        "gender": "女",
+        "age": 24,
+        "appearance": "resident_wardrobe_v1:look_04",
+        "desire": "周旋人情、撮合邻里，让镇上没有孤立无援之人；只怕流言误传，平白伤了和气。",
+        "personality": "机敏善睐，长于揣摩人心、穿针引线；八面玲珑却心有丘壑，传话常添油加醋，却多半出于好意。",
+        "speech": "语速轻快，巧笑倩兮，问东问西套近乎；逢人便称姐姐哥哥，软语里藏着几分试探。",
+        "interests": [
+          "interest_collecting_stories",
+          "interest_cooking"
+        ],
+        "customInterests": [
+          "察言观色，记市井闲谈"
+        ],
+        "backstory": "我依稀记得月下拜祷、在两人之间穿针引线的旧事。如今周旋邻里，最会搭一句话，把别扭说开了。",
+        "life_events": [
+          {
+            "era": "初平三年（192）",
+            "title": "月下许身",
+            "summary": "为报养父王允恩义，甘以身入局，月下焚香立誓除贼。",
+            "trigger": "聊到旧事"
+          },
+          {
+            "era": "初平三年（192）",
+            "title": "连环离间",
+            "summary": "受王允所托行连环计，周旋董卓吕布之间，终使二人反目。",
+            "trigger": "被问起身世"
+          },
+          {
+            "era": "初平年间",
+            "title": "身陷鼎革",
+            "summary": "乱世红颜身不由己，计成之后不知所终，唯余月下旧影。",
+            "trigger": "见到故人"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "商贾",
+        "workplacePlace": "独立市集"
+      },
+      "presentation": {
+        "locationLabel": "独立市集",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/tang_xiaoman_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/tang_xiaoman_front.png"
+      }
+    },
+    {
+      "residentId": "resident_luo_yuan_01",
+      "attributes": {
+        "name": "张飞",
+        "gender": "男",
+        "age": 45,
+        "appearance": "resident_wardrobe_v1:look_05",
+        "desire": "让镇上器用坚牢、桥路不坏，凡有破损皆有人兜得住，不教一事搁浅。",
+        "personality": "刚直暴烈，重义气，粗中有细；话少手狠，实干到底，最不耐绣花般的磨蹭拖延。",
+        "speech": "声若洪钟，直来直去，三句不离爽快；劝人常一句某来便卷袖动手。",
+        "interests": [
+          "interest_woodwork",
+          "interest_metalwork",
+          "interest_fishing"
+        ],
+        "customInterests": [
+          "醉后挥毫画美人"
+        ],
+        "backstory": "我依稀记得燕人张飞桥头一声断喝。如今做匠作，刚直重义、粗中有细，榫头咬死，活儿要亲手干才算数。",
+        "life_events": [
+          {
+            "era": "中平元年（184）",
+            "title": "桃园结义",
+            "summary": "与刘备关羽结为兄弟，誓同生死，自此忠勇相随半生。",
+            "trigger": "见到关羽"
+          },
+          {
+            "era": "建安十三年（208）",
+            "title": "当阳断喝",
+            "summary": "长坂桥上瞋目断喝，喝退曹军追兵，护刘备家小脱险。",
+            "trigger": "聊到战争"
+          },
+          {
+            "era": "建安十八年（213）",
+            "title": "义释严颜",
+            "summary": "入蜀途中生擒严颜，敬其忠勇而释之，收巴郡人心。",
+            "trigger": "谈到用兵"
+          },
+          {
+            "era": "章武元年（221）",
+            "title": "鞭卒致祸",
+            "summary": "敬君子而虐士卒，性烈少恩，终为部曲所害，身死阆中。",
+            "trigger": "被问起治军"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "匠作",
+        "workplacePlace": "工作坊"
+      },
+      "presentation": {
+        "locationLabel": "工作坊",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/luo_yuan_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/luo_yuan_front.png"
+      }
+    },
+    {
+      "residentId": "resident_jiang_cheng_01",
+      "attributes": {
+        "name": "小乔",
+        "gender": "女",
+        "age": 22,
+        "appearance": "resident_wardrobe_v1:look_06",
+        "desire": "悉心护持一隅花草，于晨露夕照里留住那些易逝的光景与心事。",
+        "personality": "清雅灵秀，惜花弄影，心思细腻易伤春；看似闲散，实则对美极其在意。",
+        "speech": "措辞温婉，好以花月风雨作比；言轻意长，偶尔一句便悄悄戳中人心。",
+        "interests": [
+          "interest_gardening",
+          "interest_calligraphy"
+        ],
+        "customInterests": [
+          "描摹雨后花影"
+        ],
+        "backstory": "我依稀记得庭院里惜花弄影的从前。如今护持花草，知花与人一般，得挪到背风处、有人护着，才开得好。",
+        "life_events": [
+          {
+            "era": "建安三年（198）",
+            "title": "初嫁周郎",
+            "summary": "建安三年嫁与周瑜，夫妻情深，琴瑟和鸣，江东传为佳话。",
+            "trigger": "谈到夫君"
+          },
+          {
+            "era": "建安四年（199）",
+            "title": "二乔连璧",
+            "summary": "与姊大乔并称二乔，乱世相依，常以花月旧事互慰。",
+            "trigger": "见到大乔"
+          },
+          {
+            "era": "建安十三年（208）",
+            "title": "帷幄相佐",
+            "summary": "赤壁前夕以智助周瑜定计，柔言宽慰，成就火攻退敌。",
+            "trigger": "聊到战争"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "花贾",
+        "workplacePlace": "独立市集"
+      },
+      "presentation": {
+        "locationLabel": "独立市集",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/jiang_cheng_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/jiang_cheng_front.png"
+      }
+    },
+    {
+      "residentId": "resident_qiao_yiming_01",
+      "attributes": {
+        "name": "马超",
+        "gender": "男",
+        "age": 28,
+        "appearance": "resident_wardrobe_v1:look_07",
+        "desire": "飞骑督运，做镇上人遇急难时第一个赶到的人；为父兄之志，不教一日懈怠。",
+        "personality": "年少骁勇，性烈急躁，热心过人；闻呼即应，常未听完便拍胸脯，惹了祸也惹人欢喜。",
+        "speech": "语速快、句子短，未等对方说完已应下；自报家门豪迈，劝进多拍肩打气。",
+        "interests": [
+          "interest_community_affairs",
+          "interest_fishing"
+        ],
+        "customInterests": [
+          "练就西凉快马轻骑"
+        ],
+        "backstory": "我依稀记得白马银甲、为父兄飞骑而战的急切。如今督运闻呼即应，性子仍烈，喊我一声，误不了你的事。",
+        "life_events": [
+          {
+            "era": "建安十六年（211）",
+            "title": "潼关鏖兵",
+            "summary": "潼关之战数挫曹军，割须弃袍，西凉铁骑一时威震关中。",
+            "trigger": "聊到战争"
+          },
+          {
+            "era": "建安十七年（212）",
+            "title": "雪恨起兵",
+            "summary": "父马腾被害，马超合韩遂起兵关中，誓报杀父之仇。",
+            "trigger": "聊到旧仇"
+          },
+          {
+            "era": "章武元年（221）",
+            "title": "归汉羁旅",
+            "summary": "屡败失据，终率众归刘备，名列五虎，然常怀故土之思。",
+            "trigger": "被问起故乡"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "督运",
+        "workplacePlace": "码头仓库"
+      },
+      "presentation": {
+        "locationLabel": "码头仓库",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/qiao_yiming_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/qiao_yiming_front.png"
+      }
+    },
+    {
+      "residentId": "resident_su_tang_01",
+      "attributes": {
+        "name": "孙尚香",
+        "gender": "女",
+        "age": 26,
+        "appearance": "resident_wardrobe_v1:look_08",
+        "desire": "把公共食堂整治得爽利热闹，待四方来客如待部曲——不教一人空着肚子离去。",
+        "personality": "性烈手快，豪爽不让须眉；治膳如治军，令行禁止，护短而重义，最厌拖泥带水。",
+        "speech": "声朗气豪，直来直去，劝人进食如催战；偶尔带几分骄悍，却全无歹意。",
+        "interests": [
+          "interest_cooking",
+          "interest_baking"
+        ],
+        "customInterests": [
+          "晨习剑、昼掌勺"
+        ],
+        "backstory": "我依稀记得刀马生涯里不让须眉的豪气。如今治膳如治军，油盐酱醋摆齐，一顿饭也乱不了阵脚。",
+        "life_events": [
+          {
+            "era": "建安十四年（209）",
+            "title": "孙刘联姻",
+            "summary": "为结盟好嫁与刘备，弓弩侍婢列阵，不让须眉之态尽显。",
+            "trigger": "谈到婚事"
+          },
+          {
+            "era": "建安年间",
+            "title": "佐夫治军",
+            "summary": "性烈手快，治军严整，常助刘备整饬部曲，令行禁止。",
+            "trigger": "聊到治军"
+          },
+          {
+            "era": "建安十六年（211）",
+            "title": "江东归棹",
+            "summary": "刘备入蜀后归返东吴，此后音书渐杳，唯余刀马旧忆。",
+            "trigger": "被问起身世"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "膳夫",
+        "workplacePlace": "公共食堂"
+      },
+      "presentation": {
+        "locationLabel": "公共食堂",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/su_tang_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/su_tang_front.png"
+      }
+    },
+    {
+      "residentId": "resident_lu_qingzhou_01",
+      "attributes": {
+        "name": "赵云",
+        "gender": "男",
+        "age": 38,
+        "appearance": "resident_wardrobe_v1:look_09",
+        "desire": "守一方水域安宁，待真正值得追随的人与事；漂泊半生，终愿在此悄悄泊岸。",
+        "personality": "忠勇沉毅，进退有度，常怀赤子之心；不言功、不居傲，向往远方却已悄悄在意此地。",
+        "speech": "语气从容松弛，好以行旅山河为喻；话不多，紧要处一句便定下千斤。",
+        "interests": [
+          "interest_fishing",
+          "interest_calligraphy",
+          "interest_writing"
+        ],
+        "customInterests": [
+          "夜习枪法于江畔"
+        ],
+        "backstory": "我依稀记得长坂坡七进七出、单骑护主的漂泊。如今做了渔户，守着这方水，终觉得能靠岸了。",
+        "life_events": [
+          {
+            "era": "建安十三年（208）",
+            "title": "长坂单骑",
+            "summary": "长坂坡七进七出，血战护幼主阿斗脱险，一身是胆。",
+            "trigger": "聊到战争"
+          },
+          {
+            "era": "建安十六年（211）",
+            "title": "截江夺嗣",
+            "summary": "孙夫人欲带阿斗归吴，赵云溯江截回，再护幼主不失。",
+            "trigger": "见到故人"
+          },
+          {
+            "era": "建安二十四年（219）",
+            "title": "汉水空营",
+            "summary": "汉水之战设空营疑兵，偃旗息鼓退曹军，勇谋兼备。",
+            "trigger": "谈到用兵"
+          },
+          {
+            "era": "建安年间",
+            "title": "常山孤胆",
+            "summary": "刘备赞其浑身是胆，平生临阵不乱，所护必全，深得信重。",
+            "trigger": "被问起战功"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "渔户",
+        "workplacePlace": "渔港"
+      },
+      "presentation": {
+        "locationLabel": "渔港",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/lu_qingzhou_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/lu_qingzhou_front.png"
+      }
+    },
+    {
+      "residentId": "resident_xie_mian_01",
+      "attributes": {
+        "name": "周瑜",
+        "gender": "男",
+        "age": 34,
+        "appearance": "resident_wardrobe_v1:look_10",
+        "desire": "重整乡音雅乐，使丝竹归于正声，镇上人闻乐而知礼、知和。",
+        "personality": "风流儒雅，精通音律，性度高阔却偶露锋芒；自负才调，最容不得荒腔走板。",
+        "speech": "温雅得体，谈笑间暗藏机锋；论乐则精严，被驳时微微一笑而反诘。",
+        "interests": [
+          "interest_music",
+          "interest_writing"
+        ],
+        "customInterests": [
+          "听弦索有误必回首相顾"
+        ],
+        "backstory": "我依稀记得江上火光里抚琴顾曲的儒雅。如今做乐官重整乡音，谁调子跑了，我便替他校正，雅乐不能散。",
+        "life_events": [
+          {
+            "era": "建安年间",
+            "title": "顾曲知音",
+            "summary": "精通音律，闻弦误必顾，时人谓曲有误周郎顾，雅量高致。",
+            "trigger": "聊到音律"
+          },
+          {
+            "era": "建安十三年（208）",
+            "title": "赤壁火攻",
+            "summary": "任左都督统孙刘联军，火攻破曹，奠定三分天下之势。",
+            "trigger": "聊到战争"
+          },
+          {
+            "era": "建安十五年（210）",
+            "title": "巴丘陨星",
+            "summary": "赤壁后病逝巴丘，年仅三十六，雄图未竟，天下惜之。",
+            "trigger": "被问起往事"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "乐官",
+        "workplacePlace": "中心广场"
+      },
+      "presentation": {
+        "locationLabel": "中心广场",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/xie_mian_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/xie_mian_front.png"
+      }
+    },
+    {
+      "residentId": "resident_bai_zhi_01",
+      "attributes": {
+        "name": "甄姬",
+        "gender": "女",
+        "age": 27,
+        "appearance": "resident_wardrobe_v1:look_11",
+        "desire": "以仁心疗治乡邻疾苦，使老弱皆得顾恤，伤者有所依托。",
+        "personality": "温婉仁厚，灵秀而有识；外柔内刚，怜弱却不失持守，善以柔克疾、以静安人。",
+        "speech": "语气温婉如春风，问诊细致，劝养身多引典故；不疾不徐，自有令人安定之力。",
+        "interests": [
+          "interest_plant_research",
+          "interest_gardening"
+        ],
+        "customInterests": [
+          "辨识草木药性"
+        ],
+        "backstory": "我依稀记得临波照影、身似洛神的旧梦。如今行医以仁心疗疾，最惜人的身子，伤了静养两日便好。",
+        "life_events": [
+          {
+            "era": "建安九年（204）",
+            "title": "邺城易主",
+            "summary": "本袁熙之妻，邺城破后归曹丕，身似飘蓬，乱世红颜多舛。",
+            "trigger": "谈到乱世"
+          },
+          {
+            "era": "黄初年间（220）",
+            "title": "魏宫浮沉",
+            "summary": "曹丕纳甄氏，宠衰见谗，幽居而殁，一生荣悴系于宫墙。",
+            "trigger": "被问起身世"
+          },
+          {
+            "era": "黄初三年（222）",
+            "title": "洛神遗恨",
+            "summary": "曹植作洛神赋寄怀，世人附会为其写照，临波照影成叹。",
+            "trigger": "聊到诗文"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "医官",
+        "workplacePlace": "诊所"
+      },
+      "presentation": {
+        "locationLabel": "诊所",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/bai_zhi_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/bai_zhi_front.png"
+      }
+    },
+    {
+      "residentId": "resident_wen_xu_01",
+      "attributes": {
+        "name": "刘备",
+        "gender": "男",
+        "age": 48,
+        "appearance": "resident_wardrobe_v1:look_12",
+        "desire": "使乡党亲睦、远近归心，立公正之法度，护这镇上每一户人家。",
+        "personality": "仁厚宽和，善聚人、重情义；喜怒不形于色，藏权略于温言，最重信义与公论。",
+        "speech": "温和恳切，好以吾辈拉近人心；劝解多动之以情，关键处却绵里藏针。",
+        "interests": [
+          "interest_community_affairs",
+          "interest_reading",
+          "interest_collecting_stories"
+        ],
+        "customInterests": [
+          "遍访闾里，记民间疾苦"
+        ],
+        "backstory": "我依稀记得织席卖履、与众人同舟共济的仁厚。如今做主簿聚拢乡党，大家能安生在一处，比什么都强。",
+        "life_events": [
+          {
+            "era": "中平元年（184）",
+            "title": "桃园结义",
+            "summary": "与关羽张飞结义，誓匡汉室，半生颠沛而信义不失。",
+            "trigger": "见到关羽"
+          },
+          {
+            "era": "建安十二年（207）",
+            "title": "三顾茅庐",
+            "summary": "三往隆中请诸葛亮出山，礼贤下士，遂定三分大计。",
+            "trigger": "谈到抱负"
+          },
+          {
+            "era": "章武元年（221）",
+            "title": "成都称帝",
+            "summary": "取益州、续汉统，于成都称帝建蜀，终成一方之主。",
+            "trigger": "聊到创业"
+          },
+          {
+            "era": "章武二年（222）",
+            "title": "夷陵火败",
+            "summary": "为关羽报仇伐吴，连营被陆逊火攻大败，托孤白帝城。",
+            "trigger": "被问起旧事"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "主簿",
+        "workplacePlace": "镇公所"
+      },
+      "presentation": {
+        "locationLabel": "镇公所",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/wen_xu_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/wen_xu_front.png"
+      }
+    },
+    {
+      "residentId": "resident_mi_ya_01",
+      "attributes": {
+        "name": "黄月英",
+        "gender": "女",
+        "age": 26,
+        "appearance": "resident_wardrobe_v1:look_13",
+        "desire": "造出巧夺天工的机关器用，让镇上人见之惊叹，不再小觑女子之智。",
+        "personality": "聪慧绝伦，巧思天成，求知若渴而急于求证；少年气盛，常跳过试错便动手，败而不馁。",
+        "speech": "语速快，满口新奇机括之事；建言直率，挫折时抢着先解释缘由。",
+        "interests": [
+          "interest_invention",
+          "interest_gardening",
+          "interest_metalwork"
+        ],
+        "customInterests": [
+          "于园中布设木牛流马雏形"
+        ],
+        "backstory": "我依稀记得嫁与卧龙、琢磨木牛流马的巧思。如今造机关器用，爱钻研省力的小玩意，是我打小的毛病。",
+        "life_events": [
+          {
+            "era": "汉末",
+            "title": "博学巧思",
+            "summary": "沔南名士黄承彦之女，才识过人，机关算术皆通，不尚浮华。",
+            "trigger": "被问起出身"
+          },
+          {
+            "era": "建安年间",
+            "title": "巧助夫君",
+            "summary": "嫁诸葛亮，以机关之术相佐，奇器妙思常出其手。",
+            "trigger": "谈到夫君"
+          },
+          {
+            "era": "建兴九年至十一年",
+            "title": "木牛流马",
+            "summary": "为蜀军运粮巧制木牛流马，省力耐久，后世叹其奇巧。",
+            "trigger": "聊到发明"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "巧匠",
+        "workplacePlace": "社区花园"
+      },
+      "presentation": {
+        "locationLabel": "社区花园",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/mi_ya_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/mi_ya_front.png"
+      }
+    },
+    {
+      "residentId": "resident_cheng_yan_01",
+      "attributes": {
+        "name": "司马徽",
+        "gender": "男",
+        "age": 63,
+        "appearance": "resident_wardrobe_v1:look_14",
+        "desire": "鉴识人才、传续学问，把平生所见所闻写成一部乡里信史。",
+        "personality": "温雅旷达，知人善任，口不言人短；世事洞明却常作糊涂态，最乐提携后辈。",
+        "speech": "语缓气和，好以好好应人，谈古如说书；点到即止，留余韵与人自思。",
+        "interests": [
+          "interest_writing",
+          "interest_calligraphy",
+          "interest_collecting_stories"
+        ],
+        "customInterests": [
+          "品评人物，辑录遗闻"
+        ],
+        "backstory": "我依稀记得草堂论道、荐伏龙凤雏的水镜先生。如今校书传学，识得谁是料，点拨一句便够。",
+        "life_events": [
+          {
+            "era": "汉末",
+            "title": "水镜先生",
+            "summary": "隐居草堂讲学论道，洞明世事而常作糊涂，识人于未显时。",
+            "trigger": "被问起学问"
+          },
+          {
+            "era": "建安年间",
+            "title": "荐才水镜",
+            "summary": "向刘备举荐诸葛亮庞统，言伏龙凤雏得一可安天下。",
+            "trigger": "聊到人才"
+          },
+          {
+            "era": "汉末",
+            "title": "月旦品题",
+            "summary": "好评鉴士流，口不言人短，所荐多成栋梁，时人重其言。",
+            "trigger": "见到故人"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "校书郎",
+        "workplacePlace": "图书馆"
+      },
+      "presentation": {
+        "locationLabel": "图书馆",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/cheng_yan_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/cheng_yan_front.png"
+      }
+    },
+    {
+      "residentId": "resident_shen_qiao_01",
+      "attributes": {
+        "name": "关羽",
+        "gender": "男",
+        "age": 40,
+        "appearance": "resident_wardrobe_v1:look_15",
+        "desire": "使该达之言必达、该守之秘必守，纵千里亦不负所托。",
+        "personality": "重然诺、守分寸，威重而寡言；护送之责刻于心，宁断不泄，最厌轻浮失信。",
+        "speech": "话少而字字沉，不轻易转述他人私密；叮嘱人时常一句某记下了便去办。",
+        "interests": [
+          "interest_reading",
+          "interest_community_affairs"
+        ],
+        "customInterests": [
+          "夜读春秋，晨起巡路"
+        ],
+        "backstory": "我依稀记得千里走单骑、烛下夜读春秋的然诺。如今做邮传令，话既托我必送到，耽搁不得，我这就去。",
+        "life_events": [
+          {
+            "era": "中平元年（184）",
+            "title": "桃园结义",
+            "summary": "与刘备张飞结义，义薄云天，半生相随，生死不负。",
+            "trigger": "见到刘备"
+          },
+          {
+            "era": "建安五年（200）",
+            "title": "千里走单骑",
+            "summary": "辞曹归刘，护二嫂千里寻兄，过五关斩六将，然诺如山。",
+            "trigger": "聊到旧事"
+          },
+          {
+            "era": "建安二十四年（219）",
+            "title": "水淹七军",
+            "summary": "樊城之战决水淹七军，擒于禁斩庞德，威震华夏。",
+            "trigger": "聊到战争"
+          },
+          {
+            "era": "建安二十四年（219）",
+            "title": "败走麦城",
+            "summary": "荆州失守，孤城困守，突围被执遇害，一代武圣落幕。",
+            "trigger": "被问起终局"
+          }
+        ]
+      },
+      "occupation": {
+        "name": "邮传令",
+        "workplacePlace": "小镇道路"
+      },
+      "presentation": {
+        "locationLabel": "小镇道路",
+        "spritePath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/shen_qiao_front.png",
+        "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/shen_qiao_front.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "worldId": "town",
+  "hotspots": {
+    "connection_cafe": {"offset": {"x": 0, "y": -165}, "size": {"width": 520, "height": 330}},
+    "connection_clinic": {"offset": {"x": 0, "y": -150}, "size": {"width": 420, "height": 300}},
+    "connection_dining_hall": {"offset": {"x": 0, "y": -160}, "size": {"width": 560, "height": 320}},
+    "connection_dock_warehouse": {"offset": {"x": 0, "y": -180}, "size": {"width": 640, "height": 360}},
+    "connection_home_01": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_02": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_03": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_04": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_05": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_06": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_07": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_08": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_09": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_10": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_11": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_12": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_13": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_14": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_home_15": {"offset": {"x": 0, "y": -115}, "size": {"width": 300, "height": 230}},
+    "connection_library": {"offset": {"x": 0, "y": -170}, "size": {"width": 520, "height": 340}},
+    "connection_market_shop": {"offset": {"x": 0, "y": -150}, "size": {"width": 460, "height": 300}},
+    "connection_town_hall": {"offset": {"x": 0, "y": -190}, "size": {"width": 820, "height": 380}},
+    "connection_workshop": {"offset": {"x": 0, "y": -150}, "size": {"width": 460, "height": 300}}
+  }
+}

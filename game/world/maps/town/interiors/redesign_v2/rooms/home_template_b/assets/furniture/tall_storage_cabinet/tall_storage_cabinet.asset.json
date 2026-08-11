@@ -1,0 +1,120 @@
+{
+  "schema_version": 2,
+  "source_revision": "home_template_b_tall_storage_cabinet_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "tall_storage_cabinet",
+  "label": "住宅 B 朴素深木色高收纳柜（仅关闭的高柜，不含书、货物或其他家具）",
+  "room_id": "home_template_b",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 64,
+    "depth": 64,
+    "height": 192
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/tall_storage_cabinet/frames/tall_storage_cabinet_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/tall_storage_cabinet/frames/tall_storage_cabinet_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/tall_storage_cabinet/frames/tall_storage_cabinet_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/tall_storage_cabinet/frames/tall_storage_cabinet_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      177
+    ],
+    "right": [
+      104,
+      177
+    ],
+    "up": [
+      104,
+      177
+    ],
+    "left": [
+      104,
+      177
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -32,
+          -20
+        ],
+        [
+          32,
+          -20
+        ],
+        [
+          32,
+          0
+        ],
+        [
+          -32,
+          0
+        ]
+      ]
+    ],
+    "polygons_by_direction_px": {
+      "down": [[[-32, -20], [32, -20], [32, 0], [-32, 0]]],
+      "right": [[[-24, -20], [24, -20], [24, 0], [-24, 0]]],
+      "up": [[[-32, -20], [32, -20], [32, 0], [-32, 0]]],
+      "left": [[[-24, -20], [24, -20], [24, 0], [-24, 0]]]
+    }
+  },
+  "occupied_cells": {
+    "origin2": [
+      -2,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [-32, -149],
+      [32, -149],
+      [32, 0],
+      [-32, 0]
+    ],
+    "points_by_direction_px": {
+      "down": [[-32, -149], [32, -149], [32, 0], [-32, 0]],
+      "right": [[-25, -149], [24, -149], [24, 0], [-25, 0]],
+      "up": [[-32, -149], [32, -149], [32, 0], [-32, 0]],
+      "left": [[-25, -149], [24, -149], [24, 0], [-25, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "doors",
+      "kind": "store",
+      "position_px": [
+        0,
+        -24
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "../source/tall_storage_cabinet_four_direction_sheet_final_1x.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_b/layout_concepts/home_02_layout_v1/home_02_decor_layout_concept_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "docs/design/pipelines/indoor_handoffs/home_template_b.md"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

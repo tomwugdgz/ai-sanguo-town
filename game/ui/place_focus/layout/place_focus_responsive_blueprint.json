@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "pageId": "place_focus",
+  "status": "pending_user_visual_review",
+  "coordinatePolicy": {
+    "unit": "logical_px",
+    "layoutGrid": 4,
+    "wholePageScale": false,
+    "physicalPixelSnap": "每次视口、DPI、浏览器缩放或安全区变化后重新布局，再把每条边吸附到最近整数物理像素。",
+    "ninePatchRule": "只拉伸九宫格中部；角件、边框线宽、字体、头像与图标保持整数像素。",
+    "ultrawideRule": "扩展地图视口和弹性留白，不横向拉宽地点面板、文字槽、头像或图标。"
+  },
+  "safeAreaPolicy": {
+    "source": "运行时可用逻辑视口与系统 safeInsets",
+    "outerGap": 16,
+    "hudCoexistence": "面板使用 HUD 框体内缘安全区；不覆盖顶部时间天气主信息、底部四入口或屏幕边缘方向标。",
+    "minimumTextPadding": {
+      "body32": 12,
+      "emphasis48": 18,
+      "primary80": 30
+    },
+    "touchTargetMinimum": {
+      "width": 48,
+      "height": 48,
+      "preferred": 64,
+      "adjacentGap": 8
+    }
+  },
+  "contentPriority": [
+    "place_identity",
+    "enter_interior_action",
+    "present_residents",
+    "current_event",
+    "interactables",
+    "recent_logs"
+  ],
+  "sections": {
+    "header": {
+      "requiredSlots": ["place_icon", "place_name", "place_type_or_state", "close"],
+      "placeNameLines": 1,
+      "overflow": "single_line_ellipsis",
+      "minimumHeight": 104
+    },
+    "residents": {
+      "requiredSlots": ["section_label", "resident_items", "resident_count_or_empty"],
+      "itemMinimum": {"width": 112, "height": 112},
+      "wideBehavior": "单行头像与姓名，超出后横向滚动并显示人数。",
+      "compactBehavior": "保留头像、姓名与公开状态；职业等低优先级字段不进入本页。"
+    },
+    "currentEvent": {
+      "requiredSlots": ["event_icon", "event_title", "event_summary", "time_label", "open_event"],
+      "titleLines": 2,
+      "summaryLines": 2,
+      "minimumTextHeight": 104,
+      "emptyStateReserved": true
+    },
+    "interactables": {
+      "requiredSlots": ["section_label", "interactable_items", "empty_or_disabled_reason"],
+      "itemMinimum": {"width": 152, "height": 80},
+      "overflow": "wrap_then_vertical_scroll",
+      "disabledReasonLines": 2
+    },
+    "recentLogs": {
+      "requiredSlots": ["section_label", "log_items", "open_all_logs"],
+      "visibleItemTargetWide": 3,
+      "visibleItemTargetCompact": 2,
+      "itemTitleLines": 2,
+      "itemSubtitleLines": 2,
+      "overflow": "panel_scroll; compact modes collapse extra rows behind open_all_logs"
+    },
+    "enterInterior": {
+      "requiredSlots": ["door_icon", "action_label", "operation_feedback"],
+      "sticky": true,
+      "minimumHeightWith48pxText": 112,
+      "planningEnvelopeHeightWith80pxText": 180,
+      "disabledReasonLines": 2,
+      "rule": "loading、success、rejected、error、disabled 共用同一几何；状态变化不移动点击区。"
+    }
+  },
+  "breakpoints": [
+    {
+      "id": "wide_landscape",
+      "when": "availableWidth >= 1600 and aspectRatio >= 1.45",
+      "panelMode": "right_sheet",
+      "panelWidth": {"min": 704, "preferred": 736, "max": 768},
+      "panelHeight": "availableHeight - max(64, safeTop + safeBottom + 32)",
+      "mapMinimumVisibleWidth": 960,
+      "contentLayout": "单列纵向信息流；居民横排；当前事件独立主卡；最近日志显示 3 条；进入室内固定在底部。",
+      "reference1920x1080": {
+        "panelRect": {"x": 1120, "y": 80, "w": 736, "h": 920},
+        "mapReadableRect": {"x": 48, "y": 48, "w": 1024, "h": 936}
+      }
+    },
+    {
+      "id": "standard_landscape",
+      "when": "1100 <= availableWidth < 1600 and aspectRatio >= 1.35",
+      "panelMode": "right_sheet",
+      "panelWidth": {"min": 560, "preferred": 608, "max": 640},
+      "panelHeight": "availableHeight - max(48, safeTop + safeBottom + 24)",
+      "mapMinimumVisibleWidth": 520,
+      "contentLayout": "居民横向滚动；当前事件和可交互物完整；最近日志显示 2 条；其余内容在面板内部滚动。",
+      "reference1280x720": {
+        "panelRect": {"x": 656, "y": 32, "w": 592, "h": 656},
+        "mapReadableRect": {"x": 24, "y": 24, "w": 608, "h": 672}
+      }
+    },
+    {
+      "id": "mobile_landscape",
+      "when": "availableHeight < 720 and aspectRatio >= 1.35",
+      "panelMode": "right_sheet",
+      "panelWidth": "clamp(480, availableWidth * 0.55, 620)",
+      "panelHeight": "availableHeight - safeTop - safeBottom",
+      "mapMinimumVisibleWidth": "availableWidth * 0.40",
+      "contentLayout": "固定标题与进入室内操作，中部单列滚动；居民只显示头像与单行姓名；事件与日志各保留最高优先级摘要。",
+      "inputNotes": "软键盘不属于本页；触控、键鼠和手柄焦点均保持在可见安全区内。"
+    },
+    {
+      "id": "near_square",
+      "when": "availableWidth >= 720 and 0.85 <= aspectRatio < 1.35",
+      "panelMode": "bottom_sheet",
+      "panelWidth": "availableWidth - safeLeft - safeRight",
+      "panelHeight": "clamp(520, availableHeight * 0.64, availableHeight - safeTop - 24)",
+      "contentLayout": "标题与进入室内操作固定；内容区两列：左列在场居民与当前事件，右列可交互物与最近日志；窄于 860 时改为单列滚动。",
+      "mapMinimumVisibleHeight": "availableHeight * 0.28"
+    },
+    {
+      "id": "mobile_portrait",
+      "when": "availableWidth < 720 or aspectRatio < 0.85",
+      "panelMode": "bottom_sheet",
+      "panelWidth": "availableWidth - safeLeft - safeRight",
+      "panelHeight": "clamp(560, availableHeight * 0.76, availableHeight - safeTop - 16)",
+      "contentLayout": "单列滚动；标题与进入室内操作固定；居民横向滚动；当前事件完整；可交互物使用两列或单列；最近日志默认显示 2 条。",
+      "mapMinimumVisibleHeight": 160,
+      "compactRule": "保持正文 32px 规划角色；通过折叠字段和面板滚动解决空间，不缩小完整桌面页面。"
+    }
+  ],
+  "responsiveTransitions": {
+    "hysteresis": 32,
+    "preserve": ["focusedPlaceName", "scrollSection", "focusedControlId", "lastConfirmedRevision"],
+    "mustNotOccur": ["font_size_drop", "baseline_jump", "sibling_overlap", "hitbox_drift", "whole_page_scale"]
+  },
+  "testViewports": [
+    {"logicalViewport": [1920, 1080], "class": "wide_landscape"},
+    {"logicalViewport": [1280, 720], "class": "standard_landscape"},
+    {"logicalViewport": [1440, 900], "class": "standard_landscape"},
+    {"logicalViewport": [1024, 768], "class": "near_square"},
+    {"logicalViewport": [2560, 1080], "class": "wide_landscape"},
+    {"logicalViewport": [390, 844], "class": "mobile_portrait", "safeInsets": [0, 47, 0, 34]},
+    {"logicalViewport": [844, 390], "class": "mobile_landscape", "safeInsets": [47, 0, 47, 21]},
+    {"logicalViewport": [810, 810], "class": "near_square"}
+  ]
+}

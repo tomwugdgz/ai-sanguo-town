@@ -1,0 +1,64 @@
+{
+  "schema": "ai-town.resident-whitebody-freeze.v2",
+  "status": "user_selected_geometry_frozen_pending_full_outfit_visual_review",
+  "scope": "unified_test_workspace_only",
+  "approval_basis": "User explicitly requested restarting the original frozen wardrobe pipeline from this whitebody three-view and carrying clothing into the bound skeleton.",
+  "canvas_size": [627, 627],
+  "center_x": 314.5,
+  "foot_anchor": [314.5, 591.0],
+  "direction_order": ["down", "right", "up", "left"],
+  "left_policy": "exact_asset_mirror_of_right",
+  "whitebody": {
+    "down": {
+      "path": "whitebody/down.png",
+      "sha256": "446db2207577fc949b9c7a7cfc6ead539f7e62470bb1da1855a0af41bae7fcea"
+    },
+    "right": {
+      "path": "whitebody/right.png",
+      "sha256": "e97d536d9a9eb45c32a7a6df432af192b01c88fb7b4a229936d43c9c9dc5cc37"
+    },
+    "up": {
+      "path": "whitebody/up.png",
+      "sha256": "cb3fde62daba506ac5602c471094cd9bce02c6c3ef8d3740d891040d46db7ab8"
+    },
+    "left": {
+      "path": "whitebody/left.png",
+      "sha256": "b709239e88f3504c9922a646f9a0ef5bc2bfa33a498956c90c527775353cb0c8"
+    }
+  },
+  "rig_sources": {
+    "contract": {
+      "path": "../rig_contract_v1.json",
+      "sha256": "e8d2ca75cf8e4fc03bc68f0333f8f39fe20bfa04526d9271926277fa73e5e038"
+    },
+    "down": {
+      "path": "../rig_v1/down/rig_manifest.json",
+      "sha256": "6a18a45f2c119ee78db3d865b2101e9562bddfd197b616de1c78b6d1ad26dc06"
+    },
+    "right": {
+      "path": "../rig_v1/right/rig_manifest.json",
+      "sha256": "9501e8427eaefb9966861693ce5a7ef10730e0f0344826ea4ec381dfda6026f3"
+    },
+    "up": {
+      "path": "../rig_v1/up/rig_manifest.json",
+      "sha256": "6fff2fddffd65cab057c1de284cb27e386b2671503c07e101dd04ebdb9267215"
+    },
+    "left": "mirror right art parts and joint transforms"
+  },
+  "runtime_motion_policy": {
+    "use_current_validated_low_amplitude_gait": true,
+    "use_old_18_bone_walk_experiment": false,
+    "prop_interactions_preserved": ["sit_chair", "carry_crate", "push_book_cart"]
+  },
+  "wardrobe_pipeline": [
+    "freeze whitebody geometry, center, foot anchor and joints",
+    "first Image generation creates a complete multi-direction outfit visual candidate",
+    "user performs visual approval",
+    "second Image generation extracts independent semantic slots",
+    "local tools remove background and place slots using frozen profiles",
+    "slot artwork is split by the same body-part masks and follows the same bones",
+    "test entry validates outfit switching, gait and prop interactions"
+  ],
+  "wardrobe_slots": ["hair_back", "face_shape", "expression", "hair_front", "top", "bottom", "shoes"],
+  "current_gate": "full_outfit_three_view_visual_candidate"
+}

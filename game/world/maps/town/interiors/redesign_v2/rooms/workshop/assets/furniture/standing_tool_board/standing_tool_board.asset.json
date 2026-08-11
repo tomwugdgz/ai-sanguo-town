@@ -1,0 +1,200 @@
+{
+  "schema_version": 2,
+  "source_revision": "workshop_standing_tool_board_batch_v1_formal_import_v1_footpoint_v3",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "standing_tool_board",
+  "label": "立式木工工具板",
+  "room_id": "workshop",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 64,
+    "depth": 16,
+    "height": 160
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/standing_tool_board/frames/standing_tool_board_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/standing_tool_board/frames/standing_tool_board_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/standing_tool_board/frames/standing_tool_board_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/standing_tool_board/frames/standing_tool_board_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      182
+    ],
+    "right": [
+      104,
+      183
+    ],
+    "up": [
+      104,
+      182
+    ],
+    "left": [
+      102,
+      182
+    ]
+  },
+  "ground_contact": {
+    "polygons_by_direction_px": {
+      "down": [[[-32, -16], [32, -16], [32, 0], [-32, 0]]],
+      "right": [[[-20, -16], [14, -16], [14, 0], [-20, 0]]],
+      "up": [[[-32, -16], [32, -16], [32, 0], [-32, 0]]],
+      "left": [[[-20, -16], [13, -16], [13, 0], [-20, 0]]]
+    },
+    "polygons_px": [
+      [
+        [
+          -32,
+          -16
+        ],
+        [
+          32,
+          -16
+        ],
+        [
+          32,
+          0
+        ],
+        [
+          -32,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -2,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -33,
+        -152
+      ],
+      [
+        38,
+        -152
+      ],
+      [
+        38,
+        -8
+      ],
+      [
+        -33,
+        -8
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [
+        [
+          -33,
+          -152
+        ],
+        [
+          38,
+          -152
+        ],
+        [
+          38,
+          -8
+        ],
+        [
+          -33,
+          -8
+        ]
+      ],
+      "right": [
+        [
+          -20,
+          -153
+        ],
+        [
+          14,
+          -153
+        ],
+        [
+          14,
+          -9
+        ],
+        [
+          -20,
+          -9
+        ]
+      ],
+      "up": [
+        [
+          -33,
+          -152
+        ],
+        [
+          38,
+          -152
+        ],
+        [
+          38,
+          -7
+        ],
+        [
+          -33,
+          -7
+        ]
+      ],
+      "left": [
+        [
+          -20,
+          -151
+        ],
+        [
+          13,
+          -151
+        ],
+        [
+          13,
+          -7
+        ],
+        [
+          -20,
+          -7
+        ]
+      ]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "tool_pickup",
+      "kind": "take",
+      "position_px": [
+        0,
+        32
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/candidates/calibration_c/shell_raw.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/layout_concepts/workshop_layout_concept_a/workshop_furniture_layout_concept_a.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "assets/furniture/standing_tool_board/batch_v1/SOURCE_RECORD.json"
+  }
+}

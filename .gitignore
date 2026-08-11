@@ -1,0 +1,18 @@
+.DS_Store
+/.tmp/
+
+# Local Obsidian workspace settings
+/.obsidian/
+
+# Godot local/editor cache
+game/.godot/
+
+# Local Godot plugins and private resource packs used by the editor/runtime.
+game/addons/
+game/AI资源库/
+game/romestead_weather_free/
+__pycache__/
+
+# 本地发布产物与临时分析文档，不进版本库
+release/
+attack-perf-fixes-*.md

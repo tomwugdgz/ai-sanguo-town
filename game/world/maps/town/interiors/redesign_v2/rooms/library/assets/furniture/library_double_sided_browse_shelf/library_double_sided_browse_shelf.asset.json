@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "source_revision": "library_double_sided_browse_shelf_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "library_double_sided_browse_shelf",
+  "label": "图书馆双面中央浏览书架（用户要求两种视觉方向先落位）",
+  "room_id": "library",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 128,
+    "depth": 64,
+    "height": 192
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/library_double_sided_browse_shelf/frames/library_double_sided_browse_shelf_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/library_double_sided_browse_shelf/frames/library_double_sided_browse_shelf_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/library_double_sided_browse_shelf/frames/library_double_sided_browse_shelf_down.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/library/assets/furniture/library_double_sided_browse_shelf/frames/library_double_sided_browse_shelf_right.png"
+  },
+  "visual_anchor": {
+    "down": [
+      157,
+      258
+    ],
+    "right": [187, 152],
+    "up": [157, 46],
+    "left": [124, 152]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -68,
+          -12
+        ],
+        [
+          68,
+          -12
+        ],
+        [
+          68,
+          0
+        ],
+        [
+          -68,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -5,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -64,
+        -96
+      ],
+      [
+        64,
+        -96
+      ],
+      [
+        64,
+        -64
+      ],
+      [
+        -64,
+        -64
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-68, -212], [68, -212], [68, 0], [-68, 0]],
+      "right": [[-63, -106], [0, -106], [0, 106], [-63, 106]],
+      "up": [[-68, 0], [68, 0], [68, 212], [-68, 212]],
+      "left": [[0, -106], [63, -106], [63, 106], [0, 106]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "browse_front",
+      "kind": "take",
+      "position_px": [
+        0,
+        32
+      ],
+      "actor_facing": "up",
+      "capacity": 2
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/library/shell_candidates/candidate_c_interior_visual_review/assets/background/library_shell_candidate_c_uniform_wall_height.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/library/layout_concepts/candidate_a_same_shell_c_user_directed_v1/library_layout_preview_c_complete_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

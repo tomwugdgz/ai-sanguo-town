@@ -1,0 +1,663 @@
+{
+  "schemaVersion": 1,
+  "worldId": "town",
+  "agentContract": {
+    "operation": "activity.perform",
+    "requiredTargetFields": ["activityId", "placeId"],
+    "optionalTargetFields": ["preferredSlotId"],
+    "optionalParamsFields": ["reason"],
+    "worldQueryFields": [
+      "activityId",
+      "label",
+      "placeId",
+      "role",
+      "available",
+      "disabledReason",
+      "preferredSlots"
+    ],
+    "errorCodes": [
+      "ACTIVITY_UNKNOWN",
+      "ACTIVITY_PLACE_MISMATCH",
+      "ACTIVITY_NOT_ELIGIBLE",
+      "ACTIVITY_REQUIRES_TRAVEL_STEP",
+      "ACTIVITY_SLOT_REFERENCE_INVALID",
+      "ACTIVITY_NO_EXECUTABLE_SLOT",
+      "ACTIVITY_TARGET_UNREACHABLE",
+      "ACTIVITY_RESERVATION_CONFLICT",
+      "ACTIVITY_STATE_CHANGED"
+    ],
+    "idempotencyKeyFields": [
+      "residentId",
+      "planId",
+      "stepId",
+      "planRevision"
+    ]
+  },
+  "stateKeys": [
+    "energy",
+    "satiety",
+    "stress",
+    "socialNeed",
+    "solitudeNeed"
+  ],
+  "activities": [
+    {
+      "activityId": "activity_cafe_brew_coffee",
+      "label": "冲咖啡",
+      "kind": "work",
+      "tags": ["drink.prepare", "cafe.service"],
+      "durationMinutes": 20,
+      "effects": {"energy": -2},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_cafe_receive_guests",
+      "label": "在柜台接待客人",
+      "kind": "work",
+      "tags": ["cafe.service"],
+      "durationMinutes": 15,
+      "effects": {"energy": -1},
+      "interruptible": true,
+      "poseFamily": "service"
+    },
+    {
+      "activityId": "activity_cafe_tidy_tables",
+      "label": "整理桌椅",
+      "kind": "work",
+      "tags": ["cafe.tidy"],
+      "durationMinutes": 15,
+      "effects": {"energy": -1},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_cafe_eat_pastry",
+      "label": "吃点心",
+      "kind": "need",
+      "tags": ["food.eat", "cafe.visit"],
+      "durationMinutes": 20,
+      "effects": {"satiety": 12, "stress": -2},
+      "interruptible": true,
+      "poseFamily": "eat_drink"
+    },
+    {
+      "activityId": "activity_cafe_order",
+      "label": "点单",
+      "kind": "service",
+      "tags": ["cafe.order", "cafe.visit"],
+      "durationMinutes": 10,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "service",
+      "resultContract": {
+        "mode": "create_task",
+        "taskCapability": "cafe.order",
+        "resultKind": "service_request",
+        "requiredEvidence": ["residentId", "itemId"]
+      }
+    },
+    {
+      "activityId": "activity_postal_collect_outgoing_mail",
+      "label": "巡看沿途信箱",
+      "kind": "work", "tags": ["mail.delivery"], "durationMinutes": 30,
+      "effects": {"energy": -1}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_cafe_rest",
+      "label": "在咖啡馆歇一会儿",
+      "kind": "leisure",
+      "tags": ["rest", "cafe.visit"],
+      "durationMinutes": 30,
+      "effects": {"energy": 6, "stress": -8, "solitudeNeed": -4},
+      "interruptible": true,
+      "poseFamily": "rest"
+    },
+    {
+      "activityId": "activity_clinic_consult",
+      "label": "看诊",
+      "kind": "service",
+      "tags": ["care.consult", "care.visit"],
+      "durationMinutes": 30,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "service",
+      "resultContract": {
+        "mode": "create_task",
+        "taskCapability": "care.consult",
+        "resultKind": "service_request",
+        "requiredEvidence": ["residentId", "subjectId"]
+      }
+    },
+    {
+      "activityId": "activity_clinic_examination",
+      "label": "接受检查",
+      "kind": "service",
+      "tags": ["care.examine", "care.visit"],
+      "durationMinutes": 30,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "service",
+      "resultContract": {
+        "mode": "advance_task",
+        "taskCapability": "care.examine",
+        "resultKind": "care_observation",
+        "requiredEvidence": ["taskId", "workerResidentId", "subjectId"]
+      }
+    },
+    {
+      "activityId": "activity_clinic_prepare_medicine",
+      "label": "配取药品",
+      "kind": "work",
+      "tags": ["care.medicine"],
+      "durationMinutes": 10,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_clinic_receive_patient",
+      "label": "在问诊位接诊",
+      "kind": "work",
+      "tags": ["care.consult", "care.examine"],
+      "durationMinutes": 20,
+      "effects": {"energy": -1},
+      "interruptible": true,
+      "poseFamily": "service"
+    },
+    {
+      "activityId": "activity_clinic_wait",
+      "label": "候诊休息",
+      "kind": "need",
+      "tags": ["rest", "care.visit"],
+      "durationMinutes": 30,
+      "effects": {"energy": 6, "stress": -6},
+      "interruptible": true,
+      "poseFamily": "rest"
+    },
+    {
+      "activityId": "activity_dining_eat_meal",
+      "label": "吃饭",
+      "kind": "need",
+      "tags": ["food.eat", "social.meal", "routine.meal.consume"],
+      "durationMinutes": 30,
+      "effects": {"satiety": 24, "stress": -3},
+      "interruptible": true,
+      "poseFamily": "eat_drink"
+    },
+    {
+      "activityId": "activity_dining_collect_meal",
+      "label": "取餐",
+      "kind": "need",
+      "tags": ["food.collect", "social.meal", "routine.meal.collect"],
+      "durationMinutes": 5,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_dining_return_dishes",
+      "label": "归还餐具",
+      "kind": "need",
+      "tags": ["food.cleanup", "social.meal", "routine.meal.cleanup"],
+      "durationMinutes": 10,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_dining_prepare_meal",
+      "label": "准备饭菜",
+      "kind": "work",
+      "tags": ["food.prepare", "food.serve"],
+      "durationMinutes": 60,
+      "effects": {"energy": -4},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_dining_serve_meal",
+      "label": "把备好的饭菜递给顾客",
+      "kind": "work",
+      "tags": ["food.serve"],
+      "durationMinutes": 5,
+      "effects": {"energy": -1},
+      "interruptible": true,
+      "poseFamily": "service"
+    },
+    {
+      "activityId": "activity_dining_wash_dishes",
+      "label": "洗餐具",
+      "kind": "work",
+      "tags": ["food.clean"],
+      "durationMinutes": 30,
+      "effects": {"energy": -2},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_home_sleep",
+      "label": "睡觉",
+      "kind": "need",
+      "tags": ["sleep", "home"],
+      "durationMinutes": 480,
+      "effects": {"energy": 40, "stress": -8},
+      "interruptible": true,
+      "poseFamily": "sleep"
+    },
+    {
+      "activityId": "activity_library_checkout",
+      "label": "借还书",
+      "kind": "service",
+      "tags": ["library.service", "library.visit"],
+      "durationMinutes": 15,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "service",
+      "resultContract": {
+        "mode": "advance_task",
+        "taskCapability": "library.loan",
+        "resultKind": "loan_record",
+        "requiredEvidence": ["taskId", "residentId", "itemId"]
+      }
+    },
+    {
+      "activityId": "activity_library_read",
+      "label": "阅读",
+      "kind": "leisure",
+      "tags": ["library.read", "quiet"],
+      "durationMinutes": 60,
+      "effects": {"stress": -4, "solitudeNeed": -3},
+      "interruptible": true,
+      "poseFamily": "read_write"
+    },
+    {
+      "activityId": "activity_library_write",
+      "label": "写作",
+      "kind": "leisure",
+      "tags": ["library.write", "quiet"],
+      "durationMinutes": 60,
+      "effects": {"stress": -2, "solitudeNeed": -3},
+      "interruptible": true,
+      "poseFamily": "read_write"
+    },
+    {
+      "activityId": "activity_library_research",
+      "label": "查资料",
+      "kind": "leisure",
+      "tags": ["library.research", "quiet"],
+      "durationMinutes": 30,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "read_write"
+    },
+    {
+      "activityId": "activity_library_shelve_returns",
+      "label": "整理归还书籍",
+      "kind": "work",
+      "tags": ["library.shelve", "library.service"],
+      "durationMinutes": 10,
+      "effects": {"energy": -1},
+      "interruptible": true,
+      "poseFamily": "read_write"
+    },
+    {
+      "activityId": "activity_library_staff_checkout",
+      "label": "整理借还记录",
+      "kind": "work",
+      "tags": ["library.service", "library.research"],
+      "durationMinutes": 15,
+      "effects": {"energy": -1},
+      "interruptible": true,
+      "poseFamily": "read_write"
+    },
+    {
+      "activityId": "activity_town_hall_civic_service",
+      "label": "办理镇务",
+      "kind": "service",
+      "tags": ["civic.service", "civic.visit"],
+      "durationMinutes": 30,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "service",
+      "resultContract": {
+        "mode": "advance_task",
+        "taskCapability": "civic.service",
+        "resultKind": "civic_case_update",
+        "requiredEvidence": ["taskId", "workerResidentId", "subjectId"]
+      }
+    },
+    {
+      "activityId": "activity_town_hall_fill_form",
+      "label": "填表",
+      "kind": "service",
+      "tags": ["civic.form", "civic.visit"],
+      "durationMinutes": 20,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "read_write",
+      "resultContract": {
+        "mode": "create_task",
+        "taskCapability": "civic.service",
+        "resultKind": "service_request",
+        "requiredEvidence": ["residentId", "subjectId"]
+      }
+    },
+    {
+      "activityId": "activity_town_hall_manage_records",
+      "label": "查阅和整理档案",
+      "kind": "work",
+      "tags": ["civic.records"],
+      "durationMinutes": 30,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "read_write"
+    },
+    {
+      "activityId": "activity_town_hall_process_paperwork",
+      "label": "处理日常文书",
+      "kind": "work",
+      "tags": ["civic.service", "civic.meeting"],
+      "durationMinutes": 20,
+      "effects": {"energy": -1},
+      "interruptible": true,
+      "poseFamily": "read_write"
+    },
+    {
+      "activityId": "activity_town_hall_meeting",
+      "label": "参加议事",
+      "kind": "social",
+      "tags": ["civic.meeting", "social"],
+      "durationMinutes": 45,
+      "effects": {"socialNeed": -4},
+      "interruptible": true,
+      "poseFamily": "service"
+    },
+    {
+      "activityId": "activity_warehouse_check_cargo",
+      "label": "检查货物",
+      "kind": "work",
+      "tags": ["logistics.inventory", "logistics.cargo"],
+      "durationMinutes": 20,
+      "effects": {"energy": -1},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_warehouse_check_manifest",
+      "label": "核对货单",
+      "kind": "work",
+      "tags": ["logistics.inventory", "logistics.records"],
+      "durationMinutes": 45,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "read_write"
+    },
+    {
+      "activityId": "activity_warehouse_move_cargo",
+      "label": "搬运货物",
+      "kind": "work",
+      "tags": ["logistics.cargo"],
+      "durationMinutes": 45,
+      "effects": {"energy": -4},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_warehouse_organize_shelves",
+      "label": "整理货架",
+      "kind": "work",
+      "tags": ["logistics.inventory"],
+      "durationMinutes": 60,
+      "effects": {"energy": -3},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_workshop_assemble_item",
+      "label": "组装器物",
+      "kind": "work",
+      "tags": ["craft.assembly"],
+      "durationMinutes": 90,
+      "effects": {"energy": -4},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_workshop_craft_item",
+      "label": "制作器物",
+      "kind": "work",
+      "tags": ["craft.woodwork"],
+      "durationMinutes": 120,
+      "effects": {"energy": -5},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_workshop_grind_parts",
+      "label": "打磨零件",
+      "kind": "work",
+      "tags": ["craft.metalwork"],
+      "durationMinutes": 45,
+      "effects": {"energy": -3},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_workshop_handoff_repair",
+      "label": "交接修理件",
+      "kind": "service",
+      "tags": ["craft.handoff", "craft.visit"],
+      "durationMinutes": 15,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "service",
+      "resultContract": {
+        "mode": "advance_task",
+        "taskCapability": "craft.handoff",
+        "resultKind": "handoff_record",
+        "requiredEvidence": ["taskId", "residentId", "itemId"]
+      }
+    },
+    {
+      "activityId": "activity_workshop_inspect_finished",
+      "label": "查看成品",
+      "kind": "leisure",
+      "tags": ["craft.visit"],
+      "durationMinutes": 15,
+      "effects": {},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_workshop_take_lumber",
+      "label": "取用木料",
+      "kind": "work",
+      "tags": ["craft.materials", "craft.woodwork"],
+      "durationMinutes": 10,
+      "effects": {"energy": -1},
+      "interruptible": true,
+      "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_botanist_observe_plants",
+      "label": "观察植物",
+      "kind": "work", "tags": ["plant.study"], "durationMinutes": 20,
+      "effects": {"energy": -1}, "interruptible": true, "poseFamily": "read_write"
+    },
+    {
+      "activityId": "activity_botanist_record_plants",
+      "label": "整理研究记录",
+      "kind": "work", "tags": ["library.write"], "durationMinutes": 20,
+      "effects": {"energy": -1}, "interruptible": true, "poseFamily": "read_write"
+    },
+    {
+      "activityId": "activity_botanist_verify_sources",
+      "label": "查证植物资料",
+      "kind": "work", "tags": ["library.research"], "durationMinutes": 20,
+      "effects": {"energy": -1}, "interruptible": true, "poseFamily": "read_write"
+    },
+    {
+      "activityId": "activity_baker_prepare_dough",
+      "label": "准备面团",
+      "kind": "work", "tags": ["baking.prepare"], "durationMinutes": 25,
+      "effects": {"energy": -2}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_baker_bake_bread",
+      "label": "烘烤面包",
+      "kind": "work", "tags": ["baking.prepare"], "durationMinutes": 30,
+      "effects": {"energy": -2}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_fisher_organize_gear",
+      "label": "整理渔具",
+      "kind": "work", "tags": ["fishing.harvest"], "durationMinutes": 25,
+      "effects": {"energy": -2}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_fisher_catch_in_region",
+      "label": "在捕鱼区域捕鱼",
+      "kind": "work", "tags": ["fishing.harvest"], "durationMinutes": 30,
+      "effects": {"energy": -3}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_fisher_count_catch",
+      "label": "清点渔获",
+      "kind": "work", "tags": ["fishing.harvest"], "durationMinutes": 20,
+      "effects": {"energy": -1}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_grocer_count_goods",
+      "label": "清点货品",
+      "kind": "work", "tags": ["retail.goods"], "durationMinutes": 20,
+      "effects": {"energy": -1}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_grocer_tidy_stall",
+      "label": "在杂货摊接待客人",
+      "kind": "work", "tags": ["retail.goods"], "durationMinutes": 20,
+      "effects": {"energy": -1}, "interruptible": true, "poseFamily": "service"
+    },
+    {
+      "activityId": "activity_market_buy_general_goods",
+      "label": "在杂货摊买日用品",
+      "kind": "service", "tags": ["retail.buy", "retail.goods"], "durationMinutes": 10,
+      "effects": {}, "interruptible": true, "poseFamily": "service",
+      "resultContract": {
+        "mode": "create_task",
+        "taskCapability": "retail.sale",
+        "resultKind": "service_request",
+        "requiredEvidence": ["residentId", "itemId"]
+      }
+    },
+    {
+      "activityId": "activity_market_buy_fish",
+      "label": "在鱼货摊买鱼",
+      "kind": "service", "tags": ["retail.buy", "retail.goods"], "durationMinutes": 10,
+      "effects": {}, "interruptible": true, "poseFamily": "service",
+      "resultContract": {
+        "mode": "create_task",
+        "taskCapability": "retail.sale",
+        "resultKind": "service_request",
+        "requiredEvidence": ["residentId", "itemId"]
+      }
+    },
+    {
+      "activityId": "activity_postal_sort_mail",
+      "label": "分拣信件",
+      "kind": "work", "tags": ["mail.delivery"], "durationMinutes": 20,
+      "effects": {"energy": -1}, "interruptible": true, "poseFamily": "read_write"
+    },
+    {
+      "activityId": "activity_postal_prepare_mailbag",
+      "label": "整理投递袋",
+      "kind": "work", "tags": ["mail.delivery"], "durationMinutes": 20,
+      "effects": {"energy": -1}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_flower_arrange_bouquets",
+      "label": "整理花束",
+      "kind": "work", "tags": ["retail.flowers"], "durationMinutes": 20,
+      "effects": {"energy": -1}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_flower_watch_stall",
+      "label": "在花摊接待客人",
+      "kind": "work", "tags": ["retail.flowers"], "durationMinutes": 20,
+      "effects": {"energy": -1}, "interruptible": true, "poseFamily": "service"
+    },
+    {
+      "activityId": "activity_market_buy_flowers",
+      "label": "在花摊买花",
+      "kind": "service", "tags": ["retail.buy", "retail.flowers"], "durationMinutes": 10,
+      "effects": {}, "interruptible": true, "poseFamily": "service",
+      "resultContract": {
+        "mode": "create_task",
+        "taskCapability": "retail.sale",
+        "resultKind": "service_request",
+        "requiredEvidence": ["residentId", "itemId"]
+      }
+    },
+    {
+      "activityId": "activity_musician_rehearse",
+      "label": "练习曲目",
+      "kind": "work", "tags": ["music.perform"], "durationMinutes": 25,
+      "effects": {"energy": -1}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_musician_perform",
+      "label": "公开演奏",
+      "kind": "work", "tags": ["music.perform"], "durationMinutes": 25,
+      "effects": {"energy": -2, "socialNeed": -2}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_farm_water_beds",
+      "label": "浇灌花圃",
+      "kind": "work", "tags": ["garden.care"], "durationMinutes": 25,
+      "effects": {"energy": -2}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_garden_harvest_region",
+      "label": "在成熟花圃采收",
+      "kind": "work", "tags": ["garden.care"], "durationMinutes": 25,
+      "effects": {"energy": -2}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_farm_tidy_tools",
+      "label": "整理园具",
+      "kind": "work", "tags": ["garden.care"], "durationMinutes": 20,
+      "effects": {"energy": -1}, "interruptible": true, "poseFamily": "work"
+    },
+    {
+      "activityId": "activity_bulletin_read",
+      "label": "阅读公告栏",
+      "kind": "leisure", "tags": ["bulletin.read", "community.attention"], "durationMinutes": 10,
+      "effects": {}, "interruptible": true, "poseFamily": "read_write"
+    },
+    {
+      "activityId": "activity_bulletin_publish",
+      "label": "张贴公告",
+      "kind": "service", "tags": ["bulletin.publish", "community.attention"], "durationMinutes": 10,
+      "effects": {}, "interruptible": true, "poseFamily": "read_write",
+      "resultContract": {
+        "mode": "complete_task",
+        "taskCapability": "bulletin.publish",
+        "resultKind": "bulletin_publish",
+        "requiredEvidence": ["taskId", "workerResidentId", "content"]
+      }
+    },
+    {
+      "activityId": "activity_garden_bench_rest",
+      "label": "在花园长椅歇一会儿",
+      "kind": "leisure", "tags": ["rest", "garden.visit"], "durationMinutes": 30,
+      "effects": {"energy": 5, "stress": -4}, "interruptible": true, "poseFamily": "rest"
+    },
+    {
+      "activityId": "activity_river_bench_rest",
+      "label": "在河岸长椅歇一会儿",
+      "kind": "leisure", "tags": ["rest", "river.visit"], "durationMinutes": 30,
+      "effects": {"energy": 5, "stress": -4}, "interruptible": true, "poseFamily": "rest"
+    }
+  ]
+}

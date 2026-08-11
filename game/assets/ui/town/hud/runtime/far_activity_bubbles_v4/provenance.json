@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "runtimeFamilyId": "ui.town.hud.far-activity-bubbles.v4",
+  "generationMode": "pixel_preserving_center_expansion",
+  "sourceSize": [
+    52,
+    48
+  ],
+  "outputSize": [
+    60,
+    56
+  ],
+  "runtimeLayout": {
+    "iconDisplaySize": [
+      32,
+      32
+    ],
+    "iconPosition": [
+      14,
+      7
+    ],
+    "markerDisplaySize": [
+      9,
+      9
+    ],
+    "markerPosition": [
+      46,
+      7
+    ],
+    "markerRightSafeInset": 5,
+    "iconMarkerGap": 0,
+    "runtimeScalingRequired": false,
+    "filter": "nearest"
+  },
+  "hashes": {
+    "activity_action_shell.png": "291d59340d4d96ef1acc4136c466a4b0cdde78faf01fe06edcbc55302b816cfa",
+    "activity_ellipsis_shell.png": "b80ed3625e2aff8abf85b08e07ac64478fdbf17566af3832a0f42060ecbd57e6"
+  }
+}

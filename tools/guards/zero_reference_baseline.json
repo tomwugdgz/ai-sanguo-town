@@ -1,0 +1,105 @@
+{
+ "version": 1,
+ "entries": [
+  {
+   "id": "class:AgentAvatarMemoryOrganizer",
+   "file": "game/agent/avatar_memory/AvatarMemoryOrganizer.gd"
+  },
+  {
+   "id": "class:AgentAvatarMemoryRetriever",
+   "file": "game/agent/avatar_memory/AvatarMemoryRetriever.gd"
+  },
+  {
+   "id": "class:AgentDebugBatch",
+   "file": "game/agent/debug/DebugBatch.gd"
+  },
+  {
+   "id": "class:AgentDecisionExecution",
+   "file": "game/agent/DecisionExecution.gd"
+  },
+  {
+   "id": "class:AgentMemoryContinuityGuard",
+   "file": "game/agent/memory/MemoryContinuityGuard.gd"
+  },
+  {
+   "id": "class:AgentMemoryOrganizer",
+   "file": "game/agent/memory/MemoryOrganizer.gd"
+  },
+  {
+   "id": "class:AgentModelImageContent",
+   "file": "game/agent/prompt/ModelImageContent.gd"
+  },
+  {
+   "id": "class:AgentModelProvider",
+   "file": "game/agent/model/ModelProvider.gd"
+  },
+  {
+   "id": "class:AgentModelProviderCatalog",
+   "file": "game/agent/model/ModelProviderCatalog.gd"
+  },
+  {
+   "id": "class:AgentPromptText",
+   "file": "game/agent/prompt/PromptText.gd"
+  },
+  {
+   "id": "class:AgentResidentAvatarEvidenceQueue",
+   "file": "game/agent/avatar_memory/ResidentAvatarEvidenceQueue.gd"
+  },
+  {
+   "id": "class:AgentResidentAvatarMemoryModule",
+   "file": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd"
+  },
+  {
+   "id": "class:AgentResidentAvatarMemoryStore",
+   "file": "game/agent/avatar_memory/ResidentAvatarMemoryStore.gd"
+  },
+  {
+   "id": "class:AgentResidentEvidenceQueue",
+   "file": "game/agent/memory/ResidentEvidenceQueue.gd"
+  },
+  {
+   "id": "class:AgentResidentFormalMemoryBuilder",
+   "file": "game/agent/memory/ResidentFormalMemoryBuilder.gd"
+  },
+  {
+   "id": "class:AgentResidentMemoryAgingService",
+   "file": "game/agent/memory/ResidentMemoryAgingService.gd"
+  },
+  {
+   "id": "class:AgentResidentMemoryEntryStore",
+   "file": "game/agent/memory/ResidentMemoryEntryStore.gd"
+  },
+  {
+   "id": "class:AgentResidentMemoryEvidenceMatcher",
+   "file": "game/agent/memory/ResidentMemoryEvidenceMatcher.gd"
+  },
+  {
+   "id": "class:AgentResidentMemoryInterventionService",
+   "file": "game/agent/memory/ResidentMemoryInterventionService.gd"
+  },
+  {
+   "id": "class:AgentResidentMemoryInterventionStore",
+   "file": "game/agent/memory/ResidentMemoryInterventionStore.gd"
+  },
+  {
+   "id": "class:AgentResidentMemoryReappraiser",
+   "file": "game/agent/memory/ResidentMemoryReappraiser.gd"
+  },
+  {
+   "id": "class:AgentResidentMemoryStore",
+   "file": "game/agent/memory/ResidentMemoryStore.gd"
+  },
+  {
+   "id": "class:AgentResidentMemorySummaryProjector",
+   "file": "game/agent/memory/ResidentMemorySummaryProjector.gd"
+  },
+  {
+   "id": "class:AgentResidentMemorySystem",
+   "file": "game/agent/memory/ResidentMemorySystem.gd"
+  },
+  {
+   "id": "class:AgentResidentStateCodec",
+   "file": "game/agent/lifecycle/ResidentStateCodec.gd"
+  }
+ ]
+}

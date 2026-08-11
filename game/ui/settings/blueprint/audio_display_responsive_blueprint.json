@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "pageId": "audio_display_settings",
+  "status": "ready_for_visual",
+  "referenceViewport": [
+    1920,
+    1080
+  ],
+  "layout": {
+    "wide": {
+      "condition": "available_width >= 1600",
+      "structure": "two_columns",
+      "contentMaxWidth": 1504,
+      "outerMargin": 48,
+      "columnGap": 32,
+      "audioColumnWeight": 1,
+      "displayColumnWeight": 1
+    },
+    "desktop": {
+      "condition": "1100 <= available_width < 1600",
+      "structure": "two_columns",
+      "contentMaxWidth": 1320,
+      "outerMargin": 36,
+      "columnGap": 24,
+      "audioColumnWeight": 1,
+      "displayColumnWeight": 1
+    },
+    "compact": {
+      "condition": "720 <= available_width < 1100",
+      "structure": "single_column_scroll",
+      "contentMaxWidth": 880,
+      "outerMargin": 24,
+      "panelGap": 24
+    },
+    "narrow": {
+      "condition": "available_width < 720",
+      "structure": "single_column_touch",
+      "contentMaxWidth": 640,
+      "outerMargin": 16,
+      "panelGap": 16,
+      "rowRule": "label_above_control_when_130_percent_text_does_not_fit",
+      "windowModeRule": "vertical_radio_rows",
+      "sliderRule": "full_width_track_with_value_slot",
+      "statusTextRule": "expand_in_scroll_flow_up_to_five_body_lines"
+    },
+    "shortViewport": {
+      "condition": "available_height < 720",
+      "structure": "fixed_safe_header_plus_scroll_body",
+      "footerRule": "status_banner_participates_in_scroll_and_never_overlays_controls"
+    },
+    "ultrawide": {
+      "condition": "available_width / available_height >= 2.2",
+      "structure": "centered_fixed_content",
+      "rule": "expand_outer_town_backdrop_and_elastic_gutters_only"
+    }
+  },
+  "panels": [
+    {
+      "id": "audio",
+      "titleSlot": "声音",
+      "rows": [
+        "mute",
+        "master",
+        "music",
+        "ambience",
+        "sfx",
+        "ui"
+      ]
+    },
+    {
+      "id": "display",
+      "titleSlot": "画面",
+      "rows": [
+        "resolution",
+        "window_mode",
+        "ui_scale",
+        "pixel_rendering",
+        "reduced_flashing"
+      ]
+    }
+  ],
+  "typography": {
+    "fontCandidate": "ZhengGeDianHei-16 v1.0.0",
+    "fontStatus": "user-selected-candidate",
+    "spacingGlyph": 2,
+    "roles": {
+      "pageTitle": {
+        "fontSize": 64,
+        "ascent": 75,
+        "descent": 19,
+        "fontHeight": 94,
+        "outline": 1,
+        "minimumPaperPaddingPerSide": 24,
+        "minimumSlotHeight": 142
+      },
+      "sectionTitle": {
+        "fontSize": 48,
+        "ascent": 56,
+        "descent": 14,
+        "fontHeight": 70,
+        "outline": 0,
+        "minimumPaperPaddingPerSide": 18,
+        "minimumSlotHeight": 106
+      },
+      "body": {
+        "fontSize": 32,
+        "ascent": 38,
+        "descent": 10,
+        "fontHeight": 48,
+        "outline": 0,
+        "minimumPaperPaddingPerSide": 12,
+        "minimumSlotHeight": 72
+      },
+      "twoLineBody": {
+        "fontSize": 32,
+        "fontHeight": 48,
+        "lineSpacing": 8,
+        "minimumTextHeight": 104,
+        "minimumPaperPaddingPerSide": 12,
+        "minimumSlotHeight": 128
+      },
+      "primaryButtonCandidate": {
+        "fontSize": 80,
+        "ascent": 93,
+        "descent": 24,
+        "fontHeight": 117,
+        "outline": 1,
+        "minimumPaperPaddingPerSide": 30,
+        "minimumSlotHeight": 177
+      }
+    }
+  },
+  "geometry": {
+    "minimumTouchTarget": [
+      48,
+      48
+    ],
+    "minimumAdjacentTargetGap": 8,
+    "minimumRowHeight": 80,
+    "minimumSliderThumbHitbox": [
+      48,
+      48
+    ],
+    "minimumToggleHitbox": [
+      64,
+      48
+    ],
+    "integerLogicalCoordinates": true,
+    "wholePageScale": false,
+    "ninePatchRule": "stretch_center_only",
+    "finalPhysicalPixelSnap": true
+  },
+  "safeArea": {
+    "availableRectRule": "viewport_minus_runtime_safe_insets",
+    "headerInsideSafeRect": true,
+    "scrollBodyInsideSafeRect": true,
+    "desktopMinimumEdgeInset": 36,
+    "compactMinimumEdgeInset": 24,
+    "narrowMinimumEdgeInset": 16,
+    "focusRingIncludedInBounds": true,
+    "sliderValueSlotIncludedInBounds": true
+  },
+  "contentPressure": {
+    "scale": 1.3,
+    "cases": [
+      {
+        "id": "short",
+        "text": "音乐"
+      },
+      {
+        "id": "normal",
+        "text": "界面操作音量"
+      },
+      {
+        "id": "long",
+        "text": "调整菜单、按钮、确认与错误提示的声音大小"
+      },
+      {
+        "id": "two_line",
+        "text": "减少雷暴和天气切换时的明显闪烁效果"
+      },
+      {
+        "id": "error",
+        "text": "系统没有更改当前的分辨率、窗口模式或音量设置，请检查后重试。"
+      }
+    ],
+    "singleLineOverflow": "ellipsis_inside_registered_value_or_label_slot",
+    "bodyOverflow": {
+      "wideAndDesktop": "controlled_wrap_to_two_lines",
+      "compact": "controlled_wrap_to_three_lines",
+      "narrow": "controlled_wrap_to_five_lines"
+    },
+    "fallbackOrder": [
+      "expand_control",
+      "wrap_registered_body",
+      "ellipsis_registered_single_line",
+      "responsive_reflow"
+    ]
+  },
+  "operationStates": [
+    "idle",
+    "loading",
+    "success",
+    "rejected",
+    "error",
+    "disabled"
+  ],
+  "operationLayoutRules": {
+    "sharedStatusSlot": true,
+    "rejectedKeepsConfirmedData": true,
+    "requestIdNeverRendered": true,
+    "loadingDoesNotClearData": true,
+    "errorUsesResponsiveTextSlot": true,
+    "disabledReasonUsesResponsiveTextSlot": true,
+    "desktopStatusLineLimit": 2,
+    "compactStatusLineLimit": 3,
+    "narrowStatusLineLimit": 5
+  },
+  "contrast": {
+    "targets": {
+      "bodyText": 4.5,
+      "largeText": 3,
+      "nonTextControl": 3
+    },
+    "measuredPairs": [
+      {
+        "foreground": "#3F2818",
+        "background": "#FFF0CC",
+        "ratio": 12.16,
+        "use": "body_on_paper"
+      },
+      {
+        "foreground": "#76583D",
+        "background": "#FFF0CC",
+        "ratio": 5.75,
+        "use": "secondary_text_on_paper"
+      },
+      {
+        "foreground": "#FFF8E6",
+        "background": "#B94D2D",
+        "ratio": 4.76,
+        "use": "text_on_terracotta"
+      },
+      {
+        "foreground": "#FFF8E6",
+        "background": "#557B2A",
+        "ratio": 4.66,
+        "use": "text_on_moss"
+      },
+      {
+        "foreground": "#FFF8E6",
+        "background": "#A7352B",
+        "ratio": 6.22,
+        "use": "text_on_error"
+      },
+      {
+        "foreground": "#3F2818",
+        "background": "#CBBE9F",
+        "ratio": 7.46,
+        "use": "disabled_text_on_disabled_paper"
+      }
+    ],
+    "forbiddenPairReason": "#76583D on #CBBE9F measures 3.53:1 and cannot carry 32px body text"
+  },
+  "inputTests": {
+    "mouseKeyboard": [
+      "tab_and_shift_tab_follow_visual_order",
+      "arrow_keys_adjust_focused_slider_by_one_percent",
+      "page_up_and_page_down_adjust_focused_slider_by_ten_percent",
+      "space_toggles_switch",
+      "enter_activates_focused_choice",
+      "escape_requests_back_without_losing_confirmed_data",
+      "focus_ring_never_clipped"
+    ],
+    "controller": [
+      "dpad_moves_between_rows_and_choices",
+      "left_right_adjust_slider_by_five_percent",
+      "confirm_activates_toggle_or_choice",
+      "cancel_requests_back",
+      "focus_restored_after_operation_banner"
+    ],
+    "touch": [
+      "all_targets_at_least_48_by_48_logical_pixels",
+      "slider_thumb_drag_stays_inside_track_hitbox",
+      "vertical_scroll_does_not_accidentally_change_slider",
+      "safe_insets_cover_notch_and_rounded_corners"
+    ]
+  },
+  "requiredViewports": [
+    {
+      "id": "desktop_16_9",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "desktop_minimum",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "id": "desktop_16_10",
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "id": "desktop_ultrawide",
+      "size": [
+        2560,
+        1080
+      ]
+    },
+    {
+      "id": "desktop_4_3",
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "id": "phone_portrait_small",
+      "size": [
+        360,
+        780
+      ]
+    },
+    {
+      "id": "phone_portrait",
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "id": "phone_landscape",
+      "size": [
+        844,
+        390
+      ]
+    },
+    {
+      "id": "foldable_square",
+      "size": [
+        810,
+        810
+      ]
+    }
+  ],
+  "systemScaleTests": [
+    "windows_100_percent",
+    "windows_125_percent",
+    "windows_150_percent",
+    "windows_200_percent",
+    "browser_zoom",
+    "macos_retina",
+    "runtime_window_resize"
+  ]
+}

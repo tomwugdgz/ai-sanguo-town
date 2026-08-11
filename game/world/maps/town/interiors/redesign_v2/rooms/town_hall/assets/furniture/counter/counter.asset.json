@@ -1,0 +1,147 @@
+{
+  "schema_version": 2,
+  "source_revision": "town_hall_counter_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "counter",
+  "label": "镇公所办事柜台",
+  "room_id": "town_hall",
+  "canonical_direction": "down",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 224,
+    "depth": 64,
+    "height": 128
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/counter/frames/counter_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/counter/frames/counter_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/counter/frames/counter_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/counter/frames/counter_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      157,
+      207
+    ],
+    "right": [
+      183,
+      146
+    ],
+    "up": [
+      157,
+      115
+    ],
+    "left": [
+      123,
+      142
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -112,
+          -12
+        ],
+        [
+          112,
+          -12
+        ],
+        [
+          112,
+          0
+        ],
+        [
+          -112,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -7,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -112,
+        -96
+      ],
+      [
+        112,
+        -96
+      ],
+      [
+        112,
+        -64
+      ],
+      [
+        -112,
+        -64
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-121, -87], [121, -87], [121, 0], [-121, 0]],
+      "right": [[-60, -100], [0, -100], [0, 99], [-60, 99]],
+      "up": [[-121, 0], [121, 0], [121, 89], [-121, 89]],
+      "left": [[0, -100], [61, -100], [61, 100], [0, 100]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "service_public",
+      "kind": "service",
+      "position_px": [
+        0,
+        32
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "res://world/maps/town/interiors/assets/indoor_town_hall_shell_v1.png",
+      "res://world/maps/town/interiors/town_hall/assets/concepts/town_hall_layout_warm_v1.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/town_hall_service_desk/candidate_b_furniture_four_direction_sheet_v1/SOURCE_RECORD.json"
+  },
+  "direction_visual_policy": "strict_four_direction",
+  "direction_visual_policy_revision": "furniture_direction_visual_policy_v1"
+}

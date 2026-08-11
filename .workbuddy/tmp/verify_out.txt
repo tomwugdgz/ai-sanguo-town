@@ -1,0 +1,39 @@
+============================================================
+通过检查点: 33
+  [OK] resident_catalog.json: 合法 JSON
+  [OK] 居民数量 = 16
+  [OK] 全部 16 个居民 backstory 非空且长度合理
+  [OK] game/agent/contract/AgentContractIdentity.gd: 含 '"backstory",'
+  [OK] game/agent/contract/AgentContractIdentity.gd: 含 'backstory 不能为空字符串'
+  [OK] game/agent/contract/AgentContractIdentity.gd: 含 '"life_events",'
+  [OK] game/world/runtime/TownWorldRuntime.gd: 含 '"backstory",'
+  [OK] game/world/runtime/TownWorldRuntime.gd: 含 '"backstory": String('
+  [OK] game/world/runtime/TownWorldRuntime.gd: 含 '"life_events",'
+  [OK] game/world/runtime/TownWorldRuntime.gd: 含 '"life_events":'
+  [OK] game/world/runtime/TownWorldOpeningConfig.gd: 含 '"backstory",'
+  [OK] game/world/runtime/TownWorldOpeningConfig.gd: 含 '"life_events",'
+  [OK] game/world/runtime/persistence/TownWorldRestorePeople.gd: 含 '"backstory",'
+  [OK] game/world/runtime/persistence/TownWorldRestorePeople.gd: 含 '"life_events",'
+  [OK] game/world/presentation/session/TownNewGameOpeningCompiler.gd: 含 '"backstory",'
+  [OK] game/world/presentation/session/TownNewGameOpeningCompiler.gd: 含 '"life_events",'
+  [OK] game/world/presentation/session/TownResidentCatalog.gd: 含 '"backstory",'
+  [OK] game/world/presentation/session/TownResidentCatalog.gd: 含 'legacy_without_backstory'
+  [OK] game/world/presentation/session/TownResidentCatalog.gd: 含 'not _has_exact_fields(attributes, legacy_without_backstory)'
+  [OK] game/world/presentation/session/TownResidentCatalog.gd: 含 '"life_events",'
+  [OK] game/world/presentation/session/TownResidentCatalog.gd: 含 'legacy_without_life_events'
+  [OK] game/world/presentation/session/TownResidentCatalog.gd: 含 'not _has_exact_fields(attributes, legacy_without_life_events)'
+  [OK] game/agent/prompt/AgentPromptCompiler.gd: 含 '前世记忆（三国）'
+  [OK] game/agent/prompt/AgentPromptCompiler.gd: 含 '前世人生大事（三国）'
+  [OK] game/agent/memory/MemoryOrganizer.gd: 含 '前世记忆（三国）'
+  [OK] game/agent/memory/MemoryOrganizer.gd: 含 '前世人生大事（三国）'
+  [OK] lore: 含 '来历'
+  [OK] lore: 含 '前身'
+  [OK] lore: 含 '搬'
+  [OK] TownResidentCatalog.gd: 无重复 'var var'
+  [OK] tk_timeline.json: 合法 JSON
+  [OK] tk_timeline.json: 18 个事件全部结构合法且 eventId 唯一
+  [OK] 全部 16 个居民 life_events 合法（3–5 条且字段完整）
+
+问题: 0
+
+结果: PASS ✅

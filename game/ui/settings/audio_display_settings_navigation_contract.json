@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "pageId": "ui.settings.audio-display",
+  "status": "ready_for_pause_host",
+  "scene": "res://ui/settings/AudioDisplaySettingsScreen.tscn",
+  "openRoute": {
+    "sourceIntent": "pause_menu.open_audio_video",
+    "owner": "pause_menu_navigation_host"
+  },
+  "adapter": {
+    "bindingMethod": "bind_town_ui_adapter",
+    "sameInstanceAsPauseMenu": true,
+    "requiredScope": "audio_display_settings",
+    "missingScopeBehavior": {
+      "source": "placeholder",
+      "capabilityMode": "placeholder",
+      "formalReady": false,
+      "scenarioId": "disabled_formal_interface_missing"
+    }
+  },
+  "backRoute": {
+    "intent": "audio_display_settings.back",
+    "escapeUsesSameIntent": true,
+    "hostResult": "restore_existing_pause_menu_and_previous_focus"
+  },
+  "lifecycleInvariant": {
+    "mustRemainPaused": true,
+    "settingsPageDispatchesLifecycleIntent": false,
+    "resumeOwner": "pause_menu_return_game_only"
+  },
+  "hostOwnedResponsibilities": [
+    "instantiate_or_show_settings_scene",
+    "bind_same_town_ui_adapter",
+    "preserve_paused_lifecycle",
+    "restore_existing_pause_menu_instance",
+    "restore_previous_focus"
+  ],
+  "settingsPageOwnedResponsibilities": [
+    "consume_complete_audio_display_settings_view_model",
+    "emit_audio_display_settings_back",
+    "remain_placeholder_with_formalReady_false_when_scope_is_missing"
+  ]
+}

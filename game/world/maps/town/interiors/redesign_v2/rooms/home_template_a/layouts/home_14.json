@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "source_revision": "home_template_a_home_14_user_manual_layout_footpoint_v4",
+  "projection_revision": "interior_projection_v1",
+  "layout_revision": 4,
+  "room_id": "home_template_a",
+  "instances": [
+    {
+      "instance_id": "home_14_single_bed_01",
+      "asset_id": "single_bed",
+      "position_px": [
+        -128,
+        -32
+      ],
+      "direction": "down"
+    },
+    {
+      "instance_id": "home_14_storage_cabinet_01",
+      "asset_id": "storage_cabinet",
+      "position_px": [
+        -304,
+        32
+      ],
+      "direction": "down"
+    },
+    {
+      "instance_id": "home_14_work_table_01",
+      "asset_id": "work_table",
+      "position_px": [
+        336,
+        32
+      ],
+      "direction": "down"
+    },
+    {
+      "instance_id": "home_14_wooden_chair_01",
+      "asset_id": "wooden_chair",
+      "position_px": [
+        336,
+        96
+      ],
+      "direction": "up"
+    },
+    {
+      "instance_id": "home_14_wooden_chair_02",
+      "asset_id": "wooden_chair",
+      "position_px": [
+        464,
+        48
+      ],
+      "direction": "down"
+    },
+    {
+      "instance_id": "home_14_potted_plant_01",
+      "asset_id": "potted_plant",
+      "position_px": [
+        -528,
+        32
+      ],
+      "direction": "down"
+    }
+  ]
+}

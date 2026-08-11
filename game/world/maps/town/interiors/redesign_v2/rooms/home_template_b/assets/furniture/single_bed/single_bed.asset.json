@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "source_revision": "home_template_b_single_bed_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "single_bed",
+  "label": "住宅 B 朴素深木框绿色床褥单人床（仅单人床，不含床头柜、箱柜或其他物品）",
+  "room_id": "home_template_b",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 96,
+    "depth": 192,
+    "height": 96
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/single_bed/frames/single_bed_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/single_bed/frames/single_bed_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/single_bed/frames/single_bed_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/single_bed/frames/single_bed_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      153,
+      282
+    ],
+    "right": [
+      153,
+      234
+    ],
+    "up": [
+      153,
+      232
+    ],
+    "left": [
+      164,
+      231
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -48,
+          -24
+        ],
+        [
+          48,
+          -24
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          -48,
+          0
+        ]
+      ]
+    ],
+    "polygons_by_direction_px": {
+      "down": [[[-48, -24], [48, -24], [48, 0], [-48, 0]]],
+      "right": [[[-96, -24], [96, -24], [96, 0], [-96, 0]]],
+      "up": [[[-48, -24], [48, -24], [48, 0], [-48, 0]]],
+      "left": [[[-96, -24], [96, -24], [96, 0], [-96, 0]]]
+    }
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [-58, -241],
+      [58, -241],
+      [58, 0],
+      [-58, 0]
+    ],
+    "points_by_direction_px": {
+      "down": [[-58, -241], [58, -241], [58, 0], [-58, 0]],
+      "right": [[-117, -142], [116, -142], [116, 0], [-117, 0]],
+      "up": [[-58, -185], [58, -185], [58, 0], [-58, 0]],
+      "left": [[-117, -143], [116, -143], [116, 0], [-117, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "sleep_side",
+      "kind": "use",
+      "position_px": [
+        64,
+        -96
+      ],
+      "actor_facing": "left",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "../source/single_bed_four_direction_sheet_final_1x.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_b/layout_concepts/home_02_layout_v1/home_02_decor_layout_concept_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "docs/design/pipelines/indoor_handoffs/home_template_b.md"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

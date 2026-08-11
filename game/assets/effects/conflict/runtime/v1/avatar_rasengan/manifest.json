@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "assetId": "effect.conflict.avatar-rasengan-v1",
+  "status": "user_approved_runtime_animation_ready_for_review",
+  "deliveryScope": {
+    "runtimeFramesIncluded": true,
+    "sourceCandidatesIncluded": false,
+    "skillButtonAssetsIncluded": false,
+    "skillButtonOwner": "avatar_mode_hud_follow_up"
+  },
+  "runtime": {
+    "frameCount": 22,
+    "frameSize": [
+      256,
+      256
+    ],
+    "fps": 18,
+    "displayScale": 1.0,
+    "mirrorRightForLeft": true,
+    "footOffsetPx": 104,
+    "contactFrame": 15,
+    "authorityMovement": false,
+    "frames": [
+      {
+        "runtimeFrame": 0,
+        "sourceFrame": 9,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_00.png",
+        "sha256": "76c963079b0178ed0a5dcc24da27f8269fd9ae703d20ea33a72c3c9507b06beb"
+      },
+      {
+        "runtimeFrame": 1,
+        "sourceFrame": 13,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_01.png",
+        "sha256": "a77f1aff76f187b40d5702e8ba92a76f3e3511bb424264d7b6c927f53a91095a"
+      },
+      {
+        "runtimeFrame": 2,
+        "sourceFrame": 17,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_02.png",
+        "sha256": "46dc9368765936272562c050783ccb5ade84092fb534b7f5fa904760ed48c004"
+      },
+      {
+        "runtimeFrame": 3,
+        "sourceFrame": 21,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_03.png",
+        "sha256": "6ca6a4dba6d486ac2d22b12c1ee3a26289a8fe3466081913bb04c745cafc7020"
+      },
+      {
+        "runtimeFrame": 4,
+        "sourceFrame": 25,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_04.png",
+        "sha256": "c962c3d340dc22040b4aec798681c8827e73a3758e23ea859936ed53066f0250"
+      },
+      {
+        "runtimeFrame": 5,
+        "sourceFrame": 33,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_05.png",
+        "sha256": "2927feb938ce04d5084f439798f3ba2452cb1ca1a623d63fc68912300fe8bf3b"
+      },
+      {
+        "runtimeFrame": 6,
+        "sourceFrame": 41,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_06.png",
+        "sha256": "38f65ea0a516761ed24ff63cb699303388033385da0149313f31cf0be7185052"
+      },
+      {
+        "runtimeFrame": 7,
+        "sourceFrame": 49,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_07.png",
+        "sha256": "64f4c583d358379a8933cceee88194fdce7bea47aaa409bfb3c6faaa24f7e42b"
+      },
+      {
+        "runtimeFrame": 8,
+        "sourceFrame": 57,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_08.png",
+        "sha256": "c727abd716d2e07d77d598f4318842f49e2b3b358b9ae41ae31342a15243a32b"
+      },
+      {
+        "runtimeFrame": 9,
+        "sourceFrame": 65,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_09.png",
+        "sha256": "2338f06bbc5b31c149859952774c52dd79b821ce9fb7a113c6682f2d095a3254"
+      },
+      {
+        "runtimeFrame": 10,
+        "sourceFrame": 73,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_10.png",
+        "sha256": "f60056a7ad24aeb3fe3d6979e2ea228aaf866e0d4d5bad138542369a75a1054f"
+      },
+      {
+        "runtimeFrame": 11,
+        "sourceFrame": 81,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_11.png",
+        "sha256": "413ee3538fa0f7af535d5a912f6fa8a12dff7c95d9da9a75a0e8f43adbb643ce"
+      },
+      {
+        "runtimeFrame": 12,
+        "sourceFrame": 89,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_12.png",
+        "sha256": "c1ae3d06c7b823860e2f82deca6cd2b61ee13152ab0027f48f1baf4cd6824395"
+      },
+      {
+        "runtimeFrame": 13,
+        "sourceFrame": 97,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_13.png",
+        "sha256": "4ef5c0c1684c085de3e156d178b4db7af589217a7702b0ffad9f35bbaeb35358"
+      },
+      {
+        "runtimeFrame": 14,
+        "sourceFrame": 105,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_14.png",
+        "sha256": "4b29e3dbf2ed1236d3b618f685a7bfbd95b49b761cb786a580a462fedd2f1fbf"
+      },
+      {
+        "runtimeFrame": 15,
+        "sourceFrame": 113,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_15.png",
+        "sha256": "427665698a3128307a603b8a7d1b4d25bca5e0694e37e90472d1b222ffbe60ae"
+      },
+      {
+        "runtimeFrame": 16,
+        "sourceFrame": 121,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_16.png",
+        "sha256": "9ff88c561287195156323cd0fa056336ad59c655406b23e9d36ae74bc604a058"
+      },
+      {
+        "runtimeFrame": 17,
+        "sourceFrame": 129,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_17.png",
+        "sha256": "4025133b4adc37486d0605b3776f6d51c566c3cdb9890e2cb25cc8a53a7bde52"
+      },
+      {
+        "runtimeFrame": 18,
+        "sourceFrame": 137,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_18.png",
+        "sha256": "2cc4b55da56b65520bb8868c42f7585dec56e817b484fb53c4d473ab5ca7c2a6"
+      },
+      {
+        "runtimeFrame": 19,
+        "sourceFrame": 145,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_19.png",
+        "sha256": "313465b1038b492df48251aad69544ba8f6ecfcc65b0d9e50a34a9697df95df9"
+      },
+      {
+        "runtimeFrame": 20,
+        "sourceFrame": 153,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_20.png",
+        "sha256": "0cc53e947d60899a74b9d70cbd9caca3ca93a9019eab0e4fea134c33887e7328"
+      },
+      {
+        "runtimeFrame": 21,
+        "sourceFrame": 160,
+        "path": "assets/effects/conflict/runtime/v1/avatar_rasengan/frame_21.png",
+        "sha256": "500d7079b6163ce4e38a9d5dd97e9ba9674b788eeeb426344cb25de3d386a86a"
+      }
+    ]
+  },
+  "skillButton": {
+    "label": "螺旋丸",
+    "states": [
+      {
+        "state": "normal",
+        "path": "assets/ui/avatar_mode/runtime/attack_button_v1/avatar_rasengan/avatar_rasengan_button_normal.png",
+        "sha256": "a27f3c0ef813e2fb670ae8037f48ce9bfe9b1d5994119908436c6f57608caa40"
+      },
+      {
+        "state": "hover",
+        "path": "assets/ui/avatar_mode/runtime/attack_button_v1/avatar_rasengan/avatar_rasengan_button_hover.png",
+        "sha256": "0993eb39beed76e1da2ec06a17a06826620aa191650558d8e57a6dfb4bb7f528"
+      },
+      {
+        "state": "pressed",
+        "path": "assets/ui/avatar_mode/runtime/attack_button_v1/avatar_rasengan/avatar_rasengan_button_pressed.png",
+        "sha256": "1ad29883b46ea40e829bde18b032f24cf862d4a6fa10c8738304088a81d3713c"
+      },
+      {
+        "state": "disabled",
+        "path": "assets/ui/avatar_mode/runtime/attack_button_v1/avatar_rasengan/avatar_rasengan_button_disabled.png",
+        "sha256": "2ceff45a579e23b9056969acd400c1d198ef30dfc2215b28c6cf47947d2584c4"
+      }
+    ],
+    "processing": "imagegen_reference_then_chroma_removal_and_nearest_resize"
+  },
+  "productContract": {
+    "owner": "avatar_unilateral_attack",
+    "residentCanRetaliate": false,
+    "usesResidentBrawlCloud": false,
+    "targetReaction": "red_flash_shake",
+    "worldAuthorityPositionUnchanged": true,
+    "injurySeverity": "light"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "source_revision": "dining_hall_stove_oven_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "stove_oven",
+  "label": "公共食堂炉灶烤箱",
+  "room_id": "dining_hall",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 64,
+    "depth": 64,
+    "height": 112
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/stove_oven/frames/stove_oven_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/stove_oven/frames/stove_oven_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/stove_oven/frames/stove_oven_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/stove_oven/frames/stove_oven_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      167
+    ],
+    "right": [
+      104,
+      161
+    ],
+    "up": [
+      104,
+      146
+    ],
+    "left": [
+      104,
+      146
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -32,
+          -12
+        ],
+        [
+          32,
+          -12
+        ],
+        [
+          32,
+          0
+        ],
+        [
+          -32,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -2,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -39,
+        -129
+      ],
+      [
+        39,
+        -129
+      ],
+      [
+        39,
+        0
+      ],
+      [
+        -39,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-39, -129], [39, -129], [39, 0], [-39, 0]],
+      "right": [[-45, -121], [31, -121], [31, 0], [-45, 0]],
+      "up": [[-38, -110], [40, -110], [40, 0], [-38, 0]],
+      "left": [[-39, -121], [37, -121], [37, 0], [-39, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "use_front",
+      "kind": "use",
+      "position_px": [
+        0,
+        48
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/dining_hall/assets/concepts/dining_hall_layout_candidate_3.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "docs/design/pipelines/indoor_handoffs/dining_hall.md"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

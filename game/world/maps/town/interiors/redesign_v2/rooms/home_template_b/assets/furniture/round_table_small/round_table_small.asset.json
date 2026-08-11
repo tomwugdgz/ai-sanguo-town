@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "source_revision": "home_template_b_round_table_small_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "round_table_small",
+  "label": "住宅 B 朴素深木色无方向性摆件小圆桌（仅空圆桌，不含椅子、餐具、布或其他物品）",
+  "room_id": "home_template_b",
+  "canonical_direction": "down",
+  "direction_visual_policy": "rotationally_symmetric_reuse",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 96,
+    "depth": 96,
+    "height": 80
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/round_table_small/frames/round_table_small_canonical.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/round_table_small/frames/round_table_small_canonical.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/round_table_small/frames/round_table_small_canonical.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/round_table_small/frames/round_table_small_canonical.png"
+  },
+  "visual_anchor": {
+    "down": [
+      158,
+      213
+    ],
+    "right": [
+      158,
+      213
+    ],
+    "up": [
+      158,
+      213
+    ],
+    "left": [
+      158,
+      213
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -14,
+          -10
+        ],
+        [
+          -10,
+          -14
+        ],
+        [
+          10,
+          -14
+        ],
+        [
+          14,
+          -10
+        ],
+        [
+          14,
+          10
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          -10,
+          14
+        ],
+        [
+          -14,
+          10
+        ]
+      ]
+    ],
+    "polygons_by_direction_px": {
+      "down": [[[-14, -10], [-10, -14], [10, -14], [14, -10], [14, 10], [10, 14], [-10, 14], [-14, 10]]],
+      "right": [[[-14, -10], [-10, -14], [10, -14], [14, -10], [14, 10], [10, 14], [-10, 14], [-14, 10]]],
+      "up": [[[-14, -10], [-10, -14], [10, -14], [14, -10], [14, 10], [10, 14], [-10, 14], [-14, 10]]],
+      "left": [[[-14, -10], [-10, -14], [10, -14], [14, -10], [14, 10], [10, 14], [-10, 14], [-14, 10]]]
+    }
+  },
+  "occupied_cells": {
+    "origin2": [
+      -1,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [-51, -113],
+      [51, -113],
+      [51, 0],
+      [-51, 0]
+    ],
+    "points_by_direction_px": {
+      "down": [[-51, -113], [51, -113], [51, 0], [-51, 0]],
+      "right": [[-51, -113], [51, -113], [51, 0], [-51, 0]],
+      "up": [[-51, -113], [51, -113], [51, 0], [-51, 0]],
+      "left": [[-51, -113], [51, -113], [51, 0], [-51, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "table_edge",
+      "kind": "use",
+      "position_px": [
+        0,
+        0
+      ],
+      "actor_facing": "up",
+      "capacity": 4
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "../source/round_table_small_canonical_down_final_1x.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_b/layout_concepts/home_02_layout_v1/home_02_decor_layout_concept_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "docs/design/pipelines/indoor_handoffs/home_template_b.md"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

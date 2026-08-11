@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "source_revision": "dock_warehouse_selected_c_space_v1_formal_furniture_manifest_v1",
+  "room_id": "dock_warehouse",
+  "assets": [
+    {
+      "asset_id": "empty_heavy_storage_rack",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/empty_heavy_storage_rack/empty_heavy_storage_rack.asset.json"
+    },
+    {
+      "asset_id": "fishing_net_bundle",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/fishing_net_bundle/fishing_net_bundle.asset.json"
+    },
+    {
+      "asset_id": "freight_handcart",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/freight_handcart/freight_handcart.asset.json"
+    },
+    {
+      "asset_id": "storage_barrel",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/storage_barrel/storage_barrel.asset.json"
+    },
+    {
+      "asset_id": "warehouse_record_desk",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/warehouse_record_desk/warehouse_record_desk.asset.json"
+    },
+    {
+      "asset_id": "wooden_shipping_crate",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/wooden_shipping_crate/wooden_shipping_crate.asset.json"
+    }
+  ]
+}

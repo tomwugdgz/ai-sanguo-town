@@ -1,0 +1,126 @@
+{
+  "schema_version": 2,
+  "source_revision": "dock_warehouse_wooden_shipping_crate_base_envelope_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "wooden_shipping_crate",
+  "label": "木制货箱",
+  "room_id": "dock_warehouse",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 64,
+    "depth": 64,
+    "height": 64
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/wooden_shipping_crate/frames/wooden_shipping_crate_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/wooden_shipping_crate/frames/wooden_shipping_crate_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/wooden_shipping_crate/frames/wooden_shipping_crate_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/wooden_shipping_crate/frames/wooden_shipping_crate_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      63,
+      98
+    ],
+    "right": [
+      100,
+      67
+    ],
+    "up": [
+      63,
+      25
+    ],
+    "left": [
+      25,
+      66
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -30,
+          -32
+        ],
+        [
+          30,
+          -32
+        ],
+        [
+          30,
+          0
+        ],
+        [
+          -30,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -2,
+      -4
+    ],
+    "cells": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_by_direction_px": {
+      "down": [[-30, -73], [30, -73], [30, 0], [-30, 0]],
+      "right": [[-75, -30], [0, -30], [0, 31], [-75, 31]],
+      "up": [[-30, 0], [30, 0], [30, 72], [-30, 72]],
+      "left": [[0, -30], [75, -30], [75, 31], [0, 31]]
+    },
+    "points_px": [
+      [
+        -30.0,
+        -73
+      ],
+      [
+        30.0,
+        -73
+      ],
+      [
+        30.0,
+        0
+      ],
+      [
+        -30.0,
+        0
+      ]
+    ]
+  },
+  "interaction_anchor": [
+    {
+      "id": "take_front",
+      "kind": "take",
+      "position_px": [
+        0,
+        32
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/shell_candidates/candidate_c_imagegen_prompt_v1/assets/background/dock_warehouse_shell_candidate_c_native.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/layout_concepts/concept_a_imagegen_prompt_v1/assets/dock_warehouse_furniture_layout_concept_candidate_a_native.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "game/world/maps/town/interiors/redesign_v2/rooms/dock_warehouse/assets/furniture/wooden_shipping_crate/candidate_h_unlimited_retry_topdown_v1/SOURCE_RECORD.json"
+  }
+}

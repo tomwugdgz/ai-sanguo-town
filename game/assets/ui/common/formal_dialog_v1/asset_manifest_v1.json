@@ -1,0 +1,72 @@
+{
+  "assetFamily": "formal_dialog_v1",
+  "status": "runtime_approved",
+  "runtimeIntegration": true,
+  "formalReady": true,
+  "generatedWith": "built-in imagegen",
+  "visualDirection": "warm parchment, walnut frame, restrained terracotta and moss pixel-art town UI",
+  "runtimeAssets": [
+    {
+      "id": "dialog_panel",
+      "path": "runtime/formal_dialog_panel_base_v1_1024x640.png",
+      "size": [1024, 640],
+      "alpha": true,
+      "usage": "fixed-ratio modal panel; scale uniformly"
+    },
+    {
+      "id": "dialog_input_frame",
+      "path": "runtime/formal_dialog_input_frame_v1_1024x192.png",
+      "size": [1024, 192],
+      "alpha": true,
+      "usage": "stretchable memory input surface"
+    },
+    {
+      "id": "error_icon",
+      "path": "runtime/formal_dialog_error_icon_v1_128x128.png",
+      "size": [128, 128],
+      "alpha": true,
+      "usage": "retryable and terminal error semantic icon"
+    },
+    {
+      "id": "memory_icon",
+      "path": "runtime/formal_dialog_memory_icon_v1_128x128.png",
+      "size": [128, 128],
+      "alpha": true,
+      "usage": "resident-memory dialog semantic icon"
+    },
+    {
+      "id": "secondary_button_normal",
+      "path": "runtime/buttons/button_paper_normal_v1.png",
+      "size": [146, 137],
+      "alpha": true,
+      "usage": "secondary dialog button normal state"
+    },
+    {
+      "id": "secondary_button_hover",
+      "path": "runtime/buttons/button_paper_hover_v1.png",
+      "size": [147, 137],
+      "alpha": true,
+      "usage": "secondary dialog button hover and focus state"
+    },
+    {
+      "id": "secondary_button_pressed",
+      "path": "runtime/buttons/button_paper_pressed_v1.png",
+      "size": [145, 137],
+      "alpha": true,
+      "usage": "secondary dialog button pressed state"
+    }
+  ],
+  "reuse": {
+    "primaryButtons": "../system_feedback/buttons_v3/",
+    "secondaryButtons": "runtime/buttons/",
+    "semanticIcons": "../system_feedback/icons/",
+    "reusedIconIds": ["warning", "info", "close", "loading"]
+  },
+  "notes": [
+    "Preview text is illustrative and is not baked into runtime assets.",
+    "The centered roof ornament makes the main panel a fixed-ratio asset rather than a horizontal nine-patch.",
+    "The shared FormalConfirmationDialog component replaces the seven player-facing native ConfirmationDialog instances currently present on main.",
+    "The production SystemFeedback error dialog uses the formal raster error icon.",
+    "User visual approval, focused automated checks, real Godot rendering, and Windows PCK resource validation passed."
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "source_revision": "cafe_candidate_a_v3_geometry_v1",
+  "room_id": "cafe",
+  "canvas_size_px": [
+    1402,
+    1122
+  ],
+  "segments": [
+    {
+      "id": "south_main_west_face",
+      "foreground_polygon_canvas_px": [
+        [
+          58,
+          792
+        ],
+        [
+          115,
+          792
+        ],
+        [
+          115,
+          960
+        ],
+        [
+          337,
+          960
+        ],
+        [
+          337,
+          1002
+        ],
+        [
+          58,
+          1002
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            96,
+            864
+          ],
+          [
+            336,
+            864
+          ],
+          [
+            336,
+            960
+          ],
+          [
+            96,
+            960
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_entry_left_jamb",
+      "foreground_polygon_canvas_px": [
+        [
+          337,
+          930
+        ],
+        [
+          373,
+          930
+        ],
+        [
+          373,
+          1078
+        ],
+        [
+          337,
+          1078
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            304,
+            864
+          ],
+          [
+            432,
+            864
+          ],
+          [
+            432,
+            960
+          ],
+          [
+            304,
+            960
+          ]
+        ]
+      ],
+      "fade_distance_px": 64,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_entry_right_jamb",
+      "foreground_polygon_canvas_px": [
+        [
+          520,
+          930
+        ],
+        [
+          553,
+          930
+        ],
+        [
+          553,
+          1078
+        ],
+        [
+          520,
+          1078
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            448,
+            864
+          ],
+          [
+            584,
+            864
+          ],
+          [
+            584,
+            960
+          ],
+          [
+            448,
+            960
+          ]
+        ]
+      ],
+      "fade_distance_px": 64,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_main_center_face",
+      "foreground_polygon_canvas_px": [
+        [
+          553,
+          960
+        ],
+        [
+          677,
+          960
+        ],
+        [
+          677,
+          1034
+        ],
+        [
+          553,
+          1034
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            544,
+            864
+          ],
+          [
+            704,
+            864
+          ],
+          [
+            704,
+            960
+          ],
+          [
+            544,
+            960
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_main_east_face",
+      "foreground_polygon_canvas_px": [
+        [
+          677,
+          812
+        ],
+        [
+          945,
+          812
+        ],
+        [
+          945,
+          974
+        ],
+        [
+          677,
+          974
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            672,
+            736
+          ],
+          [
+            944,
+            736
+          ],
+          [
+            944,
+            928
+          ],
+          [
+            672,
+            928
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_glasshouse_face",
+      "foreground_polygon_canvas_px": [
+        [
+          945,
+          804
+        ],
+        [
+          1270,
+          804
+        ],
+        [
+          1270,
+          974
+        ],
+        [
+          945,
+          974
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            928,
+            736
+          ],
+          [
+            1248,
+            736
+          ],
+          [
+            1248,
+            928
+          ],
+          [
+            928,
+            928
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    }
+  ]
+}

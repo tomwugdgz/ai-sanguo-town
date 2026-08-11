@@ -1,0 +1,1515 @@
+{
+  "schema": "ai-town.resident-wardrobe.v1",
+  "revision": "classic-resident-complete-sets-20260730",
+  "canvasSize": [
+    627,
+    627
+  ],
+  "footAnchor": [
+    314.5,
+    591
+  ],
+  "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+  ],
+  "leftPolicy": "exact_runtime_mirror_of_right",
+  "textureFilter": "nearest",
+  "combinationPolicy": {
+    "headCount": 4,
+    "outfitCount": 4,
+    "loadoutCount": 16,
+    "deterministicShuffleSeed": 20260728
+  },
+  "heads": [
+    {
+      "id": "tousled_brown",
+      "label": "蓬松棕发",
+      "approvedCell": 0,
+      "thumbnailPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/hair/tousled_brown.png",
+      "thumbnailSha256": "4b5ce3743b8316fdb6fb36626c1ebdc1c6320e7740a280a855130e0ae5143f8d"
+    },
+    {
+      "id": "side_swept_brown",
+      "label": "侧分棕发",
+      "approvedCell": 1,
+      "thumbnailPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/hair/side_swept_brown.png",
+      "thumbnailSha256": "4204f33a3caab7a1f5d7c30093f320924fb9dc38f5ff20c7e408355b8040165e"
+    },
+    {
+      "id": "dark_bob",
+      "label": "深色短发",
+      "approvedCell": 2,
+      "thumbnailPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/hair/dark_bob.png",
+      "thumbnailSha256": "4697c19fce4dc5995d80a63c7ec757dbc4cef68a2b6c52f3552fe72733003309"
+    },
+    {
+      "id": "warm_ponytail",
+      "label": "暖棕马尾",
+      "approvedCell": 3,
+      "thumbnailPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/hair/warm_ponytail.png",
+      "thumbnailSha256": "b0f14788837c1ed80124ac1d06cd291e86e076bd12816bd55bd54aaf88c76dea"
+    }
+  ],
+  "outfits": [
+    {
+      "id": "teal_town_jacket",
+      "label": "青蓝小镇夹克",
+      "approvedCell": 0,
+      "slots": [
+        "top",
+        "bottom",
+        "shoes"
+      ],
+      "thumbnailPaths": {
+        "top": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/top/teal_town_jacket.png",
+        "bottom": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/bottom/teal_town_jacket.png",
+        "shoes": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/shoes/teal_town_jacket.png"
+      },
+      "thumbnailSha256": {
+        "top": "d76069de077242240413ae407cee9945ed286660eb6696d4be38db3f70ae424b",
+        "bottom": "732f65fb1a1471a131b3bb33f1b38c37fd2eb141bf1aad137e7b6437e26df3fe",
+        "shoes": "ae2025a49aa557d10dc7f17847a670792a103977ffa5e18d3628d606f9f530b0"
+      }
+    },
+    {
+      "id": "rust_work_jacket",
+      "label": "铁锈红工作夹克",
+      "approvedCell": 1,
+      "slots": [
+        "top",
+        "bottom",
+        "shoes"
+      ],
+      "thumbnailPaths": {
+        "top": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/top/rust_work_jacket.png",
+        "bottom": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/bottom/rust_work_jacket.png",
+        "shoes": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/shoes/rust_work_jacket.png"
+      },
+      "thumbnailSha256": {
+        "top": "e02a1202b84c4326386c628914670bff5fe1343d8d43c2fd7fbb90a5b2a15987",
+        "bottom": "462467e7d89fe16f023b128a167bbac7d96b933c6821c9243da3844ccc95dcb7",
+        "shoes": "2f063854a60df7d5e8e10d17e50920e79b5ab1962d728e8d36ffea6bb35e07bb"
+      }
+    },
+    {
+      "id": "navy_field_jacket",
+      "label": "深蓝田野外套",
+      "approvedCell": 2,
+      "slots": [
+        "top",
+        "bottom",
+        "shoes"
+      ],
+      "thumbnailPaths": {
+        "top": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/top/navy_field_jacket.png",
+        "bottom": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/bottom/navy_field_jacket.png",
+        "shoes": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/shoes/navy_field_jacket.png"
+      },
+      "thumbnailSha256": {
+        "top": "6e6a8dbda46b1a8973d5cf918ee571dcbf8acecf046c19b813e051da8ddac3cb",
+        "bottom": "03abad175cc630299c5794392f04aa71fbc60292084e14247dde621cdc522df9",
+        "shoes": "bac4f18e280e2628e0b1b1d39b94d156c915e85a5b6b9df614696e3177bb1a03"
+      }
+    },
+    {
+      "id": "moss_knit_sweater",
+      "label": "苔绿针织衫",
+      "approvedCell": 3,
+      "slots": [
+        "top",
+        "bottom",
+        "shoes"
+      ],
+      "thumbnailPaths": {
+        "top": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/top/moss_knit_sweater.png",
+        "bottom": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/bottom/moss_knit_sweater.png",
+        "shoes": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/slot_thumbnails/shoes/moss_knit_sweater.png"
+      },
+      "thumbnailSha256": {
+        "top": "067b233da727f1b6d9b8572d470efbf777e5a0c4be1879134526f405438626c2",
+        "bottom": "d1d4c073a1ace66e7ba4450c9675ddc6fef77dd6dc61deb9b43f558e2ae30ce6",
+        "shoes": "d2a3674e71ed9156304c0ad6c45b794a75b80aaf5e9158872946cb7a36a753b8"
+      }
+    }
+  ],
+  "loadouts": [
+    {
+      "id": "look_00",
+      "appearanceId": "resident_wardrobe_v1:look_00",
+      "label": "花子 · 完整套装",
+      "headId": "warm_ponytail",
+      "outfitId": "teal_town_jacket",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/hanako_front.png",
+      "portraitSha256": "8990352c3c9ee8a35196bc5bb22f5f3ca6d9ffb788d74972264e6cbedc481d79",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_00/down/rest.png",
+          "restSha256": "cdbbfdb43181c443f37ba3dd21d0852ef8a39535e4f1753a7ef164e36174f892",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_00/down/parts",
+          "partSha256": {
+            "pelvis": "ed56405b0bec923a06aa17467b089ff0dd9701d4befeff8d19e59ccadd83ec17",
+            "torso": "a5274af414f0e711e144bcedf8870ce991aa2cb08b0e0b83a87e6b27d0f107de",
+            "head": "71f80a8ba55ca5774b12f31b92065546a313f0bd348ace935e13f40351922e9f",
+            "upper_arm_l": "ceb0bb4b9aa59261491a3d2cae389d6c166568932497369d6193e0a876901afa",
+            "forearm_l": "f0f3a7df7a7a64e23252a722f605cf53e2875c24ccbb6d673b824ae7773ed640",
+            "hand_l": "27d5a3722ce83c402296b28a31b06565d303deac795a5c789c1d0c77a64bad0e",
+            "upper_arm_r": "445b820d9cf12fc4bfa510a809afc5bb63c95de39301584a65888e317e86e25c",
+            "forearm_r": "5d542165bcdfcc8e45322c3dfc135671861af0b595c946f29b08ac59393300b5",
+            "hand_r": "03b427a4642bfeae2a21afaa65457a0cd604b3fc2c21e5f126177f84b2ee545b",
+            "thigh_l": "e261a8602b6eb45920a9413a8cfcd5a58df63b18f5e526de08eb142ca1e1470c",
+            "shin_l": "a5ed542b72f2200f1bc00762dc74a3c6d63999742d48e35b654bf52c88acb0d7",
+            "foot_l": "e9579de84ff4236f64ac6c86e292edd4afaee4a66682bbc05150dc568a53d3c8",
+            "thigh_r": "b84d979b05cc0e1909795647b10be045b1ea2da8de38b946d9443bcb1a87e662",
+            "shin_r": "b7060cbde0e150a45d3e2b6afd324e18aec7f69fa5f966000626d3d35edececb",
+            "foot_r": "674e665990ab41e8f9bbacc1564c1ad514736750a7eee910fdebc88ce656f740"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_00/right/rest.png",
+          "restSha256": "0dc96e6ccdfbb2b00cf552b6292722e81aa996a9cc6b0d31d3af6893e8899826",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_00/right/parts",
+          "partSha256": {
+            "pelvis": "edf5444fb5de736f6fcb4140db47ced72ccb39348ff675ff71ddbbd1da4727ce",
+            "torso": "e54c0173886a478c044101988ea1fde6d26fa6d43df520cf4bba2b2e8eb62494",
+            "head": "77cc7bb28d62917b13736ab30cfa8744365f9650ef66126b48fd3d3d91ac4978",
+            "upper_arm_l": "52903ce847eedad3be4209b0831253428a2c6aa3e8332df953adc29b2f2dbcbc",
+            "forearm_l": "957a0bb4e3836dc8c7a42ca0acba5cba9d78a1c4651d3b0eb83b50ae4cdfb488",
+            "hand_l": "b496cad226a518df9ed41711a56a06413f9d1bcc3c197dc466e7d1fbe90b7731",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "035b4586b3a680cd1b94faf6276aa627b9ae4ffcdb042a8f578e653ad5a3ef79",
+            "shin_l": "11dbd80f3527d598f3650006b04b1b9ac93464aec14509073feed3a0859165d0",
+            "foot_l": "e87a0e1093b894b3f9c245a805dd8feee904a1d1b1d963cbf636f2788adc2998",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_00/up/rest.png",
+          "restSha256": "17522d531ba5fe7ae73b32f8dd7e12b77a376876bd507dc94806a9ef43778093",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_00/up/parts",
+          "partSha256": {
+            "pelvis": "6ceacc0716596c17bab9e0d4705cdb42f33fa8bbebe70244f1418d16ff3e3419",
+            "torso": "fbf9948ecadae3f7a15b8726234b4dfc9ceeadb9d8bd49f71b75cee447ebf8ab",
+            "head": "6b3fb449d38e2b536ba0fc4d99c5c0ab8f5f563bcc232fb41b0627e19e4314dc",
+            "upper_arm_l": "e68593bbcd6bd8ce35c2a218f8ff2bb1b2fa505dbc6d38194c79d099df9688eb",
+            "forearm_l": "3d78fdde189c2af575f01a1fc7ce34b0d399b4023ae25ca557a53e336ba1d870",
+            "hand_l": "6d6c4ac0d778c68ee5dbf902015657d6a70520522b6b46af15e5bd7c17e70d24",
+            "upper_arm_r": "9c4b6c14f194d7f8945353223040461dea73d3a376ceb8bdbd96eea75ccdb1de",
+            "forearm_r": "883409a18aafe97c1c6a85b3f61fde47a17a901537157ff9d396d801ba4774c2",
+            "hand_r": "cc7c2cc3ce3fe3d048c0e328adc8a439dc721b1097186b9a2dac461b892101e5",
+            "thigh_l": "a2629feea28d7ae001ebd076018b63533008147b4f453543e4c841c5a99a3910",
+            "shin_l": "cb95782a88c62695d4220a5d1113aded8fb01d6c7b642718dc4a48d077f5a3c3",
+            "foot_l": "02c3f7b777745ba323a214cfe66465c9fbce4629683318c194face45a106583f",
+            "thigh_r": "e588e9ab9c798fbe6981b338e588d4e1164c425ee1751eb39c914f169f9fe495",
+            "shin_r": "b04ac0b6eeaf2a78657d40dd6479a2e85ea891f3e10e66fcc2a00ef611796e43",
+            "foot_r": "ffd51cad68076d99bae0fa489289261c24c3e7d0c013ef95aa76d3fdd63a3cd6"
+          }
+        }
+      },
+      "residentId": "resident_hanako_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/hanako_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "aa3f0f2b381a845d9dd6d361902df15b76108d2da60a483dba415db6a55efb7c"
+    },
+    {
+      "id": "look_01",
+      "appearanceId": "resident_wardrobe_v1:look_01",
+      "label": "林岚 · 完整套装",
+      "headId": "side_swept_brown",
+      "outfitId": "navy_field_jacket",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/lin_lan_front.png",
+      "portraitSha256": "e25c4bfbc02213a0313b2227a31e23f88c6a2972a19f82853e399da642564d64",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_01/down/rest.png",
+          "restSha256": "3bc5bc8a773f753e4a2121c3761467387c460d3866b902d58083da970bbd0de5",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_01/down/parts",
+          "partSha256": {
+            "pelvis": "203c91d61f02a45d3ee668cb1f3cffb097d8ab264d2e388c862864f41b329475",
+            "torso": "708de5f0768f7fd58a57a6b9294f35af612bb88eb9cc5720495f0392eb66ad44",
+            "head": "2aea45f24c2e1334ea0ca9b00ef697ec88f06d8b2baf43896367b5ebcf04a0d0",
+            "upper_arm_l": "f19cef5e791ec195e7f4a6699367c012537c54bf83c850f3cf3be47798b9178f",
+            "forearm_l": "a88be969b960b59b8401e1dee29baf99f5aff754a3670edfe23f72a26205549d",
+            "hand_l": "d833779d1fc0e4e2108fd2e911f66c00834002907983dca8019098d546460437",
+            "upper_arm_r": "24d0cccce9e5251bbe2fa833f4d83f55e8cd07a39962f84a8380afce42b60257",
+            "forearm_r": "de2e18744bc93b63ca1f01a2dce04e0290bef1945351e90420eeeb7af61417fd",
+            "hand_r": "79a463f34c940bc3516c2da1a9d300e575da20dac16af7f902352d36aadcf917",
+            "thigh_l": "cfe8b124546d6ea3d72702d0072fa1c9c60be4f6e05c0c56f436ed4fd8554361",
+            "shin_l": "5be3e774101488333b5e82de7d63b1eceec4650ee887da7e5ba6d68b9284facf",
+            "foot_l": "0d109186f2516e6f6fc5b3fc13ea6ce92368d0a2a4f0e2152083a174988e3336",
+            "thigh_r": "fde34d443b1e733012ca09e5c84c9ee0b58eb24bd0eaa8a591a93427f19fba98",
+            "shin_r": "3ac493fe266ac9ccf5d88800a806cc385ccf1643a7701b74ad7d75daa39a28ac",
+            "foot_r": "7f096c7fcbcbae24c916d52ad5fba109181c7febfbdd0a5df9bfa1e1510187c9"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_01/right/rest.png",
+          "restSha256": "0799d831cc6ee139f695a0857b0b15875a539f70f83c25db4105eda3b2023131",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_01/right/parts",
+          "partSha256": {
+            "pelvis": "c443680dac64e132f558b30a5745daf83c4c5a865fb757581bf5a43151567894",
+            "torso": "0c3825b65a2e231ed96056b7827bc3cc96251bc77d2d092b86a58c54b7effbc0",
+            "head": "30fab4b6ec4a237145d385082f2fba391b3957865a6ab287d959c2dd5d426fae",
+            "upper_arm_l": "0aadd53085107e4a3763cb9a4d204e8c0e804f453aa381b78c183934b0a865e8",
+            "forearm_l": "85f9e0e0e322b765a8ea0844f1b80b9367b0f9a41a85d73b2c4021f6e6bf2db5",
+            "hand_l": "cfc7dd4c8bf084849c7958c99943257640d31cbd8dda0991faa8eb185093ebae",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "82bd9192462f1e1a380eb4204a6399298f57465b6f4811d096af4140a2dd1e92",
+            "shin_l": "e50d5e2d55505c37ab0dc1b2b3a486d66254af8189ff137928d7517445877c59",
+            "foot_l": "52d40cda17836efd29e492381a5a198fec1cde5da4a0c2ca157b4f91dc84464e",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_01/up/rest.png",
+          "restSha256": "2e4536c690d81e9369a1789c4065ae33ba05edb69a811522c52b23aa168223c8",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_01/up/parts",
+          "partSha256": {
+            "pelvis": "9e7fffc3c934071aec555b88a837b625768a6ee58f43b7d708f156f8f343409a",
+            "torso": "ecabb44184409ada14e671b5d08eb545ac6f84b12ad86323eeecd92185d090cb",
+            "head": "6d4c2bcb8f03047588661e642a1981fe6291fbd34bb4b3bde774822bc987976f",
+            "upper_arm_l": "552c8495d1396f308b4d4adbe416207ec12fb2c80c28832bd3c7d0e17d70a220",
+            "forearm_l": "510efd7f2dc75ed5e82fa205ab4e0b32ac0e26c03ca23fc284bf5129768845d1",
+            "hand_l": "baa598839605626ea2107702acee3751cb71a6656f9dc206846f3b1fb9f55443",
+            "upper_arm_r": "723609316a03180ff7e10f5a6b0aa9887eae97a4da4e03574715d12e03f95cd3",
+            "forearm_r": "4c6bb33604b1a8763b26094ab7feb28c37f24b4abe212f0a630e49c85eb2ef9e",
+            "hand_r": "112b387b9c4ec8be7f846208d8cb2ce0e894a0fc5dbd5351da78f248e4acd751",
+            "thigh_l": "a30d03420fc31b96dfe569c7f0662542ef58158f0ae196acc70497f80edfc460",
+            "shin_l": "e0308c99ccede20d98242b74bf0ce3eb2776d5ac558c503296e0238910a9dc05",
+            "foot_l": "e0fb205ad8de744e79b38208bab43d8e4897e30e8de2602130cc87ceb656257e",
+            "thigh_r": "9afe04ec60b3017021d04af8d62d98534abc119f09c3cde994c6dc6e2c3fd440",
+            "shin_r": "9b8b69c27b515c6d0d9eec62418fb737c85d3db321d1246c7335f112ed4bf8b3",
+            "foot_r": "d5b5a9d99ad01793fdd075ce0102239991be17f92f82d4eb1459fcdb2f37e94f"
+          }
+        }
+      },
+      "residentId": "resident_lin_lan_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/lin_lan_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "41a328f2b0d9bbee25f51ff07cb9d5ba7b5f4b65c44b860c8d030c04318ff9df"
+    },
+    {
+      "id": "look_02",
+      "appearanceId": "resident_wardrobe_v1:look_02",
+      "label": "许照 · 完整套装",
+      "headId": "side_swept_brown",
+      "outfitId": "rust_work_jacket",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/xu_zhao_front.png",
+      "portraitSha256": "2f9d7c3ae7cb0139d98411ebd5d4873776ac8850e3ce059c2e6cc79da27e631f",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_02/down/rest.png",
+          "restSha256": "aeefebefd508d1fa90131f7382e08bbcd5a9466ab053f69ef00b4fd09ffa919f",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_02/down/parts",
+          "partSha256": {
+            "pelvis": "f09a05cfd64fc23ca5e40515f186ddbf36b1304a16e290cc99712c192c35b25b",
+            "torso": "ce3b68d733734b74493424e1afe8aa017a49c17cbe9d19664cb19c6db2baf6b6",
+            "head": "2677a363382a237f2e18e34b08fb5c4a6584059f35c77b885bf4384faba9778a",
+            "upper_arm_l": "965c13cd0569652644679ff845a8cfbdf8c162978d67412ac8b7668b23802d01",
+            "forearm_l": "66aa504649d40da48aa43778bda12e4db4220e8c49f92b77eb5ed3852f9cc591",
+            "hand_l": "1f69aee0f2e0171556b790c8df676d23566ca8d50c71e6933ae5a8ef74f83c73",
+            "upper_arm_r": "e7d52cc5795a5875f366131985fffd8799e811f7c877cb0197b788ce00921162",
+            "forearm_r": "7ae6394b61fde66d75378701990d10406672431b656b87ef687eb8d538c4d1e5",
+            "hand_r": "a69cbf745e21324435ee3b3d5116978af7f4fc4f10a60b1257fbb45404950c33",
+            "thigh_l": "ec4941c3ed75ef35fdeb3cc9514712037670077b8ee4ff6d75e1b06b413eac89",
+            "shin_l": "9f731af943c04731c36fa6e2b786c6a5725eb057da67a7d42a70f2d5b6f8444e",
+            "foot_l": "f295e8450ce5e3d7e5cc3bf98de697138a14001238fbd1b004430af6e7775a52",
+            "thigh_r": "08345c4c96190498c9420e294aa983723493b9707ae65d0a775f6ce48d872684",
+            "shin_r": "7b4e1b41eaa98358972059fbf251b2f0421cb9b6ee735800a0b0d721f79d6cfa",
+            "foot_r": "9c91437a4e250ab450f9530b416301889d8ed4bf606fea26041f798fb949d876"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_02/right/rest.png",
+          "restSha256": "e1acfe29b9dfe48645c8364ffa13a10617b5858e26878817a3b2e3f441fbf154",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_02/right/parts",
+          "partSha256": {
+            "pelvis": "3ad86467f4ef8577fb9d413fa831643da8a1e9409fc3740b48f154922721891e",
+            "torso": "119f2f3a14b8fc03fa802d78a9adf2bb8960d0fdc97b3ccff81464f1e0cf5e22",
+            "head": "30fab4b6ec4a237145d385082f2fba391b3957865a6ab287d959c2dd5d426fae",
+            "upper_arm_l": "ee7155bf980d0371817c1b6cdc83fdb3529aba4c8c88e676d009376aed850d1f",
+            "forearm_l": "59d2049472c2b7cea0c14a8ef0472854618d78c50227da140f8206189f64ad5e",
+            "hand_l": "67c3b5ab1b6fdd382ffb892dba8032e982abb4a716c7847d8c7efec80c6cd0b1",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "1fd7c8d2aaf3afbd7aff6fb77e5acab12a3821f00951d32eafd9714dc687d36d",
+            "shin_l": "a3d08b96a8034176de160c5cad7746e8b13da7c5ee6bc750451918276d83f717",
+            "foot_l": "2e13aca944f0f4ecd3f26c78abbb8c24f8125b495ce9c76eab5809e2031d2a89",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_02/up/rest.png",
+          "restSha256": "caafcacb636e7bf599c3de1203e3bc952e1883c1e9cb8577526672dc6083fa13",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_02/up/parts",
+          "partSha256": {
+            "pelvis": "f4da887bcafa410634775844e7fac7840333ae9b93facaa8434eb34407516f48",
+            "torso": "26eaf708504e36cabcba1b1764211dc854c295428135c628db97f36081f80ed3",
+            "head": "acdbb37cf5c0e60397f27781bd9a86794658c4a51d9c43403f45d3c8103b367e",
+            "upper_arm_l": "17ac4bfa0d51c9305282dc1cdc5c3cb3d5f8d01b08bbe19f74de8251f5cf791e",
+            "forearm_l": "c80f0f70d30d3af3fdd03e21368a7c974de89a5caf3b97df3b9520b7bab79490",
+            "hand_l": "078b7b321ea294162704c4318de0113101df4e0eb9a85a91be1397788c73fb54",
+            "upper_arm_r": "4b498a8c581407afb31396eb9c6bf791101bb9cd5e35aa7c061e9e151b205ee7",
+            "forearm_r": "9f6d317e3f79e47daa82bf37adc216642f33801d5511b16ca0ff05b5408912cf",
+            "hand_r": "e1bf1a1cfd284e237ddf7f5f0c3ec33841bb4931c6a06eb5c9526da20efccb2f",
+            "thigh_l": "4a2c606ae0c77f109f24dcc8e12265aefe5932b81e4b64aead90ca84af1fb553",
+            "shin_l": "5af10d620de64fc9e47c974f76e1f73960deba6e9caef4d595e44bce8cf700ae",
+            "foot_l": "ea78bdf9c5b812fdc04fb5ee2beccec86e9881e10a7988d263157b0b8e82e480",
+            "thigh_r": "e79e2b953829b9d653acba2c9b34ddaa627de72a61ef447609bb3ac4336d7891",
+            "shin_r": "32e6bb7c82779a08d384bc9d566ad8a99610b0d8d6dd488a45c5ed1eb364897d",
+            "foot_r": "ee1c76ed2ad504c91fcb88b184465207953f00ffa0c23114287e26ea20d98ced"
+          }
+        }
+      },
+      "residentId": "resident_xu_zhao_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/xu_zhao_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "96f44b678e3b80685aa8cf7daebe4b050bf488d330120ca84de0ffaa6822eff5"
+    },
+    {
+      "id": "look_03",
+      "appearanceId": "resident_wardrobe_v1:look_03",
+      "label": "周既明 · 完整套装",
+      "headId": "tousled_brown",
+      "outfitId": "moss_knit_sweater",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/zhou_jiming_front.png",
+      "portraitSha256": "bbd0b305f8f8f0ba185174aabba220c7e80bf442a36c776a547f2fb7399d045f",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_03/down/rest.png",
+          "restSha256": "97968116d68b51c2e980b617f7a4b8e0be47e15f8502d0e5c903cbd7831ef6be",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_03/down/parts",
+          "partSha256": {
+            "pelvis": "2f7891364e14922838a63cbbf9561adb5b69f96dd836885b2b729a71298aeaae",
+            "torso": "79b205b1b6ba960cb491e9a9a6ba5b9b84e56377fc31a18f480e2fb0ce492d75",
+            "head": "4260c1c3cd1f5c1071bdf000893a230aa3dfb9e2c9a15bc6923cfa31cd0eb5ba",
+            "upper_arm_l": "010ee6dfd15d9c316b8457c71b184d92e1830a03c46774975087fbaf8bfb607b",
+            "forearm_l": "26ace4a49308b5378f6c4c177f7d437117bc80a08c20a454263ba2b484766d95",
+            "hand_l": "c24d63d290576f8a5cea5420244a09f884718f4fce2d55d5c8bb6359998f2ca7",
+            "upper_arm_r": "9d31f8e8feec5165dbbc7c7ae85be4d31f82ce6c26c86c43edb10a9bdca27a34",
+            "forearm_r": "55e7caec5682c9f865f4442927296492425d58173ed471add91835388bc522f7",
+            "hand_r": "a8ce5d03d9af4656c51bb5e1eed295c623748eb8306a0eef684f6c1aa63daca5",
+            "thigh_l": "3f333e2e600a17b16da77bb4496d63f9d35be31052a8f9244b95b8402ea65f30",
+            "shin_l": "48f03a3d638e651f194ea75d5cc9a8cf732f7f2f6a8e736e99d42ee1c6c00693",
+            "foot_l": "734749fc3c50b68b0e33b2ba97942ae0e92633fe5e70f0e40e62536348b2933d",
+            "thigh_r": "4bbfc168377cf0f54f358fa9e637ed9467b7cb9ca853e5790eb0afcd0d40183c",
+            "shin_r": "e89acc7d87157d123728a735d5208581a71771690802a841b20ab7ce3ba83f49",
+            "foot_r": "c70ca0e2656c967f4212fbb19e7c111f249bd1a1bae995270e89dd3a959ac12c"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_03/right/rest.png",
+          "restSha256": "aee4ac58f8a3c5d73d9ecf61e55ac3e11444fc90fc5935c65aa58784d4cc8bf9",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_03/right/parts",
+          "partSha256": {
+            "pelvis": "f0e1c4d1e6eff12a491153d99f19fc671f23e58770f9a56c4711095c4e996b7c",
+            "torso": "e874a1c1887dcbfe1d93f0f432d1c7bb782fc75650509f3aeb83fac16dc620f3",
+            "head": "b307fdada4c7f95b7965b9dd284614d29be0bd430dc33dfe668762e5be1b2e36",
+            "upper_arm_l": "3eae34dce564d54b5248e8e036f05896fa4e1545a572c75a4eba16f3c83687d5",
+            "forearm_l": "26edd0c7c745cc65b849ab461a25b9aa50ee34b9b213e24777b39459a1920fb9",
+            "hand_l": "a02dd915f315815dd30468521693cb34080c6d253468b5f362673de0b35f01e3",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "62800c0c2b96db41d07d3c00dec609933a01303554d72b3c422198a010baabd7",
+            "shin_l": "a272e7e01417795b0126e4300ed9c8f03a2566353573c33de9f805bd853140d1",
+            "foot_l": "272b772aa77fe970b6d5ce39ef4ef919a672374e28d2ec3b7d599140c64496af",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_03/up/rest.png",
+          "restSha256": "a609153fc9f5ced34019a3549bd9e3a58680b94661470827a74adc529751b420",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_03/up/parts",
+          "partSha256": {
+            "pelvis": "f65731bfbf0868cd89e11ae582da9e8219e97dc6d4580e3c7a8f4973e60336ec",
+            "torso": "b578703e997b6a4ba8f8b730f0d5c02476e6286cbb517679ff734d6309f66431",
+            "head": "fc83ae8f09a0deb6be74e186a6bf4bdf3df697f7c8f75945ec9d964fae1db8e7",
+            "upper_arm_l": "dc16b2488342870cd55949f6ee731ff75ceab609695f6829accd91aba975f5cb",
+            "forearm_l": "4317e67cb317542d502fad29bd28133a7d6b50a0202d5a6fe19f615232e4d3d1",
+            "hand_l": "2b2e27bf169c822f3fb0b255fc7947b34f27a1df5a0fbdea944327e8d147293f",
+            "upper_arm_r": "5d75359876d16843699a156b9881da71469e211eac100a3858f4350b0e4022c2",
+            "forearm_r": "3a7bff0f2258a25168ec92ef889c72422ee0fe4cf982b525d8c9b9526c876ffa",
+            "hand_r": "48f10b2ba9514d404c27dd63529ad76ba2d161b81cd7b52c9be4d32d803586ca",
+            "thigh_l": "de494b6bd06c36f5340c9bbb0facec9979502a2d015c3e50304ebfce8e7b26af",
+            "shin_l": "b632ac01844ac5fba694f524accba1953a65e26162e4f0ee5762172df2002521",
+            "foot_l": "ad24eac2334e768bd4a22c6857763fc5dc073deba63679aac7d218d39d0ce50d",
+            "thigh_r": "59c5cd7df9b68510f5df506a974ee8ce5958626d53a0efe2dc92fc2a1e655a72",
+            "shin_r": "bf980c5daf7ce32aea4ffe8d662cffe42cd585f9c4c68d10a31562af5d0efddb",
+            "foot_r": "9123801e310dc542aae0ae11f4c2becf558c16e2ab56cfa6b163579a2f2ef15c"
+          }
+        }
+      },
+      "residentId": "resident_zhou_jiming_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/zhou_jiming_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "44ec74ac637a9b9d1b51887d7b2167321127b001bd5c39ccf07183a230646371"
+    },
+    {
+      "id": "look_04",
+      "appearanceId": "resident_wardrobe_v1:look_04",
+      "label": "唐小满 · 完整套装",
+      "headId": "tousled_brown",
+      "outfitId": "teal_town_jacket",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/tang_xiaoman_front.png",
+      "portraitSha256": "c19a727aeb524d89b09718dacd8e3687f0f554ed33472efc0f8cd9fef94f8024",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_04/down/rest.png",
+          "restSha256": "88d65c96753471e16e1653a142bff2032a753bffc43fd5d0675314e15569e776",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_04/down/parts",
+          "partSha256": {
+            "pelvis": "ed56405b0bec923a06aa17467b089ff0dd9701d4befeff8d19e59ccadd83ec17",
+            "torso": "a5274af414f0e711e144bcedf8870ce991aa2cb08b0e0b83a87e6b27d0f107de",
+            "head": "3a064b9f0dab8ab5617d121ba7cb62cd7934bf73151a54d192698dfa1edaa887",
+            "upper_arm_l": "ceb0bb4b9aa59261491a3d2cae389d6c166568932497369d6193e0a876901afa",
+            "forearm_l": "f0f3a7df7a7a64e23252a722f605cf53e2875c24ccbb6d673b824ae7773ed640",
+            "hand_l": "27d5a3722ce83c402296b28a31b06565d303deac795a5c789c1d0c77a64bad0e",
+            "upper_arm_r": "abcdf600630eb049a67b76ba2a3260aab1d7d507e89e06eb2da0f502e492e6ac",
+            "forearm_r": "5d542165bcdfcc8e45322c3dfc135671861af0b595c946f29b08ac59393300b5",
+            "hand_r": "03b427a4642bfeae2a21afaa65457a0cd604b3fc2c21e5f126177f84b2ee545b",
+            "thigh_l": "e261a8602b6eb45920a9413a8cfcd5a58df63b18f5e526de08eb142ca1e1470c",
+            "shin_l": "a5ed542b72f2200f1bc00762dc74a3c6d63999742d48e35b654bf52c88acb0d7",
+            "foot_l": "e9579de84ff4236f64ac6c86e292edd4afaee4a66682bbc05150dc568a53d3c8",
+            "thigh_r": "b84d979b05cc0e1909795647b10be045b1ea2da8de38b946d9443bcb1a87e662",
+            "shin_r": "b7060cbde0e150a45d3e2b6afd324e18aec7f69fa5f966000626d3d35edececb",
+            "foot_r": "674e665990ab41e8f9bbacc1564c1ad514736750a7eee910fdebc88ce656f740"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_04/right/rest.png",
+          "restSha256": "bd3fb64ad0fc63f8eab40d870cf1dcefa6cb4363bea8ac8bdac9dead0c9c61c0",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_04/right/parts",
+          "partSha256": {
+            "pelvis": "edf5444fb5de736f6fcb4140db47ced72ccb39348ff675ff71ddbbd1da4727ce",
+            "torso": "b228fa0726b5bda7bd3cbeac8815463d9c3ad693f214b42473eb2cd65f082762",
+            "head": "b307fdada4c7f95b7965b9dd284614d29be0bd430dc33dfe668762e5be1b2e36",
+            "upper_arm_l": "52903ce847eedad3be4209b0831253428a2c6aa3e8332df953adc29b2f2dbcbc",
+            "forearm_l": "957a0bb4e3836dc8c7a42ca0acba5cba9d78a1c4651d3b0eb83b50ae4cdfb488",
+            "hand_l": "b496cad226a518df9ed41711a56a06413f9d1bcc3c197dc466e7d1fbe90b7731",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "035b4586b3a680cd1b94faf6276aa627b9ae4ffcdb042a8f578e653ad5a3ef79",
+            "shin_l": "11dbd80f3527d598f3650006b04b1b9ac93464aec14509073feed3a0859165d0",
+            "foot_l": "e87a0e1093b894b3f9c245a805dd8feee904a1d1b1d963cbf636f2788adc2998",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_04/up/rest.png",
+          "restSha256": "b7ad021755893ac5f4bca45106f79561bd8751e83b06e33fd0014e9589bef09c",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_04/up/parts",
+          "partSha256": {
+            "pelvis": "6ceacc0716596c17bab9e0d4705cdb42f33fa8bbebe70244f1418d16ff3e3419",
+            "torso": "81d37bbf4c118e9afe83d32bca6a76c52d8dd82b15244620cf4dfe82387fd4ac",
+            "head": "ce704d9886985c5cbe1c60d9c22fbaf99b42ac47d380b9a51add82924b6bb56e",
+            "upper_arm_l": "e68593bbcd6bd8ce35c2a218f8ff2bb1b2fa505dbc6d38194c79d099df9688eb",
+            "forearm_l": "3d78fdde189c2af575f01a1fc7ce34b0d399b4023ae25ca557a53e336ba1d870",
+            "hand_l": "6d6c4ac0d778c68ee5dbf902015657d6a70520522b6b46af15e5bd7c17e70d24",
+            "upper_arm_r": "9c4b6c14f194d7f8945353223040461dea73d3a376ceb8bdbd96eea75ccdb1de",
+            "forearm_r": "883409a18aafe97c1c6a85b3f61fde47a17a901537157ff9d396d801ba4774c2",
+            "hand_r": "cc7c2cc3ce3fe3d048c0e328adc8a439dc721b1097186b9a2dac461b892101e5",
+            "thigh_l": "a2629feea28d7ae001ebd076018b63533008147b4f453543e4c841c5a99a3910",
+            "shin_l": "cb95782a88c62695d4220a5d1113aded8fb01d6c7b642718dc4a48d077f5a3c3",
+            "foot_l": "02c3f7b777745ba323a214cfe66465c9fbce4629683318c194face45a106583f",
+            "thigh_r": "e588e9ab9c798fbe6981b338e588d4e1164c425ee1751eb39c914f169f9fe495",
+            "shin_r": "b04ac0b6eeaf2a78657d40dd6479a2e85ea891f3e10e66fcc2a00ef611796e43",
+            "foot_r": "ffd51cad68076d99bae0fa489289261c24c3e7d0c013ef95aa76d3fdd63a3cd6"
+          }
+        }
+      },
+      "residentId": "resident_tang_xiaoman_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/tang_xiaoman_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "3333e2c96acf525c1c161733fc07945abb987aafa20b9c7c82fa1d7c96d3f5ec"
+    },
+    {
+      "id": "look_05",
+      "appearanceId": "resident_wardrobe_v1:look_05",
+      "label": "罗远 · 完整套装",
+      "headId": "dark_bob",
+      "outfitId": "moss_knit_sweater",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/luo_yuan_front.png",
+      "portraitSha256": "ebb86681f7a70d70ebde4f1e5d435a82308bbf6c37a18e68b82595a2870ac11f",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_05/down/rest.png",
+          "restSha256": "2c48692cacc10edab9dd28ea37557e816d1f88fa3956d9bf1259e2de2889f40a",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_05/down/parts",
+          "partSha256": {
+            "pelvis": "2f7891364e14922838a63cbbf9561adb5b69f96dd836885b2b729a71298aeaae",
+            "torso": "79b205b1b6ba960cb491e9a9a6ba5b9b84e56377fc31a18f480e2fb0ce492d75",
+            "head": "6cdcfa0ce04728423effab23b07ead9c48b2dc7abb426d40ebe81a2e44cd27b8",
+            "upper_arm_l": "010ee6dfd15d9c316b8457c71b184d92e1830a03c46774975087fbaf8bfb607b",
+            "forearm_l": "26ace4a49308b5378f6c4c177f7d437117bc80a08c20a454263ba2b484766d95",
+            "hand_l": "c24d63d290576f8a5cea5420244a09f884718f4fce2d55d5c8bb6359998f2ca7",
+            "upper_arm_r": "9d31f8e8feec5165dbbc7c7ae85be4d31f82ce6c26c86c43edb10a9bdca27a34",
+            "forearm_r": "55e7caec5682c9f865f4442927296492425d58173ed471add91835388bc522f7",
+            "hand_r": "a8ce5d03d9af4656c51bb5e1eed295c623748eb8306a0eef684f6c1aa63daca5",
+            "thigh_l": "3f333e2e600a17b16da77bb4496d63f9d35be31052a8f9244b95b8402ea65f30",
+            "shin_l": "48f03a3d638e651f194ea75d5cc9a8cf732f7f2f6a8e736e99d42ee1c6c00693",
+            "foot_l": "734749fc3c50b68b0e33b2ba97942ae0e92633fe5e70f0e40e62536348b2933d",
+            "thigh_r": "4bbfc168377cf0f54f358fa9e637ed9467b7cb9ca853e5790eb0afcd0d40183c",
+            "shin_r": "e89acc7d87157d123728a735d5208581a71771690802a841b20ab7ce3ba83f49",
+            "foot_r": "c70ca0e2656c967f4212fbb19e7c111f249bd1a1bae995270e89dd3a959ac12c"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_05/right/rest.png",
+          "restSha256": "40aad9e33552ed54d294a4c0522c7634d72fc342911e506947d294a26cb0feb4",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_05/right/parts",
+          "partSha256": {
+            "pelvis": "f0e1c4d1e6eff12a491153d99f19fc671f23e58770f9a56c4711095c4e996b7c",
+            "torso": "9290122df5773495b667f8608197ef3003b564a5dc500c6cd1df918f1129cdbb",
+            "head": "5fcb3cd2e91c7d79e63fed5ba0e9a594a524d0fe7aac309e91af53204c19aa07",
+            "upper_arm_l": "3eae34dce564d54b5248e8e036f05896fa4e1545a572c75a4eba16f3c83687d5",
+            "forearm_l": "26edd0c7c745cc65b849ab461a25b9aa50ee34b9b213e24777b39459a1920fb9",
+            "hand_l": "a02dd915f315815dd30468521693cb34080c6d253468b5f362673de0b35f01e3",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "62800c0c2b96db41d07d3c00dec609933a01303554d72b3c422198a010baabd7",
+            "shin_l": "a272e7e01417795b0126e4300ed9c8f03a2566353573c33de9f805bd853140d1",
+            "foot_l": "272b772aa77fe970b6d5ce39ef4ef919a672374e28d2ec3b7d599140c64496af",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_05/up/rest.png",
+          "restSha256": "a1cc0b3a0eb765eeb51677bc22f7d71527765c1d6aaeb06cb2dd254c8d126d75",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_05/up/parts",
+          "partSha256": {
+            "pelvis": "f65731bfbf0868cd89e11ae582da9e8219e97dc6d4580e3c7a8f4973e60336ec",
+            "torso": "831d77ece5ad19a0fce521d77fad60dad1121ff9476fde10cc91b1007fbbeded",
+            "head": "9762dbc4f88de3cf7134afbb159e0c7a04694f82810d57a935834900b2b24d38",
+            "upper_arm_l": "785f3fa1b8899f4155513897e5f07be9d1922612b6a58566b1ec9f944cf1520c",
+            "forearm_l": "4317e67cb317542d502fad29bd28133a7d6b50a0202d5a6fe19f615232e4d3d1",
+            "hand_l": "2b2e27bf169c822f3fb0b255fc7947b34f27a1df5a0fbdea944327e8d147293f",
+            "upper_arm_r": "177558fc58c4757f8bab6c80c753f1f6ee91358e19db2de03252b103a907f8d9",
+            "forearm_r": "3a7bff0f2258a25168ec92ef889c72422ee0fe4cf982b525d8c9b9526c876ffa",
+            "hand_r": "48f10b2ba9514d404c27dd63529ad76ba2d161b81cd7b52c9be4d32d803586ca",
+            "thigh_l": "de494b6bd06c36f5340c9bbb0facec9979502a2d015c3e50304ebfce8e7b26af",
+            "shin_l": "b632ac01844ac5fba694f524accba1953a65e26162e4f0ee5762172df2002521",
+            "foot_l": "ad24eac2334e768bd4a22c6857763fc5dc073deba63679aac7d218d39d0ce50d",
+            "thigh_r": "59c5cd7df9b68510f5df506a974ee8ce5958626d53a0efe2dc92fc2a1e655a72",
+            "shin_r": "bf980c5daf7ce32aea4ffe8d662cffe42cd585f9c4c68d10a31562af5d0efddb",
+            "foot_r": "9123801e310dc542aae0ae11f4c2becf558c16e2ab56cfa6b163579a2f2ef15c"
+          }
+        }
+      },
+      "residentId": "resident_luo_yuan_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/luo_yuan_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "239121d6cf79a808d1ecfe21b37100ad583a584bcc124be1a98255e6cdfb35be"
+    },
+    {
+      "id": "look_06",
+      "appearanceId": "resident_wardrobe_v1:look_06",
+      "label": "姜澄 · 完整套装",
+      "headId": "warm_ponytail",
+      "outfitId": "moss_knit_sweater",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/jiang_cheng_front.png",
+      "portraitSha256": "e30b84873668315e7271020a8ce0ab58fd5411608f56ecdd87f6dc34cb334d96",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_06/down/rest.png",
+          "restSha256": "a70ecf69fcca71f9af24d73db63f5df5c55583147d41353f2817b2cbcc6562f1",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_06/down/parts",
+          "partSha256": {
+            "pelvis": "2f7891364e14922838a63cbbf9561adb5b69f96dd836885b2b729a71298aeaae",
+            "torso": "79b205b1b6ba960cb491e9a9a6ba5b9b84e56377fc31a18f480e2fb0ce492d75",
+            "head": "ebc6b27e38c49f3541a75b905503c5c9c43bdd11d01065e241bb0f287e5130f4",
+            "upper_arm_l": "010ee6dfd15d9c316b8457c71b184d92e1830a03c46774975087fbaf8bfb607b",
+            "forearm_l": "26ace4a49308b5378f6c4c177f7d437117bc80a08c20a454263ba2b484766d95",
+            "hand_l": "c24d63d290576f8a5cea5420244a09f884718f4fce2d55d5c8bb6359998f2ca7",
+            "upper_arm_r": "32c6d9f8c1aa74b92855e09d9a6cfb400e8d09f89f3de2a5a813a36741c209f3",
+            "forearm_r": "55e7caec5682c9f865f4442927296492425d58173ed471add91835388bc522f7",
+            "hand_r": "a8ce5d03d9af4656c51bb5e1eed295c623748eb8306a0eef684f6c1aa63daca5",
+            "thigh_l": "3f333e2e600a17b16da77bb4496d63f9d35be31052a8f9244b95b8402ea65f30",
+            "shin_l": "48f03a3d638e651f194ea75d5cc9a8cf732f7f2f6a8e736e99d42ee1c6c00693",
+            "foot_l": "734749fc3c50b68b0e33b2ba97942ae0e92633fe5e70f0e40e62536348b2933d",
+            "thigh_r": "4bbfc168377cf0f54f358fa9e637ed9467b7cb9ca853e5790eb0afcd0d40183c",
+            "shin_r": "e89acc7d87157d123728a735d5208581a71771690802a841b20ab7ce3ba83f49",
+            "foot_r": "c70ca0e2656c967f4212fbb19e7c111f249bd1a1bae995270e89dd3a959ac12c"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_06/right/rest.png",
+          "restSha256": "5e110e7016e816f84d905179b737a368c51c426853f65daf74127ecef5f4b5a0",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_06/right/parts",
+          "partSha256": {
+            "pelvis": "f0e1c4d1e6eff12a491153d99f19fc671f23e58770f9a56c4711095c4e996b7c",
+            "torso": "593ff1b9209d9063b809a7552e43249ee56b47e69eb5c47ba05baca34fdb2856",
+            "head": "c023630391a561c616b787ad72ad6a1bbae5601fb4786efc429707511855da05",
+            "upper_arm_l": "3eae34dce564d54b5248e8e036f05896fa4e1545a572c75a4eba16f3c83687d5",
+            "forearm_l": "26edd0c7c745cc65b849ab461a25b9aa50ee34b9b213e24777b39459a1920fb9",
+            "hand_l": "a02dd915f315815dd30468521693cb34080c6d253468b5f362673de0b35f01e3",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "62800c0c2b96db41d07d3c00dec609933a01303554d72b3c422198a010baabd7",
+            "shin_l": "a272e7e01417795b0126e4300ed9c8f03a2566353573c33de9f805bd853140d1",
+            "foot_l": "272b772aa77fe970b6d5ce39ef4ef919a672374e28d2ec3b7d599140c64496af",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_06/up/rest.png",
+          "restSha256": "f590de7dbb852cecae8093d7481639f8e831b9ef590326233eae0d886aedef14",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_06/up/parts",
+          "partSha256": {
+            "pelvis": "f65731bfbf0868cd89e11ae582da9e8219e97dc6d4580e3c7a8f4973e60336ec",
+            "torso": "e6aa1b83281fd1bda6b30ac7b155ec5f623a461dd43e1a71e0067492d9e58b3c",
+            "head": "1217bb3a01f63dbd155ed719adea16f12e457197de8f0f86e00dca5d9cb6916d",
+            "upper_arm_l": "dc16b2488342870cd55949f6ee731ff75ceab609695f6829accd91aba975f5cb",
+            "forearm_l": "4317e67cb317542d502fad29bd28133a7d6b50a0202d5a6fe19f615232e4d3d1",
+            "hand_l": "2b2e27bf169c822f3fb0b255fc7947b34f27a1df5a0fbdea944327e8d147293f",
+            "upper_arm_r": "5d75359876d16843699a156b9881da71469e211eac100a3858f4350b0e4022c2",
+            "forearm_r": "3a7bff0f2258a25168ec92ef889c72422ee0fe4cf982b525d8c9b9526c876ffa",
+            "hand_r": "48f10b2ba9514d404c27dd63529ad76ba2d161b81cd7b52c9be4d32d803586ca",
+            "thigh_l": "de494b6bd06c36f5340c9bbb0facec9979502a2d015c3e50304ebfce8e7b26af",
+            "shin_l": "b632ac01844ac5fba694f524accba1953a65e26162e4f0ee5762172df2002521",
+            "foot_l": "ad24eac2334e768bd4a22c6857763fc5dc073deba63679aac7d218d39d0ce50d",
+            "thigh_r": "59c5cd7df9b68510f5df506a974ee8ce5958626d53a0efe2dc92fc2a1e655a72",
+            "shin_r": "bf980c5daf7ce32aea4ffe8d662cffe42cd585f9c4c68d10a31562af5d0efddb",
+            "foot_r": "9123801e310dc542aae0ae11f4c2becf558c16e2ab56cfa6b163579a2f2ef15c"
+          }
+        }
+      },
+      "residentId": "resident_jiang_cheng_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/jiang_cheng_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "dd94c138d729e7b3b966e2260baa63940a4332207f113585325847e9993e8e26"
+    },
+    {
+      "id": "look_07",
+      "appearanceId": "resident_wardrobe_v1:look_07",
+      "label": "乔一鸣 · 完整套装",
+      "headId": "dark_bob",
+      "outfitId": "teal_town_jacket",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/qiao_yiming_front.png",
+      "portraitSha256": "f38f7077d1e93d24d2d401480c9957733456f6aef94e3cb0671eea5629c8a1fe",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_07/down/rest.png",
+          "restSha256": "90b8937b79eec403563c4e8ad6bac266dbf3e800c0c40014c3ad59752f5785a0",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_07/down/parts",
+          "partSha256": {
+            "pelvis": "ed56405b0bec923a06aa17467b089ff0dd9701d4befeff8d19e59ccadd83ec17",
+            "torso": "a5274af414f0e711e144bcedf8870ce991aa2cb08b0e0b83a87e6b27d0f107de",
+            "head": "1902163daf279ec3cc9aad74d098bd06b57afbf72a6b9724eb7d76cfbc445b0d",
+            "upper_arm_l": "ceb0bb4b9aa59261491a3d2cae389d6c166568932497369d6193e0a876901afa",
+            "forearm_l": "f0f3a7df7a7a64e23252a722f605cf53e2875c24ccbb6d673b824ae7773ed640",
+            "hand_l": "27d5a3722ce83c402296b28a31b06565d303deac795a5c789c1d0c77a64bad0e",
+            "upper_arm_r": "abcdf600630eb049a67b76ba2a3260aab1d7d507e89e06eb2da0f502e492e6ac",
+            "forearm_r": "5d542165bcdfcc8e45322c3dfc135671861af0b595c946f29b08ac59393300b5",
+            "hand_r": "03b427a4642bfeae2a21afaa65457a0cd604b3fc2c21e5f126177f84b2ee545b",
+            "thigh_l": "e261a8602b6eb45920a9413a8cfcd5a58df63b18f5e526de08eb142ca1e1470c",
+            "shin_l": "a5ed542b72f2200f1bc00762dc74a3c6d63999742d48e35b654bf52c88acb0d7",
+            "foot_l": "e9579de84ff4236f64ac6c86e292edd4afaee4a66682bbc05150dc568a53d3c8",
+            "thigh_r": "b84d979b05cc0e1909795647b10be045b1ea2da8de38b946d9443bcb1a87e662",
+            "shin_r": "b7060cbde0e150a45d3e2b6afd324e18aec7f69fa5f966000626d3d35edececb",
+            "foot_r": "674e665990ab41e8f9bbacc1564c1ad514736750a7eee910fdebc88ce656f740"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_07/right/rest.png",
+          "restSha256": "f8c68718854d843ce3149428a9c30418d2452cc0157ec20141eb25d8c48f1f55",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_07/right/parts",
+          "partSha256": {
+            "pelvis": "edf5444fb5de736f6fcb4140db47ced72ccb39348ff675ff71ddbbd1da4727ce",
+            "torso": "b20725136fa3f27ff6fa4232d521fd0b759b56939f6c18682809d5ada326ce50",
+            "head": "5fcb3cd2e91c7d79e63fed5ba0e9a594a524d0fe7aac309e91af53204c19aa07",
+            "upper_arm_l": "52903ce847eedad3be4209b0831253428a2c6aa3e8332df953adc29b2f2dbcbc",
+            "forearm_l": "957a0bb4e3836dc8c7a42ca0acba5cba9d78a1c4651d3b0eb83b50ae4cdfb488",
+            "hand_l": "b496cad226a518df9ed41711a56a06413f9d1bcc3c197dc466e7d1fbe90b7731",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "035b4586b3a680cd1b94faf6276aa627b9ae4ffcdb042a8f578e653ad5a3ef79",
+            "shin_l": "11dbd80f3527d598f3650006b04b1b9ac93464aec14509073feed3a0859165d0",
+            "foot_l": "e87a0e1093b894b3f9c245a805dd8feee904a1d1b1d963cbf636f2788adc2998",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_07/up/rest.png",
+          "restSha256": "e67047f8db5725e4c11946b0baad3570d7108d7d46d2469cf8b6a20a2972fc4e",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_07/up/parts",
+          "partSha256": {
+            "pelvis": "6ceacc0716596c17bab9e0d4705cdb42f33fa8bbebe70244f1418d16ff3e3419",
+            "torso": "a26f879b4193ca964a99edd20bf4629cb40b678cb62f665d404783e6aa65b730",
+            "head": "99bd4cb2f18bad6c394b644dc311adc95ffa8699f4680ea007906ccab5e0c432",
+            "upper_arm_l": "d47b6dc907797609f151186840beb01bec0850ab5ce4f3eb22e8a126d4e71d3b",
+            "forearm_l": "3d78fdde189c2af575f01a1fc7ce34b0d399b4023ae25ca557a53e336ba1d870",
+            "hand_l": "6d6c4ac0d778c68ee5dbf902015657d6a70520522b6b46af15e5bd7c17e70d24",
+            "upper_arm_r": "62cee73493f53f604a8642de60849f0e2dfc9f5b33bfbe0e5fdfb8045019f81e",
+            "forearm_r": "883409a18aafe97c1c6a85b3f61fde47a17a901537157ff9d396d801ba4774c2",
+            "hand_r": "cc7c2cc3ce3fe3d048c0e328adc8a439dc721b1097186b9a2dac461b892101e5",
+            "thigh_l": "a2629feea28d7ae001ebd076018b63533008147b4f453543e4c841c5a99a3910",
+            "shin_l": "cb95782a88c62695d4220a5d1113aded8fb01d6c7b642718dc4a48d077f5a3c3",
+            "foot_l": "02c3f7b777745ba323a214cfe66465c9fbce4629683318c194face45a106583f",
+            "thigh_r": "e588e9ab9c798fbe6981b338e588d4e1164c425ee1751eb39c914f169f9fe495",
+            "shin_r": "b04ac0b6eeaf2a78657d40dd6479a2e85ea891f3e10e66fcc2a00ef611796e43",
+            "foot_r": "ffd51cad68076d99bae0fa489289261c24c3e7d0c013ef95aa76d3fdd63a3cd6"
+          }
+        }
+      },
+      "residentId": "resident_qiao_yiming_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/qiao_yiming_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "a83ebf790532da19ee293a4d970bda732793ba7a4185f8866134b80f0013c3d5"
+    },
+    {
+      "id": "look_08",
+      "appearanceId": "resident_wardrobe_v1:look_08",
+      "label": "苏棠 · 完整套装",
+      "headId": "warm_ponytail",
+      "outfitId": "rust_work_jacket",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/su_tang_front.png",
+      "portraitSha256": "799540f93c926b976916a6132795e83cf3744f8f6602baa3d3da32e3f3440c5d",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_08/down/rest.png",
+          "restSha256": "349883f0e3fb66c21c394812ec67208a3c8f8fa2cf9eb2ed78d4144c1964c669",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_08/down/parts",
+          "partSha256": {
+            "pelvis": "f09a05cfd64fc23ca5e40515f186ddbf36b1304a16e290cc99712c192c35b25b",
+            "torso": "ce3b68d733734b74493424e1afe8aa017a49c17cbe9d19664cb19c6db2baf6b6",
+            "head": "77cf7b4998e9e6792583f94e4c9011325ddcb1dcd0c39356158f2511194ad5b9",
+            "upper_arm_l": "965c13cd0569652644679ff845a8cfbdf8c162978d67412ac8b7668b23802d01",
+            "forearm_l": "66aa504649d40da48aa43778bda12e4db4220e8c49f92b77eb5ed3852f9cc591",
+            "hand_l": "1f69aee0f2e0171556b790c8df676d23566ca8d50c71e6933ae5a8ef74f83c73",
+            "upper_arm_r": "6649e0245ebf74f5a73a7a36f15c303f3f60eca48f6ff29e845a850ac2943411",
+            "forearm_r": "7ae6394b61fde66d75378701990d10406672431b656b87ef687eb8d538c4d1e5",
+            "hand_r": "a69cbf745e21324435ee3b3d5116978af7f4fc4f10a60b1257fbb45404950c33",
+            "thigh_l": "ec4941c3ed75ef35fdeb3cc9514712037670077b8ee4ff6d75e1b06b413eac89",
+            "shin_l": "9f731af943c04731c36fa6e2b786c6a5725eb057da67a7d42a70f2d5b6f8444e",
+            "foot_l": "f295e8450ce5e3d7e5cc3bf98de697138a14001238fbd1b004430af6e7775a52",
+            "thigh_r": "08345c4c96190498c9420e294aa983723493b9707ae65d0a775f6ce48d872684",
+            "shin_r": "7b4e1b41eaa98358972059fbf251b2f0421cb9b6ee735800a0b0d721f79d6cfa",
+            "foot_r": "9c91437a4e250ab450f9530b416301889d8ed4bf606fea26041f798fb949d876"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_08/right/rest.png",
+          "restSha256": "a8e7af2a0514027500a5b680e2e00cee00e4d9b6d392becb0b8d14d32df97fd6",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_08/right/parts",
+          "partSha256": {
+            "pelvis": "3ad86467f4ef8577fb9d413fa831643da8a1e9409fc3740b48f154922721891e",
+            "torso": "d44be8918e0975f54cda67f1ccf9e1cab8e647a6eb68b4b2def11542bf97f08d",
+            "head": "08ef721077b95e4d5b0f033d653c03ed438548e164eb37881a5e11317bea6ade",
+            "upper_arm_l": "ee7155bf980d0371817c1b6cdc83fdb3529aba4c8c88e676d009376aed850d1f",
+            "forearm_l": "59d2049472c2b7cea0c14a8ef0472854618d78c50227da140f8206189f64ad5e",
+            "hand_l": "67c3b5ab1b6fdd382ffb892dba8032e982abb4a716c7847d8c7efec80c6cd0b1",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "1fd7c8d2aaf3afbd7aff6fb77e5acab12a3821f00951d32eafd9714dc687d36d",
+            "shin_l": "a3d08b96a8034176de160c5cad7746e8b13da7c5ee6bc750451918276d83f717",
+            "foot_l": "2e13aca944f0f4ecd3f26c78abbb8c24f8125b495ce9c76eab5809e2031d2a89",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_08/up/rest.png",
+          "restSha256": "baced62724d68a617eb38a4cae4ae9a36128d0a378da71e71dac78a782c4d160",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_08/up/parts",
+          "partSha256": {
+            "pelvis": "f4da887bcafa410634775844e7fac7840333ae9b93facaa8434eb34407516f48",
+            "torso": "88708caecd7e1f01cddce0233ebff81c9f870143722632345977e84d40973516",
+            "head": "a87120cda950d89254a19e2ef420772ff84461468a4c4f0d062e084611d25404",
+            "upper_arm_l": "51db3ed46d22d43db1b99214f5f790b21a139cde51c2b78d37b27b2f3410911a",
+            "forearm_l": "c80f0f70d30d3af3fdd03e21368a7c974de89a5caf3b97df3b9520b7bab79490",
+            "hand_l": "078b7b321ea294162704c4318de0113101df4e0eb9a85a91be1397788c73fb54",
+            "upper_arm_r": "5737d2db6b7e15dce1cb9d39bd8716a17f47f38d316d2669d5ea207763038ece",
+            "forearm_r": "9f6d317e3f79e47daa82bf37adc216642f33801d5511b16ca0ff05b5408912cf",
+            "hand_r": "e1bf1a1cfd284e237ddf7f5f0c3ec33841bb4931c6a06eb5c9526da20efccb2f",
+            "thigh_l": "4a2c606ae0c77f109f24dcc8e12265aefe5932b81e4b64aead90ca84af1fb553",
+            "shin_l": "5af10d620de64fc9e47c974f76e1f73960deba6e9caef4d595e44bce8cf700ae",
+            "foot_l": "ea78bdf9c5b812fdc04fb5ee2beccec86e9881e10a7988d263157b0b8e82e480",
+            "thigh_r": "e79e2b953829b9d653acba2c9b34ddaa627de72a61ef447609bb3ac4336d7891",
+            "shin_r": "32e6bb7c82779a08d384bc9d566ad8a99610b0d8d6dd488a45c5ed1eb364897d",
+            "foot_r": "ee1c76ed2ad504c91fcb88b184465207953f00ffa0c23114287e26ea20d98ced"
+          }
+        }
+      },
+      "residentId": "resident_su_tang_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/su_tang_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "389d7592d1fd3be12e72fadc1e068bbbb6705e93ef8b33d249b18e6e6feab5ff"
+    },
+    {
+      "id": "look_09",
+      "appearanceId": "resident_wardrobe_v1:look_09",
+      "label": "陆青舟 · 完整套装",
+      "headId": "dark_bob",
+      "outfitId": "rust_work_jacket",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/lu_qingzhou_front.png",
+      "portraitSha256": "eca82647fe9a3a392b4081bd66dae5e6697c62ff619a5b663e9cde33fc51a511",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_09/down/rest.png",
+          "restSha256": "107e62bd950bba880a4d1c96b39f0e11fe90b02bdc2e3b27887a789d244dd47f",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_09/down/parts",
+          "partSha256": {
+            "pelvis": "f09a05cfd64fc23ca5e40515f186ddbf36b1304a16e290cc99712c192c35b25b",
+            "torso": "ce3b68d733734b74493424e1afe8aa017a49c17cbe9d19664cb19c6db2baf6b6",
+            "head": "940e068d277cee3b38bd49f2659da414828ac9088bc1418365fd40fa071230a6",
+            "upper_arm_l": "965c13cd0569652644679ff845a8cfbdf8c162978d67412ac8b7668b23802d01",
+            "forearm_l": "66aa504649d40da48aa43778bda12e4db4220e8c49f92b77eb5ed3852f9cc591",
+            "hand_l": "1f69aee0f2e0171556b790c8df676d23566ca8d50c71e6933ae5a8ef74f83c73",
+            "upper_arm_r": "e7d52cc5795a5875f366131985fffd8799e811f7c877cb0197b788ce00921162",
+            "forearm_r": "7ae6394b61fde66d75378701990d10406672431b656b87ef687eb8d538c4d1e5",
+            "hand_r": "a69cbf745e21324435ee3b3d5116978af7f4fc4f10a60b1257fbb45404950c33",
+            "thigh_l": "ec4941c3ed75ef35fdeb3cc9514712037670077b8ee4ff6d75e1b06b413eac89",
+            "shin_l": "9f731af943c04731c36fa6e2b786c6a5725eb057da67a7d42a70f2d5b6f8444e",
+            "foot_l": "f295e8450ce5e3d7e5cc3bf98de697138a14001238fbd1b004430af6e7775a52",
+            "thigh_r": "08345c4c96190498c9420e294aa983723493b9707ae65d0a775f6ce48d872684",
+            "shin_r": "7b4e1b41eaa98358972059fbf251b2f0421cb9b6ee735800a0b0d721f79d6cfa",
+            "foot_r": "9c91437a4e250ab450f9530b416301889d8ed4bf606fea26041f798fb949d876"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_09/right/rest.png",
+          "restSha256": "95d6a57b905588885280592af214079aeb655982deafcb891b83cb5078adfe4a",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_09/right/parts",
+          "partSha256": {
+            "pelvis": "3ad86467f4ef8577fb9d413fa831643da8a1e9409fc3740b48f154922721891e",
+            "torso": "3fb26d5d4f89d1c5b742f512b62fa136942fa7aff88366dca5d93e1dfbcef11a",
+            "head": "5fcb3cd2e91c7d79e63fed5ba0e9a594a524d0fe7aac309e91af53204c19aa07",
+            "upper_arm_l": "ee7155bf980d0371817c1b6cdc83fdb3529aba4c8c88e676d009376aed850d1f",
+            "forearm_l": "59d2049472c2b7cea0c14a8ef0472854618d78c50227da140f8206189f64ad5e",
+            "hand_l": "67c3b5ab1b6fdd382ffb892dba8032e982abb4a716c7847d8c7efec80c6cd0b1",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "1fd7c8d2aaf3afbd7aff6fb77e5acab12a3821f00951d32eafd9714dc687d36d",
+            "shin_l": "a3d08b96a8034176de160c5cad7746e8b13da7c5ee6bc750451918276d83f717",
+            "foot_l": "2e13aca944f0f4ecd3f26c78abbb8c24f8125b495ce9c76eab5809e2031d2a89",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_09/up/rest.png",
+          "restSha256": "34376bc74b7cc48167651d669b48540b209ac343da60bece143fd18425c4533a",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_09/up/parts",
+          "partSha256": {
+            "pelvis": "f4da887bcafa410634775844e7fac7840333ae9b93facaa8434eb34407516f48",
+            "torso": "90ecaa4822ca1454623b8032a8ca06851a8ac1e1be533a105ade9c9c6d8f890b",
+            "head": "fcd49f7a948f1d5ae3356c77b8756ca6c704b65e2c03980f54d223832d611262",
+            "upper_arm_l": "27a4418f15ee6e288e17fa44570ee94643ac998ef414c683ec0278492dbb05a7",
+            "forearm_l": "c80f0f70d30d3af3fdd03e21368a7c974de89a5caf3b97df3b9520b7bab79490",
+            "hand_l": "078b7b321ea294162704c4318de0113101df4e0eb9a85a91be1397788c73fb54",
+            "upper_arm_r": "0124b8552096e34a0ce2411ea2e20c759c10e4485c90b62de3d733bb08d67c16",
+            "forearm_r": "9f6d317e3f79e47daa82bf37adc216642f33801d5511b16ca0ff05b5408912cf",
+            "hand_r": "e1bf1a1cfd284e237ddf7f5f0c3ec33841bb4931c6a06eb5c9526da20efccb2f",
+            "thigh_l": "4a2c606ae0c77f109f24dcc8e12265aefe5932b81e4b64aead90ca84af1fb553",
+            "shin_l": "5af10d620de64fc9e47c974f76e1f73960deba6e9caef4d595e44bce8cf700ae",
+            "foot_l": "ea78bdf9c5b812fdc04fb5ee2beccec86e9881e10a7988d263157b0b8e82e480",
+            "thigh_r": "e79e2b953829b9d653acba2c9b34ddaa627de72a61ef447609bb3ac4336d7891",
+            "shin_r": "32e6bb7c82779a08d384bc9d566ad8a99610b0d8d6dd488a45c5ed1eb364897d",
+            "foot_r": "ee1c76ed2ad504c91fcb88b184465207953f00ffa0c23114287e26ea20d98ced"
+          }
+        }
+      },
+      "residentId": "resident_lu_qingzhou_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/lu_qingzhou_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "e91770730c0cbd35ece9f4e6506c599800267466daf5f75870329dcef050fbeb"
+    },
+    {
+      "id": "look_10",
+      "appearanceId": "resident_wardrobe_v1:look_10",
+      "label": "谢眠 · 完整套装",
+      "headId": "tousled_brown",
+      "outfitId": "navy_field_jacket",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/xie_mian_front.png",
+      "portraitSha256": "8a6015af9d69a3112e042ded3e4fe6579ae2a668387287f4810ea731ad27621c",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_10/down/rest.png",
+          "restSha256": "2a0042c124013ae4d5c913f144fd5d1e36d3a9c5857ea7fef47ff2b040ee196e",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_10/down/parts",
+          "partSha256": {
+            "pelvis": "203c91d61f02a45d3ee668cb1f3cffb097d8ab264d2e388c862864f41b329475",
+            "torso": "708de5f0768f7fd58a57a6b9294f35af612bb88eb9cc5720495f0392eb66ad44",
+            "head": "c0db83dc72d1ab4751d0928c6c36b1ea286c4131c16cfb7f1df668efbd269664",
+            "upper_arm_l": "f19cef5e791ec195e7f4a6699367c012537c54bf83c850f3cf3be47798b9178f",
+            "forearm_l": "a88be969b960b59b8401e1dee29baf99f5aff754a3670edfe23f72a26205549d",
+            "hand_l": "d833779d1fc0e4e2108fd2e911f66c00834002907983dca8019098d546460437",
+            "upper_arm_r": "24d0cccce9e5251bbe2fa833f4d83f55e8cd07a39962f84a8380afce42b60257",
+            "forearm_r": "de2e18744bc93b63ca1f01a2dce04e0290bef1945351e90420eeeb7af61417fd",
+            "hand_r": "79a463f34c940bc3516c2da1a9d300e575da20dac16af7f902352d36aadcf917",
+            "thigh_l": "cfe8b124546d6ea3d72702d0072fa1c9c60be4f6e05c0c56f436ed4fd8554361",
+            "shin_l": "5be3e774101488333b5e82de7d63b1eceec4650ee887da7e5ba6d68b9284facf",
+            "foot_l": "0d109186f2516e6f6fc5b3fc13ea6ce92368d0a2a4f0e2152083a174988e3336",
+            "thigh_r": "fde34d443b1e733012ca09e5c84c9ee0b58eb24bd0eaa8a591a93427f19fba98",
+            "shin_r": "3ac493fe266ac9ccf5d88800a806cc385ccf1643a7701b74ad7d75daa39a28ac",
+            "foot_r": "7f096c7fcbcbae24c916d52ad5fba109181c7febfbdd0a5df9bfa1e1510187c9"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_10/right/rest.png",
+          "restSha256": "07bad695b5567796734965931205b6d8694215f7f9fc31232ef6359baad91420",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_10/right/parts",
+          "partSha256": {
+            "pelvis": "c443680dac64e132f558b30a5745daf83c4c5a865fb757581bf5a43151567894",
+            "torso": "0f41160aa20bc10d78d2fbaaa1ea5a1414d37b3f40284f20d648634bc79fab9a",
+            "head": "b307fdada4c7f95b7965b9dd284614d29be0bd430dc33dfe668762e5be1b2e36",
+            "upper_arm_l": "0aadd53085107e4a3763cb9a4d204e8c0e804f453aa381b78c183934b0a865e8",
+            "forearm_l": "85f9e0e0e322b765a8ea0844f1b80b9367b0f9a41a85d73b2c4021f6e6bf2db5",
+            "hand_l": "cfc7dd4c8bf084849c7958c99943257640d31cbd8dda0991faa8eb185093ebae",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "82bd9192462f1e1a380eb4204a6399298f57465b6f4811d096af4140a2dd1e92",
+            "shin_l": "e50d5e2d55505c37ab0dc1b2b3a486d66254af8189ff137928d7517445877c59",
+            "foot_l": "52d40cda17836efd29e492381a5a198fec1cde5da4a0c2ca157b4f91dc84464e",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_10/up/rest.png",
+          "restSha256": "fcb26a66051a5d46e8c66e879091db3e268bd679ca91dfc0a275487f41be49b6",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_10/up/parts",
+          "partSha256": {
+            "pelvis": "9e7fffc3c934071aec555b88a837b625768a6ee58f43b7d708f156f8f343409a",
+            "torso": "9da5165576c7c1306881b6453da48fad381bcfba8817ebbf8d1a19494dfa219c",
+            "head": "fb80f05051fc136ddefa09cc0932d6d0f729943daaf48ea232cdcebc6602ae44",
+            "upper_arm_l": "81eb49def2f20076bd60e511232afee0b222ea8bb631d2471a81447f0213df18",
+            "forearm_l": "510efd7f2dc75ed5e82fa205ab4e0b32ac0e26c03ca23fc284bf5129768845d1",
+            "hand_l": "baa598839605626ea2107702acee3751cb71a6656f9dc206846f3b1fb9f55443",
+            "upper_arm_r": "31389ec2be14e494bea83e880d41195d672c993baa198c25ee99c9c0270316bf",
+            "forearm_r": "4c6bb33604b1a8763b26094ab7feb28c37f24b4abe212f0a630e49c85eb2ef9e",
+            "hand_r": "112b387b9c4ec8be7f846208d8cb2ce0e894a0fc5dbd5351da78f248e4acd751",
+            "thigh_l": "a30d03420fc31b96dfe569c7f0662542ef58158f0ae196acc70497f80edfc460",
+            "shin_l": "e0308c99ccede20d98242b74bf0ce3eb2776d5ac558c503296e0238910a9dc05",
+            "foot_l": "e0fb205ad8de744e79b38208bab43d8e4897e30e8de2602130cc87ceb656257e",
+            "thigh_r": "9afe04ec60b3017021d04af8d62d98534abc119f09c3cde994c6dc6e2c3fd440",
+            "shin_r": "9b8b69c27b515c6d0d9eec62418fb737c85d3db321d1246c7335f112ed4bf8b3",
+            "foot_r": "d5b5a9d99ad01793fdd075ce0102239991be17f92f82d4eb1459fcdb2f37e94f"
+          }
+        }
+      },
+      "residentId": "resident_xie_mian_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/xie_mian_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "5c397c361410dd02e66515e291d4f6ed990cfb7db3d9d84dd42fde7a11675203"
+    },
+    {
+      "id": "look_11",
+      "appearanceId": "resident_wardrobe_v1:look_11",
+      "label": "白芷 · 完整套装",
+      "headId": "dark_bob",
+      "outfitId": "navy_field_jacket",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/bai_zhi_front.png",
+      "portraitSha256": "0b92b729c61aa49e08c1d2c7fb0873f9680fad3f45c2551c74b747cedf6c2c2f",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_11/down/rest.png",
+          "restSha256": "bdaf14f0cc1902fcea92a6ffac5fa6f1599ff4e4b9609a74ef743d17077aca3e",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_11/down/parts",
+          "partSha256": {
+            "pelvis": "203c91d61f02a45d3ee668cb1f3cffb097d8ab264d2e388c862864f41b329475",
+            "torso": "708de5f0768f7fd58a57a6b9294f35af612bb88eb9cc5720495f0392eb66ad44",
+            "head": "84f355fde09796be457a834454406532196e5df3a8ef1685e166ca4ce59f51ba",
+            "upper_arm_l": "f19cef5e791ec195e7f4a6699367c012537c54bf83c850f3cf3be47798b9178f",
+            "forearm_l": "a88be969b960b59b8401e1dee29baf99f5aff754a3670edfe23f72a26205549d",
+            "hand_l": "d833779d1fc0e4e2108fd2e911f66c00834002907983dca8019098d546460437",
+            "upper_arm_r": "24d0cccce9e5251bbe2fa833f4d83f55e8cd07a39962f84a8380afce42b60257",
+            "forearm_r": "de2e18744bc93b63ca1f01a2dce04e0290bef1945351e90420eeeb7af61417fd",
+            "hand_r": "79a463f34c940bc3516c2da1a9d300e575da20dac16af7f902352d36aadcf917",
+            "thigh_l": "cfe8b124546d6ea3d72702d0072fa1c9c60be4f6e05c0c56f436ed4fd8554361",
+            "shin_l": "5be3e774101488333b5e82de7d63b1eceec4650ee887da7e5ba6d68b9284facf",
+            "foot_l": "0d109186f2516e6f6fc5b3fc13ea6ce92368d0a2a4f0e2152083a174988e3336",
+            "thigh_r": "fde34d443b1e733012ca09e5c84c9ee0b58eb24bd0eaa8a591a93427f19fba98",
+            "shin_r": "3ac493fe266ac9ccf5d88800a806cc385ccf1643a7701b74ad7d75daa39a28ac",
+            "foot_r": "7f096c7fcbcbae24c916d52ad5fba109181c7febfbdd0a5df9bfa1e1510187c9"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_11/right/rest.png",
+          "restSha256": "9da37858b01654b1ba804bfa4d594f16bf4cfbcc6fca2be7b98b2d3651e7587a",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_11/right/parts",
+          "partSha256": {
+            "pelvis": "c443680dac64e132f558b30a5745daf83c4c5a865fb757581bf5a43151567894",
+            "torso": "5ab49dbcd0e717f4e8193585aa5a7f563c70704bb035b8a85387fb10fe353186",
+            "head": "5fcb3cd2e91c7d79e63fed5ba0e9a594a524d0fe7aac309e91af53204c19aa07",
+            "upper_arm_l": "0aadd53085107e4a3763cb9a4d204e8c0e804f453aa381b78c183934b0a865e8",
+            "forearm_l": "85f9e0e0e322b765a8ea0844f1b80b9367b0f9a41a85d73b2c4021f6e6bf2db5",
+            "hand_l": "cfc7dd4c8bf084849c7958c99943257640d31cbd8dda0991faa8eb185093ebae",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "82bd9192462f1e1a380eb4204a6399298f57465b6f4811d096af4140a2dd1e92",
+            "shin_l": "e50d5e2d55505c37ab0dc1b2b3a486d66254af8189ff137928d7517445877c59",
+            "foot_l": "52d40cda17836efd29e492381a5a198fec1cde5da4a0c2ca157b4f91dc84464e",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_11/up/rest.png",
+          "restSha256": "f30ee17536606dc556dde70f7afbf052f7b21ff29a9254790fee8d0fbfa21d35",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_11/up/parts",
+          "partSha256": {
+            "pelvis": "9e7fffc3c934071aec555b88a837b625768a6ee58f43b7d708f156f8f343409a",
+            "torso": "45cdf150db0821a37f3b0a040efea6bbfca48d36ff64414627fd00e3139085be",
+            "head": "13dd618efae760d574b4bf47870b4b46064be3b654d0d8dab7bf16316116e04e",
+            "upper_arm_l": "8de14ea203711bba26c913c5a43882324adbe7e41fa213eb94c87fd65e41e0c0",
+            "forearm_l": "510efd7f2dc75ed5e82fa205ab4e0b32ac0e26c03ca23fc284bf5129768845d1",
+            "hand_l": "baa598839605626ea2107702acee3751cb71a6656f9dc206846f3b1fb9f55443",
+            "upper_arm_r": "f1d99a65b4436ec784065bfc3161a015c94c39e5fd36d4aba167982f327f567c",
+            "forearm_r": "4c6bb33604b1a8763b26094ab7feb28c37f24b4abe212f0a630e49c85eb2ef9e",
+            "hand_r": "112b387b9c4ec8be7f846208d8cb2ce0e894a0fc5dbd5351da78f248e4acd751",
+            "thigh_l": "a30d03420fc31b96dfe569c7f0662542ef58158f0ae196acc70497f80edfc460",
+            "shin_l": "e0308c99ccede20d98242b74bf0ce3eb2776d5ac558c503296e0238910a9dc05",
+            "foot_l": "e0fb205ad8de744e79b38208bab43d8e4897e30e8de2602130cc87ceb656257e",
+            "thigh_r": "9afe04ec60b3017021d04af8d62d98534abc119f09c3cde994c6dc6e2c3fd440",
+            "shin_r": "9b8b69c27b515c6d0d9eec62418fb737c85d3db321d1246c7335f112ed4bf8b3",
+            "foot_r": "d5b5a9d99ad01793fdd075ce0102239991be17f92f82d4eb1459fcdb2f37e94f"
+          }
+        }
+      },
+      "residentId": "resident_bai_zhi_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/bai_zhi_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "d709c531433f8e6fca53e17169c68db1c77852daf3f1ce5527acdf61e74fd845"
+    },
+    {
+      "id": "look_12",
+      "appearanceId": "resident_wardrobe_v1:look_12",
+      "label": "闻叙 · 完整套装",
+      "headId": "tousled_brown",
+      "outfitId": "rust_work_jacket",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/wen_xu_front.png",
+      "portraitSha256": "8e0ea53f026d3d5fba417a3965a32e6d3182ab40739c312bf462bd8c3d4d4809",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_12/down/rest.png",
+          "restSha256": "33738eda3aedc524c1bdd77019bcac2877df6f29fd6411e1b379635bb9543391",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_12/down/parts",
+          "partSha256": {
+            "pelvis": "f09a05cfd64fc23ca5e40515f186ddbf36b1304a16e290cc99712c192c35b25b",
+            "torso": "ce3b68d733734b74493424e1afe8aa017a49c17cbe9d19664cb19c6db2baf6b6",
+            "head": "4167b279aeb69cd2fa44cb5da079f649ef5e2ad6429f99c9fc08cd8b54f0c494",
+            "upper_arm_l": "965c13cd0569652644679ff845a8cfbdf8c162978d67412ac8b7668b23802d01",
+            "forearm_l": "66aa504649d40da48aa43778bda12e4db4220e8c49f92b77eb5ed3852f9cc591",
+            "hand_l": "1f69aee0f2e0171556b790c8df676d23566ca8d50c71e6933ae5a8ef74f83c73",
+            "upper_arm_r": "e7d52cc5795a5875f366131985fffd8799e811f7c877cb0197b788ce00921162",
+            "forearm_r": "7ae6394b61fde66d75378701990d10406672431b656b87ef687eb8d538c4d1e5",
+            "hand_r": "a69cbf745e21324435ee3b3d5116978af7f4fc4f10a60b1257fbb45404950c33",
+            "thigh_l": "ec4941c3ed75ef35fdeb3cc9514712037670077b8ee4ff6d75e1b06b413eac89",
+            "shin_l": "9f731af943c04731c36fa6e2b786c6a5725eb057da67a7d42a70f2d5b6f8444e",
+            "foot_l": "f295e8450ce5e3d7e5cc3bf98de697138a14001238fbd1b004430af6e7775a52",
+            "thigh_r": "08345c4c96190498c9420e294aa983723493b9707ae65d0a775f6ce48d872684",
+            "shin_r": "7b4e1b41eaa98358972059fbf251b2f0421cb9b6ee735800a0b0d721f79d6cfa",
+            "foot_r": "9c91437a4e250ab450f9530b416301889d8ed4bf606fea26041f798fb949d876"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_12/right/rest.png",
+          "restSha256": "dd7e3ab86fce1c3b5a7edd06f8a96454cdf18c0e32ef8ed7b72ffa78105734f6",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_12/right/parts",
+          "partSha256": {
+            "pelvis": "3ad86467f4ef8577fb9d413fa831643da8a1e9409fc3740b48f154922721891e",
+            "torso": "bd743b58d365aef708b3dbad585a8fd4e801330ec695c2136e2f1ce7094c12ef",
+            "head": "09a10f674d38dd87d1cb598fd30a14b48fa6c7786e3d976eada51e0223f22cda",
+            "upper_arm_l": "ee7155bf980d0371817c1b6cdc83fdb3529aba4c8c88e676d009376aed850d1f",
+            "forearm_l": "59d2049472c2b7cea0c14a8ef0472854618d78c50227da140f8206189f64ad5e",
+            "hand_l": "67c3b5ab1b6fdd382ffb892dba8032e982abb4a716c7847d8c7efec80c6cd0b1",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "1fd7c8d2aaf3afbd7aff6fb77e5acab12a3821f00951d32eafd9714dc687d36d",
+            "shin_l": "a3d08b96a8034176de160c5cad7746e8b13da7c5ee6bc750451918276d83f717",
+            "foot_l": "2e13aca944f0f4ecd3f26c78abbb8c24f8125b495ce9c76eab5809e2031d2a89",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_12/up/rest.png",
+          "restSha256": "db1c93dfbff2c10c51a04c1452b08847fc5c06320c6b1161b4f4b1db5955d829",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_12/up/parts",
+          "partSha256": {
+            "pelvis": "f4da887bcafa410634775844e7fac7840333ae9b93facaa8434eb34407516f48",
+            "torso": "96304b890613d709fb74e82573a56564c0b328d075825fb35db6d15b746f890e",
+            "head": "ff1277bda0f64488f81c8d93466fc5dbe6bfa3601a1873f0eafb63920a334439",
+            "upper_arm_l": "51db3ed46d22d43db1b99214f5f790b21a139cde51c2b78d37b27b2f3410911a",
+            "forearm_l": "c80f0f70d30d3af3fdd03e21368a7c974de89a5caf3b97df3b9520b7bab79490",
+            "hand_l": "078b7b321ea294162704c4318de0113101df4e0eb9a85a91be1397788c73fb54",
+            "upper_arm_r": "5737d2db6b7e15dce1cb9d39bd8716a17f47f38d316d2669d5ea207763038ece",
+            "forearm_r": "9f6d317e3f79e47daa82bf37adc216642f33801d5511b16ca0ff05b5408912cf",
+            "hand_r": "e1bf1a1cfd284e237ddf7f5f0c3ec33841bb4931c6a06eb5c9526da20efccb2f",
+            "thigh_l": "4a2c606ae0c77f109f24dcc8e12265aefe5932b81e4b64aead90ca84af1fb553",
+            "shin_l": "5af10d620de64fc9e47c974f76e1f73960deba6e9caef4d595e44bce8cf700ae",
+            "foot_l": "ea78bdf9c5b812fdc04fb5ee2beccec86e9881e10a7988d263157b0b8e82e480",
+            "thigh_r": "e79e2b953829b9d653acba2c9b34ddaa627de72a61ef447609bb3ac4336d7891",
+            "shin_r": "32e6bb7c82779a08d384bc9d566ad8a99610b0d8d6dd488a45c5ed1eb364897d",
+            "foot_r": "ee1c76ed2ad504c91fcb88b184465207953f00ffa0c23114287e26ea20d98ced"
+          }
+        }
+      },
+      "residentId": "resident_wen_xu_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/wen_xu_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "19c5790e568fae6a456bd6794b6f4fd61fcf47e0f51390529a983feecde12ae6"
+    },
+    {
+      "id": "look_13",
+      "appearanceId": "resident_wardrobe_v1:look_13",
+      "label": "米芽 · 完整套装",
+      "headId": "warm_ponytail",
+      "outfitId": "navy_field_jacket",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/mi_ya_front.png",
+      "portraitSha256": "37fbedbfa50aec5d8b77e706f0c75b988a0d5a9541a7bb2b7bf7da32be7e8a34",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_13/down/rest.png",
+          "restSha256": "86b2438188255dcc6ee190177c0f397ce9cc66dcb5c8fdb9f1d296c32645ed51",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_13/down/parts",
+          "partSha256": {
+            "pelvis": "203c91d61f02a45d3ee668cb1f3cffb097d8ab264d2e388c862864f41b329475",
+            "torso": "708de5f0768f7fd58a57a6b9294f35af612bb88eb9cc5720495f0392eb66ad44",
+            "head": "04c80df071241677efc0bf7ab2f1a5a4d203e1200b71f712ca2cd80d70258e06",
+            "upper_arm_l": "f19cef5e791ec195e7f4a6699367c012537c54bf83c850f3cf3be47798b9178f",
+            "forearm_l": "a88be969b960b59b8401e1dee29baf99f5aff754a3670edfe23f72a26205549d",
+            "hand_l": "d833779d1fc0e4e2108fd2e911f66c00834002907983dca8019098d546460437",
+            "upper_arm_r": "cdeb1b5cbc060e5f8f7a7de4a5400344fd3898a33f228dd82c445be01a11b842",
+            "forearm_r": "de2e18744bc93b63ca1f01a2dce04e0290bef1945351e90420eeeb7af61417fd",
+            "hand_r": "79a463f34c940bc3516c2da1a9d300e575da20dac16af7f902352d36aadcf917",
+            "thigh_l": "cfe8b124546d6ea3d72702d0072fa1c9c60be4f6e05c0c56f436ed4fd8554361",
+            "shin_l": "5be3e774101488333b5e82de7d63b1eceec4650ee887da7e5ba6d68b9284facf",
+            "foot_l": "0d109186f2516e6f6fc5b3fc13ea6ce92368d0a2a4f0e2152083a174988e3336",
+            "thigh_r": "fde34d443b1e733012ca09e5c84c9ee0b58eb24bd0eaa8a591a93427f19fba98",
+            "shin_r": "3ac493fe266ac9ccf5d88800a806cc385ccf1643a7701b74ad7d75daa39a28ac",
+            "foot_r": "7f096c7fcbcbae24c916d52ad5fba109181c7febfbdd0a5df9bfa1e1510187c9"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_13/right/rest.png",
+          "restSha256": "786278addabe4ac8b4deff53acfb29e476c2aa85030a92362aea548a0bfb13d2",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_13/right/parts",
+          "partSha256": {
+            "pelvis": "c443680dac64e132f558b30a5745daf83c4c5a865fb757581bf5a43151567894",
+            "torso": "1f2deecf5cea4453d844e704835438898b704e3a5759b253ee092312770f87b8",
+            "head": "1afcc3d4d1c3e8738f9be5d69e8ae2724b754fbe145ae20e3f03e8b700029066",
+            "upper_arm_l": "0aadd53085107e4a3763cb9a4d204e8c0e804f453aa381b78c183934b0a865e8",
+            "forearm_l": "85f9e0e0e322b765a8ea0844f1b80b9367b0f9a41a85d73b2c4021f6e6bf2db5",
+            "hand_l": "cfc7dd4c8bf084849c7958c99943257640d31cbd8dda0991faa8eb185093ebae",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "82bd9192462f1e1a380eb4204a6399298f57465b6f4811d096af4140a2dd1e92",
+            "shin_l": "e50d5e2d55505c37ab0dc1b2b3a486d66254af8189ff137928d7517445877c59",
+            "foot_l": "52d40cda17836efd29e492381a5a198fec1cde5da4a0c2ca157b4f91dc84464e",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_13/up/rest.png",
+          "restSha256": "95b68f0e51f968795fd799a0407b6909ed377786f7064c30a963a6e828a275bf",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_13/up/parts",
+          "partSha256": {
+            "pelvis": "9e7fffc3c934071aec555b88a837b625768a6ee58f43b7d708f156f8f343409a",
+            "torso": "94a475c46de5bb29d8958e780b2759bf4b9ebc35f3696d8a4645e36c53663e9a",
+            "head": "bffdca3a7ef90efd4f198637de5814f928ab67b6ea9f3fadc20ea5b92d409f86",
+            "upper_arm_l": "81eb49def2f20076bd60e511232afee0b222ea8bb631d2471a81447f0213df18",
+            "forearm_l": "510efd7f2dc75ed5e82fa205ab4e0b32ac0e26c03ca23fc284bf5129768845d1",
+            "hand_l": "baa598839605626ea2107702acee3751cb71a6656f9dc206846f3b1fb9f55443",
+            "upper_arm_r": "31389ec2be14e494bea83e880d41195d672c993baa198c25ee99c9c0270316bf",
+            "forearm_r": "4c6bb33604b1a8763b26094ab7feb28c37f24b4abe212f0a630e49c85eb2ef9e",
+            "hand_r": "112b387b9c4ec8be7f846208d8cb2ce0e894a0fc5dbd5351da78f248e4acd751",
+            "thigh_l": "a30d03420fc31b96dfe569c7f0662542ef58158f0ae196acc70497f80edfc460",
+            "shin_l": "e0308c99ccede20d98242b74bf0ce3eb2776d5ac558c503296e0238910a9dc05",
+            "foot_l": "e0fb205ad8de744e79b38208bab43d8e4897e30e8de2602130cc87ceb656257e",
+            "thigh_r": "9afe04ec60b3017021d04af8d62d98534abc119f09c3cde994c6dc6e2c3fd440",
+            "shin_r": "9b8b69c27b515c6d0d9eec62418fb737c85d3db321d1246c7335f112ed4bf8b3",
+            "foot_r": "d5b5a9d99ad01793fdd075ce0102239991be17f92f82d4eb1459fcdb2f37e94f"
+          }
+        }
+      },
+      "residentId": "resident_mi_ya_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/mi_ya_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "9b2f5a0848db3a6901ce4a108204b815892a0e32a151d590c927743cc42e6adb"
+    },
+    {
+      "id": "look_14",
+      "appearanceId": "resident_wardrobe_v1:look_14",
+      "label": "程砚 · 完整套装",
+      "headId": "side_swept_brown",
+      "outfitId": "moss_knit_sweater",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/cheng_yan_front.png",
+      "portraitSha256": "041e3500b7f0bcf4e5049bb6e099588b3117300d48b70e7c0d10ffec41d0dc5c",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_14/down/rest.png",
+          "restSha256": "f1d01e71ee13eea6b72726e1d7896612ca842f393006c67b79fe048b5bb5eaa2",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_14/down/parts",
+          "partSha256": {
+            "pelvis": "2f7891364e14922838a63cbbf9561adb5b69f96dd836885b2b729a71298aeaae",
+            "torso": "79b205b1b6ba960cb491e9a9a6ba5b9b84e56377fc31a18f480e2fb0ce492d75",
+            "head": "553bc8bd251b8fb8c79106ba29a5cbb3a5019f51d25b845fd48e99bbee5f143c",
+            "upper_arm_l": "010ee6dfd15d9c316b8457c71b184d92e1830a03c46774975087fbaf8bfb607b",
+            "forearm_l": "26ace4a49308b5378f6c4c177f7d437117bc80a08c20a454263ba2b484766d95",
+            "hand_l": "c24d63d290576f8a5cea5420244a09f884718f4fce2d55d5c8bb6359998f2ca7",
+            "upper_arm_r": "9d31f8e8feec5165dbbc7c7ae85be4d31f82ce6c26c86c43edb10a9bdca27a34",
+            "forearm_r": "55e7caec5682c9f865f4442927296492425d58173ed471add91835388bc522f7",
+            "hand_r": "a8ce5d03d9af4656c51bb5e1eed295c623748eb8306a0eef684f6c1aa63daca5",
+            "thigh_l": "3f333e2e600a17b16da77bb4496d63f9d35be31052a8f9244b95b8402ea65f30",
+            "shin_l": "48f03a3d638e651f194ea75d5cc9a8cf732f7f2f6a8e736e99d42ee1c6c00693",
+            "foot_l": "734749fc3c50b68b0e33b2ba97942ae0e92633fe5e70f0e40e62536348b2933d",
+            "thigh_r": "4bbfc168377cf0f54f358fa9e637ed9467b7cb9ca853e5790eb0afcd0d40183c",
+            "shin_r": "e89acc7d87157d123728a735d5208581a71771690802a841b20ab7ce3ba83f49",
+            "foot_r": "c70ca0e2656c967f4212fbb19e7c111f249bd1a1bae995270e89dd3a959ac12c"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_14/right/rest.png",
+          "restSha256": "1ec6713622892fc95d86ecde87950fa5b313c8d0c77379f3ee13ab122862f6e4",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_14/right/parts",
+          "partSha256": {
+            "pelvis": "f0e1c4d1e6eff12a491153d99f19fc671f23e58770f9a56c4711095c4e996b7c",
+            "torso": "a86b75a024d6081b54d218051e306bc564b465d7131b8366980b994b5e3863a5",
+            "head": "30fab4b6ec4a237145d385082f2fba391b3957865a6ab287d959c2dd5d426fae",
+            "upper_arm_l": "3eae34dce564d54b5248e8e036f05896fa4e1545a572c75a4eba16f3c83687d5",
+            "forearm_l": "26edd0c7c745cc65b849ab461a25b9aa50ee34b9b213e24777b39459a1920fb9",
+            "hand_l": "a02dd915f315815dd30468521693cb34080c6d253468b5f362673de0b35f01e3",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "62800c0c2b96db41d07d3c00dec609933a01303554d72b3c422198a010baabd7",
+            "shin_l": "a272e7e01417795b0126e4300ed9c8f03a2566353573c33de9f805bd853140d1",
+            "foot_l": "272b772aa77fe970b6d5ce39ef4ef919a672374e28d2ec3b7d599140c64496af",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_14/up/rest.png",
+          "restSha256": "a9805e705b3061dc413c219e2b9eada24a61e2fab14001ecc116aec802118743",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_14/up/parts",
+          "partSha256": {
+            "pelvis": "f65731bfbf0868cd89e11ae582da9e8219e97dc6d4580e3c7a8f4973e60336ec",
+            "torso": "77ad79be92066004959af18f67cb83e4fc36724cb983a9a39fa09ce6de89732d",
+            "head": "76293a2001d9a48cf16380faad099378d9a4e196136e137826972762470936fa",
+            "upper_arm_l": "be5cd8637e2f5903fe28f72b0ecec19a4bb3e16feb72eb243bce9bfb2f4aa9fe",
+            "forearm_l": "4317e67cb317542d502fad29bd28133a7d6b50a0202d5a6fe19f615232e4d3d1",
+            "hand_l": "2b2e27bf169c822f3fb0b255fc7947b34f27a1df5a0fbdea944327e8d147293f",
+            "upper_arm_r": "6786e63bf054decd492280a25d8cc53516cd557b013684bf6e5127ddcbec9c51",
+            "forearm_r": "3a7bff0f2258a25168ec92ef889c72422ee0fe4cf982b525d8c9b9526c876ffa",
+            "hand_r": "48f10b2ba9514d404c27dd63529ad76ba2d161b81cd7b52c9be4d32d803586ca",
+            "thigh_l": "de494b6bd06c36f5340c9bbb0facec9979502a2d015c3e50304ebfce8e7b26af",
+            "shin_l": "b632ac01844ac5fba694f524accba1953a65e26162e4f0ee5762172df2002521",
+            "foot_l": "ad24eac2334e768bd4a22c6857763fc5dc073deba63679aac7d218d39d0ce50d",
+            "thigh_r": "59c5cd7df9b68510f5df506a974ee8ce5958626d53a0efe2dc92fc2a1e655a72",
+            "shin_r": "bf980c5daf7ce32aea4ffe8d662cffe42cd585f9c4c68d10a31562af5d0efddb",
+            "foot_r": "9123801e310dc542aae0ae11f4c2becf558c16e2ab56cfa6b163579a2f2ef15c"
+          }
+        }
+      },
+      "residentId": "resident_cheng_yan_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/cheng_yan_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "11f099a55599de5e97087910c8cbe9fee6542faade788620cb1d08157a57ecad"
+    },
+    {
+      "id": "look_15",
+      "appearanceId": "resident_wardrobe_v1:look_15",
+      "label": "沈桥 · 完整套装",
+      "headId": "side_swept_brown",
+      "outfitId": "teal_town_jacket",
+      "portraitPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/runtime_portraits/shen_qiao_front.png",
+      "portraitSha256": "3a897d9cf76e1d93b8f4abbf499baae8f4014ee2b649a046d58d57187c6188e7",
+      "directions": {
+        "down": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_15/down/rest.png",
+          "restSha256": "4bc839e0c7ae1f3a86e80b534892a3d0bbde81bb92859f904828d072877ade35",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_15/down/parts",
+          "partSha256": {
+            "pelvis": "ed56405b0bec923a06aa17467b089ff0dd9701d4befeff8d19e59ccadd83ec17",
+            "torso": "a5274af414f0e711e144bcedf8870ce991aa2cb08b0e0b83a87e6b27d0f107de",
+            "head": "a33e1e13ac0ad2bbfb3d82c5e7565dd2746aef5a81fa5c0ff67773c9e8d7ac90",
+            "upper_arm_l": "ceb0bb4b9aa59261491a3d2cae389d6c166568932497369d6193e0a876901afa",
+            "forearm_l": "f0f3a7df7a7a64e23252a722f605cf53e2875c24ccbb6d673b824ae7773ed640",
+            "hand_l": "27d5a3722ce83c402296b28a31b06565d303deac795a5c789c1d0c77a64bad0e",
+            "upper_arm_r": "abcdf600630eb049a67b76ba2a3260aab1d7d507e89e06eb2da0f502e492e6ac",
+            "forearm_r": "5d542165bcdfcc8e45322c3dfc135671861af0b595c946f29b08ac59393300b5",
+            "hand_r": "03b427a4642bfeae2a21afaa65457a0cd604b3fc2c21e5f126177f84b2ee545b",
+            "thigh_l": "e261a8602b6eb45920a9413a8cfcd5a58df63b18f5e526de08eb142ca1e1470c",
+            "shin_l": "a5ed542b72f2200f1bc00762dc74a3c6d63999742d48e35b654bf52c88acb0d7",
+            "foot_l": "e9579de84ff4236f64ac6c86e292edd4afaee4a66682bbc05150dc568a53d3c8",
+            "thigh_r": "b84d979b05cc0e1909795647b10be045b1ea2da8de38b946d9443bcb1a87e662",
+            "shin_r": "b7060cbde0e150a45d3e2b6afd324e18aec7f69fa5f966000626d3d35edececb",
+            "foot_r": "674e665990ab41e8f9bbacc1564c1ad514736750a7eee910fdebc88ce656f740"
+          }
+        },
+        "right": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_15/right/rest.png",
+          "restSha256": "0154a7428b690cdbea1c9c2c22f4253668423937b69375082f104787979c0c84",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_15/right/parts",
+          "partSha256": {
+            "pelvis": "edf5444fb5de736f6fcb4140db47ced72ccb39348ff675ff71ddbbd1da4727ce",
+            "torso": "3f186f0a9140b88c1eb8283f8f659999b3b13ebed172b5ea914699795fdacf8c",
+            "head": "30fab4b6ec4a237145d385082f2fba391b3957865a6ab287d959c2dd5d426fae",
+            "upper_arm_l": "52903ce847eedad3be4209b0831253428a2c6aa3e8332df953adc29b2f2dbcbc",
+            "forearm_l": "957a0bb4e3836dc8c7a42ca0acba5cba9d78a1c4651d3b0eb83b50ae4cdfb488",
+            "hand_l": "b496cad226a518df9ed41711a56a06413f9d1bcc3c197dc466e7d1fbe90b7731",
+            "upper_arm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "forearm_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "hand_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "thigh_l": "035b4586b3a680cd1b94faf6276aa627b9ae4ffcdb042a8f578e653ad5a3ef79",
+            "shin_l": "11dbd80f3527d598f3650006b04b1b9ac93464aec14509073feed3a0859165d0",
+            "foot_l": "e87a0e1093b894b3f9c245a805dd8feee904a1d1b1d963cbf636f2788adc2998",
+            "thigh_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "shin_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857",
+            "foot_r": "80d76f90a36584948a27bffd43d784ae30ea0195ca8655dabccae04009b35857"
+          }
+        },
+        "up": {
+          "restPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_15/up/rest.png",
+          "restSha256": "f7cb37b6091ddf6ec9a66403646d1c969fcb0a068bd6142dc4689744eaca5a03",
+          "partsRoot": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/loadouts/look_15/up/parts",
+          "partSha256": {
+            "pelvis": "6ceacc0716596c17bab9e0d4705cdb42f33fa8bbebe70244f1418d16ff3e3419",
+            "torso": "29001b90b7f048a12769d2adac5655c87028e576e9adf01281a26bdcff5749ae",
+            "head": "c3ca6b0d2a3b280d47d2a24895ad984ecd57b59a37d09b4489272a4a9911aa17",
+            "upper_arm_l": "b74cd8a25b081c60f79e2cfae7fc451480155027c88a37492938cba9495901fa",
+            "forearm_l": "3d78fdde189c2af575f01a1fc7ce34b0d399b4023ae25ca557a53e336ba1d870",
+            "hand_l": "6d6c4ac0d778c68ee5dbf902015657d6a70520522b6b46af15e5bd7c17e70d24",
+            "upper_arm_r": "7d3703f3506ce3a1c38ff35f2b1c5c1485b9a697ffdce4c909d9ab54487bdba1",
+            "forearm_r": "883409a18aafe97c1c6a85b3f61fde47a17a901537157ff9d396d801ba4774c2",
+            "hand_r": "cc7c2cc3ce3fe3d048c0e328adc8a439dc721b1097186b9a2dac461b892101e5",
+            "thigh_l": "a2629feea28d7ae001ebd076018b63533008147b4f453543e4c841c5a99a3910",
+            "shin_l": "cb95782a88c62695d4220a5d1113aded8fb01d6c7b642718dc4a48d077f5a3c3",
+            "foot_l": "02c3f7b777745ba323a214cfe66465c9fbce4629683318c194face45a106583f",
+            "thigh_r": "e588e9ab9c798fbe6981b338e588d4e1164c425ee1751eb39c914f169f9fe495",
+            "shin_r": "b04ac0b6eeaf2a78657d40dd6479a2e85ea891f3e10e66fcc2a00ef611796e43",
+            "foot_r": "ffd51cad68076d99bae0fa489289261c24c3e7d0c013ef95aa76d3fdd63a3cd6"
+          }
+        }
+      },
+      "residentId": "resident_shen_qiao_01",
+      "spriteSheetPath": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/classic_sets/sheets/shen_qiao_walk4_3dir_v1_alpha.png",
+      "spriteSheetSha256": "462d93b371894518f75e257b0f6e6cb294b8540275a32077ced11f807e86b36f"
+    }
+  ],
+  "residentAssignments": {
+    "resident_hanako_01": "look_00",
+    "resident_lin_lan_01": "look_01",
+    "resident_xu_zhao_01": "look_02",
+    "resident_zhou_jiming_01": "look_03",
+    "resident_tang_xiaoman_01": "look_04",
+    "resident_luo_yuan_01": "look_05",
+    "resident_jiang_cheng_01": "look_06",
+    "resident_qiao_yiming_01": "look_07",
+    "resident_su_tang_01": "look_08",
+    "resident_lu_qingzhou_01": "look_09",
+    "resident_xie_mian_01": "look_10",
+    "resident_bai_zhi_01": "look_11",
+    "resident_wen_xu_01": "look_12",
+    "resident_mi_ya_01": "look_13",
+    "resident_cheng_yan_01": "look_14",
+    "resident_shen_qiao_01": "look_15"
+  },
+  "legacyAppearanceAliases": {
+    "paper_doll_64:energetic_ponytail": "look_00",
+    "paper_doll_64:neutral_hoodie": "look_01",
+    "paper_doll_64:skirt_woman": "look_02",
+    "paper_doll_64:suit_man": "look_03",
+    "paper_doll_64:street_creator": "look_04",
+    "paper_doll_64:elder_man": "look_05"
+  },
+  "approvedSources": {
+    "down": {
+      "path": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/sources/down.png",
+      "sha256": "a83632422f5b15e4ffe65cccfc7cc034981a979316e45c3e67f510731539f102"
+    },
+    "right": {
+      "path": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/sources/right.png",
+      "sha256": "d6eaa2cbdc69d99d701d0e5c2c44eb3d0ab4632ca7d5c274c1db0bd41682167d"
+    },
+    "up_cell_0": {
+      "path": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/sources/up_cell_0.png",
+      "sha256": "35db1ce209678c5592f4826fe030d1d5072de99bec616a70cce80d633398bfb5"
+    },
+    "up_cells_1_3": {
+      "path": "res://assets/characters/resident_2d_rig_v1/wardrobe_v1/sources/up_cells_1_3.png",
+      "sha256": "d3b167f4f246ab9928c361733996161ea9975b92852f5501506ae778a3a8af1e"
+    }
+  },
+  "portraitPolicy": {
+    "kind": "true_bust_portrait",
+    "contains": [
+      "head",
+      "shoulders",
+      "upper_torso"
+    ],
+    "forbids": [
+      "full_body_thumbnail"
+    ],
+    "size": [
+      256,
+      256
+    ],
+    "background": "transparent",
+    "frameOwner": "ui_asset_slot"
+  },
+  "slotThumbnailPolicy": {
+    "kind": "approved_front_slot_artwork",
+    "forbids": [
+      "resident_body",
+      "face",
+      "expression",
+      "full_loadout"
+    ],
+    "size": [
+      256,
+      192
+    ],
+    "background": "transparent",
+    "frameOwner": "wardrobe_item_slot"
+  },
+  "selectionMode": "complete_set_only",
+  "spriteSheetLayout": {
+    "frameSize": [
+      512,
+      512
+    ],
+    "columnCount": 3,
+    "rowCount": 4,
+    "directionColumns": {
+      "down": 0,
+      "left": 1,
+      "right": 1,
+      "up": 2
+    },
+    "rightMirrorsLeft": true,
+    "idleFrame": 0,
+    "walkFrameCount": 4,
+    "frameDurationSeconds": 0.15
+  }
+}

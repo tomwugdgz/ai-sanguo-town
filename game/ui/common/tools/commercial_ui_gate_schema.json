@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "gateId": "ui.common.commercial-candidate-preflight",
+  "thresholds": {
+    "safePaddingLogicalMinimum": 8,
+    "safePaddingLineHeightRatio": 0.25,
+    "lineGapLogicalMinimum": 2,
+    "lineGapLineHeightRatio": 0.125,
+    "bodyContrastMinimum": 4.5,
+    "largeTextContrastMinimum": 3.0,
+    "nonTextContrastMinimum": 3.0,
+    "touchTargetLogicalMinimum": [48, 48],
+    "touchTargetGapLogicalMinimum": 8,
+    "copyExpansion": 1.3,
+    "copyExpansionMode": "length"
+  },
+  "requiredOperationStates": [
+    "idle",
+    "loading",
+    "success",
+    "rejected",
+    "error",
+    "disabled"
+  ],
+  "requiredCopyCases": [
+    "short",
+    "regular",
+    "long",
+    "two_line",
+    "error"
+  ],
+  "requiredViewportCases": [
+    {
+      "id": "desktop_1920x1080",
+      "logicalSize": [1920, 1080],
+      "physicalScale": [1, 1],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "desktop_1280x720",
+      "logicalSize": [1280, 720],
+      "physicalScale": [1, 1],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "desktop_1440x900",
+      "logicalSize": [1440, 900],
+      "physicalScale": [1, 1],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "desktop_2560x1080",
+      "logicalSize": [2560, 1080],
+      "physicalScale": [1, 1],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "desktop_4x3_1600x1200",
+      "logicalSize": [1600, 1200],
+      "physicalScale": [1, 1],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "browser_zoom_125",
+      "logicalSize": [1536, 864],
+      "physicalScale": [1.25, 1.25],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "browser_zoom_150",
+      "logicalSize": [1280, 720],
+      "physicalScale": [1.5, 1.5],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "browser_zoom_200",
+      "logicalSize": [960, 540],
+      "physicalScale": [2, 2],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "windows_scale_100",
+      "logicalSize": [1920, 1080],
+      "physicalScale": [1, 1],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "windows_scale_125",
+      "logicalSize": [1536, 864],
+      "physicalScale": [1.25, 1.25],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "windows_scale_150",
+      "logicalSize": [1280, 720],
+      "physicalScale": [1.5, 1.5],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "windows_scale_200",
+      "logicalSize": [960, 540],
+      "physicalScale": [2, 2],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "retina_2x",
+      "logicalSize": [1280, 720],
+      "physicalScale": [2, 2],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "window_live_resize_1024x768",
+      "logicalSize": [1024, 768],
+      "physicalScale": [1, 1],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "mouse_keyboard"
+    },
+    {
+      "id": "gamepad_focus",
+      "logicalSize": [1920, 1080],
+      "physicalScale": [1, 1],
+      "safeInsets": [0, 0, 0, 0],
+      "input": "gamepad"
+    },
+    {
+      "id": "mobile_landscape_safe",
+      "logicalSize": [844, 390],
+      "physicalScale": [3, 3],
+      "safeInsets": [47, 0, 47, 21],
+      "input": "touch"
+    },
+    {
+      "id": "mobile_portrait_safe",
+      "logicalSize": [390, 844],
+      "physicalScale": [3, 3],
+      "safeInsets": [0, 47, 0, 34],
+      "input": "touch"
+    }
+  ]
+}

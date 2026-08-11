@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "source_revision": "home_template_a_storage_cabinet_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "storage_cabinet",
+  "label": "双门收纳柜",
+  "room_id": "home_template_a",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 96,
+    "depth": 20,
+    "height": 192
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/storage_cabinet/frames/storage_cabinet_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/storage_cabinet/frames/storage_cabinet_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/storage_cabinet/frames/storage_cabinet_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/storage_cabinet/frames/storage_cabinet_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      156,
+      249
+    ],
+    "right": [
+      154,
+      249
+    ],
+    "up": [
+      156,
+      249
+    ],
+    "left": [
+      151,
+      249
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -48,
+          -20
+        ],
+        [
+          48,
+          -20
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          -48,
+          0
+        ]
+      ]
+    ],
+    "polygons_by_direction_px": {
+      "down": [[[-48, -20], [48, -20], [48, 0], [-48, 0]]],
+      "right": [[[-32, -20], [32, -20], [32, 0], [-32, 0]]],
+      "up": [[[-48, -20], [48, -20], [48, 0], [-48, 0]]],
+      "left": [[[-32, -20], [32, -20], [32, 0], [-32, 0]]]
+    }
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -84,
+        -190
+      ],
+      [
+        85,
+        -190
+      ],
+      [
+        85,
+        1
+      ],
+      [
+        -84,
+        1
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-84, -190], [85, -190], [85, 1], [-84, 1]],
+      "right": [[-49, -191], [48, -191], [48, 0], [-49, 0]],
+      "up": [[-84, -192], [85, -192], [85, 0], [-84, 0]],
+      "left": [[-48, -192], [48, -192], [48, 0], [-48, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "store_items",
+      "kind": "store",
+      "position_px": [
+        0,
+        32
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_a/FURNITURE_PLAN.md",
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_a/layout_concepts/home_01_layout_concept_v1/home_01_furniture_layout_concept_candidate_a.png"
+    ],
+    "source_record": "game/world/maps/town/interiors/redesign_v2/rooms/home_template_a/assets/furniture/storage_cabinet/candidate_a_room_batch/SOURCE_RECORD.json"
+  }
+}

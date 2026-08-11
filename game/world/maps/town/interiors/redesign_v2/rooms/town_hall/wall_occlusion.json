@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "source_revision": "town_hall_runtime_v1_geometry_wall_reveal_v3_local_bays",
+  "room_id": "town_hall",
+  "canvas_size_px": [
+    1254,
+    1254
+  ],
+  "segments": [
+    {
+      "id": "south_foreground_left_outer",
+      "foreground_polygon_canvas_px": [
+        [
+          37,
+          849
+        ],
+        [
+          202,
+          849
+        ],
+        [
+          202,
+          979
+        ],
+        [
+          86,
+          979
+        ],
+        [
+          86,
+          998
+        ],
+        [
+          37,
+          998
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            83,
+            851
+          ],
+          [
+            202,
+            851
+          ],
+          [
+            202,
+            883
+          ],
+          [
+            83,
+            883
+          ]
+        ]
+      ],
+      "fade_distance_px": 12,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_foreground_left_middle",
+      "foreground_polygon_canvas_px": [
+        [
+          202,
+          849
+        ],
+        [
+          356,
+          849
+        ],
+        [
+          356,
+          979
+        ],
+        [
+          236,
+          979
+        ],
+        [
+          236,
+          998
+        ],
+        [
+          202,
+          998
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            202,
+            851
+          ],
+          [
+            356,
+            851
+          ],
+          [
+            356,
+            883
+          ],
+          [
+            202,
+            883
+          ]
+        ]
+      ],
+      "fade_distance_px": 12,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_foreground_left_inner",
+      "foreground_polygon_canvas_px": [
+        [
+          356,
+          849
+        ],
+        [
+          531,
+          849
+        ],
+        [
+          531,
+          1072
+        ],
+        [
+          500,
+          1072
+        ],
+        [
+          500,
+          1040
+        ],
+        [
+          392,
+          1040
+        ],
+        [
+          392,
+          1072
+        ],
+        [
+          356,
+          1072
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            356,
+            851
+          ],
+          [
+            531,
+            851
+          ],
+          [
+            531,
+            883
+          ],
+          [
+            356,
+            883
+          ]
+        ],
+        [
+          [
+            595,
+            915
+          ],
+          [
+            627,
+            915
+          ],
+          [
+            627,
+            947
+          ],
+          [
+            595,
+            947
+          ]
+        ]
+      ],
+      "fade_distance_px": 12,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_foreground_right_inner",
+      "foreground_polygon_canvas_px": [
+        [
+          691,
+          849
+        ],
+        [
+          870,
+          849
+        ],
+        [
+          870,
+          1072
+        ],
+        [
+          833,
+          1072
+        ],
+        [
+          833,
+          1040
+        ],
+        [
+          724,
+          1040
+        ],
+        [
+          724,
+          1072
+        ],
+        [
+          691,
+          1072
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            691,
+            851
+          ],
+          [
+            870,
+            851
+          ],
+          [
+            870,
+            883
+          ],
+          [
+            691,
+            883
+          ]
+        ],
+        [
+          [
+            595,
+            915
+          ],
+          [
+            627,
+            915
+          ],
+          [
+            627,
+            947
+          ],
+          [
+            595,
+            947
+          ]
+        ]
+      ],
+      "fade_distance_px": 12,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_foreground_right_middle",
+      "foreground_polygon_canvas_px": [
+        [
+          870,
+          849
+        ],
+        [
+          1013,
+          849
+        ],
+        [
+          1013,
+          979
+        ],
+        [
+          870,
+          979
+        ],
+        [
+          870,
+          1072
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            870,
+            851
+          ],
+          [
+            1013,
+            851
+          ],
+          [
+            1013,
+            883
+          ],
+          [
+            870,
+            883
+          ]
+        ]
+      ],
+      "fade_distance_px": 12,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_foreground_right_outer",
+      "foreground_polygon_canvas_px": [
+        [
+          1013,
+          849
+        ],
+        [
+          1217,
+          849
+        ],
+        [
+          1217,
+          998
+        ],
+        [
+          1166,
+          998
+        ],
+        [
+          1166,
+          979
+        ],
+        [
+          1047,
+          979
+        ],
+        [
+          1047,
+          998
+        ],
+        [
+          1013,
+          998
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            1013,
+            851
+          ],
+          [
+            1171,
+            851
+          ],
+          [
+            1171,
+            883
+          ],
+          [
+            1013,
+            883
+          ]
+        ]
+      ],
+      "fade_distance_px": 12,
+      "minimum_alpha": 0.15
+    }
+  ]
+}

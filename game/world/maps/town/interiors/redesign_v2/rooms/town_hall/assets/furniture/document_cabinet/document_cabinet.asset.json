@@ -1,0 +1,135 @@
+{
+  "schema_version": 2,
+  "source_revision": "town_hall_document_cabinet_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "document_cabinet",
+  "label": "镇公所档案文件柜",
+  "room_id": "town_hall",
+  "canonical_direction": "down",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 160,
+    "depth": 64,
+    "height": 192
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/document_cabinet/frames/document_cabinet_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/document_cabinet/frames/document_cabinet_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/document_cabinet/frames/document_cabinet_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/document_cabinet/frames/document_cabinet_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      106,
+      158
+    ],
+    "right": [
+      133,
+      102
+    ],
+    "up": [
+      106,
+      46
+    ],
+    "left": [
+      68,
+      102
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -64,
+          -12
+        ],
+        [
+          64,
+          -12
+        ],
+        [
+          64,
+          0
+        ],
+        [
+          -64,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -4,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -80,
+        -112
+      ],
+      [
+        80,
+        -112
+      ],
+      [
+        80,
+        -32
+      ],
+      [
+        -80,
+        -32
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-62, -112], [62, -112], [62, 0], [-62, 0]],
+      "right": [[-65, -56], [0, -56], [0, 56], [-65, 56]],
+      "up": [[-62, 0], [62, 0], [62, 113], [-62, 113]],
+      "left": [[0, -56], [65, -56], [65, 57], [0, 57]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "records",
+      "kind": "store",
+      "position_px": [
+        0,
+        32
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "res://world/maps/town/interiors/assets/indoor_town_hall_shell_v1.png",
+      "res://world/maps/town/interiors/town_hall/assets/concepts/town_hall_layout_warm_v1.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/document_cabinet/candidate_a_room_batch_v1/SOURCE_RECORD.json"
+  },
+  "direction_visual_policy": "strict_four_direction",
+  "direction_visual_policy_revision": "furniture_direction_visual_policy_v1"
+}

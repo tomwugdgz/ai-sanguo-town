@@ -1,0 +1,124 @@
+{
+  "asset_id": "wooden_chair",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -22,
+          -40
+        ],
+        [
+          22,
+          -40
+        ],
+        [
+          26,
+          -8
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          -22,
+          0
+        ],
+        [
+          -26,
+          -8
+        ]
+      ]
+    ]
+  },
+  "interaction_anchor": [
+    {
+      "actor_facing": "down",
+      "capacity": 1,
+      "id": "seat",
+      "kind": "sit",
+      "position_px": [
+        0,
+        -20
+      ]
+    }
+  ],
+  "label": "咖啡馆复用朴素深木色单人木椅",
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -28,
+        -106
+      ],
+      [
+        28,
+        -106
+      ],
+      [
+        28,
+        0
+      ],
+      [
+        -28,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-28, -106], [28, -106], [28, 0], [-28, 0]],
+      "right": [[-28, -106], [28, -106], [28, 0], [-28, 0]],
+      "up": [[-28, -85], [28, -85], [28, 0], [-28, 0]],
+      "left": [[-28, -105], [28, -105], [28, 0], [-28, 0]]
+    }
+  },
+  "occupied_cells": {
+    "cells": [[0, 0], [1, 0], [0, 1], [1, 1]],
+    "origin2": [
+      -2,
+      -4
+    ]
+  },
+  "physical_size_px": {
+    "depth": 40,
+    "height": 96,
+    "width": 52
+  },
+  "pixel_cluster_size": 3,
+  "projection_revision": "interior_projection_v1",
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/wooden_chair/candidate_e_from_d_shared_integer_scale/production_candidate/wooden_chair.asset.json",
+      "docs/design/pipelines/indoor_handoffs/home_template_b.md",
+      "docs/design/pipelines/indoor_handoffs/cafe.md"
+    ],
+    "source_record": "../REUSE_RECORD.json"
+  },
+  "room_id": "cafe",
+  "schema_version": 2,
+  "source_revision": "cafe_wooden_chair_continuous_support_anchor_v3",
+  "visual_anchor": {
+    "down": [
+      113,
+      156
+    ],
+    "left": [
+      92,
+      139
+    ],
+    "right": [
+      95,
+      156
+    ],
+    "up": [
+      114,
+      132
+    ]
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/wooden_chair/frames/wooden_chair_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/wooden_chair/frames/wooden_chair_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/wooden_chair/frames/wooden_chair_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/cafe/assets/furniture/wooden_chair/frames/wooden_chair_left.png"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "loadoutId": "master_64",
+  "displayName": "64px 无表情动作母版",
+  "previewOnly": true,
+  "frame": [
+    64,
+    80
+  ],
+  "visibleHeight": 64,
+  "root": [
+    32,
+    72
+  ],
+  "sheet": [
+    256,
+    320
+  ],
+  "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+  ],
+  "directionRows": {
+    "down": 0,
+    "right": 1,
+    "up": 2,
+    "left": 3
+  },
+  "poses": [
+    "neutral",
+    "step_left",
+    "step_right"
+  ],
+  "columnSequence": [
+    "neutral",
+    "step_right",
+    "neutral",
+    "step_left"
+  ],
+  "frameDurationMs": 200,
+  "filter": "nearest",
+  "mipmaps": false,
+  "runtimeMode": "precompiled_single_sprite_atlas",
+  "atlas": "assets/characters/paper_doll_64/compiled/master_64_walk_64.png",
+  "sourceProvenance": {
+    "contractSha256": "A3DB56CAB28515A0AEC00BC0C18261A363BD6C63E6A345A4E21766F695703850",
+    "sheetSha256ByDirection": {
+      "down": "E3006A0609E143B2233F0E47B1ED2E4E31C8DF57BFA6F7021727A5CCCA2F5B05",
+      "right": "4ABC19677E6B20FBEB4ECFC00F2D08FF791D3851BB101705E26F939CDAA5EBDF",
+      "up": "1D1F50CF0334D5226DA9A74D52489707CBBE095D89A231E6F70EBF0C56C0236A"
+    }
+  }
+}

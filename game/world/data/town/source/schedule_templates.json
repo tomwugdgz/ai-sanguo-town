@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "worldId": "town",
+  "scheduleContract": {
+    "minuteRange": [0, 1440],
+    "windowBoundary": "start_inclusive_end_exclusive",
+    "windowOrdering": "authored_start_then_window_id",
+    "output": "goal_pressure_only",
+    "planOwner": "resident_agent",
+    "publicActivityOperation": "activity.perform",
+    "generatedPlanFields": []
+  },
+  "scheduleTemplates": [
+    {
+      "scheduleTemplateId": "schedule_day_care",
+      "label": "日间诊疗",
+      "role": "worker",
+      "windows": [
+        {
+          "windowId": "window_care_morning",
+          "startMinute": 570,
+          "endMinute": 750,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 70
+          },
+          "activityTagsAny": ["care.medicine"]
+        },
+        {
+          "windowId": "window_care_afternoon",
+          "startMinute": 870,
+          "endMinute": 1140,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 65
+          },
+          "activityTagsAny": ["care.medicine"]
+        }
+      ]
+    },
+    {
+      "scheduleTemplateId": "schedule_day_civic",
+      "label": "日间镇务",
+      "role": "worker",
+      "windows": [
+        {
+          "windowId": "window_civic_morning",
+          "startMinute": 570,
+          "endMinute": 750,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 65
+          },
+          "activityTagsAny": ["civic.records"]
+        },
+        {
+          "windowId": "window_civic_afternoon",
+          "startMinute": 870,
+          "endMinute": 1140,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 60
+          },
+          "activityTagsAny": ["civic.records"]
+        }
+      ]
+    },
+    {
+      "scheduleTemplateId": "schedule_day_craft",
+      "label": "日间手工",
+      "role": "worker",
+      "windows": [
+        {
+          "windowId": "window_craft_morning",
+          "startMinute": 570,
+          "endMinute": 750,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 70
+          },
+          "activityTagsAny": [
+            "craft.woodwork",
+            "craft.assembly",
+            "craft.metalwork",
+            "craft.materials"
+          ]
+        },
+        {
+          "windowId": "window_craft_afternoon",
+          "startMinute": 870,
+          "endMinute": 1140,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 70
+          },
+          "activityTagsAny": [
+            "craft.woodwork",
+            "craft.assembly",
+            "craft.metalwork",
+            "craft.materials"
+          ]
+        }
+      ]
+    },
+    {
+      "scheduleTemplateId": "schedule_day_food_service",
+      "label": "日间供餐",
+      "role": "worker",
+      "windows": [
+        {
+          "windowId": "window_food_prepare_lunch",
+          "startMinute": 570,
+          "endMinute": 750,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 80
+          },
+          "activityTagsAny": ["food.prepare", "food.serve", "food.clean", "baking.prepare"]
+        },
+        {
+          "windowId": "window_food_lunch_service",
+          "startMinute": 750,
+          "endMinute": 870,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 90
+          },
+          "activityTagsAny": ["food.prepare", "food.serve", "food.clean", "baking.prepare"]
+        },
+        {
+          "windowId": "window_food_afternoon_close",
+          "startMinute": 870,
+          "endMinute": 1200,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 55
+          },
+          "activityTagsAny": ["food.prepare", "food.serve", "food.clean", "baking.prepare"]
+        }
+      ]
+    },
+    {
+      "scheduleTemplateId": "schedule_day_harbor",
+      "label": "港口早班",
+      "role": "worker",
+      "windows": [
+        {
+          "windowId": "window_harbor_morning",
+          "startMinute": 480,
+          "endMinute": 750,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 80
+          },
+          "activityTagsAny": [
+            "fishing.harvest",
+            "logistics.cargo",
+            "logistics.inventory"
+          ]
+        },
+        {
+          "windowId": "window_harbor_afternoon",
+          "startMinute": 870,
+          "endMinute": 1140,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 55
+          },
+          "activityTagsAny": [
+            "fishing.harvest",
+            "logistics.cargo",
+            "logistics.inventory"
+          ]
+        }
+      ]
+    },
+    {
+      "scheduleTemplateId": "schedule_day_library",
+      "label": "日间图书馆",
+      "role": "worker",
+      "windows": [
+        {
+          "windowId": "window_library_morning",
+          "startMinute": 570,
+          "endMinute": 750,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 60
+          },
+          "activityTagsAny": ["library.shelve"]
+        },
+        {
+          "windowId": "window_library_afternoon",
+          "startMinute": 870,
+          "endMinute": 1140,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 65
+          },
+          "activityTagsAny": ["library.shelve"]
+        }
+      ]
+    },
+    {
+      "scheduleTemplateId": "schedule_day_logistics",
+      "label": "仓库早班",
+      "role": "worker",
+      "windows": [
+        {
+          "windowId": "window_logistics_morning",
+          "startMinute": 480,
+          "endMinute": 750,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 75
+          },
+          "activityTagsAny": [
+            "logistics.inventory",
+            "logistics.cargo"
+          ]
+        },
+        {
+          "windowId": "window_logistics_afternoon",
+          "startMinute": 870,
+          "endMinute": 1140,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 60
+          },
+          "activityTagsAny": [
+            "logistics.inventory",
+            "logistics.cargo"
+          ]
+        }
+      ]
+    },
+    {
+      "scheduleTemplateId": "schedule_day_service",
+      "label": "日间接待服务",
+      "role": "worker",
+      "windows": [
+        {
+          "windowId": "window_service_morning",
+          "startMinute": 570,
+          "endMinute": 750,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 65
+          },
+          "activityTagsAny": ["drink.prepare", "cafe.service"]
+        },
+        {
+          "windowId": "window_service_afternoon",
+          "startMinute": 870,
+          "endMinute": 1140,
+          "role": "worker",
+          "goalPressure": {
+            "goalId": "occupation_activity",
+            "weight": 65
+          },
+          "activityTagsAny": ["drink.prepare", "cafe.service"]
+        }
+      ]
+    },
+    {
+      "scheduleTemplateId": "schedule_day_arts",
+      "label": "日间创作与表演",
+      "role": "worker",
+      "windows": [
+        {
+          "windowId": "window_arts_morning", "startMinute": 570, "endMinute": 750,
+          "role": "worker",
+          "goalPressure": {"goalId": "occupation_activity", "weight": 60},
+          "activityTagsAny": ["music.perform"]
+        },
+        {
+          "windowId": "window_arts_afternoon", "startMinute": 870, "endMinute": 1140,
+          "role": "worker",
+          "goalPressure": {"goalId": "occupation_activity", "weight": 60},
+          "activityTagsAny": ["music.perform"]
+        }
+      ]
+    },
+    {
+      "scheduleTemplateId": "schedule_day_delivery",
+      "label": "日间投递",
+      "role": "worker",
+      "windows": [
+        {
+          "windowId": "window_delivery_morning", "startMinute": 480, "endMinute": 750,
+          "role": "worker",
+          "goalPressure": {"goalId": "occupation_activity", "weight": 70},
+          "activityTagsAny": ["mail.delivery", "logistics.cargo"]
+        },
+        {
+          "windowId": "window_delivery_afternoon", "startMinute": 870, "endMinute": 1140,
+          "role": "worker",
+          "goalPressure": {"goalId": "occupation_activity", "weight": 55},
+          "activityTagsAny": ["mail.delivery", "logistics.cargo"]
+        }
+      ]
+    },
+    {
+      "scheduleTemplateId": "schedule_day_garden",
+      "label": "日间花园工作",
+      "role": "worker",
+      "windows": [
+        {
+          "windowId": "window_garden_morning", "startMinute": 480, "endMinute": 750,
+          "role": "worker",
+          "goalPressure": {"goalId": "occupation_activity", "weight": 70},
+          "activityTagsAny": ["plant.study", "garden.care"]
+        },
+        {
+          "windowId": "window_garden_afternoon", "startMinute": 870, "endMinute": 1140,
+          "role": "worker",
+          "goalPressure": {"goalId": "occupation_activity", "weight": 55},
+          "activityTagsAny": ["plant.study", "garden.care"]
+        }
+      ]
+    },
+    {
+      "scheduleTemplateId": "schedule_day_retail",
+      "label": "日间摊铺经营",
+      "role": "worker",
+      "windows": [
+        {
+          "windowId": "window_retail_morning", "startMinute": 570, "endMinute": 750,
+          "role": "worker",
+          "goalPressure": {"goalId": "occupation_activity", "weight": 65},
+          "activityTagsAny": ["retail.goods", "retail.flowers"]
+        },
+        {
+          "windowId": "window_retail_afternoon", "startMinute": 870, "endMinute": 1140,
+          "role": "worker",
+          "goalPressure": {"goalId": "occupation_activity", "weight": 60},
+          "activityTagsAny": ["retail.goods", "retail.flowers"]
+        }
+      ]
+    }
+  ]
+}

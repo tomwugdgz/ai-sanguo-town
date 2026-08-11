@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 2,
+  "loadoutId": "mix__h-elder_man__t-street_creator__b-street_creator__s-energetic_ponytail",
+  "displayName": "自由混搭",
+  "previewOnly": false,
+  "masterContractSha256": "A3DB56CAB28515A0AEC00BC0C18261A363BD6C63E6A345A4E21766F695703850",
+  "selection": {
+    "head": "elder_man",
+    "top_hands": "street_creator",
+    "bottom": "street_creator",
+    "shoes": "energetic_ponytail"
+  },
+  "preset": false,
+  "frame": [
+    64,
+    80
+  ],
+  "root": [
+    32,
+    72
+  ],
+  "sheet": [
+    256,
+    320
+  ],
+  "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+  ],
+  "columnSequence": [
+    "neutral",
+    "step_right",
+    "neutral",
+    "step_left"
+  ],
+  "frameDurationMs": 200,
+  "filter": "nearest",
+  "mipmaps": false,
+  "runtimeMode": "precompiled_single_sprite_atlas",
+  "atlas": "assets/characters/paper_doll_64/compiled/mix__h-elder_man__t-street_creator__b-street_creator__s-energetic_ponytail_walk_64.png"
+}

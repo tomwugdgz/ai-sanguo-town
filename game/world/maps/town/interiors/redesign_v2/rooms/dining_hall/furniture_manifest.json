@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "source_revision": "dining_hall_formal_furniture_footpoint_and_access_v3",
+  "room_id": "dining_hall",
+  "assets": [
+    {
+      "asset_id": "dining_table",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/dining_table/dining_table.asset.json"
+    },
+    {
+      "asset_id": "dish_rack",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/dish_rack/dish_rack.asset.json"
+    },
+    {
+      "asset_id": "pantry_cabinet",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/pantry_cabinet/pantry_cabinet.asset.json"
+    },
+    {
+      "asset_id": "potted_plant",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/potted_plant/potted_plant.asset.json"
+    },
+    {
+      "asset_id": "sink_cabinet",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/sink_cabinet/sink_cabinet.asset.json"
+    },
+    {
+      "asset_id": "square_dining_table",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/square_dining_table/square_dining_table.asset.json"
+    },
+    {
+      "asset_id": "stove_oven",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/stove_oven/stove_oven.asset.json"
+    },
+    {
+      "asset_id": "wooden_chair",
+      "definition_path": "res://world/maps/town/interiors/redesign_v2/rooms/dining_hall/assets/furniture/wooden_chair/wooden_chair.asset.json"
+    }
+  ]
+}

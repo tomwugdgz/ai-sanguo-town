@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "source_revision": "home_template_b_lidded_storage_chest_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "lidded_storage_chest",
+  "label": "住宅 B 朴素深木色带盖收纳箱（仅收纳箱，箱盖关闭，不含货物或其他家具）",
+  "room_id": "home_template_b",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 96,
+    "depth": 64,
+    "height": 80
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/lidded_storage_chest/frames/lidded_storage_chest_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/lidded_storage_chest/frames/lidded_storage_chest_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/lidded_storage_chest/frames/lidded_storage_chest_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/home_template_b/assets/furniture/lidded_storage_chest/frames/lidded_storage_chest_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      146
+    ],
+    "right": [
+      105,
+      146
+    ],
+    "up": [
+      104,
+      147
+    ],
+    "left": [
+      104,
+      147
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -48,
+          -20
+        ],
+        [
+          48,
+          -20
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          -48,
+          0
+        ]
+      ]
+    ],
+    "polygons_by_direction_px": {
+      "down": [[[-48, -20], [48, -20], [48, 0], [-48, 0]]],
+      "right": [[[-32, -20], [32, -20], [32, 0], [-32, 0]]],
+      "up": [[[-48, -20], [48, -20], [48, 0], [-48, 0]]],
+      "left": [[[-32, -20], [32, -20], [32, 0], [-32, 0]]]
+    }
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [-59, -88],
+      [60, -88],
+      [60, 0],
+      [-59, 0]
+    ],
+    "points_by_direction_px": {
+      "down": [[-59, -88], [60, -88], [60, 0], [-59, 0]],
+      "right": [[-37, -88], [38, -88], [38, 0], [-37, 0]],
+      "up": [[-59, -88], [60, -88], [60, 0], [-59, 0]],
+      "left": [[-37, -88], [38, -88], [38, 0], [-37, 0]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "lid",
+      "kind": "store",
+      "position_px": [
+        0,
+        -32
+      ],
+      "actor_facing": "down",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "../source/lidded_storage_chest_four_direction_sheet_final_1x.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/home_template_b/layout_concepts/home_02_layout_v1/home_02_decor_layout_concept_v1.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "docs/design/pipelines/indoor_handoffs/home_template_b.md"
+    ],
+    "source_record": "../SOURCE_RECORD.json"
+  }
+}

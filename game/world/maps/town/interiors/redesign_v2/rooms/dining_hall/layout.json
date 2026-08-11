@@ -1,0 +1,216 @@
+{
+  "instances": [
+    {
+      "asset_id": "wooden_chair",
+      "direction": "left",
+      "instance_id": "chair_east_long_east_side",
+      "position_px": [
+        1104,
+        496
+      ]
+    },
+    {
+      "asset_id": "wooden_chair",
+      "direction": "right",
+      "instance_id": "chair_square_southeast_left",
+      "position_px": [
+        976,
+        496
+      ]
+    },
+    {
+      "asset_id": "wooden_chair",
+      "direction": "down",
+      "instance_id": "chair_square_southeast_right",
+      "position_px": [
+        1040,
+        432
+      ]
+    },
+    {
+      "asset_id": "wooden_chair",
+      "direction": "right",
+      "instance_id": "chair_square_southwest_left",
+      "position_px": [
+        976,
+        560
+      ]
+    },
+    {
+      "asset_id": "wooden_chair",
+      "direction": "left",
+      "instance_id": "chair_square_southwest_right",
+      "position_px": [
+        1104,
+        560
+      ]
+    },
+    {
+      "asset_id": "wooden_chair",
+      "direction": "up",
+      "instance_id": "chair_west_long_east_side",
+      "position_px": [
+        1040,
+        624
+      ]
+    },
+    {
+      "asset_id": "wooden_chair",
+      "direction": "down",
+      "instance_id": "chair_west_long_north_1",
+      "position_px": [
+        304,
+        656
+      ]
+    },
+    {
+      "asset_id": "wooden_chair",
+      "direction": "down",
+      "instance_id": "chair_west_long_north_2",
+      "position_px": [
+        368,
+        656
+      ]
+    },
+    {
+      "asset_id": "wooden_chair",
+      "direction": "down",
+      "instance_id": "chair_west_long_north_3",
+      "position_px": [
+        432,
+        656
+      ]
+    },
+    {
+      "asset_id": "wooden_chair",
+      "direction": "down",
+      "instance_id": "chair_west_long_south_1",
+      "position_px": [
+        240,
+        656
+      ]
+    },
+    {
+      "asset_id": "wooden_chair",
+      "direction": "up",
+      "instance_id": "chair_west_long_south_2",
+      "position_px": [
+        240,
+        784
+      ]
+    },
+    {
+      "asset_id": "wooden_chair",
+      "direction": "up",
+      "instance_id": "chair_west_long_south_3",
+      "position_px": [
+        304,
+        784
+      ]
+    },
+    {
+      "asset_id": "wooden_chair",
+      "direction": "up",
+      "instance_id": "chair_west_long_south_4",
+      "position_px": [
+        368,
+        784
+      ]
+    },
+    {
+      "asset_id": "dining_table",
+      "direction": "down",
+      "instance_id": "dining_table_west",
+      "position_px": [
+        336,
+        752
+      ]
+    },
+    {
+      "asset_id": "dish_rack",
+      "direction": "down",
+      "instance_id": "dish_rack_kitchen_east",
+      "position_px": [
+        816,
+        336
+      ]
+    },
+    {
+      "asset_id": "wooden_chair",
+      "direction": "up",
+      "instance_id": "manual_wooden_chair_01",
+      "position_px": [
+        432,
+        784
+      ]
+    },
+    {
+      "asset_id": "pantry_cabinet",
+      "direction": "down",
+      "instance_id": "pantry_cabinet_kitchen_east",
+      "position_px": [
+        688,
+        336
+      ]
+    },
+    {
+      "asset_id": "potted_plant",
+      "direction": "down",
+      "instance_id": "plant_southeast",
+      "position_px": [
+        1104,
+        912
+      ]
+    },
+    {
+      "asset_id": "potted_plant",
+      "direction": "down",
+      "instance_id": "plant_southwest",
+      "position_px": [
+        176,
+        432
+      ]
+    },
+    {
+      "asset_id": "sink_cabinet",
+      "direction": "down",
+      "instance_id": "sink_cabinet_kitchen_west",
+      "position_px": [
+        464,
+        336
+      ]
+    },
+    {
+      "asset_id": "square_dining_table",
+      "direction": "down",
+      "instance_id": "square_table_southeast",
+      "position_px": [
+        1040,
+        528
+      ]
+    },
+    {
+      "asset_id": "square_dining_table",
+      "direction": "down",
+      "instance_id": "square_table_southwest",
+      "position_px": [
+        1040,
+        592
+      ]
+    },
+    {
+      "asset_id": "stove_oven",
+      "direction": "down",
+      "instance_id": "stove_oven_kitchen_west",
+      "position_px": [
+        368,
+        336
+      ]
+    }
+  ],
+  "layout_revision": 8,
+  "projection_revision": "interior_projection_v1",
+  "room_id": "dining_hall",
+  "schema_version": 2,
+  "source_revision": "dining_hall_user_confirmed_manual_layout_footpoint_v1"
+}

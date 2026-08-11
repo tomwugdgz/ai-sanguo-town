@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "source_revision": "library_user_confirmed_manual_layout_footpoint_audited_v1",
+  "projection_revision": "interior_projection_v1",
+  "layout_revision": 8,
+  "room_id": "library",
+  "instances": [
+    {"asset_id": "library_double_sided_browse_shelf", "direction": "down", "instance_id": "browse_shelf_east", "position_px": [784, 240]},
+    {"asset_id": "library_double_sided_browse_shelf", "direction": "down", "instance_id": "browse_shelf_west", "position_px": [528, 240]},
+    {"asset_id": "library_checkout_counter", "direction": "down", "instance_id": "checkout_counter_north", "position_px": [720, 400]},
+    {"asset_id": "floor_lamp", "direction": "down", "instance_id": "floor_lamp_east", "position_px": [1136, 560]},
+    {"asset_id": "floor_lamp", "direction": "down", "instance_id": "floor_lamp_west", "position_px": [144, 560]},
+    {"asset_id": "leafy_plant", "direction": "down", "instance_id": "leafy_plant_east", "position_px": [1136, 912]},
+    {"asset_id": "leafy_plant", "direction": "down", "instance_id": "leafy_plant_west", "position_px": [176, 944]},
+    {"asset_id": "wooden_chair", "direction": "up", "instance_id": "reading_east_chair_east", "position_px": [944, 720]},
+    {"asset_id": "wooden_chair", "direction": "down", "instance_id": "reading_east_chair_north", "position_px": [944, 592]},
+    {"asset_id": "wooden_chair", "direction": "left", "instance_id": "reading_east_chair_south", "position_px": [1008, 656]},
+    {"asset_id": "wooden_chair", "direction": "right", "instance_id": "reading_east_chair_west", "position_px": [880, 656]},
+    {"asset_id": "library_reading_table", "direction": "down", "instance_id": "reading_table_east", "position_px": [944, 688]},
+    {"asset_id": "library_reading_table", "direction": "down", "instance_id": "reading_table_west", "position_px": [336, 688]},
+    {"asset_id": "wooden_chair", "direction": "left", "instance_id": "reading_west_chair_east", "position_px": [400, 656]},
+    {"asset_id": "wooden_chair", "direction": "down", "instance_id": "reading_west_chair_north", "position_px": [336, 592]},
+    {"asset_id": "wooden_chair", "direction": "up", "instance_id": "reading_west_chair_south", "position_px": [336, 720]},
+    {"asset_id": "wooden_chair", "direction": "right", "instance_id": "reading_west_chair_west", "position_px": [272, 656]},
+    {"asset_id": "library_returns_book_cart", "direction": "down", "instance_id": "returns_book_cart_north_west", "position_px": [784, 464]},
+    {"asset_id": "library_tall_bookshelf", "direction": "down", "instance_id": "tall_bookshelf_east_lower", "position_px": [944, 464]},
+    {"asset_id": "library_tall_bookshelf", "direction": "down", "instance_id": "tall_bookshelf_east_upper", "position_px": [1136, 464]},
+    {"asset_id": "library_tall_bookshelf", "direction": "down", "instance_id": "tall_bookshelf_west_lower", "position_px": [400, 464]},
+    {"asset_id": "library_tall_bookshelf", "direction": "down", "instance_id": "tall_bookshelf_west_upper", "position_px": [208, 464]}
+  ]
+}

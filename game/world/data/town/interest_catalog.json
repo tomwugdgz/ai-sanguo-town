@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "worldId": "town",
+  "maxInterestsPerResident": 3,
+  "interests": [
+    {
+      "interestId": "interest_baking",
+      "label": "烘焙",
+      "activityTags": ["baking.prepare", "food.prepare"]
+    },
+    {
+      "interestId": "interest_calligraphy",
+      "label": "书法",
+      "activityTags": ["library.write", "quiet"]
+    },
+    {
+      "interestId": "interest_collecting_stories",
+      "label": "收集故事",
+      "activityTags": ["social", "community.attention", "library.write"]
+    },
+    {
+      "interestId": "interest_community_affairs",
+      "label": "社区事务",
+      "activityTags": ["civic.meeting", "bulletin.read", "community.attention"]
+    },
+    {
+      "interestId": "interest_cooking",
+      "label": "烹饪",
+      "activityTags": ["food.prepare", "food.serve"]
+    },
+    {
+      "interestId": "interest_fishing",
+      "label": "钓鱼",
+      "activityTags": ["fishing.harvest", "river.visit"]
+    },
+    {
+      "interestId": "interest_gardening",
+      "label": "园艺",
+      "activityTags": ["garden.care", "garden.visit"]
+    },
+    {
+      "interestId": "interest_invention",
+      "label": "发明",
+      "activityTags": ["craft.assembly", "craft.materials"]
+    },
+    {
+      "interestId": "interest_metalwork",
+      "label": "金工",
+      "activityTags": ["craft.metalwork", "craft.materials"]
+    },
+    {
+      "interestId": "interest_music",
+      "label": "音乐",
+      "activityTags": ["music.perform"]
+    },
+    {
+      "interestId": "interest_photography",
+      "label": "摄影",
+      "activityTags": ["community.attention", "garden.visit", "river.visit"]
+    },
+    {
+      "interestId": "interest_plant_research",
+      "label": "植物研究",
+      "activityTags": ["plant.study", "library.research"]
+    },
+    {
+      "interestId": "interest_reading",
+      "label": "阅读",
+      "activityTags": ["library.read", "library.research", "quiet"]
+    },
+    {
+      "interestId": "interest_woodwork",
+      "label": "木工",
+      "activityTags": ["craft.woodwork", "craft.materials"]
+    },
+    {
+      "interestId": "interest_writing",
+      "label": "写作",
+      "activityTags": ["library.write", "quiet"]
+    }
+  ]
+}

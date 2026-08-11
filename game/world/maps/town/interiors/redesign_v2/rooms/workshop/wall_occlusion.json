@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "source_revision": "workshop_candidate_c_space_v2",
+  "room_id": "workshop",
+  "canvas_size_px": [
+    1254,
+    1254
+  ],
+  "segments": [
+    {
+      "id": "south_main_left",
+      "foreground_polygon_canvas_px": [
+        [
+          115,
+          920
+        ],
+        [
+          490,
+          920
+        ],
+        [
+          490,
+          1092
+        ],
+        [
+          115,
+          1092
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            144,
+            888
+          ],
+          [
+            368,
+            888
+          ],
+          [
+            368,
+            984
+          ],
+          [
+            144,
+            984
+          ]
+        ],
+        [
+          [
+            400,
+            888
+          ],
+          [
+            464,
+            888
+          ],
+          [
+            464,
+            984
+          ],
+          [
+            400,
+            984
+          ]
+        ],
+        [
+          [
+            480,
+            960
+          ],
+          [
+            608,
+            960
+          ],
+          [
+            608,
+            1064
+          ],
+          [
+            480,
+            1064
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_main_right",
+      "foreground_polygon_canvas_px": [
+        [
+          606,
+          920
+        ],
+        [
+          907,
+          920
+        ],
+        [
+          907,
+          1092
+        ],
+        [
+          606,
+          1092
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            624,
+            888
+          ],
+          [
+            688,
+            888
+          ],
+          [
+            688,
+            984
+          ],
+          [
+            624,
+            984
+          ]
+        ],
+        [
+          [
+            720,
+            888
+          ],
+          [
+            880,
+            888
+          ],
+          [
+            880,
+            984
+          ],
+          [
+            720,
+            984
+          ]
+        ],
+        [
+          [
+            480,
+            960
+          ],
+          [
+            608,
+            960
+          ],
+          [
+            608,
+            1064
+          ],
+          [
+            480,
+            1064
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "south_annex",
+      "foreground_polygon_canvas_px": [
+        [
+          907,
+          920
+        ],
+        [
+          1161,
+          920
+        ],
+        [
+          1161,
+          1088
+        ],
+        [
+          907,
+          1088
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            912,
+            888
+          ],
+          [
+            1104,
+            888
+          ],
+          [
+            1104,
+            984
+          ],
+          [
+            912,
+            984
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "annex_divider_north",
+      "foreground_polygon_canvas_px": [
+        [
+          868,
+          495
+        ],
+        [
+          909,
+          495
+        ],
+        [
+          909,
+          741
+        ],
+        [
+          868,
+          741
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            832,
+            520
+          ],
+          [
+            944,
+            520
+          ],
+          [
+            944,
+            712
+          ],
+          [
+            832,
+            712
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    },
+    {
+      "id": "annex_divider_south",
+      "foreground_polygon_canvas_px": [
+        [
+          868,
+          848
+        ],
+        [
+          909,
+          848
+        ],
+        [
+          909,
+          956
+        ],
+        [
+          868,
+          956
+        ]
+      ],
+      "reveal_polygons_canvas_px": [
+        [
+          [
+            832,
+            808
+          ],
+          [
+            944,
+            808
+          ],
+          [
+            944,
+            936
+          ],
+          [
+            832,
+            936
+          ]
+        ]
+      ],
+      "fade_distance_px": 96,
+      "minimum_alpha": 0.15
+    }
+  ]
+}

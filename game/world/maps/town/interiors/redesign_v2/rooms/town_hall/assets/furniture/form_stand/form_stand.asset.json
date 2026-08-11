@@ -1,0 +1,131 @@
+{
+  "schema_version": 2,
+  "source_revision": "town_hall_form_stand_footpoint_geometry_v2",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "form_stand",
+  "label": "镇公所公共填表台",
+  "room_id": "town_hall",
+  "canonical_direction": "down",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 64,
+    "depth": 64,
+    "height": 112
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/form_stand/frames/form_stand_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/form_stand/frames/form_stand_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/form_stand/frames/form_stand_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/form_stand/frames/form_stand_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      103,
+      161
+    ],
+    "right": [
+      147,
+      104
+    ],
+    "up": [
+      103,
+      46
+    ],
+    "left": [
+      62,
+      104
+    ]
+  },
+  "ground_contact": {
+    "polygons_px": [
+      [
+        [
+          -48,
+          -12
+        ],
+        [
+          48,
+          -12
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          -48,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -1
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -32,
+        -96
+      ],
+      [
+        32,
+        -96
+      ],
+      [
+        40,
+        -32
+      ],
+      [
+        -40,
+        -32
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [[-53, -116], [53, -116], [53, 0], [-53, 0]],
+      "right": [[-91, -58], [0, -58], [0, 58], [-91, 58]],
+      "up": [[-53, 0], [53, 0], [53, 117], [-53, 117]],
+      "left": [[0, -58], [91, -58], [91, 59], [0, 59]]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "fill_form",
+      "kind": "use",
+      "position_px": [
+        0,
+        32
+      ],
+      "actor_facing": "up",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "res://world/maps/town/interiors/assets/indoor_town_hall_shell_v1.png",
+      "res://world/maps/town/interiors/town_hall/assets/concepts/town_hall_layout_warm_v1.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "res://world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "res://world/maps/town/interiors/redesign_v2/rooms/town_hall/assets/furniture/form_stand/candidate_a_room_batch_v1/SOURCE_RECORD.json"
+  },
+  "direction_visual_policy": "strict_four_direction",
+  "direction_visual_policy_revision": "furniture_direction_visual_policy_v1"
+}

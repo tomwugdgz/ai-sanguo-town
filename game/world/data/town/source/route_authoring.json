@@ -1,0 +1,555 @@
+{
+  "schemaVersion": 1,
+  "worldId": "town",
+  "terminalLinksPerNode": 2,
+  "junctions": [
+    {
+      "id": "junction_bridge_east",
+      "position": [
+        5550,
+        850
+      ]
+    },
+    {
+      "id": "junction_bridge_west",
+      "position": [
+        5150,
+        900
+      ]
+    },
+    {
+      "id": "junction_clinic_south",
+      "position": [
+        4300,
+        1450
+      ]
+    },
+    {
+      "id": "junction_garden_east",
+      "position": [
+        3900,
+        2700
+      ]
+    },
+    {
+      "id": "junction_garden_south",
+      "position": [
+        3250,
+        3050
+      ]
+    },
+    {
+      "id": "junction_garden_west",
+      "position": [
+        2700,
+        2650
+      ]
+    },
+    {
+      "id": "junction_harbor_center",
+      "position": [
+        5800,
+        3100
+      ]
+    },
+    {
+      "id": "junction_harbor_north",
+      "position": [
+        5400,
+        3000
+      ]
+    },
+    {
+      "id": "junction_east_middle",
+      "position": [
+        4800,
+        2100
+      ]
+    },
+    {
+      "id": "junction_library_south",
+      "position": [
+        2050,
+        1200
+      ]
+    },
+    {
+      "id": "junction_north_center",
+      "position": [
+        3200,
+        1450
+      ]
+    },
+    {
+      "id": "junction_park_center",
+      "position": [
+        5900,
+        1050
+      ]
+    },
+    {
+      "id": "junction_plaza_east",
+      "position": [
+        3750,
+        1950
+      ]
+    },
+    {
+      "id": "junction_plaza_west",
+      "position": [
+        2700,
+        1950
+      ]
+    },
+    {
+      "id": "junction_south_center",
+      "position": [
+        3240,
+        3350
+      ]
+    },
+    {
+      "id": "junction_south_east",
+      "position": [
+        4300,
+        3300
+      ]
+    },
+    {
+      "id": "junction_south_west",
+      "position": [
+        2200,
+        3300
+      ]
+    },
+    {
+      "id": "junction_southeast",
+      "position": [
+        4800,
+        2800
+      ]
+    },
+    {
+      "id": "junction_west_middle",
+      "position": [
+        1400,
+        2200
+      ]
+    },
+    {
+      "id": "junction_west_north",
+      "position": [
+        1400,
+        1500
+      ]
+    },
+    {
+      "id": "junction_west_south",
+      "position": [
+        2100,
+        2600
+      ]
+    }
+  ],
+  "backboneLinks": [
+    [
+      "junction_west_north",
+      "junction_library_south"
+    ],
+    [
+      "junction_library_south",
+      "junction_north_center"
+    ],
+    [
+      "junction_north_center",
+      "junction_clinic_south"
+    ],
+    [
+      "junction_clinic_south",
+      "junction_bridge_west"
+    ],
+    [
+      "junction_bridge_west",
+      "junction_bridge_east"
+    ],
+    [
+      "junction_bridge_east",
+      "junction_park_center"
+    ],
+    [
+      "junction_west_north",
+      "junction_west_middle"
+    ],
+    [
+      "junction_west_middle",
+      "junction_west_south"
+    ],
+    [
+      "junction_west_south",
+      "junction_south_west"
+    ],
+    [
+      "junction_library_south",
+      "junction_plaza_west"
+    ],
+    [
+      "junction_north_center",
+      "junction_plaza_west"
+    ],
+    [
+      "junction_north_center",
+      "junction_plaza_east"
+    ],
+    [
+      "junction_clinic_south",
+      "junction_plaza_east"
+    ],
+    [
+      "junction_clinic_south",
+      "junction_east_middle"
+    ],
+    [
+      "junction_west_middle",
+      "junction_plaza_west"
+    ],
+    [
+      "junction_west_south",
+      "junction_garden_west"
+    ],
+    [
+      "junction_plaza_west",
+      "junction_garden_west"
+    ],
+    [
+      "junction_plaza_west",
+      "junction_plaza_east"
+    ],
+    [
+      "junction_plaza_east",
+      "junction_east_middle"
+    ],
+    [
+      "junction_plaza_east",
+      "junction_garden_east"
+    ],
+    [
+      "junction_garden_west",
+      "junction_garden_south"
+    ],
+    [
+      "junction_garden_west",
+      "junction_garden_east"
+    ],
+    [
+      "junction_garden_east",
+      "junction_garden_south"
+    ],
+    [
+      "junction_garden_east",
+      "junction_southeast"
+    ],
+    [
+      "junction_east_middle",
+      "junction_southeast"
+    ],
+    [
+      "junction_southeast",
+      "junction_harbor_north"
+    ],
+    [
+      "junction_harbor_north",
+      "junction_harbor_center"
+    ],
+    [
+      "junction_south_west",
+      "junction_south_center"
+    ],
+    [
+      "junction_south_center",
+      "junction_south_east"
+    ],
+    [
+      "junction_garden_south",
+      "junction_south_center"
+    ],
+    [
+      "junction_garden_south",
+      "junction_south_east"
+    ],
+    [
+      "junction_southeast",
+      "junction_south_east"
+    ],
+    [
+      "junction_harbor_center",
+      "junction_south_east"
+    ]
+  ],
+  "outdoorArrivals": [
+    {
+      "id": "arrival_central_plaza",
+      "placeName": "中心广场",
+      "position": [
+        3250,
+        2050
+      ]
+    },
+    {
+      "id": "arrival_market",
+      "placeName": "市集",
+      "position": [
+        4088,
+        2034
+      ]
+    },
+    {
+      "id": "arrival_community_garden",
+      "placeName": "社区花园",
+      "position": [
+        3396,
+        2772
+      ]
+    },
+    {
+      "id": "arrival_riverbank_park",
+      "placeName": "河岸公园",
+      "position": [
+        5913,
+        1288
+      ]
+    },
+    {
+      "id": "arrival_south_entrance",
+      "placeName": "南入口",
+      "position": [
+        3240,
+        3600
+      ]
+    },
+    {
+      "id": "arrival_fishing_harbor",
+      "placeName": "渔港",
+      "position": [
+        5772,
+        3108
+      ]
+    },
+    {
+      "id": "arrival_town_roads",
+      "placeName": "小镇道路",
+      "position": [
+        2000,
+        2000
+      ]
+    }
+  ],
+  "portals": [
+    {
+      "id": "portal_cafe",
+      "insidePlaceName": "花房咖啡馆",
+      "insideSpaceId": "indoor_flower_cafe",
+      "insidePosition": [
+        432,
+        912
+      ]
+    },
+    {
+      "id": "portal_library",
+      "insidePlaceName": "图书馆",
+      "insideSpaceId": "indoor_library",
+      "insidePosition": [
+        656,
+        976
+      ]
+    },
+    {
+      "id": "portal_town_hall",
+      "insidePlaceName": "镇公所",
+      "insideSpaceId": "indoor_town_hall",
+      "insidePosition": [
+        -16,
+        304
+      ]
+    },
+    {
+      "id": "portal_clinic",
+      "insidePlaceName": "诊所",
+      "insideSpaceId": "indoor_clinic",
+      "insidePosition": [
+        16,
+        752
+      ]
+    },
+    {
+      "id": "portal_market_shop",
+      "insidePlaceName": "独立市集",
+      "insideSpaceId": "indoor_market_shop",
+      "insidePosition": [
+        624,
+        912
+      ]
+    },
+    {
+      "id": "portal_dining_hall",
+      "insidePlaceName": "公共食堂",
+      "insideSpaceId": "indoor_dining_hall",
+      "insidePosition": [
+        528,
+        1040
+      ]
+    },
+    {
+      "id": "portal_workshop",
+      "insidePlaceName": "工作坊",
+      "insideSpaceId": "indoor_workshop",
+      "insidePosition": [
+        16,
+        752
+      ]
+    },
+    {
+      "id": "portal_dock_warehouse",
+      "insidePlaceName": "码头仓库",
+      "insideSpaceId": "indoor_dock_warehouse",
+      "insidePosition": [
+        432,
+        784
+      ]
+    },
+    {
+      "id": "portal_home_01",
+      "insidePlaceName": "北街一号住宅",
+      "insideSpaceId": "home_01",
+      "insidePosition": [
+        16,
+        464
+      ]
+    },
+    {
+      "id": "portal_home_02",
+      "insidePlaceName": "北街二号住宅",
+      "insideSpaceId": "home_02",
+      "insidePosition": [
+        656,
+        912
+      ]
+    },
+    {
+      "id": "portal_home_03",
+      "insidePlaceName": "北街三号住宅",
+      "insideSpaceId": "home_03",
+      "insidePosition": [
+        656,
+        912
+      ]
+    },
+    {
+      "id": "portal_home_04",
+      "insidePlaceName": "西街二号住宅",
+      "insideSpaceId": "home_04",
+      "insidePosition": [
+        656,
+        912
+      ]
+    },
+    {
+      "id": "portal_home_05",
+      "insidePlaceName": "西街三号住宅",
+      "insideSpaceId": "home_05",
+      "insidePosition": [
+        16,
+        464
+      ]
+    },
+    {
+      "id": "portal_home_06",
+      "insidePlaceName": "西街四号住宅",
+      "insideSpaceId": "home_06",
+      "insidePosition": [
+        656,
+        912
+      ]
+    },
+    {
+      "id": "portal_home_07",
+      "insidePlaceName": "西街五号住宅",
+      "insideSpaceId": "home_07",
+      "insidePosition": [
+        656,
+        912
+      ]
+    },
+    {
+      "id": "portal_home_08",
+      "insidePlaceName": "西街六号住宅",
+      "insideSpaceId": "home_08",
+      "insidePosition": [
+        656,
+        912
+      ]
+    },
+    {
+      "id": "portal_home_09",
+      "insidePlaceName": "南街一号住宅",
+      "insideSpaceId": "home_09",
+      "insidePosition": [
+        16,
+        464
+      ]
+    },
+    {
+      "id": "portal_home_10",
+      "insidePlaceName": "南街二号住宅",
+      "insideSpaceId": "home_10",
+      "insidePosition": [
+        656,
+        912
+      ]
+    },
+    {
+      "id": "portal_home_11",
+      "insidePlaceName": "南街三号住宅",
+      "insideSpaceId": "home_11",
+      "insidePosition": [
+        16,
+        464
+      ]
+    },
+    {
+      "id": "portal_home_12",
+      "insidePlaceName": "南街四号住宅",
+      "insideSpaceId": "home_12",
+      "insidePosition": [
+        16,
+        464
+      ]
+    },
+    {
+      "id": "portal_home_13",
+      "insidePlaceName": "南街五号住宅",
+      "insideSpaceId": "home_13",
+      "insidePosition": [
+        16,
+        464
+      ]
+    },
+    {
+      "id": "portal_home_14",
+      "insidePlaceName": "东南街住宅",
+      "insideSpaceId": "home_14",
+      "insidePosition": [
+        16,
+        464
+      ]
+    },
+    {
+      "id": "portal_home_15",
+      "insidePlaceName": "西街一号住宅",
+      "insideSpaceId": "home_15",
+      "insidePosition": [
+        16,
+        464
+      ]
+    }
+  ]
+}

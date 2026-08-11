@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "assetId": "effect.conflict.avatar-rising-uppercut-v1",
+  "status": "user_approved_runtime_animation_ready_for_review",
+  "deliveryScope": {
+    "runtimeFramesIncluded": true,
+    "sourceCandidatesIncluded": false,
+    "skillButtonAssetsIncluded": false,
+    "skillButtonOwner": "avatar_mode_hud_follow_up"
+  },
+  "runtime": {
+    "frameCount": 12,
+    "frameSize": [256, 256],
+    "fps": 12,
+    "displayScale": 1.1,
+    "mirrorRightForLeft": true,
+    "footOffsetPx": 104,
+    "liftPx": [0, 5, 14, 28, 44, 62, 78, 90, 96, 62, 30, 0],
+    "forwardPx": [0, 4, 8, 12, 18, 22, 26, 28, 28, 20, 10, 0],
+    "contactFrame": 2,
+    "authorityMovement": false
+  },
+  "productContract": {
+    "owner": "avatar_unilateral_attack",
+    "residentCanRetaliate": false,
+    "usesResidentBrawlCloud": false,
+    "targetReaction": "red_flash_shake_and_visual_launch",
+    "worldAuthorityPositionUnchanged": true
+  }
+}

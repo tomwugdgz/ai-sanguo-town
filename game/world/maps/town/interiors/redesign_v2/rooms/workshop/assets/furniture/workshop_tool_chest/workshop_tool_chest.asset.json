@@ -1,0 +1,204 @@
+{
+  "schema_version": 2,
+  "source_revision": "workshop_workshop_tool_chest_batch_v1_formal_import_v1_footpoint_v3",
+  "projection_revision": "interior_projection_v1",
+  "asset_id": "workshop_tool_chest",
+  "label": "低矮带盖落地木工工具箱（闭合箱体，非竖立工具板或工具柜）",
+  "room_id": "workshop",
+  "canonical_direction": "down",
+  "direction_visual_policy": "strict_four_direction",
+  "pixel_cluster_size": 3,
+  "physical_size_px": {
+    "width": 96,
+    "depth": 32,
+    "height": 64
+  },
+  "visual_sprite": {
+    "down": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/workshop_tool_chest/frames/workshop_tool_chest_down.png",
+    "right": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/workshop_tool_chest/frames/workshop_tool_chest_right.png",
+    "up": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/workshop_tool_chest/frames/workshop_tool_chest_up.png",
+    "left": "res://world/maps/town/interiors/redesign_v2/rooms/workshop/assets/furniture/workshop_tool_chest/frames/workshop_tool_chest_left.png"
+  },
+  "visual_anchor": {
+    "down": [
+      104,
+      149
+    ],
+    "right": [
+      100,
+      149
+    ],
+    "up": [
+      104,
+      137
+    ],
+    "left": [
+      100,
+      137
+    ]
+  },
+  "ground_contact": {
+    "polygons_by_direction_px": {
+      "down": [[[-48, -32], [48, -32], [48, 0], [-48, 0]]],
+      "right": [[[-32, -32], [33, -32], [33, 0], [-32, 0]]],
+      "up": [[[-48, -32], [48, -32], [48, 0], [-48, 0]]],
+      "left": [[[-32, -32], [33, -32], [33, 0], [-32, 0]]]
+    },
+    "polygons_px": [
+      [
+        [
+          -48,
+          -32
+        ],
+        [
+          48,
+          -32
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          -48,
+          0
+        ]
+      ]
+    ]
+  },
+  "occupied_cells": {
+    "origin2": [
+      -3,
+      -2
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ]
+  },
+  "occlusion_polygon": {
+    "points_px": [
+      [
+        -53,
+        -78
+      ],
+      [
+        54,
+        -78
+      ],
+      [
+        54,
+        0
+      ],
+      [
+        -53,
+        0
+      ]
+    ],
+    "points_by_direction_px": {
+      "down": [
+        [
+          -53,
+          -78
+        ],
+        [
+          54,
+          -78
+        ],
+        [
+          54,
+          0
+        ],
+        [
+          -53,
+          0
+        ]
+      ],
+      "right": [
+        [
+          -32,
+          -78
+        ],
+        [
+          33,
+          -78
+        ],
+        [
+          33,
+          0
+        ],
+        [
+          -32,
+          0
+        ]
+      ],
+      "up": [
+        [
+          -53,
+          -77
+        ],
+        [
+          54,
+          -77
+        ],
+        [
+          54,
+          0
+        ],
+        [
+          -53,
+          0
+        ]
+      ],
+      "left": [
+        [
+          -32,
+          -77
+        ],
+        [
+          33,
+          -77
+        ],
+        [
+          33,
+          0
+        ],
+        [
+          -32,
+          0
+        ]
+      ]
+    }
+  },
+  "interaction_anchor": [
+    {
+      "id": "tool_chest_open",
+      "kind": "use",
+      "position_px": [
+        48,
+        -16
+      ],
+      "actor_facing": "left",
+      "capacity": 1
+    }
+  ],
+  "provenance": {
+    "origin": "newly_authored",
+    "semantic_references": [
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/candidates/calibration_c/shell_raw.png",
+      "game/world/maps/town/interiors/redesign_v2/rooms/workshop/layout_concepts/workshop_layout_concept_a/workshop_furniture_layout_concept_a.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/paperdoll64_elder_four_directions_3x.png",
+      "game/world/maps/town/interiors/redesign_v2/common/references/approved_camera_style_reference.png"
+    ],
+    "source_record": "assets/furniture/workshop_tool_chest/batch_v1/SOURCE_RECORD.json"
+  }
+}

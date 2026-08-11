@@ -1,0 +1,227 @@
+{
+  "schema": "ai-town-hud-runtime-asset-registry/v3",
+  "registryId": "ui.town.hud.observer-v5.static-shell-runtime-v1",
+  "runtimeScene": "res://ui/town/hud/runtime/TownHudOverlay.tscn",
+  "wrapperScript": "res://ui/town/hud/runtime/TownHudOverlay.gd",
+  "typographyContract": "res://ui/town/hud/runtime/TownHudTypographyContract.gd",
+  "visualStatus": "observer_v5_static_shell_runtime_ready",
+  "referenceViewport": [1672, 941],
+  "rules": {
+    "wholeReviewScreenshotUsed": false,
+    "commonPaperWoodUsed": false,
+    "codeDrawnFrameUsed": false,
+    "defaultThemeUsed": false,
+    "sourceBytesModified": false,
+    "textureFilter": "nearest",
+    "dynamicTextOnly": true,
+    "nonUniformStretchUsed": false,
+    "legacyBubbleAtlasUsed": false,
+    "retiredOverlayNodesMounted": false,
+    "residentBubbleOwnersUniqueByZoomBand": true,
+    "bubbleAnimationUsed": false
+  },
+  "sources": [
+    {
+      "assetId": "ui.town.hud.observer-shell.time-panel-detached-v6",
+      "path": "res://assets/ui/town/hud/runtime/composite/observer_hud_v5_time_panel_detached_v6_rgba.png",
+      "sha256": "feaf6e728a029ec420b1353b1acee23dc4e7dac7f2cdf5806af3735b88b99220",
+      "size": [1672, 941],
+      "role": "source_derived_observer_shell_with_complete_time_panel_detached"
+    },
+    {
+      "assetId": "ui.town.hud.far-activity-ellipsis.static-v2",
+      "path": "res://assets/ui/town/hud/runtime/far_transient_components_v2/activity_ellipsis_static.png",
+      "sha256": "3f752c6a9282560ecd53192d432baad93492b63479b84567de8131311bbd9f40",
+      "size": [94, 90],
+      "role": "user_confirmed_far_public_thought_ellipsis_live_head"
+    },
+    {
+      "assetId": "ui.town.hud.far-spectator-conversation.static-v2",
+      "path": "res://assets/ui/town/hud/runtime/far_transient_components_v2/spectator_conversation_static.png",
+      "sha256": "4f6edeef68a6a1567d99bd9a5d9ebeba05e8ef5eeaf3a32d434caa6ccb2e7c51",
+      "size": [340, 133],
+      "role": "user_confirmed_frozen_anchor_spectator_conversation"
+    },
+    {
+      "assetId": "ui.town.hud.mid-near-public-thought.v1",
+      "path": "res://assets/ui/town/hud/runtime/mid_near_resident_bubbles_v1/public_thought_bubble.png",
+      "sha256": "c0cf5647183a948fc7eaf0297678c43f5b0467ca8197579652f907ba0d2ddd15",
+      "size": [534, 176],
+      "role": "user_confirmed_two_line_public_thought_shell_formal_explicit_data_only"
+    },
+    {
+      "assetId": "ui.town.hud.resident-directory.approved-v2-runtime",
+      "path": "res://assets/ui/town/hud/runtime/resident_directory/resident_directory_drawer_rgba.png",
+      "sha256": "6e3e85bf6085634d7f6b1ea89fff37e6962f6910434da77c415f8ed829e040e7",
+      "size": [1024, 1536],
+      "role": "user_confirmed_resident_directory_drawer_structure_textless"
+    },
+    {
+      "assetId": "ui.town.hud.place-directory.approved-v5-runtime",
+      "path": "res://assets/ui/town/hud/runtime/place_directory/place_directory_drawer_rgba.png",
+      "sha256": "1d93c789bc455120abe49d865e123a22e3d00fa63345794367de973725666d4c",
+      "size": [1024, 1536],
+      "role": "user_confirmed_place_directory_shell_rows_icons_and_close_x"
+    },
+    {
+      "assetId": "ui.town.hud.resident-directory.scroll-track",
+      "path": "res://assets/ui/town/hud/runtime/resident_directory/resident_directory_scroll_track.png",
+      "sha256": "43b235b186c0db83757d8dfb46f371b3ff6361665418d235519b984405c60746",
+      "size": [42, 270],
+      "role": "derived_scroll_track_from_approved_drawer_source"
+    },
+    {
+      "assetId": "ui.town.hud.resident-directory.scroll-thumb",
+      "path": "res://assets/ui/town/hud/runtime/resident_directory/resident_directory_scroll_thumb.png",
+      "sha256": "4491e51645b85a1a0ada5cd368a9bfec33ba70dc0d7859286ea6d9db706ba7c5",
+      "size": [46, 272],
+      "role": "derived_scroll_thumb_from_approved_drawer_source"
+    },
+    {
+      "assetId": "ui.town.hud.resident-directory.row-normal-v4",
+      "path": "res://assets/ui/town/hud/runtime/resident_directory/resident_directory_row_normal_v4.png",
+      "sha256": "c322c64c0e0e176acbe8ba6e32a61ddcbf47b12ac77ac3684dc767915bdd96f9",
+      "size": [720, 181],
+      "role": "user_confirmed_imagegen_resident_row_inner_frame"
+    },
+    {
+      "assetId": "ui.town.hud.resident-directory.row-selected-v4",
+      "path": "res://assets/ui/town/hud/runtime/resident_directory/resident_directory_row_selected_v4.png",
+      "sha256": "2d9725ffb78c8061ac3ad0a7fda694b2d03972b28116089be58bdb3482b8878e",
+      "size": [720, 181],
+      "role": "user_confirmed_imagegen_resident_row_selected_inner_frame"
+    },
+    {
+      "assetId": "ui.town.hud.time-panel.pause-selected.imagegen-v10",
+      "path": "res://assets/ui/town/hud/runtime/time_controls/time_panel_time_pause_selected_v10.png",
+      "sha256": "dde4ba052880628f06e64e373f0ac462c41e262391b71600aabe2e00c8e60108",
+      "size": [157, 401],
+      "role": "user_approved_imagegen_complete_time_panel_pause_selected"
+    },
+    {
+      "assetId": "ui.town.hud.time-panel.speed-1-selected.imagegen-v10",
+      "path": "res://assets/ui/town/hud/runtime/time_controls/time_panel_time_speed_1_selected_v10.png",
+      "sha256": "a93d5753f46c27fa8fb89ee32ddc173627a4aebead5ddf7944e0353c48526cac",
+      "size": [157, 401],
+      "role": "user_approved_imagegen_complete_time_panel_speed_1_selected"
+    },
+    {
+      "assetId": "ui.town.hud.time-panel.speed-2-selected.imagegen-v10",
+      "path": "res://assets/ui/town/hud/runtime/time_controls/time_panel_time_speed_2_selected_v10.png",
+      "sha256": "918d79213128684e88e3badfc42102de2d477957cce3c1fd840e2fa87dc241d6",
+      "size": [157, 401],
+      "role": "user_approved_imagegen_complete_time_panel_speed_2_selected"
+    },
+    {
+      "assetId": "ui.town.hud.time-panel.speed-3-selected.imagegen-v10",
+      "path": "res://assets/ui/town/hud/runtime/time_controls/time_panel_time_speed_3_selected_v10.png",
+      "sha256": "802e166e66bc55abdc3b3eba8060200c326cf184b8231d436a1266c8b9e010d3",
+      "size": [157, 401],
+      "role": "user_approved_imagegen_complete_time_panel_speed_3_selected"
+    }
+  ],
+  "font": {
+    "assetId": "ui.font.zheng-ge-dian-hei-16.formal",
+    "path": "res://assets/fonts/zheng_ge_dian_hei_16/ZhengGeDianHei-16.ttf",
+    "nativeSize": 16,
+    "allowedRuntimeSizes": [32, 48],
+    "tracking": 0,
+    "outline": 0,
+    "sampling": "nearest"
+  },
+  "residentDirectoryFont": {
+    "assetId": "ui.font.noto-sans-cjk-sc-medium.main-menu-approved",
+    "path": "res://assets/ui/startup/fonts/noto_sans_cjk_sc_medium/NotoSansCJKsc-Medium.otf",
+    "sha256": "ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7",
+    "tracking": 2,
+    "outline": 0,
+    "role": "main_menu_heiti_shared_with_resident_directory"
+  },
+  "navigationSlots": [
+    {"index": 0, "semanticId": "residents", "buttonId": "nav_residents", "status": "runtime_ready", "component": "resident_directory", "actionKey": "cameraFollow"},
+    {"index": 1, "semanticId": "places", "buttonId": "nav_places", "status": "runtime_ready", "component": "place_directory", "actionKey": "openPlaceFocus"},
+    {"index": 2, "semanticId": "resident_management", "buttonId": "nav_relationships", "status": "runtime_ready", "actionKey": "openResidentManagement"},
+    {"index": 3, "semanticId": "town_log", "buttonId": "nav_log", "actionKey": "openTownLog"},
+    {"index": 4, "semanticId": "bulletin", "buttonId": "nav_bulletin", "actionKey": "openBulletin"},
+    {"index": 5, "semanticId": "settings", "buttonId": "nav_settings", "actionKey": "openMore"}
+  ],
+  "observerControls": [
+    {"index": 0, "semanticId": "fit_town", "buttonId": "camera_fit", "actionKey": "cameraReset"},
+    {"index": 1, "semanticId": "zoom_in", "buttonId": "camera_zoom_in", "actionKey": "cameraZoomIn"},
+    {"index": 2, "semanticId": "zoom_out", "buttonId": "camera_zoom_out", "actionKey": "cameraZoomOut"},
+    {"index": 3, "semanticId": "pause_resume", "buttonId": "time_pause", "actionKeys": ["pause", "resume"]},
+    {"index": 4, "semanticId": "speed_1x", "buttonId": "time_speed_1", "status": "runtime_ready", "actionKey": "timeSpeed1"},
+    {"index": 5, "semanticId": "speed_2x", "buttonId": "time_speed_2", "status": "runtime_ready", "actionKey": "timeSpeed2"},
+    {"index": 6, "semanticId": "speed_3x", "buttonId": "time_speed_3", "status": "runtime_ready", "actionKey": "timeSpeed3"},
+    {"index": 7, "semanticId": "avatar", "buttonId": "avatar_toggle", "actionKey": "toggleAvatar"}
+  ],
+  "components": [
+    {
+      "id": "outer_shell",
+      "sourceAssetId": "ui.town.hud.observer-shell.time-panel-detached-v6",
+      "sourceRect": [0, 0, 1672, 941],
+      "runtimeSlot": "viewport_full",
+      "ownership": "single_user_confirmed_asset",
+      "stretchMode": "keep_aspect_centered"
+    },
+    {
+      "id": "time_control_pressed_state",
+      "sourceAssetIds": [
+        "ui.town.hud.time-panel.pause-selected.imagegen-v10",
+        "ui.town.hud.time-panel.speed-1-selected.imagegen-v10",
+        "ui.town.hud.time-panel.speed-2-selected.imagegen-v10",
+        "ui.town.hud.time-panel.speed-3-selected.imagegen-v10"
+      ],
+      "runtimeSlot": "data.timeWeather.simulationSpeed_or_data.pausePrompt.visible",
+      "ownership": "confirmed_world_state",
+      "feedback": "complete_panel_selected_state_texture_swap_with_90ms_color_settle",
+      "animation": "color_only_once_on_confirmed_state_change",
+      "baseShellHasBakedTimeControls": false,
+      "sourceRectsOverlap": false
+    },
+    {
+      "id": "far_spectator_conversation",
+      "sourceAssetId": "ui.town.hud.far-spectator-conversation.static-v2",
+      "runtimeScene": "res://ui/town/hud/runtime/TownFarResidentActivityLayer.tscn",
+      "runtimeSlot": "farResidentActivity.items[kind=spectator_conversation]",
+      "anchorPolicy": "live_pair",
+      "motionPolicy": "per_frame_pair_anchor",
+      "animation": "none"
+    },
+    {
+      "id": "far_semantic_walking",
+      "sourceAssetId": "ui.town.hud.far-semantic.walking-v1",
+      "frameSourceAssetId": "ui.town.hud.far-activity-ellipsis.static-v2",
+      "runtimeScene": "res://ui/town/hud/runtime/TownFarResidentActivityLayer.tscn",
+      "runtimeSlot": "farResidentActivity.items[kind=semantic_icon,iconType=walking]",
+      "frameSize": [94, 90],
+      "iconRect": [27, 14, 40, 40],
+      "anchorPolicy": "live_head",
+      "motionPolicy": "per_frame_head_anchor",
+      "animation": "none"
+    },
+    {
+      "id": "far_semantic_tired",
+      "sourceAssetId": "ui.town.hud.far-semantic.tired-v1",
+      "frameSourceAssetId": "ui.town.hud.far-activity-ellipsis.static-v2",
+      "runtimeScene": "res://ui/town/hud/runtime/TownFarResidentActivityLayer.tscn",
+      "runtimeSlot": "farResidentActivity.items[kind=semantic_icon,iconType=tired]",
+      "frameSize": [94, 90],
+      "iconRect": [27, 14, 40, 40],
+      "anchorPolicy": "live_head",
+      "motionPolicy": "per_frame_head_anchor",
+      "animation": "none"
+    },
+    {
+      "id": "resident_directory",
+      "sourceAssetId": "ui.town.hud.resident-directory.approved-v2-runtime",
+      "runtimeScene": "res://ui/town/hud/runtime/ResidentDirectoryDrawer.tscn",
+      "runtimeSlot": "data.residentDirectory",
+      "rowNormalSourceAssetId": "ui.town.hud.resident-directory.row-normal-v4",
+      "rowSelectedSourceAssetId": "ui.town.hud.resident-directory.row-selected-v4",
+      "dynamicTextOnly": true,
+      "visibleRows": 6,
+      "totalResidentCount": 15
+    }
+  ]
+}

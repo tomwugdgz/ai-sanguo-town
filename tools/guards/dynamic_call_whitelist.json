@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "note": "确属必要的动态调用，逐项记 reason（如：Callable 实例调用，非字符串派发 / 方法名来自配置）。标识与基线一致：path + func + call。",
+  "entries": [
+    {
+      "path": "game/ui/resident_model_assignment/runtime/ResidentModelAssignmentService.gd",
+      "func": "_apply_draft",
+      "call": "variable:.call( _draft.duplicate(true), bindings.duplicate(true), )",
+      "reason": "局内改绑与新居民入镇由宿主注入事务提交回调；这是 Callable 实例调用，不按字符串选择生产方法。"
+    },
+    {
+      "path": "game/agent/model/GenericOpenAICompatibleModelProvider.gd",
+      "func": "request_model_catalog",
+      "call": "string:.call( \"request_model_catalog\", endpoint, headers, func(response: Dictionary) -> void: on_complete.call(_model_catalog_result(response)) )",
+      "reason": "模型目录传输可由正式 HTTP 或离线测试传输实现，经过 has_method 检查后调用共同契约。"
+    },
+    {
+      "path": "game/agent/model/GenericOpenAICompatibleModelProvider.gd",
+      "func": "request_model_catalog",
+      "call": "variable:.call(_model_catalog_result(response))",
+      "reason": "调用请求方传入的 Callable 完成模型目录异步回调。"
+    },
+    {
+      "path": "game/agent/model/GenericOpenAICompatibleModelProvider.gd",
+      "func": "_on_model_catalog_request_completed",
+      "call": "variable:.call(_model_catalog_result({ \"result\": result, \"status_code\": response_code, \"headers\": response_headers, \"body\": body, }))",
+      "reason": "调用请求方传入的 Callable 完成 HTTP 模型目录异步回调。"
+    },
+    {
+      "path": "game/world/integration/TownAgentProviderService.gd",
+      "func": "request_model_catalog",
+      "call": "string:.call( \"request_model_catalog\", on_complete, )",
+      "reason": "Provider 由目录工厂创建，经过接口检查后调用兼容模型目录契约。"
+    },
+    {
+      "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+      "func": "_discover_models",
+      "call": "string:.call( \"request_model_catalog\", provider_id, Callable(self, \"_on_model_catalog_completed\").bind( request_id, provider_id, ), )",
+      "reason": "设置服务通过已校验的 Provider 服务公共契约异步读取模型列表。"
+    },
+    {
+      "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+      "func": "_discover_models",
+      "call": "string:Callable(self, \"_on_model_catalog_completed\")",
+      "reason": "模型列表请求完成后回到设置服务合并并保存模型。"
+    },
+    {
+      "path": "game/agent/AgentSystem.gd",
+      "func": "request_json_for_resident",
+      "call": "string:.call( \"request_json\", model_request, on_complete, )",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/agent/debug/AgentDebugSession.gd",
+      "func": "begin_avatar_conversation",
+      "call": "string:.call( \"player_reply_conversation\", String(active.get(\"conversationId\", \"\")), say.strip_edges(), \"旅行者继续交谈\", false, )",
+      "reason": "调试会话通过 TownRuntime 的四参数对话契约继续交谈。"
+    },
+    {
+      "path": "game/agent/debug/AgentDebugSession.gd",
+      "func": "perform_action",
+      "call": "string:.call( \"player_reply_conversation\", String(action.get(\"conversation_id\", \"\")), String(action.get(\"say\", \"\")), \"旅行者继续交谈\", false, )",
+      "reason": "调试会话通过 TownRuntime 的四参数对话契约继续交谈。"
+    },
+    {
+      "path": "game/agent/memory/ResidentMemorySystem.gd",
+      "func": "accept_decision",
+      "call": "string:.call(\"replace\", _memory)",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/ui/avatar_mode/runtime/AvatarModeHud.gd",
+      "func": "bind_town_ui_adapter",
+      "call": "string:.call( \"get_view_model\", TIME_HUD_SCOPE, )",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/ui/system_feedback/SystemFeedbackLayer.gd",
+      "func": "_unhandled_input",
+      "call": "string:.call(\"request_cancel\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/integration/TownWorldAgentGateway.gd",
+      "func": "_deliver_resident_death_story",
+      "call": "variable:.call({ \"ok\": false, \"errorCode\": \"DEATH_STORY_INVALID\", \"retryable\": false, \"errors\": [\"居民 Agent 没有返回完整死亡故事\"], })",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/integration/TownWorldAgentGateway.gd",
+      "func": "_deliver_resident_death_story",
+      "call": "variable:.call({ \"ok\": true, \"story\": story, \"generatedBy\": \"resident_agent\", \"requestId\": request_id, })",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/integration/TownWorldAgentGateway.gd",
+      "func": "request_resident_death_story",
+      "call": "string:Callable(self, \"_deliver_resident_death_story\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/conflict/TownConflictPresentation.gd",
+      "func": "_horizontal_direction_name_for_actor",
+      "call": "string:.call(\"get_direction_name\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/conflict/TownConflictPresentation.gd",
+      "func": "_start_resident_attack",
+      "call": "string:.call(\"face_direction\", direction)",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/conflict/TownConflictPresentation.gd",
+      "func": "_start_resident_attack",
+      "call": "string:.call(\"get_direction_name\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/conflict/TownConflictPresentation.gd",
+      "func": "_stop_resident_attack",
+      "call": "string:.call(\"set_direction\", original_direction)",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/game_flow/GameFlowFormalOverwriteCompensator.gd",
+      "func": "_record",
+      "call": "variable:.call(result)",
+      "reason": "Callable 实例调用(宿主注入的 _last_result 记录回调),非字符串派发"
+    },
+    {
+      "path": "game/world/presentation/game_flow/GameFlowFormalOverwriteCompensator.gd",
+      "func": "finalize_pending",
+      "call": "string:.call( \"finalize_completed_new_game_archive\", pending_archive.duplicate(true), )",
+      "reason": "同上;实参随字段更名 pending_archive,内容非纯搬故走白名单"
+    },
+    {
+      "path": "game/world/presentation/game_flow/GameFlowFormalOverwriteCompensator.gd",
+      "func": "recover_interrupted",
+      "call": "string:.call( \"recover_interrupted_new_game_overwrite\", slot_id, )",
+      "reason": "同上;自 GameFlowHost 随 G4a 下沉"
+    },
+    {
+      "path": "game/world/presentation/game_flow/GameFlowFormalOverwriteCompensator.gd",
+      "func": "restore_pending",
+      "call": "string:.call( \"restore_completed_new_game_archive\", restore_request, )",
+      "reason": "归档服务经测试反射注入假件(RefCounted 无共同基类),has_method 门卫的契约调用;自 GameFlowHost 随 G4a 下沉"
+    },
+    {
+      "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+      "func": "_bind_town_runtime",
+      "call": "string:.call(\"get_time\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+      "func": "_bind_town_runtime",
+      "call": "string:.call(\"get_world_runtime\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+      "func": "_bind_town_runtime",
+      "call": "string:Callable(self, \"_on_town_environment_changed\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+      "func": "_on_town_environment_changed",
+      "call": "string:.call(\"create_save\", { \"reason\": DAILY_AUTO_SAVE_REASON, })",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/town_runtime/BuildingResidentMarker.gd",
+      "func": "_on_hit_area_input",
+      "call": "string:.call(\"activate_from_overlapping_marker\", viewport, event)",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/town_runtime/TownRuntime.gd",
+      "func": "_on_building_pressed",
+      "call": "string:.call(\"dismiss_resident_action_menu\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/town_runtime/TownRuntime.gd",
+      "func": "_on_building_pressed",
+      "call": "string:.call(\"display_size\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/town_runtime/TownRuntime.gd",
+      "func": "_update_building_resident_marker_zoom",
+      "call": "string:.call(\"set_camera_zoom\", _camera.zoom)",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/ui/TownUiAdapter.gd",
+      "func": "_expire_conversation_wait_if_needed",
+      "call": "string:.call( \"player_end_conversation\", conversation_id, \"话题自然停了下来\", )",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/ui/TownUiAdapter.gd",
+      "func": "_hud_far_conversation_participants_visible",
+      "call": "variable:.call(resident_name)",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/ui/TownUiAdapter.gd",
+      "func": "dismiss_resident_action_menu",
+      "call": "string:.call(\"current_route\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/ui/TownUiAdapter.gd",
+      "func": "dismiss_resident_action_menu",
+      "call": "string:.call(\"request_back\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+      "func": "_connect_world_signals",
+      "call": "string:Callable(self, \"_on_world_log_changed\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+      "func": "_disconnect_world_signals",
+      "call": "string:Callable(self, \"_on_world_log_changed\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+      "func": "_dispatch_resident_action",
+      "call": "string:.call( \"request_resident_death_story\", resident_id, request_id, Callable(self, \"_on_resident_death_story_result\").bind( resident_id, request_id, ), )",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+      "func": "_dispatch_resident_action",
+      "call": "string:Callable(self, \"_on_resident_death_story_result\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+      "func": "_update_persistent_world_ui_visibility",
+      "call": "string:.call( \"set_presentation_mode\", \"observer\" if _observer_mode_active else \"avatar\", )",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/runtime/TownWorldRuntime.gd",
+      "func": "_reconcile_activity_routines_before_save",
+      "call": "string:Callable(self, \"_append_action_result_without_schedule\")",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/runtime/activity/TownWorldActivityRuntime.gd",
+      "func": "reconcile_activity_routines_before_save",
+      "call": "variable:.call( resident_id, source_action_id, \"interrupted\", \"活动安排已经结束，居民继续当前的事情\", )",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/world/runtime/conflict/TownConflictAgentWorldBridge.gd",
+      "func": "_project_injuries",
+      "call": "variable:.call(source_actor_id)",
+      "reason": "本次 PR 引入的动态派发保留，需通过门禁白名单。"
+    },
+    {
+      "path": "game/agent/model/VolcengineArkModelProvider.gd",
+      "func": "request_model_catalog",
+      "call": "string:Callable(self, \"_on_unfiltered_model_catalog\")",
+      "reason": "方舟目录先复用兼容接口异步请求，再由本 Provider 过滤为居民可用模型；Callable 只绑定固定完成方法。"
+    },
+    {
+      "path": "game/agent/model/VolcengineArkModelProvider.gd",
+      "func": "_on_unfiltered_model_catalog",
+      "call": "variable:.call(_filter_town_model_catalog(result))",
+      "reason": "调用请求方传入的 Callable 返回已过滤的方舟模型目录。"
+    },
+    {
+      "path": "game/world/integration/TownAgentProviderService.gd",
+      "func": "request_model_catalog",
+      "call": "string:.call( \"request_model_catalog\", complete_and_release, )",
+      "reason": "Provider 由目录工厂按运行时配置创建，经过接口检查后调用共同的模型目录契约，并在完成时释放引用。"
+    },
+    {
+      "path": "game/world/integration/TownAgentProviderService.gd",
+      "func": "request_model_catalog",
+      "call": "variable:.call(result)",
+      "reason": "模型目录完成后调用请求方传入的 Callable，并释放异步请求期间保留的 Provider。"
+    }
+  ]
+}
