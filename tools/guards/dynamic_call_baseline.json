@@ -1,0 +1,5365 @@
+{
+ "version": 1,
+ "stats": {
+  "game/agent": 302,
+  "game/ui": 140,
+  "game/world/integration": 11,
+  "game/world/maps": 20,
+  "game/world/presentation": 472,
+  "game/world/runtime": 8
+ },
+ "entries": [
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "_capture_resident_payloads",
+   "call": "string:.call( \"encode\", String(resident_id), resident_name, capture_result.get(\"resident_state\"), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "_capture_resident_payloads",
+   "call": "string:.call(\"capture_persistent_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "_commit_restore_transaction",
+   "call": "string:.call(\"attach_session_epoch\", _session_epoch)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "_decode_resident_payloads",
+   "call": "string:.call( \"decode\", String(resident_id), String(payload_record[\"resident_name\"]), payload_record[\"payload\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "_finish_departure_operation",
+   "call": "string:.call( \"commit_departure_message\", departure_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "_finish_departure_operation",
+   "call": "string:.call( \"discard_departure_message_proposal\", departure_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "_finish_departure_operation",
+   "call": "variable:.call(result.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "_invalidate_session",
+   "call": "string:.call(\"invalidate\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "_invalidate_session",
+   "call": "string:.call(\"retire\", _release_retired_resident.bind(resident))",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "_turn_with_memory_claim_root",
+   "call": "string:.call( \"find_expressed_memory_claim\", spoken_text, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "apply_resident_memory_intervention",
+   "call": "string:.call( \"apply_memory_intervention\", request, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "delete_game",
+   "call": "string:.call(\"delete_slot\", context)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "discard_unconfirmed_decision",
+   "call": "string:.call( \"discard_unconfirmed_decision\", decision, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "finish_new_game",
+   "call": "string:.call( \"create_new_game\", context, capture_result[\"resident_payloads\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "finish_new_game",
+   "call": "string:.call(\"attach_session_epoch\", _session_epoch)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "finish_new_game",
+   "call": "string:.call(\"mark_new_game_state_ready\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "get_memory_debug_snapshot",
+   "call": "string:.call(\"get_memory_debug_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "get_resident_debug_snapshot",
+   "call": "string:.call(\"get_debug_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "get_resident_memory",
+   "call": "string:.call(\"get_read_only_memory\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "hydrate_restored_resident",
+   "call": "string:.call( \"equivalent_initialization\", resident_state.get(\"initialization\"), initialization_data, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "hydrate_restored_resident",
+   "call": "string:.call( \"initialization_difference_paths\", resident_state.get(\"initialization\"), initialization_data, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "hydrate_restored_resident",
+   "call": "string:.call(\"apply_persistent_state\", resident_state)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "hydrate_restored_resident",
+   "call": "string:.call(\"get_initialization_errors\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "initialize_resident",
+   "call": "string:.call(\"attach_session_epoch\", _session_epoch)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "initialize_resident",
+   "call": "string:.call(\"get_initialization_errors\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "prepare_departure_messages",
+   "call": "string:.call( \"has_avatar_departure_context\", )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "prepare_departure_messages",
+   "call": "string:.call( \"request_departure_message\", normalized_id, _on_departure_resident_result.bind( normalized_id, resident_id, ), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "prepare_departure_messages",
+   "call": "variable:.call( (existing.get(\"result\", {}) as Dictionary).duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "request_decision",
+   "call": "string:.call( \"request_decision\", prepared_wake, on_complete, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "request_decision",
+   "call": "string:.call( \"request_decision\", prepared_wake, on_complete, retry_feedback, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "restore_game",
+   "call": "string:.call(\"load_snapshot\", context)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "save_game",
+   "call": "string:.call( \"save_snapshot\", next, capture_result[\"resident_payloads\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "seed_debug_memory",
+   "call": "string:.call(\"seed_debug_memory\", memory)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/AgentSystem.gd",
+   "func": "start_new_game",
+   "call": "string:.call(\"validate_new_game\", context)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/DecisionExecution.gd",
+   "func": "_validate_model_decision",
+   "call": "variable:.call({ \"ok\": false, \"errors\": [\"模型调用失败\"], })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/DecisionExecution.gd",
+   "func": "_validate_model_decision",
+   "call": "variable:.call({ \"ok\": false, \"errors\": conversation_follow_up_speech_errors, })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/DecisionExecution.gd",
+   "func": "_validate_model_decision",
+   "call": "variable:.call({ \"ok\": true, \"decision\": canonical_decision, \"actionIdRepaired\": action_id_repaired, \"staleConversationReplyDiscarded\": stale_reply_discarded, \"socialResponseErrors\": social_response_errors, \"socialAttentionErrors\": social_attention_errors, \"socialRequestErrors\": social_request_errors, \"conversationFollowUpErrors\": conversation_follow_up_errors, })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/DecisionExecution.gd",
+   "func": "_validate_model_decision",
+   "call": "variable:.call({\"ok\": false, \"errors\": [\"决定必须是对象\"]})",
+   "count": 1
+  },
+  {
+   "path": "game/agent/DecisionExecution.gd",
+   "func": "_validate_model_decision",
+   "call": "variable:.call({\"ok\": false, \"errors\": errors})",
+   "count": 1
+  },
+  {
+   "path": "game/agent/DecisionExecution.gd",
+   "func": "request_decision",
+   "call": "string:.call( \"compile\", wake_packet, memory_prompt, retry_feedback, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/DecisionExecution.gd",
+   "func": "request_decision",
+   "call": "string:.call( \"request_decision\", model_request, _validate_model_decision.bind( initialization.duplicate(true), wake_packet.duplicate(true), used_action_ids.duplicate(true), on_complete, ), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/DecisionExecution.gd",
+   "func": "request_decision",
+   "call": "variable:.call({ \"ok\": false, \"errors\": model_request.get(\"errors\", [\"模型输入组装失败\"]), })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_begin_departure_message_request",
+   "call": "variable:.call({ \"ok\": true, \"wrote\": false, \"model_failure\": true, \"errors\": prepared.get(\"errors\", []), })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_begin_departure_message_request",
+   "call": "variable:.call({ \"ok\": true, \"wrote\": true, \"message\": prepared.get(\"message\", {}).duplicate(true), })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_begin_departure_message_request",
+   "call": "variable:.call({\"ok\": true, \"wrote\": false})",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_continue_after_avatar_organization",
+   "call": "variable:.call({ \"ok\": false, \"errors\": avatar_context.get( \"errors\", [\"居民化身记忆读取失败\"], ), })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_continue_after_avatar_organization",
+   "call": "variable:.call({ \"ok\": false, \"errors\": context_result.get(\"errors\", [\"居民相关记忆读取失败\"]), })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_continue_after_avatar_organization",
+   "call": "variable:.call({ \"ok\": false, \"errors\": organization_acceptance.get( \"errors\", [\"居民化身记忆整理提交失败\"], ), })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_continue_after_organization",
+   "call": "variable:.call({ \"ok\": false, \"errors\": organization_acceptance.get(\"errors\", [\"居民记忆整理提交失败\"]), })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_forward_legacy_json_result",
+   "call": "variable:.call(packet.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_forward_legacy_json_result",
+   "call": "variable:.call({ \"ok\": true, \"json\": (packet[\"decision\"] as Dictionary).duplicate(true), })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_forward_legacy_json_result",
+   "call": "variable:.call({\"ok\": false, \"errors\": [\"模型结构化结果不是对象\"]})",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_forward_legacy_json_result",
+   "call": "variable:.call({\"ok\": true, \"json\": packet.duplicate(true)})",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_notify_retired_if_drained",
+   "call": "variable:.call()",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_on_avatar_organization_result",
+   "call": "variable:.call({ \"ok\": false, \"stale\": true, \"decision_id\": request_decision_id, })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_on_decision_result",
+   "call": "variable:.call(completed_result)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_on_decision_result",
+   "call": "variable:.call(result.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_on_decision_result",
+   "call": "variable:.call({ \"ok\": false, \"stale\": true, \"decision_id\": request_decision_id, })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_on_decision_result",
+   "call": "variable:.call({\"ok\": false, \"errors\": memory_acceptance.get(\"errors\", [\"记忆写入失败\"])})",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_on_departure_message_result",
+   "call": "variable:.call(accepted.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_on_departure_message_result",
+   "call": "variable:.call({ \"ok\": true, \"wrote\": false, \"model_failure\": true, \"errors\": accepted.get(\"errors\", []), })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_on_departure_message_result",
+   "call": "variable:.call({ \"ok\": true, \"wrote\": false, \"model_failure\": true, \"errors\": result.get(\"errors\", [\"居民留言模型调用失败\"]), })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_on_departure_organization_result",
+   "call": "variable:.call({ \"ok\": true, \"wrote\": false, \"model_failure\": true, \"errors\": [\"退出前化身记忆整理结果已经过期\"], })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_on_organization_result",
+   "call": "variable:.call({ \"ok\": false, \"stale\": true, \"decision_id\": request_decision_id, })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_request_json",
+   "call": "string:.call( \"request_decision\", model_request, _forward_legacy_json_result.bind(on_complete), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "_request_json",
+   "call": "string:.call(\"request_json\", model_request, on_complete)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "apply_memory_intervention",
+   "call": "string:.call(\"apply_memory_intervention\", request)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "find_expressed_memory_claim",
+   "call": "string:.call(\"find_expressed_memory_claim\", spoken_text)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/ResidentRuntime.gd",
+   "func": "get_debug_snapshot",
+   "call": "string:.call(\"get_debug_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/AvatarMemoryOrganizer.gd",
+   "func": "build_request",
+   "call": "string:.call(\"validate\", old_memory)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/AvatarMemoryOrganizer.gd",
+   "func": "validate_candidate",
+   "call": "string:.call(\"validate\", next_state)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/AvatarMemoryOrganizer.gd",
+   "func": "validate_candidate",
+   "call": "string:.call(\"validate\", old_memory)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_build_organization_plan",
+   "call": "string:.call( \"build_request\", _memory, relevant_evidence, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_build_organization_plan",
+   "call": "string:.call(\"read\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_clear_storage",
+   "call": "string:.call(\"empty_memory\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_clear_storage",
+   "call": "string:.call(\"erase_storage\")",
+   "count": 2
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_context_result",
+   "call": "string:.call( \"retrieve\", _memory, _avatar_relevant_evidence( queue_result.get(\"items\", []) as Array, ), mode, wake_packet, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_context_result",
+   "call": "string:.call(\"mode_for_wake\", wake_packet)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_context_result",
+   "call": "string:.call(\"read\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_init",
+   "call": "string:.call(\"empty_memory\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_load_current_state",
+   "call": "string:.call( \"initialize_empty\", )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_load_current_state",
+   "call": "string:.call( \"replace\", _store.call(\"empty_memory\"), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_load_current_state",
+   "call": "string:.call(\"empty_memory\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_load_current_state",
+   "call": "string:.call(\"read\")",
+   "count": 2
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_organization_context",
+   "call": "string:.call(\"read\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_validate_persistent_state",
+   "call": "string:.call( \"validate\", state.get(\"memory\"), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "_validate_persistent_state",
+   "call": "string:.call( \"validate_state\", state.get(\"evidence_queue\"), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "accept_organization",
+   "call": "string:.call( \"build_retry_request\", context[\"old_memory\"], context[\"evidence_items\"], validation, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "accept_organization",
+   "call": "string:.call( \"replace\", context[\"old_memory\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "accept_organization",
+   "call": "string:.call( \"replace\", validation[\"memory\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "accept_organization",
+   "call": "string:.call( \"validate_candidate\", candidate, context[\"old_memory\"], context[\"evidence_items\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "accept_organization",
+   "call": "string:.call(\"mark_organized\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "apply_persistent_state",
+   "call": "string:.call( \"apply_state\", state[\"evidence_queue\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "apply_persistent_state",
+   "call": "string:.call(\"replace\", state[\"memory\"])",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "build_departure_message_request",
+   "call": "string:.call( \"retrieve\", departure_context.get(\"memory\", {}) as Dictionary, departure_context.get(\"evidence_items\", []) as Array, \"departure_message\", {}, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "build_departure_message_request",
+   "call": "string:.call(\"read\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "capture_persistent_state",
+   "call": "string:.call(\"capture_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "commit_departure_message",
+   "call": "string:.call(\"replace\", next)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "empty_persistent_state",
+   "call": "string:.call(\"empty_memory\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "get_debug_snapshot",
+   "call": "string:.call(\"capacity\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "get_debug_snapshot",
+   "call": "string:.call(\"read\")",
+   "count": 2
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "has_departure_context",
+   "call": "string:.call(\"read\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "mark_departure_context_screened",
+   "call": "string:.call(\"read\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "mark_departure_context_screened",
+   "call": "string:.call(\"replace\", next)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "prepare_context",
+   "call": "string:.call( \"append_wake\", wake_packet, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "prepare_departure_organization",
+   "call": "string:.call( \"build_request\", _memory, relevant_evidence, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/avatar_memory/ResidentAvatarMemoryModule.gd",
+   "func": "prepare_departure_organization",
+   "call": "string:.call(\"read\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_begin_manual_conversation",
+   "call": "string:.call( \"begin_avatar_conversation\", _selected_resident_id, say, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_begin_manual_conversation",
+   "call": "string:.call(\"bind_town_ui_adapter\", adapter)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_begin_manual_conversation",
+   "call": "string:.call(\"conversation_adapter\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_begin_manual_conversation",
+   "call": "string:.call(\"focus_default_control\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_create_save",
+   "call": "string:.call(\"create_save\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_create_save",
+   "call": "string:.call(\"save_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_execute_campaign",
+   "call": "string:.call( \"perform_action\", action_value as Dictionary, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_execute_campaign",
+   "call": "string:.call(\"snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_execute_campaign",
+   "call": "string:.call(\"trace_count\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_execute_campaign",
+   "call": "string:.call(\"traces_from\", before)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_load_providers",
+   "call": "string:.call(\"default_provider_id\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_load_providers",
+   "call": "string:.call(\"list_providers\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_load_providers",
+   "call": "string:.call(\"load_saved_runtime_configuration\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_on_batch_file_selected",
+   "call": "string:.call(\"load_file\", path)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_on_resident_selected",
+   "call": "string:.call( \"resident_debug_snapshot\", _selected_resident_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_on_resident_selected",
+   "call": "string:.call(\"snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_ready",
+   "call": "string:.call(\"example\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_refresh_models",
+   "call": "string:.call(\"list_models\", provider_id)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_refresh_trace_list",
+   "call": "string:.call(\"traces\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_restore_save",
+   "call": "string:.call(\"restore_latest\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_restore_save",
+   "call": "string:.call(\"save_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_run_campaign",
+   "call": "string:.call(\"parse\", value)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_show_inspector",
+   "call": "string:.call( \"resident_debug_snapshot\", _selected_resident_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_show_inspector",
+   "call": "string:.call(\"traces\", _selected_resident_id)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_start_session",
+   "call": "string:.call( \"start_new\", _selected_provider(), _selected_model(), slot_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_wait_for_quiet",
+   "call": "string:.call(\"pending_decision_count\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_wait_for_quiet",
+   "call": "string:.call(\"trace_count\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugLab.gd",
+   "func": "_wait_for_session",
+   "call": "string:.call(\"snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_active_avatar_conversation",
+   "call": "string:.call(\"get_active_conversations\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_active_avatar_conversation",
+   "call": "string:.call(\"get_player_avatar_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_begin_configured_start",
+   "call": "string:.call( \"begin_new_game_from_catalog\", draft, _world_data, catalog, _provider_service, _gateway, _runtime, { \"worldStartMode\": \"development\", \"internalPlaytest\": true, \"sessionId\": \"agent-debug-session-%s\" % identity, \"slotId\": resolved_slot_id, \"requestHost\": self, \"useLiveModel\": provider_id != \"fake\", \"enablePlayerAvatar\": true, }, _on_bootstrap_completed, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_finish_runtime_start",
+   "call": "string:.call( \"configure\", _store, _runtime.call(\"get_world_runtime\"), _gateway.call(\"get_agent_save_participant\"), _gate, {\"allowDevelopmentWorld\": true}, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_finish_runtime_start",
+   "call": "string:.call(\"configure\", _runtime)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_finish_runtime_start",
+   "call": "string:.call(\"get_agent_save_participant\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_finish_runtime_start",
+   "call": "string:.call(\"get_startup_result\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_finish_runtime_start",
+   "call": "string:.call(\"get_world_runtime\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_load_saved_provider_runtime",
+   "call": "string:.call(\"load_saved_runtime_configuration\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_on_start_provider_health_completed",
+   "call": "string:.call( \"check_entry_availability\", (_pending_start.get(\"draft\", {}) as Dictionary).get(\"slots\", []), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_restore_discovered",
+   "call": "string:.call( \"check_entry_availability\", bindings.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_restore_discovered",
+   "call": "string:.call( \"complete_restored_session\", restored.get(\"context\", {}) as Dictionary, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_restore_discovered",
+   "call": "string:.call( \"configure\", _store, _runtime.call(\"get_world_runtime\"), _gateway.call(\"get_agent_save_participant\"), _gate, {\"allowDevelopmentWorld\": true}, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_restore_discovered",
+   "call": "string:.call( \"configure_session\", gateway_config, _provider_service, self, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_restore_discovered",
+   "call": "string:.call( \"configure_session\", restored_config, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_restore_discovered",
+   "call": "string:.call( \"request_health_check\", bindings.duplicate(true), func(result: Dictionary) -> void: health_completion[\"result\"] = result.duplicate(true) health_completion[\"done\"] = true, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_restore_discovered",
+   "call": "string:.call( \"restore_revision\", slot_id, session_id, revision, _world_data.duplicate(true), identities, _gateway, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_restore_discovered",
+   "call": "string:.call(\"configure\", _runtime)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_restore_discovered",
+   "call": "string:.call(\"configure\", { \"capabilityMode\": \"development\", \"source\": \"agent-debug\", \"allowFake\": allow_fake, \"providerConfigs\": ( saved_provider_runtime.get(\"providerConfigs\", {}) as Dictionary ).duplicate(true), }, self)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_restore_discovered",
+   "call": "string:.call(\"configure_agent_gateway\", _gateway)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_restore_discovered",
+   "call": "string:.call(\"get_agent_save_participant\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_restore_discovered",
+   "call": "string:.call(\"get_startup_result\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "_restore_discovered",
+   "call": "string:.call(\"get_world_runtime\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "begin_avatar_conversation",
+   "call": "string:.call( \"player_end_conversation\", String(active.get(\"conversationId\", \"\")), \"旅行者转向其他居民\", )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "begin_avatar_conversation",
+   "call": "string:.call( \"player_reply_conversation\", String(active.get(\"conversationId\", \"\")), say.strip_edges(), \"旅行者继续交谈\", )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "begin_avatar_conversation",
+   "call": "string:.call( \"player_start_conversation\", String(resident.get(\"name\", \"\")), say.strip_edges(), \"旅行者主动交谈\", )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "begin_avatar_conversation",
+   "call": "string:.call( \"prepare_player_avatar_descent\", String(resident.get(\"spaceId\", \"town_outdoor\")), resident.get(\"position\", Vector2.ZERO) as Vector2, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "begin_avatar_conversation",
+   "call": "string:.call(\"get_resident_state\", resident_id)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "begin_avatar_conversation",
+   "call": "string:.call(\"get_world_runtime\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "conversation_adapter",
+   "call": "string:.call(\"get_ui_adapter\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "create_save",
+   "call": "string:.call(\"save\", { \"slotId\": _session_config.get(\"slotId\"), \"sessionId\": _session_config.get(\"sessionId\"), \"residentIdentities\": _session_config.get(\"residentIdentities\", []), \"sessionConfig\": _manifest_session_config(), \"savedAt\": Time.get_datetime_string_from_system(false, false), })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "pending_decision_count",
+   "call": "string:.call(\"get_debug_inflight_count\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "perform_action",
+   "call": "string:.call( \"advance\", float(action.get(\"seconds\", 1.0)), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "perform_action",
+   "call": "string:.call( \"player_end_conversation\", String(action.get(\"conversation_id\", \"\")), \"旅行者结束交谈\", )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "perform_action",
+   "call": "string:.call( \"player_reply_conversation\", String(action.get(\"conversation_id\", \"\")), String(action.get(\"say\", \"\")), \"旅行者继续交谈\", )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "perform_action",
+   "call": "string:.call( \"publish_announcement\", String(action.get(\"text\", \"\")), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "perform_action",
+   "call": "string:.call(\"get_world_runtime\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "perform_action",
+   "call": "string:.call(\"pump\")",
+   "count": 3
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "perform_action",
+   "call": "string:.call(\"set_weather\", String(action.get(\"weather\", \"\")))",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "resident_debug_snapshot",
+   "call": "string:.call(\"get_resident_debug_snapshot\", resident_id)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "restore_latest",
+   "call": "string:.call( \"discover_latest\", String(_session_config.get(\"slotId\", \"\")), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "restore_latest",
+   "call": "string:.call( \"read_reference\", manifest.get(\"session_config_ref\", \"\"), manifest.get(\"session_config_sha256\", \"\"), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "save_snapshot",
+   "call": "string:.call(\"get_agent_save_context\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "save_snapshot",
+   "call": "string:.call(\"list_incomplete\", slot_id)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "save_snapshot",
+   "call": "string:.call(\"list_published\", slot_id)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "snapshot",
+   "call": "string:.call( \"get_resident_debug_snapshot\", resident_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "snapshot",
+   "call": "string:.call(\"get_connected_resident_ids\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "start_new",
+   "call": "string:.call( \"request_health_check\", (draft.get(\"slots\", []) as Array).duplicate(true), _on_start_provider_health_completed, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/debug/AgentDebugSession.gd",
+   "func": "start_new",
+   "call": "string:.call(\"configure\", { \"capabilityMode\": \"development\", \"source\": \"agent-debug\", \"allowFake\": provider_id == \"fake\", \"providerConfigs\": ( saved_provider_runtime.get(\"providerConfigs\", {}) as Dictionary ).duplicate(true), }, self)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/MemoryOrganizer.gd",
+   "func": "build_request",
+   "call": "string:.call(\"validate\", old_memory)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/MemoryOrganizer.gd",
+   "func": "build_retry_request",
+   "call": "string:.call(\"capacity\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/MemoryOrganizer.gd",
+   "func": "validate_candidate",
+   "call": "string:.call( \"validate\", old_memory, validation[\"memory\"], evidence_items, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/MemoryOrganizer.gd",
+   "func": "validate_candidate",
+   "call": "string:.call(\"validate\", candidate)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentFormalMemoryBuilder.gd",
+   "func": "_merge_evidence",
+   "call": "string:.call(\"apply_result\", candidate, evidence, outcome, revision)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentFormalMemoryBuilder.gd",
+   "func": "_merge_evidence",
+   "call": "string:.call(\"apply_result\", exact, evidence, outcome, revision)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentFormalMemoryBuilder.gd",
+   "func": "_merge_evidence",
+   "call": "string:.call(\"compare\", candidate, evidence, active >= 0)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentFormalMemoryBuilder.gd",
+   "func": "_merge_evidence",
+   "call": "string:.call(\"compare\", exact, evidence, active >= 0)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentFormalMemoryBuilder.gd",
+   "func": "_merge_evidence",
+   "call": "string:.call(\"find_candidate_indices\", entries, evidence)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemoryInterventionService.gd",
+   "func": "apply",
+   "call": "string:.call(\"read\")",
+   "count": 2
+  },
+  {
+   "path": "game/agent/memory/ResidentMemoryInterventionService.gd",
+   "func": "apply",
+   "call": "string:.call(\"replace\", archive_validation[\"archive\"])",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemoryInterventionService.gd",
+   "func": "apply",
+   "call": "string:.call(\"replace\", log_validation[\"log\"])",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemoryInterventionService.gd",
+   "func": "apply",
+   "call": "string:.call(\"replace\", old_archive)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemoryInterventionService.gd",
+   "func": "apply",
+   "call": "string:.call(\"validate\", new_archive)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemoryInterventionService.gd",
+   "func": "apply",
+   "call": "string:.call(\"validate\", new_log)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_apply_automatic_memory_aging",
+   "call": "string:.call( \"evaluate\", old_archive, old_log, world_time, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_apply_automatic_memory_aging",
+   "call": "string:.call( \"project\", old_summary, (archive_validation[\"archive\"] as Dictionary).get(\"entries\", []), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_apply_automatic_memory_aging",
+   "call": "string:.call( \"replace\", archive_validation[\"archive\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_apply_automatic_memory_aging",
+   "call": "string:.call( \"replace\", log_validation[\"log\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_apply_automatic_memory_aging",
+   "call": "string:.call( \"replace\", summary_validation[\"memory\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_apply_automatic_memory_aging",
+   "call": "string:.call( \"validate\", evaluated.get(\"archive\"), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_apply_automatic_memory_aging",
+   "call": "string:.call( \"validate\", evaluated.get(\"intervention_log\"), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_apply_automatic_memory_aging",
+   "call": "string:.call(\"replace\", old_archive)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_apply_automatic_memory_aging",
+   "call": "string:.call(\"validate\", projected)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_build_organization_plan",
+   "call": "string:.call(\"build_request\", _memory, items)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_build_organization_plan",
+   "call": "string:.call(\"read\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_clear_resident_storage",
+   "call": "string:.call(\"erase_storage\")",
+   "count": 3
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_ingest_wake",
+   "call": "string:.call( \"append_wake\", evidence_wake, matched_intents, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_init",
+   "call": "string:.call(\"empty_memory\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_load_current_state",
+   "call": "string:.call( \"initialize_empty\", )",
+   "count": 3
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_load_current_state",
+   "call": "string:.call( \"replace\", _store.call(\"empty_memory\"), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_load_current_state",
+   "call": "string:.call(\"empty_memory\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_load_current_state",
+   "call": "string:.call(\"read\")",
+   "count": 4
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_organization_context",
+   "call": "string:.call(\"read\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_rollback_subjective_memory",
+   "call": "string:.call(\"replace\", old_archive)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_rollback_subjective_memory",
+   "call": "string:.call(\"replace\", old_log)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_rollback_subjective_memory",
+   "call": "string:.call(\"replace\", old_summary)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_select_decision_memory",
+   "call": "string:.call(\"empty_memory\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_validate_persistent_state",
+   "call": "string:.call( \"validate\", archive_value, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_validate_persistent_state",
+   "call": "string:.call( \"validate\", intervention_value, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_validate_persistent_state",
+   "call": "string:.call( \"validate_intent_shape\", pending_item.get(\"action\"), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_validate_persistent_state",
+   "call": "string:.call( \"validate_state\", state.get(\"evidence_queue\"), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_validate_persistent_state",
+   "call": "string:.call(\"empty_archive\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_validate_persistent_state",
+   "call": "string:.call(\"empty_log\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "_validate_persistent_state",
+   "call": "string:.call(\"validate\", state.get(\"memory\"))",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call( \"build\", old_archive, old_intervention_log, context[\"evidence_items\"], validation[\"memory\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call( \"build_retry_request\", context[\"old_memory\"], context[\"evidence_items\"], validation, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call( \"project\", organized_memory, formal_entries, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call( \"replace\", archive_validation[\"archive\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call( \"replace\", log_validation[\"log\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call( \"validate\", formal_result[\"archive\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call( \"validate\", formal_result[\"intervention_log\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call( \"validate_candidate\", candidate, context[\"old_memory\"], context[\"evidence_items\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call(\"mark_organized\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call(\"read\")",
+   "count": 3
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call(\"replace\", context[\"old_memory\"])",
+   "count": 3
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call(\"replace\", old_archive)",
+   "count": 2
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call(\"replace\", old_intervention_log)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call(\"replace\", organized_memory)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "accept_organization",
+   "call": "string:.call(\"validate\", projected)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "apply_memory_intervention",
+   "call": "string:.call( \"project\", old_summary, (new_archive_read[\"archive\"] as Dictionary).get(\"entries\", []), )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "apply_memory_intervention",
+   "call": "string:.call(\"apply\", request)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "apply_memory_intervention",
+   "call": "string:.call(\"read\")",
+   "count": 3
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "apply_memory_intervention",
+   "call": "string:.call(\"replace\", summary_validation[\"memory\"])",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "apply_memory_intervention",
+   "call": "string:.call(\"validate\", projected)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "apply_persistent_state",
+   "call": "string:.call( \"apply_state\", state[\"evidence_queue\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "apply_persistent_state",
+   "call": "string:.call( \"replace\", state[\"formal_memory_archive\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "apply_persistent_state",
+   "call": "string:.call( \"replace\", state[\"memory_interventions\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "apply_persistent_state",
+   "call": "string:.call(\"replace\", state[\"memory\"])",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "capture_persistent_state",
+   "call": "string:.call(\"capture_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "capture_persistent_state",
+   "call": "string:.call(\"read\")",
+   "count": 2
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "find_expressed_memory_claim",
+   "call": "string:.call(\"read\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "get_debug_snapshot",
+   "call": "string:.call(\"capacity\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "get_debug_snapshot",
+   "call": "string:.call(\"read\")",
+   "count": 2
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "seed_debug_memory",
+   "call": "string:.call( \"initialize_empty\", )",
+   "count": 2
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "seed_debug_memory",
+   "call": "string:.call(\"initialize_empty\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "seed_debug_memory",
+   "call": "string:.call(\"replace\", validation[\"memory\"])",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "seed_debug_memory",
+   "call": "string:.call(\"validate\", memory)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/memory/ResidentMemorySystem.gd",
+   "func": "validate_structured_memory",
+   "call": "string:.call(\"validate\", value)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/FakeModelProvider.gd",
+   "func": "complete_next",
+   "call": "variable:.call(result.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/FakeModelProvider.gd",
+   "func": "request_decision",
+   "call": "variable:.call(result.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/ModelProvider.gd",
+   "func": "_forward_json_result",
+   "call": "variable:.call(packet.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/ModelProvider.gd",
+   "func": "_forward_json_result",
+   "call": "variable:.call({ \"ok\": true, \"json\": (packet[\"decision\"] as Dictionary).duplicate(true), })",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/ModelProvider.gd",
+   "func": "_forward_json_result",
+   "call": "variable:.call({\"ok\": false, \"errors\": [\"模型结构化结果不是对象\"]})",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/ModelProvider.gd",
+   "func": "_forward_json_result",
+   "call": "variable:.call({\"ok\": false, \"errors\": [\"模型结构化结果缺少 JSON 对象\"]})",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/ModelProviderCatalog.gd",
+   "func": "_register_provider_with_models",
+   "call": "string:.call(\"get_provider_descriptor\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/ModelProviderCatalog.gd",
+   "func": "create_model",
+   "call": "string:.call(\"get_provider_descriptor\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/ModelProviderCatalog.gd",
+   "func": "create_provider",
+   "call": "string:.call(\"get_provider_descriptor\")",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/ModelProviderCatalog.gd",
+   "func": "create_provider",
+   "call": "variable:.call(request_host, resolved_config)",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/OpenAICompatibleModelProvider.gd",
+   "func": "_complete_failure",
+   "call": "variable:.call(result_packet.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/OpenAICompatibleModelProvider.gd",
+   "func": "_handle_transport_result",
+   "call": "variable:.call(result_packet.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/OpenAICompatibleModelProvider.gd",
+   "func": "_start_transport_watchdog",
+   "call": "variable:.call( [\"模型请求超时：transport 超过 %s 秒未回复\" % timeout_seconds], { \"error_type\": \"timeout\", \"retryable\": true, \"request\": recorded_request, }, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/OpenAICompatibleModelProvider.gd",
+   "func": "request_decision",
+   "call": "string:.call( \"request_json\", endpoint, headers, body.duplicate(true), settle_response, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/model/OpenAICompatibleModelProvider.gd",
+   "func": "request_decision",
+   "call": "variable:.call( [\"模型请求未能启动：%s\" % error_string(error)], {\"error_type\": \"request_start\", \"retryable\": false, \"request\": recorded_request}, )",
+   "count": 1
+  },
+  {
+   "path": "game/agent/prompt/ModelImageContent.gd",
+   "func": "build",
+   "call": "string:.call( \"resolve_photo\", ref, mime_type, )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/avatar_mode/runtime/AvatarModeHud.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_adapter_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/avatar_mode/runtime/AvatarModeHud.gd",
+   "func": "_request_action",
+   "call": "string:.call(\"dispatch\", intent, payload.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/ui/avatar_mode/runtime/AvatarModeHud.gd",
+   "func": "_sync_live_resident_prompt_anchor",
+   "call": "variable:.call(resident_id)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/avatar_mode/runtime/AvatarModeHud.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:.call(\"get_view_model\", scope)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/avatar_mode/runtime/AvatarModeHud.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(adapter, \"get_town_hud_resident_head_anchor\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/avatar_mode/runtime/AvatarModeHud.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_adapter_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/bulletin_board/BulletinBoardPanel.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/bulletin_board/BulletinBoardPanel.gd",
+   "func": "_refresh_from_adapter",
+   "call": "string:.call(\"get_view_model\", str(SCOPE))",
+   "count": 1
+  },
+  {
+   "path": "game/ui/bulletin_board/BulletinBoardPanel.gd",
+   "func": "_render_feedback",
+   "call": "string:.call( \"configure\", _dialog_view_model(dialog), \"dialog\" )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/bulletin_board/BulletinBoardPanel.gd",
+   "func": "_render_feedback",
+   "call": "string:.call( \"configure\", _toast_view_model(feedback), \"toast\" )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/bulletin_board/BulletinBoardPanel.gd",
+   "func": "_request_action",
+   "call": "string:.call(\"dispatch\", intent, envelope)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/bulletin_board/BulletinBoardPanel.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/conversation_unified/UnifiedConversationScreen.gd",
+   "func": "_clear_selected_photo",
+   "call": "string:.call( \"discard_conversation_photo\", _selected_photo_ref, _selected_photo_owner_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/conversation_unified/UnifiedConversationScreen.gd",
+   "func": "_conversation_photo_texture",
+   "call": "string:.call( \"resolve_conversation_photo_preview\", ref, mime_type, )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/conversation_unified/UnifiedConversationScreen.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/conversation_unified/UnifiedConversationScreen.gd",
+   "func": "_on_photo_selected",
+   "call": "string:.call( \"discard_conversation_photo\", staged_ref, staged_owner, )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/conversation_unified/UnifiedConversationScreen.gd",
+   "func": "_on_photo_selected",
+   "call": "string:.call( \"prepare_conversation_photo\", path, )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/conversation_unified/UnifiedConversationScreen.gd",
+   "func": "_refresh_from_adapter",
+   "call": "string:.call(\"get_view_model\", String(SCOPE))",
+   "count": 1
+  },
+  {
+   "path": "game/ui/conversation_unified/UnifiedConversationScreen.gd",
+   "func": "_request_action",
+   "call": "string:.call( \"dispatch\", String(intent), payload.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/conversation_unified/UnifiedConversationScreen.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/custom_resident_creator/CustomResidentCreatorScreen.gd",
+   "func": "_apply_dropdown_skin",
+   "call": "string:Callable(self, \"_on_dropdown_visual_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/custom_resident_creator/CustomResidentCreatorScreen.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_adapter_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/custom_resident_creator/CustomResidentCreatorScreen.gd",
+   "func": "_refresh_from_adapter",
+   "call": "string:.call(\"get_view_model\", SCOPE)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/custom_resident_creator/CustomResidentCreatorScreen.gd",
+   "func": "_render_preview",
+   "call": "string:.call( \"set_selection\", appearance.get(\"selection\", {}) as Dictionary, )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/custom_resident_creator/CustomResidentCreatorScreen.gd",
+   "func": "_render_preview",
+   "call": "string:.call(\"set_preview_direction\", 0)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/custom_resident_creator/CustomResidentCreatorScreen.gd",
+   "func": "_render_preview",
+   "call": "string:.call(\"set_preview_frame\", 0)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/custom_resident_creator/CustomResidentCreatorScreen.gd",
+   "func": "_request_action",
+   "call": "string:.call(\"dispatch\", intent, payload)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/custom_resident_creator/CustomResidentCreatorScreen.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_adapter_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/indoor_overlay/IndoorOverlay.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/indoor_overlay/IndoorOverlay.gd",
+   "func": "_refresh_from_adapter",
+   "call": "string:.call(\"get_view_model\", str(SCOPE))",
+   "count": 1
+  },
+  {
+   "path": "game/ui/indoor_overlay/IndoorOverlay.gd",
+   "func": "_request_action",
+   "call": "string:.call( \"dispatch\", str(intent), envelope.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/indoor_overlay/IndoorOverlay.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/inner_observation/InnerObservationOverlay.gd",
+   "func": "_apply_initial_adapter_view_model",
+   "call": "string:.call(\"get_view_model\", REQUIRED_SCOPE)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/inner_observation/InnerObservationOverlay.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_adapter_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/inner_observation/InnerObservationOverlay.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_adapter_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/new_game_overwrite/NewGameOverwriteScreen.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/new_game_overwrite/NewGameOverwriteScreen.gd",
+   "func": "_refresh_from_adapter",
+   "call": "string:.call( \"get_view_model\", str(SCOPE) )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/new_game_overwrite/NewGameOverwriteScreen.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "_apply_adapter",
+   "call": "string:.call(\"bind_town_ui_adapter\", _adapter)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "_apply_adapter",
+   "call": "string:.call(\"unbind_town_ui_adapter\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "_connect_pause_screen",
+   "call": "string:Callable( self, \"_on_pause_action_blocked\" )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "_connect_pause_screen",
+   "call": "string:Callable( self, \"_on_pause_intent_requested\" )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "_disconnect_pause_screen",
+   "call": "string:Callable( self, \"_on_pause_action_blocked\" )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "_disconnect_pause_screen",
+   "call": "string:Callable( self, \"_on_pause_intent_requested\" )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "close_audio_display_settings",
+   "call": "string:.call(\"unbind_town_ui_adapter\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "close_load_game",
+   "call": "string:.call(\"deactivate_modal_ownership\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "debug_snapshot",
+   "call": "string:.call( \"runtime_gate_snapshot\" )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "open_audio_display_settings",
+   "call": "string:Callable( self, \"_on_settings_action_blocked\" )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "open_audio_display_settings",
+   "call": "string:Callable( self, \"_on_settings_intent_requested\" )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "open_load_game",
+   "call": "string:.call(\"apply_view_model\", view_model)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "open_load_game",
+   "call": "string:Callable( self, \"_on_load_game_action_blocked\" )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "open_load_game",
+   "call": "string:Callable( self, \"_on_load_game_intent_requested\" )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "present_host_result",
+   "call": "string:.call( \"present_host_result\", intent, result.duplicate(true) )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuNavigationHost.gd",
+   "func": "request_back",
+   "call": "string:.call(\"request_back\")",
+   "count": 2
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuScreen.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuScreen.gd",
+   "func": "_refresh_from_adapter",
+   "call": "string:.call(\"get_view_model\", scope)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuScreen.gd",
+   "func": "_request_action",
+   "call": "string:.call(\"dispatch\", intent, payload)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuScreen.gd",
+   "func": "_request_save_create",
+   "call": "string:.call(\"dispatch\", intent, payload)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/pause_menu/PauseMenuScreen.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/place_focus/runtime/PlaceFocusPanel.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/place_focus/runtime/PlaceFocusPanel.gd",
+   "func": "_refresh_from_adapter",
+   "call": "string:.call(\"get_view_model\", String(SCOPE))",
+   "count": 1
+  },
+  {
+   "path": "game/ui/place_focus/runtime/PlaceFocusPanel.gd",
+   "func": "_request_action",
+   "call": "string:.call( \"dispatch\", String(intent), envelope.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/place_focus/runtime/PlaceFocusPanel.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/provider_settings/ProviderSettingsScreen.gd",
+   "func": "_dispatch_intent",
+   "call": "string:.call(\"dispatch\", intent, envelope)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/provider_settings/ProviderSettingsScreen.gd",
+   "func": "_toggle_key_visibility",
+   "call": "string:.call( \"reveal_provider_api_key\", provider_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/provider_settings/ProviderSettingsScreen.gd",
+   "func": "bind_adapter",
+   "call": "string:.call( \"get_view_model\", SCOPE )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_action_menu/ResidentActionMenu.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_adapter_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_action_menu/ResidentActionMenu.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:.call(\"get_view_model\", REQUIRED_SCOPE)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_action_menu/ResidentActionMenu.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:.call(\"view_model\", REQUIRED_SCOPE)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_action_menu/ResidentActionMenu.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_adapter_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_detail/ResidentDetailScreen.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_detail/ResidentDetailScreen.gd",
+   "func": "_refresh_from_adapter",
+   "call": "string:.call(\"get_view_model\", str(SCOPE))",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_detail/ResidentDetailScreen.gd",
+   "func": "_request_action",
+   "call": "string:.call(\"dispatch\", str(intent), payload)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_detail/ResidentDetailScreen.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_build_interface",
+   "call": "string:Callable(self, \"_assign_target\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_build_interface",
+   "call": "string:Callable(self, \"_close_completion_modal\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_build_interface",
+   "call": "string:Callable(self, \"_open_completion_modal\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_build_interface",
+   "call": "string:Callable(self, \"_request_action\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_build_interface",
+   "call": "string:Callable(self, \"_request_back\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_build_interface",
+   "call": "string:Callable(self, \"_start_game_from_completion_modal\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_adapter_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_dispatch_prepared_action",
+   "call": "string:.call(\"dispatch\", intent, payload.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_focus_initial_control",
+   "call": "string:.call(\"focus_initial\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_refresh_from_adapter",
+   "call": "string:.call(\"get_view_model\", SCOPE)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_render",
+   "call": "string:.call(\"apply_view_model\", _presentation_view_model())",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_render_provider_auto_refresh_feedback",
+   "call": "string:.call(\"apply_view_model\", _presentation_view_model())",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_restore_apply_focus",
+   "call": "string:.call(\"focus_target\", \"apply\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_restore_pending_focus",
+   "call": "string:.call(\"focus_target\", _pending_focus_id)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_set_completion_modal_message",
+   "call": "string:.call(\"set_completion_modal_message\", message)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "_sync_completion_modal_visibility",
+   "call": "string:.call( \"set_completion_modal_visible\", _completion_modal_open and composite_visible, )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_adapter_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/ResidentModelAssignmentScreen.gd",
+   "func": "runtime_gate_snapshot",
+   "call": "string:.call(\"asset_animation_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/runtime/ResidentModelAssignmentService.gd",
+   "func": "_apply_draft",
+   "call": "string:.call(\"validate_resident_bindings\", bindings)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/runtime/ResidentModelAssignmentService.gd",
+   "func": "_refresh_public_catalog",
+   "call": "string:.call(\"get_health_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_model_assignment/runtime/ResidentModelAssignmentService.gd",
+   "func": "_refresh_public_catalog",
+   "call": "string:.call(\"list_available_models\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_overview/ResidentOverviewScreen.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_overview/ResidentOverviewScreen.gd",
+   "func": "_refresh_from_adapter",
+   "call": "string:.call(\"get_view_model\", SCOPE)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_overview/ResidentOverviewScreen.gd",
+   "func": "_request_follow",
+   "call": "string:.call( \"dispatch\", \"resident_overview.follow\", {\"residentId\": _selected_resident_id}, )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_overview/ResidentOverviewScreen.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_overview/ResidentProfileEditorService.gd",
+   "func": "_reload_from_overview",
+   "call": "string:.call( \"get_view_model\", \"resident_overview\", )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/resident_overview/ResidentProfileEditorService.gd",
+   "func": "_save_existing",
+   "call": "string:.call( \"dispatch\", \"resident_overview.update_profile\", { \"residentId\": _resident_id, \"profile\": { \"home\": String(_draft.get(\"ownedPlaceId\", \"\")), \"job\": job, \"workplace\": String(_draft.get(\"workplaceId\", \"\")), \"attributes\": { \"gender\": String(_draft.get(\"gender\", \"\")), \"age\": int(_draft.get(\"age\", 0)), \"appearance\": String( _resolved_appearance.get(\"appearanceId\", \"\"), ), \"desire\": String(_draft.get(\"desire\", \"\")), \"personality\": String(_draft.get(\"personality\", \"\")), \"speech\": String(_draft.get(\"speech\", \"\")), \"interests\": INTERESTS.normalize( _draft.get(\"interests\", []), ), \"customInterests\": INTERESTS.normalize_custom( _draft.get(\"customInterests\", []), ), }, }, }, )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/settings/AudioDisplaySettingsScreen.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/settings/AudioDisplaySettingsScreen.gd",
+   "func": "_refresh_from_adapter",
+   "call": "string:.call(\"get_view_model\", SCOPE)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/settings/AudioDisplaySettingsScreen.gd",
+   "func": "_render",
+   "call": "string:.call( \"apply_snapshot\", _view_model, _render_data )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/settings/AudioDisplaySettingsScreen.gd",
+   "func": "_request_action",
+   "call": "string:.call(\"dispatch\", intent, envelope)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/settings/AudioDisplaySettingsScreen.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/settings/AudioDisplaySettingsScreen.gd",
+   "func": "request_back",
+   "call": "string:.call(\"_on_back_pressed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/settings/AudioDisplaySettingsScreen.gd",
+   "func": "runtime_gate_snapshot",
+   "call": "string:.call(\"animation_frame\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/settings/AudioDisplaySettingsScreen.gd",
+   "func": "runtime_gate_snapshot",
+   "call": "string:.call(\"confirmation_dialog_visible\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/settings/AudioDisplaySettingsScreen.gd",
+   "func": "runtime_gate_snapshot",
+   "call": "string:.call(\"dropdown_expanded\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/settings/AudioDisplaySettingsScreen.gd",
+   "func": "runtime_gate_snapshot",
+   "call": "string:.call(\"unsaved_dialog_visible\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/startup/StartupScreen.gd",
+   "func": "_build_ambient_residents",
+   "call": "string:.call( \"build_loop_script\", route_nodes, definition[\"indoor\"] as Dictionary, )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/startup/StartupScreen.gd",
+   "func": "_build_ambient_residents",
+   "call": "string:.call( \"configure\", loadout_id, route_steps, float(definition[\"speed\"]) / reference_scale * _rng.randf_range(0.92, 1.08), float(definition[\"scale\"]) / reference_scale * _rng.randf_range(0.96, 1.04), _rng.randi(), _rng.randf_range(0.0, 1.2), )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/startup/StartupScreen.gd",
+   "func": "_build_ambient_residents",
+   "call": "string:.call(\"load_catalog\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/startup/StartupScreen.gd",
+   "func": "_physics_process",
+   "call": "string:.call(\"advance\", delta)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/system_feedback/SystemFeedbackLayer.gd",
+   "func": "_activate_entry",
+   "call": "string:.call( \"configure\", entry.get(\"viewModel\", {}), entry.get(\"surface\", \"\") )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/system_feedback/SystemFeedbackLayer.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/system_feedback/SystemFeedbackLayer.gd",
+   "func": "_disconnect_anchor_layout_if_unused",
+   "call": "string:Callable(self, \"_queue_layout\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/system_feedback/SystemFeedbackLayer.gd",
+   "func": "_dispatch_entry_action",
+   "call": "string:.call(\"dispatch\", intent, payload)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/system_feedback/SystemFeedbackLayer.gd",
+   "func": "_replace_toast_entry",
+   "call": "string:.call( \"configure\", view_model, \"toast\" )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/system_feedback/SystemFeedbackLayer.gd",
+   "func": "_update_entry",
+   "call": "string:.call( \"configure\", view_model, entry.get(\"surface\", \"\") )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/system_feedback/SystemFeedbackLayer.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:.call( \"get_view_model\", str(scope) )",
+   "count": 1
+  },
+  {
+   "path": "game/ui/system_feedback/SystemFeedbackLayer.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/system_feedback/SystemFeedbackLayer.gd",
+   "func": "register_anchor",
+   "call": "string:Callable(self, \"_queue_layout\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/town/hud/runtime/TownFarResidentActivityLayer.gd",
+   "func": "_provider_head_anchor",
+   "call": "variable:.call(resident_id)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/town/hud/runtime/TownFarResidentActivityLayer.gd",
+   "func": "bind_anchor_provider",
+   "call": "string:Callable(_anchor_provider, \"get_town_hud_resident_head_anchor\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/town_log/TownLogPanel.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/town_log/TownLogPanel.gd",
+   "func": "_refresh_from_adapter",
+   "call": "string:.call(\"get_view_model\", String(SCOPE))",
+   "count": 1
+  },
+  {
+   "path": "game/ui/town_log/TownLogPanel.gd",
+   "func": "_request_action",
+   "call": "string:.call(\"dispatch\", String(intent), dispatch_payload)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/town_log/TownLogPanel.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/wardrobe/runtime_approved_v2/WardrobeApprovedV2Runtime.gd",
+   "func": "_request_apply",
+   "call": "string:.call(\"dispatch\", return_intent, payload)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/wardrobe/runtime_approved_v2/WardrobeApprovedV2Runtime.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:.call(\"get_view_model\", \"wardrobe\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/wardrobe/runtime_approved_v2/WardrobeApprovedV2Runtime.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/wardrobe/runtime_approved_v2/WardrobeApprovedV2Runtime.gd",
+   "func": "unbind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/ui/weather_control/WeatherControlPanel.gd",
+   "func": "_on_confirm_pressed",
+   "call": "string:.call(\"dispatch\", intent, payload)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/weather_control/WeatherControlPanel.gd",
+   "func": "bind_adapter",
+   "call": "string:.call(\"get_view_model\", SCOPE)",
+   "count": 1
+  },
+  {
+   "path": "game/ui/weather_control/WeatherControlPanel.gd",
+   "func": "bind_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 2
+  },
+  {
+   "path": "game/ui/weather_control/WeatherControlPanel.gd",
+   "func": "unbind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/integration/TownAgentProviderService.gd",
+   "func": "_cancel_pending_health_checks",
+   "call": "variable:.call({ \"ok\": false, \"accepted\": true, \"status\": \"stale\", \"errorCode\": \"PROVIDER_HEALTH_CHECK_STALE\", \"retryable\": false, \"requestId\": request_id, \"targets\": [], })",
+   "count": 1
+  },
+  {
+   "path": "game/world/integration/TownAgentProviderService.gd",
+   "func": "_finish_health_request",
+   "call": "variable:.call(result.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/world/integration/TownAgentProviderService.gd",
+   "func": "check_entry_availability",
+   "call": "variable:.call(result.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/world/integration/TownAgentProviderService.gd",
+   "func": "request_health_check",
+   "call": "string:Callable( self, \"_on_health_probe_completed\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/integration/TownAgentProviderService.gd",
+   "func": "request_health_check",
+   "call": "variable:.call(invalid_targets.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/world/integration/TownAgentProviderService.gd",
+   "func": "request_health_check",
+   "call": "variable:.call(rejected.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/world/integration/TownAgentProviderService.gd",
+   "func": "request_health_check",
+   "call": "variable:.call(unconfigured.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/world/integration/TownWorldAgentGateway.gd",
+   "func": "_deliver_resident_inner_observation",
+   "call": "variable:.call( _inner_observation_ready_result( snapshot, request_id, ) )",
+   "count": 1
+  },
+  {
+   "path": "game/world/integration/TownWorldAgentGateway.gd",
+   "func": "bind_world",
+   "call": "string:.call( \"get_agent_initialization_by_id\", resident_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/integration/TownWorldAgentGateway.gd",
+   "func": "bind_world",
+   "call": "string:.call(\"get_resident_identity_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/integration/TownWorldAgentGateway.gd",
+   "func": "bind_world",
+   "call": "string:.call(\"is_running\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "_begin_furniture_drag",
+   "call": "string:.call(\"get_active_item_position\")",
+   "count": 2
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "_begin_furniture_drag",
+   "call": "string:.call(\"is_active_item_new\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "_begin_furniture_drag",
+   "call": "string:.call(\"try_pick_up_at\", local_mouse_position)",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "_finish_furniture_drag",
+   "call": "string:.call(\"cancel_placement\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "_update_cafe_depth_order",
+   "call": "string:.call(\"update_depth_for_subject\", _player)",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "_update_cafe_furniture_placement_preview",
+   "call": "string:.call( \"update_placement_position\", local_mouse_position + _furniture_drag_offset )",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "_update_cafe_furniture_placement_preview",
+   "call": "string:.call(\"is_active_item_new\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "cancel_cafe_furniture_placement",
+   "call": "string:.call(\"cancel_placement\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "enter_cafe_furniture_edit_mode",
+   "call": "string:.call(\"set_editor_active\", true)",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "exit_cafe_furniture_edit_mode",
+   "call": "string:.call(\"cancel_placement\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "exit_cafe_furniture_edit_mode",
+   "call": "string:.call(\"save_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "exit_cafe_furniture_edit_mode",
+   "call": "string:.call(\"set_editor_active\", false)",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "place_cafe_furniture_at",
+   "call": "string:.call(\"confirm_placement\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "place_cafe_furniture_at",
+   "call": "string:.call(\"update_placement_position\", local_position)",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "reset_cafe_furniture_state",
+   "call": "string:.call(\"reset_to_default\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "rotate_cafe_furniture_clockwise",
+   "call": "string:.call(\"rotate_clockwise\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "save_cafe_furniture_state",
+   "call": "string:.call(\"save_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "select_cafe_decor_from_library",
+   "call": "string:.call(\"begin_placement\", asset_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/maps/town/TownBase.gd",
+   "func": "set_cafe_furniture_direction",
+   "call": "string:.call(\"set_direction\", direction_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/animals/TownAnimalPresentation.gd",
+   "func": "_update_resident_cat_interactions",
+   "call": "string:.call(\"get_body\", resident_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "_apply_projection",
+   "call": "string:.call( \"apply_public_projection\", projection, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "_on_resident_body_removed",
+   "call": "string:.call(\"unregister_actor\", normalized_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "_presentation_paused_actor_ids",
+   "call": "string:.call(\"debug_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "_register_existing_residents",
+   "call": "string:.call( \"get_body\", resident_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "_register_existing_residents",
+   "call": "string:.call(\"get_resident_ids\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "_register_resident_body",
+   "call": "string:.call( \"register_actor\", normalized_id, body, visual_root, \"resident\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "_register_resident_body",
+   "call": "string:.call(\"get_character_rig\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "_resident_body",
+   "call": "string:.call( \"get_body\", resident_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "_resident_world_paused",
+   "call": "string:.call( \"get_presentation_snapshot\" )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "_set_body_paused",
+   "call": "string:.call(\"set_presentation_paused\", paused)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "debug_snapshot",
+   "call": "string:.call(\"debug_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "register_external_actor",
+   "call": "string:.call( \"register_actor\", normalized_id, authority_node, resolved_visual, \"avatar\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "sync_now",
+   "call": "variable:.call(_projection_method)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "unconfigure",
+   "call": "string:.call(\"clear_all\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "unconfigure",
+   "call": "string:Callable( self, \"_on_conflict_projection_changed\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "unconfigure",
+   "call": "string:Callable(self, \"_on_resident_body_created\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "unconfigure",
+   "call": "string:Callable(self, \"_on_resident_body_removed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/conflict/TownConflictPresentationHost.gd",
+   "func": "unregister_external_actor",
+   "call": "string:.call(\"unregister_actor\", normalized_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowFormalOverwriteCompensator.gd",
+   "func": "_record",
+   "call": "variable:.call(result)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowFormalOverwriteCompensator.gd",
+   "func": "finalize_pending",
+   "call": "string:.call( \"finalize_completed_new_game_archive\", pending_archive.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowFormalOverwriteCompensator.gd",
+   "func": "recover_interrupted",
+   "call": "string:.call( \"recover_interrupted_new_game_overwrite\", slot_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowFormalOverwriteCompensator.gd",
+   "func": "restore_pending",
+   "call": "string:.call( \"restore_completed_new_game_archive\", restore_request, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_adapter_action_enabled",
+   "call": "string:.call(\"get_ui_adapter\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_adapter_action_enabled",
+   "call": "string:.call(\"get_view_model\", scope)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_advance_town_entry_loading",
+   "call": "string:.call(\"advance\", progress, status_text)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_agent_save_participant",
+   "call": "string:.call(\"get_agent_save_participant\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_apply_custom_resident_creator_route_affordances",
+   "call": "string:.call( \"get_view_model\", \"custom_resident_creator\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_apply_delete_save_failure",
+   "call": "string:.call(\"apply_view_model\", view_model)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_apply_new_game_overwrite_failure",
+   "call": "string:.call(\"apply_view_model\", view_model)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_apply_resident_selection_view_model",
+   "call": "string:.call(\"apply_view_model\", _resident_selection_vm.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_apply_world_intro_view_model",
+   "call": "string:.call(\"apply_view_model\", _world_intro_vm.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_archive_confirmed_formal_slot",
+   "call": "string:.call( \"archive_unpaired_agent_slot_for_new_game\", target_slot_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_archive_confirmed_formal_slot",
+   "call": "string:.call(\"archive_for_new_game\", { \"slotId\": String(latest_summary.get(\"slotId\", FORMAL_SLOT_ID)), \"sessionId\": String(latest_summary.get(\"sessionId\", \"\")), \"saveRevision\": int(latest_summary.get(\"saveRevision\", -1)), })",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_begin_town_entry_loading",
+   "call": "string:.call(\"begin\", normalized_route_kind)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_begin_town_entry_loading",
+   "call": "string:.call(\"is_active\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_resident_selection",
+   "call": "string:Callable(self, \"_on_custom_resident_delete_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_resident_selection",
+   "call": "string:Callable(self, \"_on_custom_resident_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_resident_selection",
+   "call": "string:Callable(self, \"_on_recommended_selection_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_resident_selection",
+   "call": "string:Callable(self, \"_on_resident_selection_back_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_resident_selection",
+   "call": "string:Callable(self, \"_on_resident_selection_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_resident_selection",
+   "call": "string:Callable(self, \"_on_residents_delete_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_resident_selection",
+   "call": "string:Callable(self, \"_on_roster_confirmation_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_resident_selection",
+   "call": "string:Callable(self, \"_on_selection_clear_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_startup",
+   "call": "string:.call( \"apply_view_models\", startup_view_models[\"session\"], startup_view_models[\"save\"], )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_startup",
+   "call": "string:Callable(self, \"_on_startup_action_blocked\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_startup",
+   "call": "string:Callable(self, \"_on_startup_intent_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:.call( \"bind_audio_display_settings_service\", _audio_display_settings_service, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:.call( \"bind_page_projection_service\", _ui_page_projection_service, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:.call( \"bind_provider_settings_service\", _provider_settings_ui_service, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:.call( \"bind_session_save_service\", _session_ui_service, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:.call( \"bind_town_ui_adapter\", adapter, )",
+   "count": 4
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:.call( \"configure\", runtime, runtime.call(\"get_world_runtime\"), _agent_save_participant(), _active_session_config, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:.call(\"bind_town_ui_adapter\", adapter)",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:.call(\"bind_ui_route_host\", _town_ui_host)",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:.call(\"current_route\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:.call(\"get_startup_result\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:.call(\"get_ui_adapter\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:.call(\"get_world_runtime\")",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:Callable(self, \"_on_avatar_hud_intent_requested\")",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:Callable(self, \"_on_pause_intent_requested\")",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:Callable(self, \"_on_town_ui_pause_requested\")",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_town_runtime",
+   "call": "string:Callable(self, \"_on_town_ui_route_changed\")",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_world_intro",
+   "call": "string:Callable(self, \"_on_world_intro_intent_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_bind_world_intro",
+   "call": "string:Callable(self, \"_on_world_intro_step_switch_confirmed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_build_formal_resident_selection_view_model",
+   "call": "string:.call( \"get_view_model\" )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_build_formal_resident_selection_view_model",
+   "call": "string:.call( \"runtime_configuration\" )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_build_internal_catalog",
+   "call": "string:.call( \"build_catalog\", world_data, _resident_selection_vm, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_build_internal_resident_selection_view_model",
+   "call": "string:.call(\"build_view_model\", provider_id, model_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_build_startup_view_models",
+   "call": "string:.call( \"get_view_model\" )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_close_custom_resident_creator",
+   "call": "string:.call(\"bind_custom_resident_creator_service\", null)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_close_custom_resident_creator",
+   "call": "string:.call(\"unbind_town_ui_adapter\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_close_custom_resident_creator",
+   "call": "string:Callable(self, \"_restore_resident_selection_focus\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_close_new_game_overwrite",
+   "call": "string:.call(\"deactivate_modal_ownership\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_close_pause_menu",
+   "call": "string:.call(\"set_main_menu_open\", false)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_close_resident_model_assignment",
+   "call": "string:.call(\"unbind_town_ui_adapter\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_close_resident_model_assignment",
+   "call": "string:Callable(self, \"_restore_resident_selection_confirm_focus\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_close_startup_load_game",
+   "call": "string:.call(\"deactivate_modal_ownership\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_close_startup_settings",
+   "call": "string:.call( \"apply_view_models\", startup_view_models.get(\"session\", {}) as Dictionary, startup_view_models.get(\"save\", {}) as Dictionary, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_close_startup_settings",
+   "call": "string:.call(\"unbind_town_ui_adapter\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_complete_custom_resident_creation",
+   "call": "string:Callable( self, \"_restore_resident_selection_resident_focus\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_configure_resident_model_assignment_service",
+   "call": "string:.call( \"bind_resident_model_assignment_service\", _resident_model_assignment_service, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_configure_resident_model_assignment_service",
+   "call": "string:Callable(self, \"_on_resident_model_assignment_draft_applied\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_configure_resident_model_assignment_service",
+   "call": "string:Callable(self, \"_on_resident_model_assignment_service_back_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_confirm_delete_save",
+   "call": "string:.call( \"clear_slot_profile\", slot_id, slot_ids, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_confirm_delete_save",
+   "call": "string:.call(\"archive_for_player_delete\", { \"slotId\": slot_id, \"sessionId\": String(latest_summary.get(\"sessionId\", \"\")), \"saveRevision\": int(latest_summary.get(\"saveRevision\", 0)), \"expectedState\": String(latest_slot.get(\"state\", \"unknown\")), })",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_default_model_id",
+   "call": "string:.call(\"default_model_id\", provider_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_detach_resident_model_assignment_service",
+   "call": "string:.call(\"bind_resident_model_assignment_service\", null)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_discard_failed_new_game_session",
+   "call": "string:.call( \"discard_unpublished_new_game\", not _pending_formal_overwrite_archive.is_empty(), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_discard_internal_agent_slot",
+   "call": "string:.call(\"discard_unpublished_new_game\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_discover_formal_save",
+   "call": "string:.call( \"configure_test_root\", test_store_root, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_discover_formal_save",
+   "call": "string:.call( \"read_reference\", String(manifest.get(\"session_config_ref\", \"\")), String(manifest.get(\"session_config_sha256\", \"\")), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_discover_formal_save",
+   "call": "string:.call(\"list_published\", FORMAL_SLOT_ID)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_dismiss_town_entry_loading",
+   "call": "string:.call(\"dismiss\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_enter_pending_town",
+   "call": "string:.call(\"complete\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_enter_pending_town",
+   "call": "string:.call(\"get_startup_result\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_enter_resident_selection",
+   "call": "string:.call( \"apply_view_model\", _resident_selection_vm.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_enter_world_intro",
+   "call": "string:.call( \"apply_view_model\", _world_intro_vm.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_initialize_startup_settings_services",
+   "call": "string:.call( \"bind_audio_display_settings_service\", _audio_display_settings_service, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_initialize_startup_settings_services",
+   "call": "string:.call( \"bind_provider_service\", _startup_provider_service, self, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_initialize_startup_settings_services",
+   "call": "string:.call( \"bind_provider_settings_service\", _startup_provider_settings_service, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_initialize_startup_settings_services",
+   "call": "string:.call( \"configure\", _startup_save_store, STARTUP_SAVE_CATALOG.DEFAULT_PROFILE_PATH, startup_agent_save_store, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_initialize_startup_settings_services",
+   "call": "string:.call( \"set_custom_resident_creator_route_capabilities\", {\"wardrobe\": true}, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_initialize_startup_settings_services",
+   "call": "string:.call(\"configure\", { \"capabilityMode\": \"formal\", \"source\": \"runtime\", \"allowFake\": false, \"providerConfigs\": {}, }, self)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_initialize_startup_settings_services",
+   "call": "string:Callable(self, \"_on_startup_provider_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_input",
+   "call": "string:.call( \"present_back_blocked_feedback\", \"当前操作还没完成，请稍后再试。\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_input",
+   "call": "string:.call(\"close_page\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_input",
+   "call": "string:.call(\"current_route\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_input",
+   "call": "string:.call(\"request_back\")",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_custom_resident_creator_intent_requested",
+   "call": "string:.call( \"open_complete_set_wardrobe\", handoff.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_formal_continue_provider_health_completed",
+   "call": "string:.call( \"check_entry_availability\", bindings.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_formal_continue_provider_health_completed",
+   "call": "string:.call( \"complete_restored_session\", restored.get(\"context\", {}) as Dictionary, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_formal_continue_provider_health_completed",
+   "call": "string:.call( \"configure\", runtime, runtime.call(\"get_world_runtime\"), _agent_save_participant(), restored_session_config, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_formal_continue_provider_health_completed",
+   "call": "string:.call( \"configure_agent_gateway\", _gateway, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_formal_continue_provider_health_completed",
+   "call": "string:.call( \"configure_session\", gateway_config, _provider_service, self, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_formal_continue_provider_health_completed",
+   "call": "string:.call( \"configure_session\", restored_session_config, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_formal_continue_provider_health_completed",
+   "call": "string:.call( \"continue_revision\", session_id, restore_revision, world_data, identities, _gateway, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_formal_continue_provider_health_completed",
+   "call": "string:.call(\"get_startup_result\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_formal_continue_provider_health_completed",
+   "call": "string:.call(\"get_world_runtime\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_pause_intent_requested",
+   "call": "string:.call( \"open_page\", &\"provider_settings\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_pause_intent_requested",
+   "call": "string:.call( \"present_host_result\", \"pause_menu.open_llm_settings\", settings_opened, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_resident_model_assignment_back_requested",
+   "call": "string:.call( \"get_view_model\", \"resident_model_assignment\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_resident_model_assignment_draft_applied",
+   "call": "string:.call( \"validate_new_game_draft\", draft, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_resident_model_assignment_intent_requested",
+   "call": "string:.call( \"set_resident_model_assignment_startup_state\", \"idle\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_startup_load_game_intent_requested",
+   "call": "string:.call(\"_block\", intent, reason)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_startup_provider_view_model_changed",
+   "call": "string:.call( \"apply_view_models\", models.get(\"session\", {}) as Dictionary, models.get(\"save\", {}) as Dictionary, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_on_town_ui_route_changed",
+   "call": "string:.call( \"set_place_focus_route_active\", route == &\"place_focus\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_custom_resident_creator",
+   "call": "string:.call( \"bind_custom_resident_creator_service\", _custom_resident_creator_service, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_custom_resident_creator",
+   "call": "string:.call( \"configure\", _custom_resident_candidate_pool, base_catalog, world_data, { \"draftId\": \"custom-resident-%d-%d\" % [ _flow_generation, Time.get_ticks_msec(), ], \"revision\": maxi(int(_resident_selection_vm.get(\"revision\", 1)), 1), }, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_custom_resident_creator",
+   "call": "string:.call(\"bind_custom_resident_creator_service\", null)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_custom_resident_creator",
+   "call": "string:.call(\"bind_town_ui_adapter\", _startup_ui_adapter)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_custom_resident_creator",
+   "call": "string:Callable(self, \"_on_custom_resident_creator_action_blocked\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_custom_resident_creator",
+   "call": "string:Callable(self, \"_on_custom_resident_creator_intent_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_in_session_load_game",
+   "call": "string:.call( \"present_host_result\", \"pause_menu.open_load_game\", _last_result, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_in_session_load_game",
+   "call": "string:.call(\"open_load_game\", view_model)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_pause_menu",
+   "call": "string:.call(\"set_main_menu_open\", true)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_resident_model_assignment",
+   "call": "string:.call(\"_show_notice\", visible_result[\"playerMessage\"])",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_resident_model_assignment",
+   "call": "string:.call(\"bind_town_ui_adapter\", _startup_ui_adapter)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_resident_model_assignment",
+   "call": "string:Callable(self, \"_on_resident_model_assignment_action_dispatch_started\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_resident_model_assignment",
+   "call": "string:Callable(self, \"_on_resident_model_assignment_back_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_resident_model_assignment",
+   "call": "string:Callable(self, \"_on_resident_model_assignment_intent_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_save_handling",
+   "call": "string:.call(\"apply_view_model\", view_model)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_save_handling",
+   "call": "string:Callable(self, \"_on_new_game_overwrite_intent_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_startup_load_game",
+   "call": "string:.call(\"apply_view_model\", view_model)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_startup_load_game",
+   "call": "string:Callable(self, \"_on_startup_action_blocked\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_startup_load_game",
+   "call": "string:Callable(self, \"_on_startup_load_game_intent_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_startup_settings",
+   "call": "string:.call(\"bind_adapter\", _startup_ui_adapter)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_startup_settings",
+   "call": "string:.call(\"bind_town_ui_adapter\", _startup_ui_adapter)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_open_startup_settings",
+   "call": "string:Callable(self, \"_on_startup_settings_intent_requested\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_play_cover_music",
+   "call": "string:.call(\"play_cover_music\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_prepare_audio_shutdown",
+   "call": "string:.call(\"prepare_shutdown\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_prepare_session_departure",
+   "call": "string:.call( \"prepare_for_world_save\", \"session_departure\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_prepare_session_departure",
+   "call": "string:.call(\"close_session\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_prepare_session_departure",
+   "call": "string:.call(\"create_save\", { \"reason\": \"session_departure\", \"residentMessages\": resident_messages.duplicate(true), })",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_prepare_session_departure",
+   "call": "string:.call(\"get_save_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_present_in_session_load_failure",
+   "call": "string:.call( \"present_host_result\", \"pause_menu.open_load_game\", result.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_present_in_session_load_failure",
+   "call": "string:.call(\"close_load_game\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_present_in_session_load_failure",
+   "call": "string:.call(\"current_route\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_present_pause_departure_failure",
+   "call": "string:.call( \"present_host_result\", intent, result.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_present_pending_continue_notice",
+   "call": "string:.call(\"present_feedback\", { \"scope\": \"startup\", \"status\": \"ready\", \"revision\": 1, \"data\": { \"source\": \"runtime\", \"capabilityMode\": \"formal\", \"formalReady\": true, \"feedback\": { \"feedbackId\": \"startup-%s\" % notice_id, \"component\": \"toast\", \"tone\": \"warning\", \"title\": \"已使用最近完整存档\", \"message\": message, \"blocking\": false, \"dismissPolicy\": \"auto_or_manual\", \"durationMsec\": 5000, \"anchor\": \"viewport_top_right\", \"dedupeKey\": \"startup.%s\" % notice_id, }, }, \"actions\": { \"dismiss\": { \"intent\": \"feedback.dismiss\", \"enabled\": true, \"disabledReason\": \"\", }, }, \"operation\": { \"requestId\": \"startup-%s\" % notice_id, \"intent\": \"session.continue\", \"status\": \"success\", \"submittedAtMsec\": 0, \"completedAtMsec\": Time.get_ticks_msec(), }, \"error\": null, })",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_present_route_failure_result",
+   "call": "string:.call(\"_show_notice\", player_message)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_present_route_failure_result",
+   "call": "string:.call(\"show_navigation_failure\", player_message)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_publish_initial_formal_baseline",
+   "call": "string:.call(\"dispatch\", \"save.create\", { \"reason\": \"new_game_baseline\", })",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_publish_initial_formal_baseline",
+   "call": "string:.call(\"get_save_snapshot\")",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_publish_resident_model_assignment_starting",
+   "call": "string:.call( \"set_resident_model_assignment_startup_state\", \"loading\", { \"requestId\": \"resident-model-start-%d\" % _flow_generation, \"submittedAtMsec\": Time.get_ticks_msec(), }, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_publish_resident_model_assignment_startup_failure",
+   "call": "string:.call( \"set_resident_model_assignment_startup_state\", status, final_result.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_publish_startup_action_failure",
+   "call": "string:.call( \"present_host_result\", intent, result.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_publish_startup_load_game_result",
+   "call": "string:.call(\"apply_view_model\", view_model)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_publish_startup_result",
+   "call": "string:.call(\"apply_view_models\", models[\"session\"], models[\"save\"])",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_record_last_played_slot",
+   "call": "string:.call( \"record_last_played\", slot_id, slot_ids, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_record_startup_resident_message_receipt",
+   "call": "string:.call( \"record_resident_messages_shown\", payload.get(\"slotId\"), payload.get(\"messageIds\"), slot_ids, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_refresh_startup_main_menu_view_models",
+   "call": "string:.call( \"apply_view_models\", startup_view_models.get(\"session\", {}) as Dictionary, startup_view_models.get(\"save\", {}) as Dictionary, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_reset_custom_resident_creator_session",
+   "call": "string:.call(\"bind_custom_resident_creator_service\", null)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_restore_resident_model_assignment_failure_modal",
+   "call": "string:.call( \"_set_completion_modal_message\", \"暂时无法开始游戏\\n%s\\n当前模型草稿已保留，可修复后重试。\" % message, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_restore_resident_model_assignment_failure_modal",
+   "call": "string:.call(\"_open_completion_modal\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_start_formal_continue",
+   "call": "string:.call( \"request_health_check\", bindings.duplicate(true), Callable(self, \"_on_formal_continue_provider_health_completed\").bind( generation, discovery.duplicate(true), world_data.duplicate(true), identities.duplicate(true), bindings.duplicate(true), resident_names.duplicate(), ), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_start_formal_continue",
+   "call": "string:.call( \"runtime_configuration\" )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_start_formal_continue",
+   "call": "string:.call(\"configure\", { \"capabilityMode\": \"formal\", \"source\": \"runtime\", \"allowFake\": false, \"providerConfigs\": ( provider_runtime.get(\"providerConfigs\", {}) as Dictionary ).duplicate(true), }, self)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_start_formal_continue",
+   "call": "string:Callable(self, \"_on_formal_continue_provider_health_completed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_start_formal_new_game",
+   "call": "string:.call( \"validate_resident_bindings\", _build_resident_binding_payload(normalized_draft), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_start_formal_new_game",
+   "call": "string:Callable(self, \"_on_bootstrap_completed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_start_internal_new_game",
+   "call": "string:.call( \"configure\", { \"capabilityMode\": \"development\", \"source\": \"placeholder\", \"allowFake\": provider_id == \"fake\", \"providerConfigs\": {}, }, self, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_start_internal_new_game",
+   "call": "string:Callable(self, \"_on_bootstrap_completed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_startup_catalog_snapshot",
+   "call": "string:.call( \"get_catalog\", FORMAL_SLOT_DEFINITIONS.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_sync_town_runtime_input_gates",
+   "call": "string:.call( \"set_avatar_movement_input_enabled\", gameplay_input_enabled, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_sync_town_runtime_input_gates",
+   "call": "string:.call( \"set_observer_camera_input_enabled\", gameplay_input_enabled, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_update_confirmation_payload",
+   "call": "string:.call( \"runtime_configuration\" )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "_update_confirmation_payload",
+   "call": "string:.call( \"update_confirmation_payload\", data, provider_id, model_id, int(_resident_selection_vm.get(\"revision\", 1)), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "get_flow_snapshot",
+   "call": "string:.call(\"get_startup_result\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "get_formal_runtime_audit_snapshot",
+   "call": "string:.call(\"debug_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "get_formal_runtime_audit_snapshot",
+   "call": "string:.call(\"get_runtime_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "get_formal_runtime_audit_snapshot",
+   "call": "string:.call(\"get_ui_adapter\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "get_formal_runtime_audit_snapshot",
+   "call": "string:.call(\"get_view_model\", scope)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "request_quit_game",
+   "call": "string:.call( \"prepare_departure_messages\", _quit_departure_id, 2, Callable(self, \"_on_quit_departure_messages_ready\"), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/game_flow/GameFlowHost.gd",
+   "func": "request_quit_game",
+   "call": "string:Callable(self, \"_on_quit_departure_messages_ready\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/residents/ResidentCharacterPresentation.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_resident_action_phase_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/residents/ResidentCharacterPresentation.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_resident_place_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/residents/ResidentCharacterPresentation.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_resident_state_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/residents/ResidentCharacterPresentation.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_world_lifecycle_state_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/residents/ResidentCharacterPresentation.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_world_restored\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/residents/ResidentCharacterPresentation.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_resident_action_phase_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/residents/ResidentCharacterPresentation.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_resident_place_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/residents/ResidentCharacterPresentation.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_resident_state_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/residents/ResidentCharacterPresentation.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_world_lifecycle_state_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/residents/ResidentCharacterPresentation.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_world_restored\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/residents/ResidentCharacterPresentation.gd",
+   "func": "_prepared_identity_state_can_apply",
+   "call": "string:.call(\"can_apply_authoritative_state\", authority_state)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownCustomResidentCandidatePool.gd",
+   "func": "_persist_candidates",
+   "call": "string:.call( \"replace_candidates\", candidates, _candidate_pool_revision, target_revision, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownCustomResidentCreatorService.gd",
+   "func": "_create_candidate",
+   "call": "string:.call( \"create_candidate\", _candidate_source(), expected_pool_revision, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownCustomResidentCreatorService.gd",
+   "func": "_data_snapshot",
+   "call": "string:.call(\"candidate_pool_revision\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownCustomResidentCreatorService.gd",
+   "func": "_validate_draft",
+   "call": "string:.call(\"resident_name_available\", resident_name)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownCustomResidentCreatorService.gd",
+   "func": "configure",
+   "call": "string:.call(\"candidate_pool_revision\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionBootstrap.gd",
+   "func": "_begin_new_game",
+   "call": "string:.call( \"check_entry_availability\", bindings, Callable(self, \"_on_entry_availability\").bind(request_id), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionBootstrap.gd",
+   "func": "_begin_new_game",
+   "call": "string:.call( \"validate_new_game_resident_spawns\", world_data, opening_config, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionBootstrap.gd",
+   "func": "_begin_new_game",
+   "call": "string:.call( \"validate_startup\", world_data, opening_config, start_mode == \"formal\", _resident_identities(bindings), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionBootstrap.gd",
+   "func": "_begin_new_game",
+   "call": "string:.call(\"validate_resident_bindings\", bindings)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionBootstrap.gd",
+   "func": "_begin_new_game",
+   "call": "string:Callable(self, \"_on_entry_availability\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionBootstrap.gd",
+   "func": "_compensate_configured_gateway_failure",
+   "call": "string:.call( \"discard_unpublished_new_game\", false, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionBootstrap.gd",
+   "func": "_complete",
+   "call": "variable:.call(final_result.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionBootstrap.gd",
+   "func": "_on_entry_availability",
+   "call": "string:.call( \"configure_session\", { \"sessionId\": session_id, \"slotId\": slot_id, \"saveRevision\": 0, \"residentIdentities\": _resident_identities(bindings), \"residentBindings\": bindings.duplicate(true), \"capabilityMode\": capability_mode, \"formalReady\": formal_ready, \"internalPlaytest\": internal_playtest, \"internalLivePlaytest\": internal_live_playtest, }, provider_service, options.get(\"requestHost\") as Node, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionBootstrap.gd",
+   "func": "_on_entry_availability",
+   "call": "string:.call(\"configure_agent_gateway\", gateway)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionBootstrap.gd",
+   "func": "_on_entry_availability",
+   "call": "string:.call(\"configure_session\", session_config)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionSaveCoordinator.gd",
+   "func": "_call_dictionary",
+   "call": "variable:.callv(method_name, arguments)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionSaveCoordinator.gd",
+   "func": "_end_gate",
+   "call": "string:.call( \"end_session_transaction\", token, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionSaveCoordinator.gd",
+   "func": "_restore_selected",
+   "call": "string:.call(\"cancel_restore\")",
+   "count": 13
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionUiService.gd",
+   "func": "_save_blocker",
+   "call": "string:.call( \"get_resident_identity_snapshot\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionUiService.gd",
+   "func": "_save_blocker",
+   "call": "string:.call(\"get_save_context\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionUiService.gd",
+   "func": "configure",
+   "call": "string:.call( \"configure\", _store, world, agent, _gate, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionUiService.gd",
+   "func": "configure",
+   "call": "string:.call( \"configure_test_root\", _test_store_root, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionUiService.gd",
+   "func": "configure",
+   "call": "string:.call(\"configure\", runtime)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionUiService.gd",
+   "func": "configure_test_store_root",
+   "call": "string:.call(\"configure_test_root\", path)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionUiService.gd",
+   "func": "continue_latest",
+   "call": "string:.call( \"restore_latest\", slot_id, world_data.duplicate(true), resident_identities.duplicate(true), agent_hydrator, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionUiService.gd",
+   "func": "continue_revision",
+   "call": "string:.call( \"restore_revision\", slot_id, normalized_session_id, save_revision, world_data.duplicate(true), resident_identities.duplicate(true), agent_hydrator, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionUiService.gd",
+   "func": "create_save",
+   "call": "string:.call(\"save\", { \"slotId\": _session_config.get(\"slotId\"), \"sessionId\": _session_config.get(\"sessionId\"), \"residentIdentities\": identities, \"sessionConfig\": _manifest_session_config(), \"savedAt\": Time.get_datetime_string_from_system(false, false), \"residentMessages\": ( (payload.get(\"residentMessages\", []) as Array).duplicate(true) if payload.get(\"residentMessages\", []) is Array else payload.get(\"residentMessages\") ), })",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownSessionUiService.gd",
+   "func": "get_save_snapshot",
+   "call": "string:.call(\"discover_latest\", slot_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownStartupSaveCatalog.gd",
+   "func": "_inspect_agent_snapshot",
+   "call": "string:.call(\"load_snapshot\", { \"slot_id\": slot_id, \"session_id\": session_id, \"save_revision\": save_revision, })",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownStartupSaveCatalog.gd",
+   "func": "_inspect_manifest",
+   "call": "string:.call( \"read_reference\", config_ref, config_sha256, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownStartupSaveCatalog.gd",
+   "func": "_inspect_manifest",
+   "call": "string:.call( \"read_reference\", snapshot_ref, snapshot_sha256, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownStartupSaveCatalog.gd",
+   "func": "_inspect_slot",
+   "call": "string:.call(\"list_incomplete\", slot_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/session/TownStartupSaveCatalog.gd",
+   "func": "_inspect_slot",
+   "call": "string:.call(\"list_published\", slot_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/town_runtime/TownRuntime.gd",
+   "func": "_start_world",
+   "call": "string:Callable( _resident_presentation, \"get_display_head_screen_anchor\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/town_runtime/TownRuntime.gd",
+   "func": "_start_world",
+   "call": "string:Callable( _resident_presentation, \"get_display_screen_anchor\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/town_runtime/TownRuntime.gd",
+   "func": "_start_world",
+   "call": "variable:.call( start_method, world_data, opening_result.get(\"config\", {}) as Dictionary, _world_resident_identity_input(), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/town_runtime/TownRuntime.gd",
+   "func": "get_resident_head_screen_anchor",
+   "call": "variable:.call(resident_name)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/town_runtime/TownRuntime.gd",
+   "func": "get_resident_screen_anchor",
+   "call": "variable:.call(resident_name)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_apply_display_draft",
+   "call": "string:.call(\"apply_ui_scale\", scale)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_display_screen_get_usable_rect",
+   "call": "string:.call(\"screen_get_usable_rect\", screen)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_display_server_name",
+   "call": "string:.call(\"get_name\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_display_window_get_current_screen",
+   "call": "string:.call(\"window_get_current_screen\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_display_window_get_mode",
+   "call": "string:.call(\"window_get_mode\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_display_window_get_position",
+   "call": "string:.call(\"window_get_position\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_display_window_get_size",
+   "call": "string:.call(\"window_get_size\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_display_window_set_mode",
+   "call": "string:.call(\"window_set_mode\", mode)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_display_window_set_position",
+   "call": "string:.call(\"window_set_position\", position)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_display_window_set_size",
+   "call": "string:.call(\"window_set_size\", size)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_initialize_runtime_state",
+   "call": "string:.call(\"load_settings\", runtime)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_initialize_runtime_state",
+   "call": "string:.call(\"save_settings\", _confirmed)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_persist_confirmed_draft",
+   "call": "string:.call(\"save_settings\", _draft)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownAudioDisplaySettingsService.gd",
+   "func": "_restore_display_state",
+   "call": "string:.call(\"apply_ui_scale\", scale)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_apply_provider_configuration",
+   "call": "string:.call(\"configure\", { \"capabilityMode\": \"formal\", \"source\": \"runtime\", \"allowFake\": false, \"providerConfigs\": _provider_configs_for_runtime(), }, ( _request_host if _request_host != null and is_instance_valid(_request_host) else (Engine.get_main_loop().root if Engine.get_main_loop() is SceneTree else null) ))",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_delete_key",
+   "call": "string:.call(\"delete_api_key\", provider_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_load_public_snapshot",
+   "call": "string:.call(\"get_health_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_load_public_snapshot",
+   "call": "string:.call(\"list_available_models\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_load_stored_config",
+   "call": "string:.call(\"load_config\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_load_stored_config",
+   "call": "string:.call(\"load_keys\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_migrate_plaintext_credentials",
+   "call": "string:.call( \"save_api_key\", provider_id, plaintext_key, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_migrate_plaintext_credentials",
+   "call": "string:.call(\"save_config\", _stored_config)",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_persist_candidate_and_reconfigure",
+   "call": "string:.call(\"save_config\", candidate)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_persist_candidate_and_reconfigure",
+   "call": "string:.call(\"save_config\", previous)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_restore_credential",
+   "call": "string:.call( \"save_api_key\", provider_id, previous_key, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_restore_credential",
+   "call": "string:.call(\"delete_api_key\", provider_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_save_key",
+   "call": "string:.call(\"save_api_key\", provider_id, api_key)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_start_health_request",
+   "call": "string:.call( \"request_health_check\", targets.duplicate(true), Callable(self, \"_on_health_request_completed\").bind( request_id, intent, health_generation, targets.duplicate(true), ), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "_start_health_request",
+   "call": "string:Callable(self, \"_on_health_request_completed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "configure_store",
+   "call": "string:.call(\"configure\", credential_path)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "configure_store",
+   "call": "string:.call(\"configure\", path)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownProviderSettingsService.gd",
+   "func": "reveal_saved_api_key",
+   "call": "string:.call(\"api_key\", provider_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_attack_avatar_target",
+   "call": "string:.call(\"get_runtime_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_bind_external_ui_service",
+   "call": "string:Callable(self, \"_on_external_ui_operation_completed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_bind_external_ui_service",
+   "call": "string:Callable(self, \"_on_external_ui_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_build_avatar_view_model",
+   "call": "string:.call(\"get_runtime_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_build_avatar_view_model",
+   "call": "string:Callable(self, \"_avatar_target_before\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_build_pause_menu_view_model",
+   "call": "string:.call(\"get_session_summary\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_build_player_conversation_view_model",
+   "call": "string:.call( \"can_attach_photo_for_resident\", resident_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_build_session_view_model",
+   "call": "string:.call(\"get_session_summary\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_build_spectator_conversation_view_model",
+   "call": "string:Callable(self, \"_spectator_conversation_before\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_build_town_hud_view_model",
+   "call": "string:.call( \"get_town_hud_runtime_state\" )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_build_town_hud_view_model",
+   "call": "string:.call(\"get_runtime_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_call_runtime_lifecycle",
+   "call": "variable:.call(runtime_method, paused)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_capture_current_hud_far_conversations",
+   "call": "string:Callable(self, \"_spectator_conversation_before\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_connected_resident_names",
+   "call": "string:.call(\"get_connected_resident_names\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_continue_disabled_reason",
+   "call": "string:.call(\"get_session_summary\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_disconnect_external_ui_service",
+   "call": "string:Callable(self, \"_on_external_ui_operation_completed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_disconnect_external_ui_service",
+   "call": "string:Callable(self, \"_on_external_ui_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_disconnect_world",
+   "call": "string:Callable(self, \"_on_conversation_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_disconnect_world",
+   "call": "string:Callable(self, \"_on_simulation_speed_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_disconnect_world",
+   "call": "string:Callable(self, \"_on_world_revision_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_announcements_intent",
+   "call": "string:.call( \"publish_player_announcement\", str(payload.get(\"text\", \"\")) )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_avatar_intent",
+   "call": "string:.call(\"enter_avatar_mode\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_avatar_intent",
+   "call": "string:.call(\"exit_avatar_mode\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_conversation_intent",
+   "call": "string:.call( \"player_end_conversation\", conversation_id, str(payload.get(\"narration\", \"旅行者结束交谈\")) )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_conversation_intent",
+   "call": "string:.call( \"player_reject_conversation\", conversation_id, str(payload.get(\"narration\", \"旅行者没有接话\")) )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_conversation_intent",
+   "call": "string:.call( \"player_start_conversation\", resident_name, str(payload.get(\"say\", \"\")), str(payload.get(\"narration\", \"旅行者开口搭话\")) )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_conversation_intent",
+   "call": "string:.call(\"pump\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_conversation_reply_intent",
+   "call": "string:.call( \"can_attach_photo_for_resident\", resident_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_conversation_reply_intent",
+   "call": "string:.call( \"commit_conversation_photo\", resident_id, photo_ref, photo_mime_type, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_conversation_reply_intent",
+   "call": "string:.call( \"has_staged_conversation_photo\", resident_id, photo_ref, photo_mime_type, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_conversation_reply_intent",
+   "call": "string:.call( \"player_reply_conversation\", _active_conversation_id(), str(payload.get(\"say\", \"\")), str( payload.get( \"narration\", \"旅行者继续交谈\", ) ), false, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_conversation_reply_intent",
+   "call": "string:.call( \"player_reply_conversation_with_photos\", _active_conversation_id(), str(payload.get(\"say\", \"\")), str( payload.get( \"narration\", \"旅行者继续交谈\", ) ), photos, false, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_conversation_reply_intent",
+   "call": "string:.call( \"prepare_conversation_photo_commit\", resident_id, photo_ref, photo_mime_type, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_hud_camera_follow",
+   "call": "string:.call(\"follow_resident\", resident_name)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_save_create",
+   "call": "string:.call( \"prepare_for_world_save\", String(payload.get(\"reason\", \"manual_save\")), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_save_create",
+   "call": "string:.call(\"create_save\", payload.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_town_hud_intent",
+   "call": "string:.call(\"cancel_resident_follow\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_town_hud_intent",
+   "call": "string:.call(\"open_announcement_panel\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_town_hud_intent",
+   "call": "string:.call(\"open_weather_panel\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_town_hud_intent",
+   "call": "string:.call(\"request_observe_place\", place_name)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_town_hud_intent",
+   "call": "string:.call(\"reset_observer_camera\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_town_hud_intent",
+   "call": "string:.call(\"zoom_observer_camera\", -1)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_execute_town_hud_intent",
+   "call": "string:.call(\"zoom_observer_camera\", 1)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_gateway_errors",
+   "call": "string:.call(\"get_errors\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_hud_resident_overlays",
+   "call": "string:Callable(self, \"_hud_public_thought_before\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_process",
+   "call": "string:.call(\"get_runtime_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_process",
+   "call": "string:.call(\"get_ui_poll_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_read_save_snapshot",
+   "call": "string:.call(\"get_save_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_refresh_resident_identities",
+   "call": "string:.call(\"get_resident_identity_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_refresh_scope",
+   "call": "string:.call(\"get_view_model\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_refresh_scope",
+   "call": "string:.call(\"get_view_model\", scope)",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_toggle_hud_avatar_mode",
+   "call": "string:.call(\"enter_avatar_mode\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_toggle_hud_avatar_mode",
+   "call": "string:.call(\"exit_avatar_mode\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "_toggle_hud_avatar_mode",
+   "call": "string:.call(\"get_runtime_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "attach_world_resident_action_menu",
+   "call": "string:.call( \"attach_world_resident_action_menu\", menu, context.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "bind_page_projection_service",
+   "call": "string:Callable(self, \"_on_external_ui_operation_completed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "bind_page_projection_service",
+   "call": "string:Callable(self, \"_on_external_ui_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "bind_runtime",
+   "call": "string:Callable(runtime, \"get_resident_head_screen_anchor\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "bind_runtime",
+   "call": "string:Callable(self, \"_on_conversation_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "bind_runtime",
+   "call": "string:Callable(self, \"_on_simulation_speed_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "bind_runtime",
+   "call": "string:Callable(self, \"_on_world_revision_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "discard_conversation_photo",
+   "call": "string:.call( \"discard_staged_conversation_photo\", resident_id.strip_edges(), ref.strip_edges(), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "dispatch",
+   "call": "string:.call( \"dispatch\", intent, payload.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "end_resident_view",
+   "call": "string:.call(\"clear_resident_selection\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "get_town_hud_resident_head_anchor",
+   "call": "variable:.call(resident_name)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "open_ui_page",
+   "call": "string:.call(\"open_page\", StringName(route), context.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "prepare_conversation_photo",
+   "call": "string:.call( \"can_attach_photo_for_resident\", resident_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "prepare_conversation_photo",
+   "call": "string:.call( \"stage_conversation_photo\", resident_id, path, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "resolve_conversation_photo_preview",
+   "call": "string:.call( \"resolve_conversation_photo_preview\", ref, mime_type, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "reveal_provider_api_key",
+   "call": "string:.call( \"reveal_saved_api_key\", provider_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiAdapter.gd",
+   "func": "set_page_context",
+   "call": "string:.call( \"set_page_context\", scope, context.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_begin_inner_observation_generation",
+   "call": "string:.call( \"request_resident_inner_observation\", resident_id, generation_request_id, confirmed_revision, Callable(self, \"_on_inner_observation_result\").bind( generation_request_id, resident_id, _inner_observation_generation, ), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_begin_inner_observation_generation",
+   "call": "string:Callable(self, \"_on_inner_observation_result\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_cancel_inner_observation_request",
+   "call": "string:.call( \"cancel_resident_inner_observation\", request_id, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_connect_runtime_signals",
+   "call": "string:Callable(self, \"_on_observed_place_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_action_result_created\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_announcement_published\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_environment_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_player_avatar_place_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_resident_place_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_story_event_created\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_world_event_created\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_world_restored\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_connect_world_signals",
+   "call": "string:Callable(self, \"_on_world_revision_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_disconnect_runtime_signals",
+   "call": "string:Callable(self, \"_on_observed_place_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_action_result_created\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_announcement_published\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_environment_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_player_avatar_place_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_resident_place_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_story_event_created\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_world_event_created\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_world_restored\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_disconnect_world_signals",
+   "call": "string:Callable(self, \"_on_world_revision_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_dispatch_indoor",
+   "call": "string:.call(\"request_return_to_town_overview\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_dispatch_indoor",
+   "call": "string:.call(\"select_resident\", resident_name)",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_dispatch_place_focus",
+   "call": "string:.call(\"request_observe_place\", place_name)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_dispatch_resident_action",
+   "call": "string:.call(\"follow_resident\", resident_name)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_dispatch_resident_detail",
+   "call": "string:.call( \"apply_resident_memory_intervention\", resident_id, { \"memoryKey\": String(payload.get(\"memoryKey\", \"\")), \"operation\": String(payload.get(\"operation\", \"\")), \"playerText\": String(payload.get(\"playerText\", \"\")), \"expectedRevision\": int(payload.get(\"expectedRevision\", -1)), }, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_dispatch_resident_overview",
+   "call": "string:.call(\"follow_resident\", resident_name)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_dispatch_weather",
+   "call": "string:.call(\"exit_avatar_mode\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_publish_announcement_command",
+   "call": "string:.call(\"publish_player_announcement\", text)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_publish_resident_detail",
+   "call": "string:.call(\"get_resident_memory\", resident_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_read_lifecycle",
+   "call": "string:.call(\"get_lifecycle_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_read_runtime_state",
+   "call": "string:.call(\"get_runtime_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_resident_identities",
+   "call": "string:.call(\"get_resident_identity_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_resident_placement",
+   "call": "string:.call(\"get_resident_screen_anchor\", resident_name)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiPageProjectionService.gd",
+   "func": "_resident_public_summary_capabilities",
+   "call": "string:.call(\"get_resident_memory\", resident_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_apply_adapter",
+   "call": "string:.call(\"bind_adapter\", _adapter)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_apply_adapter",
+   "call": "string:.call(\"bind_town_ui_adapter\", _adapter)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_apply_adapter_to_persistent_layers",
+   "call": "string:.call(\"apply_view_model\", hud_vm)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_apply_adapter_to_persistent_layers",
+   "call": "string:.call(\"bind_town_ui_adapter\", _adapter)",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_apply_adapter_to_persistent_layers",
+   "call": "string:.call(\"get_view_model\", \"avatar\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_apply_adapter_to_persistent_layers",
+   "call": "string:.call(\"get_view_model\", \"conversation\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_apply_adapter_to_persistent_layers",
+   "call": "string:.call(\"get_view_model\", \"indoor\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_apply_adapter_to_persistent_layers",
+   "call": "string:.call(\"get_view_model\", \"session\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_apply_adapter_to_persistent_layers",
+   "call": "string:.call(\"get_view_model\", \"town_hud\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_begin_resident_view",
+   "call": "string:.call(\"begin_resident_view\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_bulletin_route_payload",
+   "call": "string:.call( \"get_view_model\", \"avatar\", )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_connect_page",
+   "call": "string:Callable(self, \"_on_inner_observation_intent\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_connect_page",
+   "call": "string:Callable(self, \"_on_page_close_requested\")",
+   "count": 3
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_connect_page",
+   "call": "string:Callable(self, \"_on_resident_action_intent\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_connect_page",
+   "call": "string:Callable(self, \"_on_resident_management_intent\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_connect_page",
+   "call": "string:Callable(self, \"_on_resident_profile_editor_intent\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_connect_page",
+   "call": "string:Callable(self, \"_on_self_dispatching_page_intent\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_operation_completed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_disconnect_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_dispatch_adapter",
+   "call": "string:.call(\"dispatch\", intent, payload.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_finish_resident_view",
+   "call": "string:.call(\"end_resident_view\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_focus_avatar_hud_fallback",
+   "call": "string:.call(\"focus_default_control\")",
+   "count": 2
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_focus_open_page",
+   "call": "variable:.call(method_name)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_on_resident_management_intent",
+   "call": "string:.call(\"navigation_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_on_resident_profile_editor_intent",
+   "call": "string:.call( \"open_complete_set_wardrobe\", handoff.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_on_self_dispatching_page_intent",
+   "call": "string:.call(\"adapter_contract_available\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_on_view_model_changed",
+   "call": "string:.call(\"apply_view_model\", view_model)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_open_resident_profile_editor",
+   "call": "string:.call( \"bind_custom_resident_creator_service\", service, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_open_resident_profile_editor",
+   "call": "string:.call( \"set_custom_resident_creator_route_capabilities\", {\"wardrobe\": true}, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_open_resident_profile_editor",
+   "call": "string:.call(\"configure\", _adapter, resident_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_open_resident_profile_editor",
+   "call": "string:.call(\"navigation_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_play_audio_cue",
+   "call": "string:.call(\"play_cue\", cue_id, volume_db)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_present_navigation_failure",
+   "call": "string:.call(\"show_navigation_failure\", message)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_resident_action_return_payload",
+   "call": "string:.call(\"current_view_model\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_resident_action_return_payload",
+   "call": "string:.call(\"navigation_state\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_transition_inner_observation_to_resident_view",
+   "call": "string:.call( \"transition_inner_observation_to_resident_view\" )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_transition_resident_view_to_inner_observation",
+   "call": "string:.call( \"transition_resident_view_to_inner_observation\" )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_unbind_resident_profile_editor_service",
+   "call": "string:.call(\"bind_custom_resident_creator_service\", null)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "_update_persistent_world_ui_visibility",
+   "call": "string:.call(\"set_indoor_focus_active\", _observer_indoor_active)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_operation_completed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "bind_town_ui_adapter",
+   "call": "string:Callable(self, \"_on_view_model_changed\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "close_page",
+   "call": "string:.call(\"clear_scope\", StringName(scope), true)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "close_page",
+   "call": "string:.call(\"set_page_context\", scope, {\"open\": false})",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "close_page",
+   "call": "string:.call(\"unbind_town_ui_adapter\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "debug_snapshot",
+   "call": "string:.call(\"audit_snapshot\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "open_page",
+   "call": "string:.call( \"attach_world_resident_action_menu\", page, payload.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "open_page",
+   "call": "string:.call(\"apply_route_payload\", payload.duplicate(true))",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "open_page",
+   "call": "string:.call(\"set_page_context\", scope, context)",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "prepare_for_world_save",
+   "call": "string:.call( \"set_page_context\", \"inner_observation\", {\"open\": false}, )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "present_feedback",
+   "call": "string:.call( \"apply_view_model\", view_model.duplicate(true), )",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "request_back",
+   "call": "string:.call(\"request_back\")",
+   "count": 5
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "request_back",
+   "call": "string:.call(\"request_close\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/presentation/ui/TownUiRuntimeHost.gd",
+   "func": "request_back",
+   "call": "string:.call(\"request_exit\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/runtime/conflict/TownConflictAgentWorldBridge.gd",
+   "func": "_project_conflicts",
+   "call": "variable:.call(String(value_id))",
+   "count": 1
+  },
+  {
+   "path": "game/world/runtime/conflict/TownConflictAgentWorldBridge.gd",
+   "func": "_project_tension_options",
+   "call": "variable:.call(target_id)",
+   "count": 1
+  },
+  {
+   "path": "game/world/runtime/conflict/TownConflictWorldController.gd",
+   "func": "_world_call",
+   "call": "variable:.call(method)",
+   "count": 1
+  },
+  {
+   "path": "game/world/runtime/conflict/TownConflictWorldController.gd",
+   "func": "_world_call",
+   "call": "variable:.call(method, arg)",
+   "count": 1
+  },
+  {
+   "path": "game/world/runtime/conversation/TownConversationRuntime.gd",
+   "func": "_begin_clinic_interview_conversation",
+   "call": "string:.call(\"get_absolute_minute\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/runtime/conversation/TownConversationRuntime.gd",
+   "func": "_finish_clinic_interview_conversation",
+   "call": "string:.call(\"get_absolute_minute\")",
+   "count": 1
+  },
+  {
+   "path": "game/world/runtime/persistence/TownWorldRestorePeople.gd",
+   "func": "prepare_resident_lifecycle",
+   "call": "string:.call(\"_resident_home_anchor\", world_data, resident)",
+   "count": 1
+  },
+  {
+   "path": "game/world/runtime/persistence/TownWorldRestoreState.gd",
+   "func": "prepare_full",
+   "call": "string:.call( \"_build_default_place_service_states\", world_data, prepared.get(\"owners\", {}) as Dictionary, prepared.get(\"livingResidentsPrepared\", {}) as Dictionary, {}, true, )",
+   "count": 1
+  }
+ ]
+}
